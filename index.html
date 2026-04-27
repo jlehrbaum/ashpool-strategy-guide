@@ -668,91 +668,74 @@
   const noResults = document.getElementById('no-results');
   const content = document.getElementById('content');
 
-  // Store original HTML for reset
+  // Snapshot original HTML once, before any mutation
   const originalHTML = content.innerHTML;
 
-  // Build searchable blocks: each top-level child of #content
-  function getBlocks() {
-    return Array.from(content.children);
-  }
-
   function escapeRe(s) {
-    return s.replace(/[.*+?^${}()|[\]\]/g, '\$&');
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 
-  function highlight(text, query) {
-    if (!query) return text;
-    return text.replace(new RegExp(escapeRe(query), 'gi'), m => `<mark>${m}</mark>`);
+  function highlightNode(el, re) {
+    // Walk text nodes and wrap matches in <mark>
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    const nodes = [];
+    let n;
+    while ((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(node => {
+      if (!re.test(node.nodeValue)) return;
+      const span = document.createElement('span');
+      span.innerHTML = node.nodeValue.replace(re, m => `<mark>${m}</mark>`);
+      node.parentNode.replaceChild(span, node);
+    });
   }
 
   function doSearch(query) {
-    // Reset
     content.innerHTML = originalHTML;
     countEl.textContent = '';
     noResults.style.display = 'none';
 
     if (!query.trim()) return;
 
-    const q = query.trim().toLowerCase();
-    const blocks = getBlocks();
+    const q = query.trim();
+    const re = new RegExp(escapeRe(q), 'gi');
+    const ql = q.toLowerCase();
+
+    const blocks = Array.from(content.children);
     let matchCount = 0;
-    let sectionVisible = false;
-    let lastH1 = null;
 
-    // We work with the actual DOM: group elements by H1 section
-    // Strategy: hide paragraphs/tables that don't match; keep headings if any child matches
-    // Simple approach: highlight all matching text, hide blocks with zero matches
-
+    // First pass: mark non-heading blocks as hidden/visible
     blocks.forEach(el => {
-      const text = el.textContent.toLowerCase();
-      const isHeading = /^H[123]$/.test(el.tagName);
-
-      if (isHeading) {
-        // Will decide visibility after seeing content
-        el.dataset.isHeading = '1';
-        return;
-      }
-
-      if (text.includes(q)) {
+      if (/^H[123]$/.test(el.tagName)) return;
+      if (el.textContent.toLowerCase().includes(ql)) {
         matchCount++;
-        // Highlight
-        el.innerHTML = highlight(el.innerHTML, query.trim());
+        highlightNode(el, re);
       } else {
         el.classList.add('search-hidden');
       }
     });
 
-    // Now handle headings: show a heading only if it has visible siblings before the next same-or-higher heading
-    // Simpler: show heading if any following non-heading element is visible until next heading
-    const allBlocks = Array.from(content.children);
-    let i = 0;
-    while (i < allBlocks.length) {
-      const el = allBlocks[i];
-      if (el.dataset.isHeading) {
-        // Look ahead for visible content
-        let j = i + 1;
-        let hasVisible = false;
-        while (j < allBlocks.length && !allBlocks[j].dataset.isHeading) {
-          if (!allBlocks[j].classList.contains('search-hidden')) { hasVisible = true; break; }
-          j++;
-        }
-        // Also check if heading text itself matches
-        const headingMatch = el.textContent.toLowerCase().includes(q);
-        if (!hasVisible && !headingMatch) {
-          el.classList.add('search-hidden');
-        } else {
-          if (headingMatch) {
-            el.innerHTML = highlight(el.innerHTML, query.trim());
-            matchCount++;
-          }
-        }
+    // Second pass: show/hide headings based on whether following content is visible
+    for (let i = 0; i < blocks.length; i++) {
+      const el = blocks[i];
+      if (!/^H[123]$/.test(el.tagName)) continue;
+
+      const headingMatches = el.textContent.toLowerCase().includes(ql);
+      let contentVisible = false;
+      for (let j = i + 1; j < blocks.length; j++) {
+        if (/^H[123]$/.test(blocks[j].tagName)) break;
+        if (!blocks[j].classList.contains('search-hidden')) { contentVisible = true; break; }
       }
-      i++;
+
+      if (!headingMatches && !contentVisible) {
+        el.classList.add('search-hidden');
+      } else if (headingMatches) {
+        matchCount++;
+        highlightNode(el, re);
+      }
     }
 
     if (matchCount === 0) {
       noResults.style.display = 'block';
-      countEl.textContent = '';
     } else {
       countEl.textContent = matchCount + ' match' + (matchCount !== 1 ? 'es' : '');
     }
@@ -763,9 +746,6 @@
     clearTimeout(debounce);
     debounce = setTimeout(() => doSearch(input.value), 180);
   });
-
-  // Clear search-hidden when query is empty
-  input.addEventListener('search', () => { if (!input.value) doSearch(''); });
 })();
 </script>
 </body>
