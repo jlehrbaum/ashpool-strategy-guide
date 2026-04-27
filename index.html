@@ -129,25 +129,74 @@
   /* Title block */
   .title-block {
     margin-bottom: 48px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--border);
+    padding: 32px 36px 28px;
+    background: linear-gradient(135deg, #1a1d35 0%, #1e2140 60%, #1a2030 100%);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .title-block::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, #a78bfa 50%, var(--accent2) 100%);
+  }
+  .doc-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .doc-eyebrow::after {
+    content: '';
+    flex: 1;
+    max-width: 40px;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.4;
   }
   .doc-title {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+    line-height: 1.2;
   }
-  .doc-subtitle {
-    font-size: 1.1rem;
+  .doc-tagline {
+    font-size: 0.95rem;
     color: var(--text-muted);
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+  .doc-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .doc-chip {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: rgba(108,142,245,0.12);
+    border: 1px solid rgba(108,142,245,0.3);
+    color: var(--accent);
+    letter-spacing: 0.02em;
   }
   .doc-meta {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-dim);
     margin-top: 4px;
+    font-style: italic;
   }
 
   /* Headings */
@@ -335,7 +384,20 @@
 </nav>
 
 <main id="main">
-  <div class="title-block"><h1 class="doc-title">JANUARY 2026 UPDATE</h1><p class="doc-subtitle">Strategy Guide</p><p class="doc-meta">Chip Formations  |  Sentinels  |  Mech Spirits  |  Engines</p><p class="doc-meta">A comprehensive guide to the four major new systems, covering core mechanics, investment strategy, and situational tactics for PVP and PVE (with deeper emphasis on burn builds).</p><p class="doc-meta">Written for intermediate-to-advanced players looking to optimize their loadouts.</p></div>
+  <div class="title-block">
+    <div class="doc-eyebrow">Wing Fighter &nbsp;·&nbsp; January 2026 Update</div>
+    <h1 class="doc-title">Strategy Guide: The Four New Systems</h1>
+    <p class="doc-tagline">How Chip Formations, Sentinels, Mech Spirits, and Engines change how you build and compete — covering core mechanics, investment strategy, and situational tactics for PVP and PVE.</p>
+    <div class="doc-chips">
+      <span class="doc-chip">Chip Formations</span>
+      <span class="doc-chip">Sentinels</span>
+      <span class="doc-chip">Mech Spirits</span>
+      <span class="doc-chip">Engines</span>
+      <span class="doc-chip">Burn Builds</span>
+      <span class="doc-chip">PVP &amp; PVE</span>
+    </div>
+    <p class="doc-meta">Written for intermediate-to-advanced players looking to optimize their loadouts.</p>
+  </div>
   <div id="content">
 <h1 id="part-1-understanding-the-four-systems">Part 1: Understanding the Four Systems</h1>
 <p>The January 2026 update introduced four interconnected systems that change how you build and compete. This section covers how each system works, what to invest in, and how quickly you can progress. Part 2 covers situational builds and tactical swaps.</p>
