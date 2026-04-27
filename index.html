@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashpool Strategy Guide — January 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #222538;
+    --border: #2e3250;
+    --accent: #6c8ef5;
+    --accent2: #e07b54;
+    --text: #e2e4f0;
+    --text-muted: #8b90b0;
+    --text-dim: #5a5f7a;
+    --highlight: #ffe58a;
+    --sidebar-w: 280px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.7;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── Sidebar ── */
+  #sidebar {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: var(--sidebar-w);
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  #sidebar-header {
+    padding: 16px 14px 12px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  #sidebar-header h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  #search {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.85rem;
+    padding: 7px 10px;
+    outline: none;
+    font-family: var(--font);
+  }
+  #search:focus { border-color: var(--accent); }
+  #search::placeholder { color: var(--text-dim); }
+
+  #search-count {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 6px;
+    min-height: 1.2em;
+  }
+
+  #toc {
+    overflow-y: auto;
+    flex: 1;
+    padding: 8px 0 16px;
+  }
+
+  .toc-item {
+    display: block;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 4px 12px;
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+  }
+  .toc-item:hover {
+    color: var(--text);
+    background: var(--surface2);
+  }
+  .toc-item.active {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    background: rgba(108,142,245,0.07);
+  }
+  .toc-level-1 {
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 8px;
+    font-size: 0.85rem;
+  }
+  .toc-level-2 { }
+  .toc-level-3 { color: var(--text-dim); font-size: 0.8rem; }
+
+  /* ── Main content ── */
+  #main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    min-width: 0;
+    padding: 48px 56px 80px 56px;
+    max-width: calc(var(--sidebar-w) + 760px);
+  }
+
+  /* Title block */
+  .title-block {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .doc-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+  .doc-meta {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 2.4em 0 0.6em;
+    padding-top: 0.5em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4em;
+    letter-spacing: -0.01em;
+    scroll-margin-top: 24px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 1.8em 0 0.5em;
+    scroll-margin-top: 24px;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 1.4em 0 0.4em;
+    scroll-margin-top: 24px;
+  }
+
+  /* Body text */
+  p {
+    margin-bottom: 0.85em;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+
+  /* Lists */
+  ul {
+    margin: 0.5em 0 1em 1.2em;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 0.55em;
+    font-size: 0.95rem;
+    color: var(--text);
+    padding-left: 0.3em;
+  }
+  li::marker { color: var(--accent2); }
+
+  /* Tables */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 1em 0 1.6em;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.88rem;
+  }
+  th {
+    background: var(--surface2);
+    color: var(--text);
+    font-weight: 600;
+    text-align: left;
+    padding: 9px 14px;
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+  td {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+  /* Search highlights */
+  mark {
+    background: var(--highlight);
+    color: #1a1a00;
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+
+  /* Search — hide non-matching sections */
+  .search-hidden { display: none; }
+
+  /* No results */
+  #no-results {
+    display: none;
+    text-align: center;
+    color: var(--text-dim);
+    margin-top: 60px;
+    font-size: 0.95rem;
+  }
+
+  /* Scrollbar */
+  #toc::-webkit-scrollbar { width: 4px; }
+  #toc::-webkit-scrollbar-track { background: transparent; }
+  #toc::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  @media (max-width: 700px) {
+    :root { --sidebar-w: 0px; }
+    #sidebar { display: none; }
+    #main { margin-left: 0; padding: 24px 20px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="sidebar">
+  <div id="sidebar-header">
+    <h2>Contents</h2>
+    <input type="search" id="search" placeholder="Search guide…" autocomplete="off" spellcheck="false">
+    <div id="search-count"></div>
+  </div>
+  <div id="toc">
+<a href="#part-1-understanding-the-four-systems" class="toc-item toc-level-1" style="padding-left:12px">Part 1: Understanding the Four Systems</a>
+<a href="#quick-overview" class="toc-item toc-level-2" style="padding-left:28px">Quick Overview</a>
+<a href="#how-they-work-together" class="toc-item toc-level-2" style="padding-left:28px">How They Work Together</a>
+<a href="#build-philosophy-how-to-think-about-builds" class="toc-item toc-level-1" style="padding-left:12px">Build Philosophy: How to Think About Builds</a>
+<a href="#every-build-has-a-counter" class="toc-item toc-level-2" style="padding-left:28px">Every Build Has a Counter</a>
+<a href="#the-layer-hierarchy" class="toc-item toc-level-2" style="padding-left:28px">The Layer Hierarchy</a>
+<a href="#pairing-primaries-with-secondaries" class="toc-item toc-level-2" style="padding-left:28px">Pairing Primaries with Secondaries</a>
+<a href="#on-bp-battle-power" class="toc-item toc-level-2" style="padding-left:28px">On BP (Battle Power)</a>
+<a href="#f2p-realities" class="toc-item toc-level-2" style="padding-left:28px">F2P Realities</a>
+<a href="#pilots-the-foundation" class="toc-item toc-level-1" style="padding-left:12px">Pilots: The Foundation</a>
+<a href="#the-four-core-stats" class="toc-item toc-level-2" style="padding-left:28px">The Four Core Stats</a>
+<a href="#why-pilots-matter-more-than-they-look" class="toc-item toc-level-2" style="padding-left:28px">Why Pilots Matter More Than They Look</a>
+<a href="#don-t-specialize-defensively" class="toc-item toc-level-2" style="padding-left:28px">Don&#x27;t Specialize Defensively</a>
+<a href="#stat-targets-by-bp" class="toc-item toc-level-2" style="padding-left:28px">Stat Targets by BP</a>
+<a href="#defense-break-vs-defense-how-the-math-works" class="toc-item toc-level-2" style="padding-left:28px">Defense Break vs. Defense: How the Math Works</a>
+<a href="#the-formula" class="toc-item toc-level-3" style="padding-left:44px">The Formula</a>
+<a href="#the-breakpoint" class="toc-item toc-level-3" style="padding-left:44px">The Breakpoint</a>
+<a href="#why-the-asymmetry-matters" class="toc-item toc-level-3" style="padding-left:44px">Why the Asymmetry Matters</a>
+<a href="#worked-example-even-match" class="toc-item toc-level-3" style="padding-left:44px">Worked Example: Even Match</a>
+<a href="#burn-drones" class="toc-item toc-level-1" style="padding-left:12px">Burn Drones</a>
+<a href="#foundation-two-maxed-ninjas" class="toc-item toc-level-2" style="padding-left:28px">Foundation: Two Maxed Ninjas</a>
+<a href="#the-r-vs-sr-fork" class="toc-item toc-level-2" style="padding-left:28px">The R vs. SR Fork</a>
+<a href="#choosing-among-r-tier-burn-drones" class="toc-item toc-level-2" style="padding-left:28px">Choosing Among R-Tier Burn Drones</a>
+<a href="#progression-lineups" class="toc-item toc-level-2" style="padding-left:28px">Progression Lineups</a>
+<a href="#chip-formations" class="toc-item toc-level-1" style="padding-left:12px">Chip Formations</a>
+<a href="#understanding-the-stat-caps" class="toc-item toc-level-2" style="padding-left:28px">Understanding the Stat Caps</a>
+<a href="#the-evil-eye-conversion-ceiling-pve" class="toc-item toc-level-2" style="padding-left:28px">The Evil Eye Conversion Ceiling (PVE)</a>
+<a href="#building-toward-the-burn-cap" class="toc-item toc-level-2" style="padding-left:28px">Building Toward the Burn Cap</a>
+<a href="#example-formation-setups" class="toc-item toc-level-2" style="padding-left:28px">Example Formation Setups</a>
+<a href="#dodge-vs-crit-when-to-switch" class="toc-item toc-level-2" style="padding-left:28px">Dodge vs. Crit: When to Switch</a>
+<a href="#sentinels" class="toc-item toc-level-1" style="padding-left:12px">Sentinels</a>
+<a href="#core-mechanics" class="toc-item toc-level-2" style="padding-left:28px">Core Mechanics</a>
+<a href="#cost-progression-and-rarity" class="toc-item toc-level-2" style="padding-left:28px">Cost, Progression, and Rarity</a>
+<a href="#recommended-sentinel-choices" class="toc-item toc-level-2" style="padding-left:28px">Recommended Sentinel Choices</a>
+<a href="#pairing-sentinels-with-fighters-and-mechs" class="toc-item toc-level-2" style="padding-left:28px">Pairing Sentinels with Fighters and Mechs</a>
+<a href="#sentinel-investment-path" class="toc-item toc-level-2" style="padding-left:28px">Sentinel Investment Path</a>
+<a href="#recommended-progression" class="toc-item toc-level-3" style="padding-left:44px">Recommended Progression</a>
+<a href="#sentinel-passives-and-rerolling" class="toc-item toc-level-2" style="padding-left:28px">Sentinel Passives and Rerolling</a>
+<a href="#the-reverse-merge-technique" class="toc-item toc-level-3" style="padding-left:44px">The Reverse Merge Technique</a>
+<a href="#sentinel-passives-stacking-and-rarity" class="toc-item toc-level-3" style="padding-left:44px">Sentinel Passives — Stacking and Rarity</a>
+<a href="#odds-of-hitting-gold" class="toc-item toc-level-3" style="padding-left:44px">Odds of Hitting Gold</a>
+<a href="#recommended-passive-priorities" class="toc-item toc-level-3" style="padding-left:44px">Recommended Passive Priorities</a>
+<a href="#sentinel-spending-priorities-and-progression-timeline" class="toc-item toc-level-2" style="padding-left:28px">Sentinel Spending Priorities and Progression Timeline</a>
+<a href="#short-term-1-2-months" class="toc-item toc-level-3" style="padding-left:44px">Short Term (1–2 Months)</a>
+<a href="#medium-to-long-term-4-months-to-1-5-years" class="toc-item toc-level-3" style="padding-left:44px">Medium to Long Term (4+ Months to 1.5 Years)</a>
+<a href="#on-ssr-sentinels" class="toc-item toc-level-3" style="padding-left:44px">On SSR Sentinels</a>
+<a href="#mech-spirits" class="toc-item toc-level-1" style="padding-left:12px">Mech Spirits</a>
+<a href="#how-mech-leveling-works" class="toc-item toc-level-2" style="padding-left:28px">How Mech Leveling Works</a>
+<a href="#mech-investment-strategy" class="toc-item toc-level-2" style="padding-left:28px">Mech Investment Strategy</a>
+<a href="#my-pvp-offensive-defensive-hybrid-favorites-in-priority-order" class="toc-item toc-level-3" style="padding-left:44px">My PVP Offensive/Defensive Hybrid Favorites (in priority order)</a>
+<a href="#my-pvp-defensive-favorites-in-priority-order" class="toc-item toc-level-3" style="padding-left:44px">My PVP Defensive Favorites (in priority order)</a>
+<a href="#my-pvp-offensive-favorites-in-priority-order" class="toc-item toc-level-3" style="padding-left:44px">My PVP Offensive Favorites (in priority order)</a>
+<a href="#my-pve-burn-formation-mechs-in-priority-order" class="toc-item toc-level-3" style="padding-left:44px">My PVE Burn Formation Mechs (in priority order)</a>
+<a href="#note-the-evil-eye-and-star-envoy-synergy" class="toc-item toc-level-3" style="padding-left:44px">Note: The Evil Eye and Star Envoy Synergy</a>
+<a href="#engines" class="toc-item toc-level-1" style="padding-left:12px">Engines</a>
+<a href="#available-engines" class="toc-item toc-level-2" style="padding-left:28px">Available Engines</a>
+<a href="#quick-decision-rule" class="toc-item toc-level-2" style="padding-left:28px">Quick Decision Rule</a>
+<a href="#part-2-situational-builds-and-tactics" class="toc-item toc-level-1" style="padding-left:12px">Part 2: Situational Builds and Tactics</a>
+<a href="#pve-burn-build" class="toc-item toc-level-2" style="padding-left:28px">PVE Burn Build</a>
+<a href="#pvp-defensive-build" class="toc-item toc-level-2" style="padding-left:28px">PVP Defensive Build</a>
+<a href="#pvp-offensive-build" class="toc-item toc-level-2" style="padding-left:28px">PVP Offensive Build</a>
+<a href="#burn-in-pvp" class="toc-item toc-level-2" style="padding-left:28px">Burn in PVP</a>
+<a href="#situational-swaps-for-pvp" class="toc-item toc-level-2" style="padding-left:28px">Situational Swaps for PVP</a>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="title-block"><h1 class="doc-title">JANUARY 2026 UPDATE</h1><p class="doc-subtitle">Strategy Guide</p><p class="doc-meta">Chip Formations  |  Sentinels  |  Mech Spirits  |  Engines</p><p class="doc-meta">A comprehensive guide to the four major new systems, covering core mechanics, investment strategy, and situational tactics for PVP and PVE (with deeper emphasis on burn builds).</p><p class="doc-meta">Written for intermediate-to-advanced players looking to optimize their loadouts.</p></div>
+  <div id="content">
+<h1 id="part-1-understanding-the-four-systems">Part 1: Understanding the Four Systems</h1>
+<p>The January 2026 update introduced four interconnected systems that change how you build and compete. This section covers how each system works, what to invest in, and how quickly you can progress. Part 2 covers situational builds and tactical swaps.</p>
+<h2 id="quick-overview">Quick Overview</h2>
+<p>Chip Formations let you save up to three loadouts of stat-boosting chips. You assign chips to tailor your stats (burn, crit, dodge, hit rate, etc.) for different scenarios. Key constraints include the 100% cap on drone type enhancements (burning, electric, reflect) — net of opponent resistance — and the 80% net cap on dodge and crit rate against players. In PVE, crit rate is capped at 80% as well — but the Evil Eye mech spirit allows you to convert excess crit into burn crit, which effectively extends the useful ceiling. See the Chip Formations section for details.</p>
+<p>Sentinels are companion units (similar to drones) with up to four passive abilities at four stars. Passives come in three rarity tiers — gold, purple, and blue — and scale with star level, so a maxed low-rarity sentinel often outperforms a high-rarity sentinel at low stars. You equip one sentinel at a time. Unlike drone passives, sentinel passives stack across slots, meaning the same passive type appearing in multiple slots adds up. Note that you can&#x27;t get two golds of the same passive on a single sentinel, but you can get a gold plus a purple plus a blue of the same type, which still produces a meaningful stacked bonus once the sentinel is fully leveled.</p>
+<p>Mech Spirits provide a core skill and up to four attribute bonuses. You equip three mech spirits at a time and should swap them based on the situation. Beyond what you equip, your entire mech collection contributes passive bonuses based on the four attributes. In addition, you can get combination bonuses by accumulating and leveling mech spirits — there are 14 combinations with up to 22 levels each. You can advance the combination level when each mech in the combination has achieved a specified level itself. For example, to get to level 22 of the combination bonus, each of the relevant mechs must be at level 60.</p>
+<p>Mech spirits appear to have the most growth headroom of any system in the update although it may get pretty difficult to level at some point. In the early days, you can accumulate a tremendous amount of attribute bonus through leveling mechs and we&#x27;ll see how long that continues.</p>
+<p>Engines provide a stat boost that you select before battle. Each engine has a base bonus that grows as you level it, and the bonus doubles when equipped. For example, a grade 7 hit rate engine gives 35% hit rate passively and 70% when equipped.</p>
+<h2 id="how-they-work-together">How They Work Together</h2>
+<p>A strong build layers all four systems to hit your caps efficiently. For a PVE burn build, you combine burn chips, mech combination bonuses (e.g., 22% passive burn from mechs alone), sentinel passives, and possibly Magic Armor to reach the 100% burn cap — then redirect everything else into crit, but only up to the ceiling that Evil Eye can absorb (more on this below). For PVP, remember that caps like 80% dodge are net values after your opponent&#x27;s resistance. If your dodge is 160% and your opponent has 100% hit rate, your effective dodge is only 60%, so you still have headroom. This means stacking dodge beyond 80% is not wasted if opponents have high hit rate. The same logic applies to crit rate in PVP.</p>
+<h1 id="build-philosophy-how-to-think-about-builds">Build Philosophy: How to Think About Builds</h1>
+<p>Before getting into the mechanics of each system, it&#x27;s worth stepping back and thinking about how strong builds actually come together. The four-system update has dramatically increased the number of possible loadouts, which makes it tempting to optimize everything at once. The reality is that resources — especially for f2p and lightly-spending players — are limited, and where you choose to focus matters more than how much you have.</p>
+<p>This section lays out the strategic logic behind strong builds. The key ideas: every build has a counter, the layers you optimize matter more than your raw power level, and pairing your primary attributes with the right secondaries is what turns a good build into a winning one.</p>
+<h2 id="every-build-has-a-counter">Every Build Has a Counter</h2>
+<p>There is no single dominant build. Every offensive style is vulnerable to a defensive style, and every defense has an attacker that can crack it. The strongest players accept this and aim for one of two outcomes:</p>
+<ul><li>Min/max the secondaries: Pair your primary attribute with the secondaries that enable it. Dodge needs heal to outlast enemies. Crit needs hit (so you can land attacks) and crit damage (so the crits matter). The combinations that win are dodge + heal, or crit + hit + crit damage. A build that stacks one primary attribute without its enablers is brittle.</li>
+<li>Overpower the primaries: Push your primary attribute high enough that the opponent&#x27;s secondary defenses can&#x27;t keep up. This is the brute-force path and tends to require deeper investment, but it&#x27;s effective when min/maxing isn&#x27;t an option.</li>
+</ul><h2 id="the-layer-hierarchy">The Layer Hierarchy</h2>
+<p>When you&#x27;re deciding where to spend pilot points, chips, or recast materials, this hierarchy is a useful guide. The layers are listed in order of impact — investing well in a higher layer beats investing more in a lower one.</p>
+<div class="table-wrap"><table><tr><th>Layer</th><th>What It Covers</th><th>Why It Matters</th></tr><tr><td>1. Consistency</td><td>Crit, hit, dodge, burn rate</td><td>If you can&#x27;t land hits or can&#x27;t avoid them, nothing else matters. This is the foundation.</td></tr><tr><td>2. Core scaling</td><td>Pilots, damage increase mechs, damage reduction mechs</td><td>Once you&#x27;re hitting consistently, this is what makes hits hurt and survives the ones that land.</td></tr><tr><td>3. Sustain / anti-sustain</td><td>Heal enhancement, heal reduction</td><td>Decides whether long fights favor you or your opponent. Critical against defensive builds.</td></tr><tr><td>4. Drone / sentinel / mech optimization</td><td>Landing the right passives, equipping the right ones</td><td>High-leverage tuning. Gold passives can multiply effectiveness in any of the layers above.</td></tr><tr><td>5. Base stats</td><td>Raw HP, attack from gear</td><td>Lowest priority. Players with maxed Titan gear regularly lose to lower-stat opponents who built the layers above better.</td></tr></table></div>
+<p>The bottom-of-the-list status of base stats is counterintuitive — it&#x27;s where the visible numbers live, and it&#x27;s the easiest thing to track. But it&#x27;s also the most easily overcome by an opponent who built the upper layers well.</p>
+<h2 id="pairing-primaries-with-secondaries">Pairing Primaries with Secondaries</h2>
+<p>This is where the min/max approach pays off in practice. A few examples:</p>
+<ul><li>Crit builds need crit resistance or hit rate, depending on the matchup. Against an opponent stacking dodge, you need hit rate to land your crits. Against an opponent stacking crit themselves, you need crit resistance to deny theirs. Then layer crit damage (passive sources) and damage increase (mechs) on top — fights end faster, which naturally counters healing-focused opponents.</li>
+<li>Dodge builds need heal. Dodge alone slows fights down; heal is what keeps you alive through the hits that do land. The Gridstar + Ladybug + Berserk Dragon + Aqua Spirit defensive build in Part 2 is a textbook example.</li>
+<li>Burn builds (PVE) need crit (up to the Evil Eye ceiling) and crit damage. Once you&#x27;re at the 100% burn cap, crit is the multiplier that pushes damage further — and Evil Eye routes overflow into burn crit, making crit damage do double duty.</li>
+</ul><h2 id="on-bp-battle-power">On BP (Battle Power)</h2>
+<p>BP is the most visible stat in the game and the most misleading. It&#x27;s useful as a rough screening signal — if someone&#x27;s BP is dramatically higher than yours, they probably have a build that can challenge you — but it doesn&#x27;t tell you whether they will actually beat you. A 30M BP player with a well-tuned consistency-and-scaling build can routinely beat a 45M BP player whose investment is spread thin or focused on base stats. The same player can lose to a 25M BP opponent who happens to counter their setup.</p>
+<p>Think of BP the way you&#x27;d think of a chess rating: it tells you what range of opponent you&#x27;re dealing with, not who wins the specific game.</p>
+<h2 id="f2p-realities">F2P Realities</h2>
+<p>If you&#x27;re not spending heavily, you won&#x27;t get to fully min/max every build. The options most worth playing with — high-tier sentinels, deep mech combination bonuses, recast materials for chasing gold passives — are the slowest to accumulate f2p, and that&#x27;s by design.</p>
+<p>The practical implication: pick one or two builds you actually use and concentrate your resources there. A defensive PVP build and a PVE burn build is a reasonable starting pair. Don&#x27;t try to fully tune three or four loadouts in parallel — you&#x27;ll end up with all of them slightly underbuilt and none of them able to beat their natural counters. The chip formation system already nudges you toward this (three saved loadouts), and treating those slots as your build commitments rather than experiments is the f2p-friendly way to use them.</p>
+<h1 id="pilots-the-foundation">Pilots: The Foundation</h1>
+<p>Pilots aren&#x27;t new with the January 2026 update, but they belong near the front of any serious strategy guide because they are the foundation everything else sits on. The Build Philosophy section above puts base stats at the bottom of the layer hierarchy — pilots are the opposite. They drive four core combat stats: Player Defense Break (PDB), Enemy Defense Break (EDB), Physical Defense (PD), and Energy Defense (ED). Together these determine how much damage you actually deal and absorb. A player who has poured resources into the new systems but skipped pilots will have a high BP and a hollow foundation, and they will lose to comparably-resourced opponents who built pilots properly.</p>
+<h2 id="the-four-core-stats">The Four Core Stats</h2>
+<p>Pilots affect both sides of the damage equation. You need to think about offense and defense as a paired system, not as separate priorities.</p>
+<div class="table-wrap"><table><tr><th>Stat</th><th>Role</th><th>What You Want</th></tr><tr><td>PDB (Physical Defense Break)</td><td>Offensive — your physical attacks vs. opponent&#x27;s PD</td><td>Higher than your opponent&#x27;s PD</td></tr><tr><td>EDB (Energy Defense Break)</td><td>Offensive — your energy attacks vs. opponent&#x27;s ED</td><td>Higher than your opponent&#x27;s ED</td></tr><tr><td>PD (Physical Defense)</td><td>Defensive — opponent&#x27;s physical attacks vs. your PD</td><td>Higher than your opponent&#x27;s PDB</td></tr><tr><td>ED (Energy Defense)</td><td>Defensive — opponent&#x27;s energy attacks vs. your EDB</td><td>Higher than your opponent&#x27;s EDB</td></tr></table></div>
+<h2 id="why-pilots-matter-more-than-they-look">Why Pilots Matter More Than They Look</h2>
+<p>There are two practical rules worth internalizing:</p>
+<ul><li>You need to be in the ballpark to compete. If your offense (PDB/EDB) and defense (PD/ED) are roughly comparable to opponents at your BP, you are competitive — and from there you can win by exploiting an advantage in chips, drones, sentinels, mechs, or passives. If your pilots lag, you have to find a much larger exploitable gap elsewhere to overcome the deficit, and against a well-built opponent that gap may not exist.</li>
+<li>Strong pilots make you durable beyond your BP. A player with mediocre gear but well-developed pilots is unusually tough for their BP. Pilots scale damage and damage taken in a way that compounds with everything else, so investment here pays off across every build you might run. If you were starting fresh, focusing on pilots before anything else would be defensible — and arguably optimal.</li>
+</ul><h2 id="don-t-specialize-defensively">Don&#x27;t Specialize Defensively</h2>
+<p>This is the most common pilot-investment mistake. If you&#x27;re a primarily physical-damage player, it&#x27;s tempting to max your PDB on offense and your PD on defense, while letting EDB and ED lag. Don&#x27;t. You face both physical and energy attackers in PVP, and an opponent running an energy build will tear through a defender who has poured everything into PD and ignored ED.</p>
+<p>The rule is simple: regardless of your offensive specialization, max both PD and ED on defense. A physical player still needs strong ED. An energy player still needs strong PD. Your offensive choice can be specialized, but your defense should be balanced — you don&#x27;t get to pick what your opponent throws at you.</p>
+<p>On offense, specializing is more defensible since you&#x27;re choosing your own build, but maxing both PDB and EDB is still the long-term goal because some PVE encounters and some PVP matchups reward the flexibility.</p>
+<h2 id="stat-targets-by-bp">Stat Targets by BP</h2>
+<p>These are reasonable PDB/EDB targets at each BP tier, drawn from community analysis on the Galaxy server. The pattern is +100 per million BP up through 20M, then +50 per million BP from 20M onward. Hitting these numbers means your offensive foundation is competitive with players in your range; falling significantly below them means you are giving up an advantage that&#x27;s hard to recover elsewhere.</p>
+<p>For PD and ED, the right target is relative rather than absolute: aim to match or exceed the PDB/EDB that opponents at your BP are running. In practice that means using the same table as a rough defensive benchmark — if a player at your BP is hitting these PDB/EDB numbers on offense, you need PD/ED in that range on defense to deny them the bonus damage zone (see the scaling math below).</p>
+<div class="table-wrap"><table><tr><th>BP</th><th>Target (PDB / EDB / PD / ED)</th><th>BP</th><th>Target (PDB / EDB / PD / ED)</th></tr><tr><td>1M+</td><td>100</td><td>28M+</td><td>2400</td></tr><tr><td>2M+</td><td>200</td><td>29M+</td><td>2450</td></tr><tr><td>3M+</td><td>300</td><td>30M+</td><td>2500</td></tr><tr><td>4M+</td><td>400</td><td>31M+</td><td>2550</td></tr><tr><td>5M+</td><td>500</td><td>32M+</td><td>2600</td></tr><tr><td>6M+</td><td>600</td><td>33M+</td><td>2650</td></tr><tr><td>7M+</td><td>700</td><td>34M+</td><td>2700</td></tr><tr><td>8M+</td><td>800</td><td>35M+</td><td>2750</td></tr><tr><td>9M+</td><td>900</td><td>36M+</td><td>2800</td></tr><tr><td>10M+</td><td>1000</td><td>37M+</td><td>2850</td></tr><tr><td>11M+</td><td>1100</td><td>38M+</td><td>2900</td></tr><tr><td>12M+</td><td>1200</td><td>39M+</td><td>2950</td></tr><tr><td>13M+</td><td>1300</td><td>40M+</td><td>3000</td></tr><tr><td>14M+</td><td>1400</td><td>41M+</td><td>3050</td></tr><tr><td>15M+</td><td>1500</td><td>42M+</td><td>3100</td></tr><tr><td>16M+</td><td>1600</td><td>43M+</td><td>3150</td></tr><tr><td>17M+</td><td>1700</td><td>44M+</td><td>3200</td></tr><tr><td>18M+</td><td>1800</td><td>45M+</td><td>3250</td></tr><tr><td>19M+</td><td>1900</td><td>46M+</td><td>3300</td></tr><tr><td>20M+</td><td>2000</td><td>47M+</td><td>3350</td></tr><tr><td>21M+</td><td>2050</td><td>48M+</td><td>3400</td></tr><tr><td>22M+</td><td>2100</td><td>49M+</td><td>3450</td></tr><tr><td>23M+</td><td>2150</td><td>50M+</td><td>3500</td></tr><tr><td>24M+</td><td>2200</td><td>51M+</td><td>3550</td></tr><tr><td>25M+</td><td>2250</td><td>52M+</td><td>3600</td></tr><tr><td>26M+</td><td>2300</td><td>53M+</td><td>3650</td></tr><tr><td>27M+</td><td>2350</td><td>54M+</td><td>3700</td></tr></table></div>
+<h2 id="defense-break-vs-defense-how-the-math-works">Defense Break vs. Defense: How the Math Works</h2>
+<p>Defense Break (your offensive stat) is compared against the opponent&#x27;s Defense (their defensive stat). The difference between the two — not the raw values — drives a damage multiplier on top of everything else you&#x27;ve built. The same math applies in reverse on incoming damage: opponent&#x27;s PDB vs. your PD, and opponent&#x27;s EDB vs. your ED.</p>
+<h3 id="the-formula">The Formula</h3>
+<p>If your Break ≥ enemy Defense (neutral or bonus zone):</p>
+<p>Damage Multiplier = 1 + ((Your Break − Enemy Defense) / 1000)</p>
+<p>If your Break &lt; enemy Defense (penalty zone):</p>
+<p>Damage Multiplier = 1 / (1 + ((Enemy Defense − Your Break) / 1000))</p>
+<p>The only thing that matters is the gap: Your Break minus Enemy Defense. That gap places you in one of three zones: below (penalty), equal (neutral, 1.00x), or above (bonus). The same logic applies on the defensive side: when your PD exceeds an opponent&#x27;s PDB, they are in their penalty zone against you.</p>
+<h3 id="the-breakpoint">The Breakpoint</h3>
+<p>The breakpoint is simple: Enemy Defense. Get to or above that number and the penalty zone disappears entirely. Below it, you are paying a multiplicative tax on every hit.</p>
+<h3 id="why-the-asymmetry-matters">Why the Asymmetry Matters</h3>
+<p>The two formulas are not symmetric. Being above gives you a linear bonus; being below gives you an inverted penalty that compounds quickly. Worked examples at a few gap sizes:</p>
+<div class="table-wrap"><table><tr><th>Gap</th><th>Above (Bonus)</th><th>Below (Penalty)</th><th>Effective Asymmetry</th></tr><tr><td>±100</td><td>1.10x  (+10%)</td><td>1 / 1.10 = 0.909x  (−9.1%)</td><td>Small gaps are nearly symmetric</td></tr><tr><td>±200</td><td>1.20x  (+20%)</td><td>1 / 1.20 = 0.833x  (−16.7%)</td><td>Gap starts to open</td></tr><tr><td>±500</td><td>1.50x  (+50%)</td><td>1 / 1.50 = 0.667x  (−33.3%)</td><td>Penalty zone is meaningfully worse</td></tr><tr><td>±1000</td><td>2.00x  (+100%)</td><td>1 / 2.00 = 0.500x  (−50%)</td><td>Falling 1000 behind halves your damage</td></tr></table></div>
+<p>The practical implication: the worst place to be is in the penalty zone. The first job of pilot investment is to clear the breakpoint against the opponents you actually fight — once you are even or slightly above, you are paying no tax and your other systems get to work at full effectiveness. Pushing far above the breakpoint is nice but has diminishing returns relative to lifting yourself out of the penalty zone in the first place.</p>
+<h3 id="worked-example-even-match">Worked Example: Even Match</h3>
+<p>Your Break = 1000, Enemy Defense = 1000 → Multiplier = 1.00. You deal 100% of your base damage: no bonus, no penalty. This is the floor you want to hit before optimizing anywhere else.</p>
+<h1 id="burn-drones">Burn Drones</h1>
+<p>Burn is one of the most flexible damage types in the game — strong in PVE against bosses, and useful in PVP because it bypasses dodge and scales over long fights (covered in Part 2). Choosing the right burn drones, and progressing them in the right order, is one of the higher-leverage decisions you&#x27;ll make.</p>
+<h2 id="foundation-two-maxed-ninjas">Foundation: Two Maxed Ninjas</h2>
+<p>Most players should start by maxing 1–2 Ninjas. Ninjas are accessible, cheap to level relative to higher-rarity drones, and a maxed Ninja meaningfully outperforms an under-leveled higher-rarity drone (the same star-scaling logic that makes maxed Gridstars beat low-star SSRs). Two maxed Ninjas give you a working burn build today and let you compete in PVE while you decide where to invest next.</p>
+<h2 id="the-r-vs-sr-fork">The R vs. SR Fork</h2>
+<p>Once you have your Ninja foundation, you face a choice: add R-tier burn drones or work toward an SR-tier burn drone. These are genuine alternatives, not a sequence — most players pick one path based on how much they plan to invest.</p>
+<ul><li>R-tier path: Faster to max, lower ceiling. Good for F2P or lightly-spending players who want a competitive burn lineup sooner. R drones include Lich, Scorpion Lion, and Cerberus.</li>
+<li>SR-tier path: Slower and more expensive, but higher ceiling. SR burners (Sagittarius, Lyra, Fornax) outperform R drones once leveled. The most common F2P long-term path is 2x maxed Ninja + 1 maxed SR. Heavier spenders may stack multiple SRs.</li>
+</ul><p>There&#x27;s no wrong answer between R and SR — it depends on your time horizon and resource budget. The mistake is splitting investment across both tiers, which leaves you with under-leveled drones in both and no maxed lineup.</p>
+<h2 id="choosing-among-r-tier-burn-drones">Choosing Among R-Tier Burn Drones</h2>
+<p>If you go the R-tier route, the three options are not equal. Lich is meaningfully stronger than Scorpion Lion or Cerberus, and the reasoning is worth understanding because it generalizes to how you should evaluate burn drones in general.</p>
+<div class="table-wrap"><table><tr><th>Drone</th><th>Effect</th><th>Real Value</th></tr><tr><td>Lich</td><td>+15% to all burn damage, every burn tick, all the time</td><td>Highest. The bonus applies to every burn stack, every tick, across every burn drone you run, and is always active. It scales with everything else you stack.</td></tr><tr><td>Scorpion Lion</td><td>+1 burn stack when recoil is active</td><td>Lower than it looks. Burn caps at 6 stacks and you reach the cap within 2–3 cycles of attacks anyway. Past cap, the extra stack typically just replaces an old one (FIFO queue) rather than adding new damage. Also conditional on recoil being active.</td></tr><tr><td>Cerberus</td><td>Skill damage 255% + 3.5% per burn stack (max ~276% at 6 stacks)</td><td>Modest. Roughly +8% to one drone&#x27;s skill hit at full burn — not nothing, but it&#x27;s a one-time bonus on a single drone where Lich is multiplying everything.</td></tr></table></div>
+<p>The general principle: burn drones whose bonuses apply continuously to all burn damage are more valuable than burn drones whose bonuses are conditional, capped, or applied to a single hit. Lich satisfies the first criterion; Scorpion Lion and Cerberus run into the second.</p>
+<h2 id="progression-lineups">Progression Lineups</h2>
+<p>Reasonable burn lineups at different stages of progression:</p>
+<div class="table-wrap"><table><tr><th>Stage</th><th>Lineup</th><th>Notes</th></tr><tr><td>Early (F2P starter)</td><td>1–2 maxed Ninjas + 1 unleveled R or SR</td><td>Ninjas carry the build while you progress your third drone</td></tr><tr><td>Mid (R-tier path)</td><td>2 maxed Ninjas + 1 maxed Lich</td><td>Strong, accessible, F2P-friendly endpoint</td></tr><tr><td>Mid (SR-tier path)</td><td>2 maxed Ninjas + 1 maxed SR (Sagittarius / Lyra / Fornax)</td><td>Most common F2P long-term lineup</td></tr><tr><td>Late (heavy spender)</td><td>Multiple maxed SRs</td><td>Higher ceiling but requires significant investment</td></tr></table></div>
+<h1 id="chip-formations">Chip Formations</h1>
+<p>Chip formations give you three saved loadouts of stat chips, associated with your underlying formations. You can swap between them before battles, but also need to align with all of your other equipment (gems, gears, drones, sentinels, etc). Many players will select one formation for PVE and then select two different PVP formations. In my case, I have one PVP formation that is defensive (leans on dodge) and one that is offensive (mix of crit and dodge).</p>
+<h2 id="understanding-the-stat-caps">Understanding the Stat Caps</h2>
+<p>Most chip attributes have a cap, and exceeding it wastes chip slots. These caps are the most important constraints for chip formation planning.</p>
+<div class="table-wrap"><table><tr><th>Attribute</th><th>Cap</th><th>Notes</th></tr><tr><td>Burning Enhancement</td><td>100% net</td><td>Net of opponent burn resistance. PVE bosses have no burn resistance, so 100% raw = 100% net. PVP opponents may run burn reduce, so raw burn above 100% can be useful.</td></tr><tr><td>Electric Enhancement</td><td>100% net</td><td>Same rules as burn — net of opponent electric resistance</td></tr><tr><td>Reflect Enhancement</td><td>100% net</td><td>Same rules as burn — net of opponent reflect resistance</td></tr><tr><td>Dodge Rate</td><td>80% net vs players</td><td>Your dodge minus opponent&#x27;s hit rate; raw dodge can exceed 80%</td></tr><tr><td>Crit Rate (PVP)</td><td>80% net vs players</td><td>Your crit rate minus opponent&#x27;s crit resistance; raw crit can exceed 80%</td></tr><tr><td>Crit Rate (PVE)</td><td>80% — but extendable via Evil Eye</td><td>Hard cap at 80%, but Evil Eye converts overflow into burn crit (see below)</td></tr></table></div>
+<h2 id="the-evil-eye-conversion-ceiling-pve">The Evil Eye Conversion Ceiling (PVE)</h2>
+<p>This is the most important nuance for PVE burn builds, and the original version of this guide got it wrong.</p>
+<p>Crit rate in PVE is capped at 80% just like in PVP. Stacking crit chips past that point is normally wasted — except that the Evil Eye mech spirit converts crit rate that exceeds the enemy&#x27;s crit resistance into burn crit rate. Since PVE bosses appear to have no crit resistance, every point of crit you have above 80% is overflow that Evil Eye can route into amplified burn damage.</p>
+<p>The conversion ratio depends on Evil Eye&#x27;s level, which sets a hard ceiling on how much crit is actually useful:</p>
+<div class="table-wrap"><table><tr><th>Evil Eye Level</th><th>Useful Crit Ceiling</th><th>What This Means</th></tr><tr><td>Level 1</td><td>~400%</td><td>Wide runway. Stack crit aggressively after burn cap; nearly all chip slots find a home.</td></tr><tr><td>Maxed</td><td>~143%</td><td>Tighter ceiling. Past ~143% crit, additional crit chips do nothing — redirect to crit damage, hit rate, or other useful stats.</td></tr></table></div>
+<p>Practical takeaway: a low-level Evil Eye is forgiving and can absorb a huge amount of crit overflow. As you level Evil Eye up, the conversion gets more efficient per point but the absolute amount of crit it can usefully consume drops. Early on, you don&#x27;t really need to think about it — just keep stacking crit. Once Evil Eye is maxed, recheck your sheet and trim crit back toward ~143% to free up chip slots for other stats.</p>
+<p>If you don&#x27;t run Evil Eye at all, the regular 80% PVE crit cap applies and there&#x27;s no reason to push crit past that.</p>
+<h2 id="building-toward-the-burn-cap">Building Toward the Burn Cap</h2>
+<p>For a burn-oriented PVE build, the 100% burning enhancement cap is still the primary constraint. Once you hit 100% burn from all sources combined (chips, sentinel passives, mech combination bonuses, equipped mech skills), you can redirect remaining chip slots into crit — up to whatever ceiling Evil Eye allows. PVE bosses appear to have no burn resistance, so raw burn = effective burn in PVE.</p>
+<p>PVP is different: the 100% cap is net of opponent burn resistance. If your opponent runs 50% burn reduce (from a Burn Decrease engine, sentinel passives, or mech sources), you need raw burn enhancement of ~150% to actually deliver 100% burn damage. This means a PVP burn build doesn&#x27;t waste chip slots stacking burn past 100% raw — it depends on what you&#x27;re up against. The same logic applied to dodge and PVP crit applies here.</p>
+<p>For example, if you have a 22% burn enhancement from your mech collection and a ~20% enhancement from Magic Armor, you&#x27;d only need ~60% more burn enhancement from chips to reach 100% raw — which is the cap for PVE, and the starting point for PVP against opponents with burn resistance.</p>
+<h2 id="example-formation-setups">Example Formation Setups</h2>
+<p>The exact formations you run will depend on your build, but my setups are as follows:</p>
+<p>Formation 1 — Pure Dodge (PVP Defensive): Stack dodge as high as possible. Use this against opponents with high hit rates where you need every point of dodge to survive. Remember that the 80% cap is net (your dodge minus their hit rate), so even very high raw dodge is not wasted against high-hit-rate opponents. This is my default formation.</p>
+<p>Formation 2 — Crit + Dodge (PVP Balanced): I use this against opponents with low hit rates. You can still dodge effectively, but your dodge is not excessive (staying near or under the 80% net cap), so your crit chips also contribute meaningful damage. This is my go-to when I do not need maximum dodge. Note that crit rate in PVP is also a net cap (your crit minus opponent crit resistance), so against opponents with significant crit resistance, raw crit above 80% is still useful.</p>
+<p>Formation 3 — Crit + Burn (PVE Offense): This is my primary PVE formation. The exact ratio depends on your progression and on your Evil Eye level. Once you are at 100% burn from all sources, begin adding crit. Because Evil Eye routes crit overflow into amplified burn, this formation can run a lot of crit — but only up to the conversion ceiling discussed above (~400% at Evil Eye level 1, ~143% at max). If still building toward the burn cap, lean heavier on burn chips and use mech spirits like Magic Armor or Rhino, or a sentinel with a burn enhancement passive, to bridge the gap until chips can fill it. I&#x27;m currently at 84% burn through passives/chips. Once I get back to 100% I&#x27;ll drop Magic Armor for Dragon Emperor.</p>
+<h2 id="dodge-vs-crit-when-to-switch">Dodge vs. Crit: When to Switch</h2>
+<p>You cannot crit if you cannot hit. Only use a crit-focused formation when your opponent&#x27;s hit rate is low enough that landing attacks is not a problem. Against high-hit-rate opponents, switch to your dodge formation. Remember that the 80% dodge and crit rate caps in PVP are net values — your stat minus your opponent&#x27;s hit rate and crit resistance.</p>
+<h1 id="sentinels">Sentinels</h1>
+<p>Sentinels offer deep tactical flexibility to exploit specific weaknesses in your opponent&#x27;s build. Your goal is to build a roster of sentinels with different passive combinations so you can swap between them depending on the fight.</p>
+<h2 id="core-mechanics">Core Mechanics</h2>
+<p>Sentinels gain one passive at each star level, up to four passives at four stars. Each time you raise the star level after 4, one of the four passives is enhanced (just like drones). Critically, passives scale with the underlying star level of the sentinel. This means a maxed G-class sentinel (40 stars, achievable in 12 days) will often outperform even a well-rolled SSR that is only at a few stars — because the SSR&#x27;s passives have not had a chance to scale yet. There are 18 different passive types, and each slot rolls from a pool of three rarity tiers: gold (9% chance), purple (18%), and blue (~73%). The gold rate is dramatically higher than the 0.42% gold rate on drones, which is what makes the rerolling strategy viable (see below).</p>
+<p>Note on passives at low stars: Passives on low-star drones and sentinels are not useless — they do function — but the benefit is much lower than at high stars. The real value comes from maxing your sentinel and letting the passives scale fully.</p>
+<h2 id="cost-progression-and-rarity">Cost, Progression, and Rarity</h2>
+<div class="table-wrap"><table><tr><th>Rarity</th><th>Cost to Max (40 Stars)</th><th>Time to Max</th></tr><tr><td>G-class (e.g., Gridstar)</td><td>1,200 tickets (30/star)</td><td>~12 days at 105 tickets/day</td></tr><tr><td>N-class (e.g., SavagePlate)</td><td>2,400 tickets (60/star)</td><td>~23 days</td></tr><tr><td>R-class</td><td>Skip — none are compelling</td><td>—</td></tr><tr><td>SR-class (e.g., Arcglow, Glimshade)</td><td>Higher cost</td><td>~4–5 months</td></tr><tr><td>SSR-class (e.g., Doomblast, Rendclaw)</td><td>40,000 tickets (1,000/star)</td><td>~1.5 years</td></tr></table></div>
+<p>G-class sentinels are the backbone of your early strategy because you can max several quickly and experiment with different passive combinations. You can evolve sentinels forever — you just get no additional benefit after 40 stars. You can also &quot;reroll&quot; their passives for the cost of one new sentinel, making them much cheaper and easier to reroll than drones (see below).</p>
+<h2 id="recommended-sentinel-choices">Recommended Sentinel Choices</h2>
+<p>Gridstar (G-class) — Best Defensive Starter: Extremely cheap to get to max stars which ensures your passives are functioning at peak performance. At 40 stars, a gold heal passive provides a 100% heal benefit. Paired with Ladybug (mech spirit), this creates a guaranteed health recovery when you drop below 30% HP — at level 7, Ladybug restores 7.5% health, doubled to 15% by a gold heal at maximum power. If you also have the Cheat Death drone passive, the two effects stack for extreme survivability. While heal pairs very nicely with a Gridstar, expect to build multiple maxed Gridstars with different passives for flexibility.</p>
+<p>SavagePlate (N-class) — Best Offensive Starter: Its key advantage is a 2-second skill cooldown, the fastest available. The only other sentinel with a 2-second skill cooldown is Rendclaw (SSR). Most Star Scramble fights last under 6 seconds unless one or both players are running heal-centric defensive builds. Even in extended fights, the 2-second cooldown means you fire your skill slightly more often than sentinels on a 4- or 6-second cycle. Since SavagePlate is meant for offensive builds, you should generally expect shorter fights — but you still benefit from the faster cycle even when things go long.</p>
+<p>SR-class (e.g., Arcglow, Glimshade): Reasonable mid-term targets, maxable in roughly 4–5 months. Personally planning to go with an Arcglow because heal enhancement is a benefit you can only get from sentinels.</p>
+<p>SSR-class (e.g., Doomblast, Rendclaw): Strictly long-term investments. Budget 1.5+ years to max unless spending heavily. The primary short-term reason to buy SSRs is the combination bonus (one of each). Only SavagePlate and Rendclaw share the 2-second skill cooldown. Doomblast fires every 4 seconds but its healing enhancement (+10%) stacks up to 5 times, giving it strong long-fight value once maxed.</p>
+<p>Note: I plan to skip R sentinels as there aren&#x27;t any attractive options and it would only delay my progression to SR. I plan to build an SR (Arcglow) and SSR (Doomblast) in parallel. Picking up stars opportunistically over the next 6-18 months.</p>
+<h2 id="pairing-sentinels-with-fighters-and-mechs">Pairing Sentinels with Fighters and Mechs</h2>
+<p>It&#x27;s important to start with the overall goal for your build, and then pair each of the elements. For example, if you want an offensive build for quicker fights you might go with a SavagePlate for the extra sentinel damage and faster cooldown and then pair it with a Conqueror fighter to get the 5-gear Conqueror damage bonus. For a defensive build, you might equip a Gridstar with gold heal alongside a Hardrock fighter for the HP bonus, and defensive mechs like Berserk Dragon, Aqua Spirit, and Ladybug. Your drone choice also matters: an Apus further amplifies the HP bonus on a defensive build, for example.</p>
+<h2 id="sentinel-investment-path">Sentinel Investment Path</h2>
+<h3 id="recommended-progression">Recommended Progression</h3>
+<p>Max 2–3 Gridstars with varied passives (12 days each) → Max 1 SavagePlate (~23 days) → Build an SR like Arcglow (4–5 months) → Slowly build an SSR (Doomblast or Rendclaw) as a long-term project. Along the way, buy at least one of most sentinels to unlock the 9 combination bonuses (each bonus can only be earned once). Buy one of each SSR for their combination bonus even if you do not plan to use them yet.</p>
+<h2 id="sentinel-passives-and-rerolling">Sentinel Passives and Rerolling</h2>
+<h3 id="the-reverse-merge-technique">The Reverse Merge Technique</h3>
+<p>When you find a 1-star sentinel with a desirable gold passive, use it as the base and merge a higher-star sentinel into it. The 1-star keeps its gold passive, and the three other slots reroll. You effectively get a free reroll of three slots.</p>
+<p>How to do it: First, level down the higher-star sentinel to avoid losing any overclock chips. Then merge the higher-star sentinel into the 1-star base. You will keep the one passive on your base sentinel, lose the four passives in the sentinel you are merging in, and get three new random passives. You can repeat this process indefinitely, even after hitting max stars — you just do not gain additional stars.</p>
+<p>Side sentinel strategy: Build one or more side sentinels. Get them to four stars and do a reverse merge as soon as you find a 1-star with your desired passive. Once you prefer the side sentinel&#x27;s passives, merge your main into it. Low-risk way to chase upgrades without disrupting your current setup. I aim to have around half a dozen of these low 4+ star sentinels ready to go.</p>
+<h3 id="sentinel-passives-stacking-and-rarity">Sentinel Passives — Stacking and Rarity</h3>
+<p>Unlike drone passives, sentinel passives stack across slots: the same passive type appearing in multiple slots adds up. You can&#x27;t get two golds of the same passive type on one sentinel, but you can have a gold, a purple, and a blue of the same type — and those will stack together for a meaningful combined bonus on a maxed sentinel. With a ~31.5% chance of rolling at least one gold across four slots, the rerolling system is generous enough that you can realistically pursue strong passive combinations at a relatively low cost in chips.</p>
+<p>There are 18 different passive types and three levels of rarity for each passive, with increasing levels of benefit.</p>
+<div class="table-wrap"><table><tr><th>Rarity</th><th>Per-Passive Rate</th><th>Chance of Any (18 types)</th><th>Examples</th></tr><tr><td>Gold</td><td>0.5%</td><td>9%</td><td>Crit Damage, Heal, Dodge, Crit Rate, etc.</td></tr><tr><td>Purple</td><td>1.0%</td><td>18%</td><td>Same 18 types at mid tier</td></tr><tr><td>Blue</td><td>~4.06%</td><td>~73%</td><td>Same 18 types at base tier</td></tr></table></div>
+<h3 id="odds-of-hitting-gold">Odds of Hitting Gold</h3>
+<div class="table-wrap"><table><tr><th>Scenario</th><th>At Least One Gold</th></tr><tr><td>Fresh 4-star build (4 open slots)</td><td>~31.5%</td></tr><tr><td>Recast with 1 slot locked (3 open)</td><td>~24.6%</td></tr><tr><td>Recast with 2 slots locked (2 open)</td><td>~17.2%</td></tr><tr><td>Compare: Drone gold rate per slot</td><td>0.42% (nearly 15x less likely)</td></tr></table></div>
+<p>Not every gold passive is worth keeping, but these are still excellent odds compared to drones. Even with two slots locked, you have roughly a 1-in-6 chance of landing a gold on any given recast.</p>
+<h3 id="recommended-passive-priorities">Recommended Passive Priorities</h3>
+<p>Given the high drop rates, you should aim to have at least two favorable gold passives for each of your primary sentinels. Of course it is OK to start with just one, but keep working until you can get two that are synergistic. Here is my best analysis of where to focus your efforts:</p>
+<div class="table-wrap"><table><tr><th>Build Type</th><th>Primary Passives</th><th>Secondary Passives</th></tr><tr><td>PVE</td><td>Crit damage, crit rate, sentinel enhancement</td><td>Sentinel enhancement</td></tr><tr><td>PVP Defense</td><td>Heal, dodge</td><td>Crit dmg reduction, heal reduction, sentinel enhancement</td></tr><tr><td>PVP Offense</td><td>Crit damage, crit rate, heal reduction</td><td>Hit rate, dodge, sentinel enhancement</td></tr></table></div>
+<p>Low-value passives: Attack and HP are generally not worth pursuing. Elemental enhancement and reduction passives (burn, electric, reflect) can be useful in niche builds, but for me they are low value — your chips handle enhancement for PVE, and in PVP a mixed drone build makes you harder to counter than going all-in on one element (since opponents can equip an engine or sentinel passive to reduce a single element). If you run all three drones of one type in PVP, elemental passives become more relevant, but that build is also easier to counter.</p>
+<h2 id="sentinel-spending-priorities-and-progression-timeline">Sentinel Spending Priorities and Progression Timeline</h2>
+<h3 id="short-term-1-2-months">Short Term (1–2 Months)</h3>
+<p>Max 2–3 Gridstars with different passive combinations (~12 days of chip accumulations each). Use the reverse merge technique to chase gold passives. Set up your three chip formations. Collect mech spirits and start leveling Berserk Dragon and Ladybug. Buy at least one of most sentinels for the 9 combination bonuses (one-time each). Buy one of each SSR sentinel for their combination bonus.</p>
+<p>Max a SavagePlate (~23 days of chip accumulation). Continue refining sentinel passives through merging. Shift pilot spend toward mech spirits — mechs have the most cheap headroom to grow, and the 14 passive combination bonuses (up to 22 levels each) provide massive returns. Work toward 100% burn cap through chips so you can drop Magic Armor for Dragon Emperor.</p>
+<h3 id="medium-to-long-term-4-months-to-1-5-years">Medium to Long Term (4+ Months to 1.5 Years)</h3>
+<p>Build an SR sentinel like Arcglow or Glimshade (4–5 months). In parallel, begin slowly accumulating SSR sentinel copies (Doomblast or Rendclaw) as a 1.5-year project. Continue leveling mechs toward the level 60 threshold for top-tier combination bonuses.</p>
+<h3 id="on-ssr-sentinels">On SSR Sentinels</h3>
+<p>The main problem with SSRs is that their passives will be low value for a very long time because passives scale with star level. A gold sentinel enhancement on a 3-star Rendclaw sounds great, but it will take 37 more purchases to max. Meanwhile, a well-rolled maxed Gridstar or SavagePlate is outperforming it right now. SSRs are a long game — invest slowly and do not expect returns for at least a year.</p>
+<h1 id="mech-spirits">Mech Spirits</h1>
+<p>Mech spirits have the most growth headroom of any system in the January 2026 update. You equip three at a time, and every mech spirit in your collection contributes to passive combination bonuses whether equipped or not. There are 14 different combinations, each with up to 22 levels. These bonuses can be enormous: for example, the Quantum Shift combination gives 2% dodge at level 1 but scales up to 44% dodge at level 22. Each mech needs to reach a specified level to unlock the next tier of the bonus (with level 60 required for the top tier). Buy lots of mech spirits and level them — this is one of the highest-value investments in the game.</p>
+<h2 id="how-mech-leveling-works">How Mech Leveling Works</h2>
+<p>Mech spirits follow a repeating 5-level cycle. At levels 1 through 4, you unlock or upgrade one attribute bonus slot each level (one slot at level 1, up to four at level 4). At level 5, the core skill upgrades. The cycle repeats: levels 6–9 upgrade attribute slots, level 10 upgrades the core skill again, and so on.</p>
+<h2 id="mech-investment-strategy">Mech Investment Strategy</h2>
+<p>If you already have good pilots, you should seriously consider shifting pilot spend toward mechs, at least early on. There is a lot of cheap headroom to grow, and between the passive bonuses on each mech as well as the 14 combination bonuses (up to 22 levels each) you can get significant returns.</p>
+<h3 id="my-pvp-offensive-defensive-hybrid-favorites-in-priority-order">My PVP Offensive/Defensive Hybrid Favorites (in priority order)</h3>
+<ul><li>Berserk Dragon: Mine is at level 3 which reduces final damage taken by 10%. Excellent all-rounder for PVE and PVP. Almost always in my loadout.</li>
+<li>Aqua Spirit: Mine is at level 5, which gives the following benefit: first time HP drops below 35.5%, gain 35% final damage decrease. This is a powerful emergency brake that synergizes with heal builds to slow down fights.</li>
+<li>Gloom Moon: 24% hit rate at level 5. Use when your opponent has high dodge. If their dodge is low, wastes a slot (note: this works in defensive builds, also).</li>
+<li>Battle Diva: Useful against opponents with very high crit rate.</li>
+<li>Faeling: Deals damage that bypasses dodge. Selectively useful against very high-dodge opponents or Star Scramble damage immunity specials. Damage roughly equals one drone. Use sparingly.</li>
+<li>Crimson Shadow: At level 12, 10% damage increase for the whole battle. Less-rare alternative to Dragon Emperor which allows you to level it quickly. May perform better for PVP, since Dragon Emperor stops working when your opponent goes below 60% health.</li>
+</ul><h3 id="my-pvp-defensive-favorites-in-priority-order">My PVP Defensive Favorites (in priority order)</h3>
+<ul><li>Ladybug: Restores HP when you fall below 30% health. At level 7, restores 7.5%, doubled to 15% with a gold heal enhancement on a maxed Gridstar. This is a guaranteed save, unlike the rare Cheat Death drone passive (35% chance at gold, only on a maxed drone). If you have both, the effects layer for extreme durability.</li>
+</ul><h3 id="my-pvp-offensive-favorites-in-priority-order">My PVP Offensive Favorites (in priority order)</h3>
+<ul><li>Flame Stinger: 25% damage increase when enemy HP falls below 35%. Good finisher mech for Star Scramble. Also could use to counter Aqua Spirit.</li>
+</ul><h3 id="my-pve-burn-formation-mechs-in-priority-order">My PVE Burn Formation Mechs (in priority order)</h3>
+<ul><li>Evil Eye: Converts crit rate exceeding the enemy&#x27;s crit resistance into burn crit rate. Since PVE bosses appear to have no crit resistance, every point of crit you have above 80% (the PVE crit cap) becomes overflow that Evil Eye routes into amplified burn damage. The conversion has a ceiling that depends on Evil Eye&#x27;s level — roughly 400% useful crit at level 1, dropping to ~143% at max. Past that point, more crit does nothing, even with Evil Eye equipped. Plan your chip allocation around this.</li>
+<li>Star Envoy: Activates when three burn drones are equipped. Every third skill released by these drones has a chance to grant a 25% burn damage bonus, stacking up to 5 times. The trigger chance is what makes this mech&#x27;s interaction with the rest of your build so important: for every 10% of burn enhancement you have exceeding the target&#x27;s burn decrease, the trigger chance increases by 10%, up to 100%. The burn damage bonus itself scales with Star Envoy&#x27;s level, reaching 85% at max.</li>
+<li>Dragon Emperor: At level 3, 11% damage increase when enemies are above 60% HP. Ideal for PVE since bosses never drop below 100% HP.</li>
+<li>Magic Armor: Burn enhancement of 6.4% every 2 seconds, stacking 3x (level 1). Bridge mech — drop for Dragon Emperor once at 100% burn without it.</li>
+<li>Rhino: Solid performer. At level 2, it deals an extra 205% damage when your sentinel releases a skill, as well as adds a 5% burn enhancement that can stack up to 5x. Although it looks better on paper, it does not outperform Magic Armor for me.</li>
+<li>Crimson Shadow: At level 12, 10% damage increase for the whole battle. Less-rare alternative to Dragon Emperor which allows you to level it quickly. May perform better for PVP, since Dragon Emperor stops working when your opponent goes below 60% health.</li>
+<li>Fireball: This is a great choice for all PVE builds. Mine is at level 20 which does 13.1% damage increase for bosses, only. It&#x27;s a commonly available mech spirit so you will level it quickly. But despite looking better on paper, it underperforms both Dragon Emperor and Crimson Shadow.</li>
+</ul><h3 id="note-the-evil-eye-and-star-envoy-synergy">Note: The Evil Eye and Star Envoy Synergy</h3>
+<p>Evil Eye and Star Envoy are the cornerstone pair for a serious PVE burn build, and they pair specifically because they convert overflow stats into burn damage through parallel mechanics. Evil Eye routes overflow crit (above the 80% PVE cap) into burn crit. Star Envoy routes overflow burn enhancement (above target burn decrease) into reliable burn damage stacks. In PVE, where bosses have no burn decrease and no crit resistance, both mechs reach maximum effectiveness: every point of burn enhancement above 0 increases Star Envoy&#x27;s trigger chance, and at 100% burn enhancement you have guaranteed Star Envoy triggers on every third skill. The two effects then compound — Star Envoy&#x27;s stacking burn damage bonus amplifies the same burn ticks that Evil Eye&#x27;s burn crits are landing. Running both is what makes PVE crit-burn builds so much stronger than their burn-only counterparts.</p>
+<h1 id="engines">Engines</h1>
+<p>Engines are the simplest of the four new systems but still matter for optimization. You select one engine to equip before each battle. Each engine provides a passive bonus that grows as you level it (each upgrade adds roughly 5% to the base bonus), and the bonus doubles when equipped. For example, a grade 7 hit rate engine gives 35% hit rate passively and 70% when equipped.</p>
+<p>Engines are primarily a defensive system. Four of the five available engines reduce incoming damage of various kinds (burn, electric, reflect) or counter incoming crits (crit resistance). The hit rate engine is the only offensive option — and it&#x27;s offensive because it negates dodge, letting your attacks land against high-dodge opponents. This means engines are mostly about deciding what kind of damage you most need to defend against in a given matchup.</p>
+<h2 id="available-engines">Available Engines</h2>
+<div class="table-wrap"><table><tr><th>Engine</th><th>Stat Boosted</th><th>When to Use</th></tr><tr><td>Hit Rate</td><td>Your default for defense and most situations</td></tr><tr><td>Crit Resistance</td><td>Vs. opponents with high crit and low dodge</td></tr><tr><td>Burn Decrease</td><td>Burning Decrease</td><td>Counter burn-heavy opponents</td></tr><tr><td>Electric Decrease</td><td>Counter electric-heavy opponents</td></tr><tr><td>Reflect Decrease</td><td>Counter reflect-heavy opponents</td></tr></table></div>
+<p>Hit rate and crit resistance are the two you will use most often. The elemental decrease engines are situational counters — worth leveling over time but lower priority.</p>
+<h2 id="quick-decision-rule">Quick Decision Rule</h2>
+<p>Defending or unsure? Hit Rate engine. Attacking a high-crit, low-dodge opponent? Crit Rate Resistance. That covers the majority of situations.</p>
+<h1 id="part-2-situational-builds-and-tactics">Part 2: Situational Builds and Tactics</h1>
+<p>Now that you understand the four systems and how to invest in them, this section covers how to combine them into effective builds for specific scenarios.</p>
+<h2 id="pve-burn-build">PVE Burn Build</h2>
+<p>My foundational PVE setup. Achieve 100% burn cap, then push crit toward the Evil Eye conversion ceiling. Past that ceiling, additional crit chips do nothing — redirect them to crit damage or other useful stats.</p>
+<div class="table-wrap"><table><tr><th>System</th><th>Setup</th><th>Notes</th></tr><tr><td>Drones</td><td>3 burn drones (e.g., 2x Ninja + Sagittarius)</td><td>Core damage dealers. Star Envoy requires three burn drones to activate.</td></tr><tr><td>Chip Formation</td><td>Crit + Burn (Formation 3)</td><td>Heavy crit once at burn cap, capped by Evil Eye conversion ceiling</td></tr><tr><td>Sentinel</td><td>SavagePlate (or even a Gridstar) w/ gold crit dmg + crit rate</td><td>Passives &gt; base damage</td></tr><tr><td>Mech Spirits (3)</td><td>Star Envoy + Evil Eye + (Dragon Emperor or Berserk Dragon)</td><td>Star Envoy and Evil Eye are the cornerstone pair. Replace third slot with Magic Armor when below 100% burn.</td></tr></table></div>
+<p>Crit ceiling reminder: with Evil Eye at level 1, you have a lot of room to stack crit (up to ~400%). With Evil Eye maxed, the useful ceiling is closer to ~143%. Recheck this whenever Evil Eye levels up — your optimal chip allocation shifts.</p>
+<h2 id="pvp-defensive-build">PVP Defensive Build</h2>
+<p>Maximizes survivability and extends fights. The longer the fight goes, the more your healing and damage reduction compound.</p>
+<div class="table-wrap"><table><tr><th>System</th><th>Setup</th><th>Notes</th></tr><tr><td>Chip Formation</td><td>Pure Dodge (Formation 1)</td><td>Survive and outlast</td></tr><tr><td>Sentinel</td><td>Maxed Gridstar w/ gold heal</td><td>100% heal benefit at 40 stars</td></tr><tr><td>Fighter</td><td>Hard Rock</td><td>HP bonus synergy</td></tr><tr><td>Mech Spirits (3)</td><td>Ladybug + Berserk Dragon + Aqua Spirit</td><td>Triple survivability layer</td></tr><tr><td>Drone</td><td>Include Apus</td><td>Further HP bonus</td></tr><tr><td>Engine</td><td>Hit Rate or Crit Resistance</td><td>Generally go with hit rate by default given most people invest in dodge</td></tr></table></div>
+<p>This build regularly sustains 600–700k HP in healing over a fight on an 800k HP base. Gold heal on a maxed Gridstar, Ladybug&#x27;s guaranteed health restore, Berserk Dragon&#x27;s damage reduction, and Aqua Spirit&#x27;s emergency threshold create multiple layers of survivability that are very difficult to burst through.</p>
+<h2 id="pvp-offensive-build">PVP Offensive Build</h2>
+<p>When facing high hit rate opponents, ensure you can dodge hits before worrying about crit or burn. Note that crit rate in PVP is capped at 80% net of opponent crit resistance — so against opponents with significant crit resistance, raw crit above 80% is still doing useful work.</p>
+<div class="table-wrap"><table><tr><th>System</th><th>Setup</th><th>Notes</th></tr><tr><td>Chip Formation</td><td>Crit + Dodge (Formation 2)</td><td>Balanced — only if hit rate is sufficient</td></tr><tr><td>Sentinel</td><td>Gridstar with gold crit damage and crit rate</td><td>Can swap to a sentinel with gold dodge if too low in this formation</td></tr><tr><td>Fighter</td><td>Conqueror</td><td>5-piece damage bonus for faster fights</td></tr><tr><td>Mech Spirits (3)</td><td>Gloom Moon + Crimson Shadow + Flame Stinger</td><td>Hit rate + damage increase + finisher</td></tr><tr><td>Engine</td><td>Hit Rate</td><td>Stack with Gloom Moon</td></tr></table></div>
+<h2 id="burn-in-pvp">Burn in PVP</h2>
+<p>Burn deserves dedicated treatment as a PVP option, not just a PVE strategy. Its main strategic value in PVP comes from a single mechanical fact:</p>
+<p>Burn damage is not affected by dodge. Once burn stacks are applied, the damage ticks regardless of whether subsequent attacks land. This makes burn a natural counter to dodge formations: a high-dodge opponent can avoid your direct hits but cannot dodge the burn ticks already on them. And because burn scales over fight duration, the longer the fight goes, the more burn damage compounds — exactly the kind of fight a dodge/heal opponent wants to drag out.</p>
+<p>This has two practical consequences:</p>
+<ul><li>Offensive: A burn formation is a credible alternative to a crit formation in PVP, especially against opponents who lean heavily on dodge. Initial testing suggests burn formations sometimes beat dodge formations and sometimes don&#x27;t — the variable appears to be crit resistance, since dodge opponents often run high crit. Equalizing crit resistance between your dodge and burn formations is a worthwhile experiment if you&#x27;re investing in a PVP burn build. The crit rate vs. burn matchup needs more testing.</li>
+<li>Defensive: If you&#x27;re running a dodge or heal-focused build, burning decrease becomes important. You can dodge incoming attacks all you want, but if the opponent gets even a few burn stacks on you, they tick through your dodge. In long fights — exactly where dodge/heal builds want to live — burn can climb to meaningful values. This is why dodge can counter burn (and vice versa) but neither does so cleanly without burning decrease in the mix.</li>
+</ul><p>Sample PVP burn formation: burn chips paired with crit resistance chips (Formation 3-style, but PVP-tuned). The burn cap nuance from earlier matters here — if your opponent runs burn reduce, you need raw burn above 100% to actually deliver 100% net burn, so don&#x27;t assume 100% raw is your stopping point in PVP the way it is in PVE.</p>
+<h2 id="situational-swaps-for-pvp">Situational Swaps for PVP</h2>
+<p>PVP requires frequent loadout adjustments based on your opponent.</p>
+<div class="table-wrap"><table><tr><th>Situation</th><th>Adjustment</th></tr><tr><td>Opponent has high dodge</td><td>Equip Gloom Moon and Faeling; switch to hit rate engine. Or consider a burn formation, since burn bypasses dodge.</td></tr><tr><td>Opponent has high crit</td><td>Equip Battle Diva; switch to crit resistance engine</td></tr><tr><td>Attacking a weakened target</td><td>Equip Flame Stinger for 25% dmg boost below 35% HP</td></tr><tr><td>Opponent has heal-heavy build</td><td>Use sentinel with gold heal reduction passive</td></tr><tr><td>Facing a burn-heavy opponent</td><td>Switch to burning decrease engine. If you run dodge/heal, ensure you have burn reduce in the mix — dodge alone won&#x27;t stop burn ticks.</td></tr><tr><td>Running dodge or heal yourself</td><td>Consider burn reduce as a defensive priority. Long fights favor whichever side has burn working for them.</td></tr><tr><td>Defending</td><td>Default to hit rate engine + pure dodge chip formation</td></tr></table></div>
+  </div>
+  <div id="no-results">No results found.</div>
+</main>
+
+<script>
+(function() {
+  // ── Active TOC highlighting on scroll ──
+  const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id]'));
+  const tocLinks = Array.from(document.querySelectorAll('.toc-item'));
+
+  function setActive(id) {
+    tocLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+    });
+    const active = tocLinks.find(a => a.getAttribute('href') === '#' + id);
+    if (active) {
+      const toc = document.getElementById('toc');
+      const top = active.offsetTop - toc.clientHeight / 2;
+      toc.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+  }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
+  headings.forEach(h => observer.observe(h));
+
+  // ── Search ──
+  const input = document.getElementById('search');
+  const countEl = document.getElementById('search-count');
+  const noResults = document.getElementById('no-results');
+  const content = document.getElementById('content');
+
+  // Store original HTML for reset
+  const originalHTML = content.innerHTML;
+
+  // Build searchable blocks: each top-level child of #content
+  function getBlocks() {
+    return Array.from(content.children);
+  }
+
+  function escapeRe(s) {
+    return s.replace(/[.*+?^${}()|[\]\]/g, '\$&');
+  }
+
+  function highlight(text, query) {
+    if (!query) return text;
+    return text.replace(new RegExp(escapeRe(query), 'gi'), m => `<mark>${m}</mark>`);
+  }
+
+  function doSearch(query) {
+    // Reset
+    content.innerHTML = originalHTML;
+    countEl.textContent = '';
+    noResults.style.display = 'none';
+
+    if (!query.trim()) return;
+
+    const q = query.trim().toLowerCase();
+    const blocks = getBlocks();
+    let matchCount = 0;
+    let sectionVisible = false;
+    let lastH1 = null;
+
+    // We work with the actual DOM: group elements by H1 section
+    // Strategy: hide paragraphs/tables that don't match; keep headings if any child matches
+    // Simple approach: highlight all matching text, hide blocks with zero matches
+
+    blocks.forEach(el => {
+      const text = el.textContent.toLowerCase();
+      const isHeading = /^H[123]$/.test(el.tagName);
+
+      if (isHeading) {
+        // Will decide visibility after seeing content
+        el.dataset.isHeading = '1';
+        return;
+      }
+
+      if (text.includes(q)) {
+        matchCount++;
+        // Highlight
+        el.innerHTML = highlight(el.innerHTML, query.trim());
+      } else {
+        el.classList.add('search-hidden');
+      }
+    });
+
+    // Now handle headings: show a heading only if it has visible siblings before the next same-or-higher heading
+    // Simpler: show heading if any following non-heading element is visible until next heading
+    const allBlocks = Array.from(content.children);
+    let i = 0;
+    while (i < allBlocks.length) {
+      const el = allBlocks[i];
+      if (el.dataset.isHeading) {
+        // Look ahead for visible content
+        let j = i + 1;
+        let hasVisible = false;
+        while (j < allBlocks.length && !allBlocks[j].dataset.isHeading) {
+          if (!allBlocks[j].classList.contains('search-hidden')) { hasVisible = true; break; }
+          j++;
+        }
+        // Also check if heading text itself matches
+        const headingMatch = el.textContent.toLowerCase().includes(q);
+        if (!hasVisible && !headingMatch) {
+          el.classList.add('search-hidden');
+        } else {
+          if (headingMatch) {
+            el.innerHTML = highlight(el.innerHTML, query.trim());
+            matchCount++;
+          }
+        }
+      }
+      i++;
+    }
+
+    if (matchCount === 0) {
+      noResults.style.display = 'block';
+      countEl.textContent = '';
+    } else {
+      countEl.textContent = matchCount + ' match' + (matchCount !== 1 ? 'es' : '');
+    }
+  }
+
+  let debounce;
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => doSearch(input.value), 180);
+  });
+
+  // Clear search-hidden when query is empty
+  input.addEventListener('search', () => { if (!input.value) doSearch(''); });
+})();
+</script>
+</body>
+</html>
