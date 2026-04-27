@@ -198,6 +198,33 @@
     margin-top: 4px;
     font-style: italic;
   }
+  .doc-byline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .doc-author {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+  }
+  .doc-author::before {
+    content: 'by ';
+    font-weight: 400;
+    color: var(--text-dim);
+  }
+  .doc-legion {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    border-left: 1px solid var(--border);
+    padding-left: 12px;
+  }
 
   /* Headings */
   h1 {
@@ -397,6 +424,10 @@
       <span class="doc-chip">PVP &amp; PVE</span>
     </div>
     <p class="doc-meta">Written for intermediate-to-advanced players looking to optimize their loadouts.</p>
+    <div class="doc-byline">
+      <span class="doc-author">ashpool</span>
+      <span class="doc-legion">GALAXY &bull; BLACK&Oslash;UT</span>
+    </div>
   </div>
   <div id="content">
 <h1 id="part-1-understanding-the-four-systems">Part 1: Understanding the Four Systems</h1>
