@@ -355,6 +355,16 @@
     margin: 1em 0 1.6em;
     border-radius: 8px;
     border: 1px solid var(--border);
+    /* Scroll-shadow affordance: fade shadows appear at the edges
+       only when the table is horizontally scrollable. */
+    background:
+      linear-gradient(90deg, var(--bg), var(--bg)) left center,
+      linear-gradient(90deg, var(--bg), var(--bg)) right center,
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.6), transparent) left center,
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.6), transparent) right center;
+    background-repeat: no-repeat;
+    background-size: 24px 100%, 24px 100%, 14px 100%, 14px 100%;
+    background-attachment: local, local, scroll, scroll;
   }
   table {
     border-collapse: collapse;
@@ -1011,6 +1021,27 @@
     entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
   }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
   headings.forEach(h => observer.observe(h));
+
+  // ── Deep-link into collapsed details ──
+  // If the URL hash targets content inside a <details>, open it (and any
+  // ancestor <details>) so the user lands on visible content. Also handles
+  // in-page clicks that change the hash.
+  function openDetailsForHash() {
+    const hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    let el;
+    try { el = document.querySelector(hash); } catch (e) { return; }
+    if (!el) return;
+    let node = el;
+    while (node && node !== document.body) {
+      if (node.tagName === 'DETAILS') node.open = true;
+      node = node.parentElement;
+    }
+    // Re-scroll to the target now that ancestors are open.
+    requestAnimationFrame(() => el.scrollIntoView());
+  }
+  openDetailsForHash();
+  window.addEventListener('hashchange', openDetailsForHash);
 
   // ── Mobile TOC drawer ──
   const sidebar = document.getElementById('sidebar');
