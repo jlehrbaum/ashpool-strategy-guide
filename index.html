@@ -442,6 +442,7 @@
 <a href="#defense-break-vs-defense-how-the-math-works" class="toc-item toc-level-3" style="padding-left:44px">Defense Break vs. Defense: How the Math Works</a>
 <a href="#chip-formations" class="toc-item toc-level-2" style="padding-left:28px">Chip Formations</a>
 <a href="#understanding-the-stat-caps" class="toc-item toc-level-3" style="padding-left:44px">Understanding the Stat Caps</a>
+<a href="#what-the-caps-apply-to" class="toc-item toc-level-3" style="padding-left:44px">What the Caps Apply To</a>
 <a href="#the-evil-eye-conversion-ceiling-pve" class="toc-item toc-level-3" style="padding-left:44px">The Evil Eye Conversion Ceiling (PVE)</a>
 <a href="#building-toward-the-burn-cap" class="toc-item toc-level-3" style="padding-left:44px">Building Toward the Burn Cap</a>
 <a href="#the-canonical-pairings" class="toc-item toc-level-3" style="padding-left:44px">The Canonical Pairings</a>
@@ -632,6 +633,14 @@
 <h2 id="understanding-the-stat-caps">Understanding the Stat Caps</h2>
 <p>Most chip attributes have a cap. Exceeding it wastes chip slots.</p>
 <div class="table-wrap"><table><tr><th>Attribute</th><th>Cap</th><th>Notes</th></tr><tr><td>Burning Enhancement</td><td>100% net</td><td>Net of opponent burn resistance. PVE bosses have no burn resistance, so 100% raw = 100% net. PVP opponents may run burn reduce, so raw burn above 100% can be useful.</td></tr><tr><td>Electric Enhancement</td><td>100% net</td><td>Same rules as burn, net of opponent electric resistance.</td></tr><tr><td>Reflect Enhancement</td><td>100% net</td><td>Same rules as burn, net of opponent reflect resistance.</td></tr><tr><td>Dodge Rate</td><td>80% net vs players</td><td>Your dodge minus opponent&#x27;s hit rate; raw dodge can exceed 80%.</td></tr><tr><td>Crit Rate (PVP)</td><td>80% net vs players</td><td>Your crit rate minus opponent&#x27;s crit resistance; raw crit can exceed 80%.</td></tr><tr><td>Crit Rate (PVE)</td><td>80%, but extendable via Evil Eye</td><td>Hard cap at 80%, but Evil Eye converts overflow into burn crit (see below).</td></tr></table></div>
+<h3 id="what-the-caps-apply-to">What the Caps Apply To</h3>
+<p>Hit, dodge, and crit don&#x27;t apply to every attack. Knowing what&#x27;s on and off the dice roll matters for passive priorities and for how you think about damage sources:</p>
+<ul>
+<li><strong>Subject to hit, dodge, and crit:</strong> all gear attacks (Fighter, MG, WG, Missile, Armor) and drone normal attacks. Drone normal attacks use their own crit rate (from Spot Weakness), not global crit rate.</li>
+<li><strong>Always hit, never miss, never crit:</strong> sentinel attacks and heals, mech spirit attacks and heals, drone <em>skills</em>. These are guaranteed-but-flat damage, no dodge roll, no crit multiplier.</li>
+<li><strong>Exception, Evil Eye:</strong> with Evil Eye equipped, drone normal attacks <em>and</em> drone skills from burning drones can crit. Crit chance comes from Evil Eye, crit damage from your global crit damage multiplier.</li>
+</ul>
+<p>Practical consequence: Sentinel Enhancement and mech-damage stats multiply damage that always lands, which is why those passives feel reliable even when the rest of your build is swingy. And why heal-reduction gold passives are so devastating against sustain builds, they can&#x27;t be dodged or softened by crit resistance.</p>
 <h2 id="the-evil-eye-conversion-ceiling-pve">The Evil Eye Conversion Ceiling (PVE)</h2>
 <p>Crit rate in PVE is capped at 80% for direct weapon crits, same as PVP. Evil Eye runs on a parallel track: it converts your full crit rate (net of enemy crit resistance) into burn crit rate at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit rate feeds the conversion. The 80% cap applies only to weapon crits, not to the burn crit Evil Eye generates, so every additional point of crit is still producing more burn crit damage past 80% raw.</p>
 <p><strong>The conversion rate improves substantially as Evil Eye levels.</strong> At Level 1, every 10% raw crit becomes 2% burn crit. At max level, every 10% raw crit becomes 5.6% burn crit. So the raw crit needed to produce the same burn crit drops as Evil Eye levels up.</p>
