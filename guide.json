@@ -14,7 +14,7 @@
     "metaLine": "Updated Oct 17, 2026 · mechanics and progression review",
     "author": "ashpool",
     "legion": "GΛLΛXY • BLΛCKØUT",
-    "lastEditedAt": "2026-10-17T21:33:00-07:00"
+    "lastEditedAt": "2026-10-17T22:01:01-07:00"
   },
   "content": [
     {
@@ -2203,13 +2203,22 @@
       "html": "Basic Tech attack boosts work like flat red-gem damage, which means they favor fast-firing weapons. Prioritize MG > WG > Missile for Basic Tech attack upgrades. Basic Tech also contains ~55.5k HP total, worth maxing."
     },
     {
-      "type": "h1",
-      "id": "titan-sets-and-weapon-tech",
-      "title": "Titan Sets & Weapon Tech"
+      "type": "h2",
+      "id": "super-tech-pvp-priorities",
+      "title": "Super Tech Priorities for PVP"
     },
     {
       "type": "p",
-      "html": "Pick your Titan set to match your damage type and the current Titan season, keep 5/5 so the set bonus doesn't drop, and invest in weapon tech in a disciplined order."
+      "html": "In <strong>Camp → Super Tech</strong>, SkyEagle Tech increases Final Damage Increase; Crystal Prism Tech and Eternal Pivot Tech increase Final Damage Decrease. One legion PVP investment plan is to develop those three to <strong>level 80</strong> and other unlocked Super Tech options toward <strong>level 60</strong>. These are useful planning targets, not mandatory milestones. Prioritize the upgrades you can unlock and afford."
+    },
+    {
+      "type": "h1",
+      "id": "titan-sets-and-weapon-tech",
+      "title": "Titan Gear and Equipment"
+    },
+    {
+      "type": "p",
+      "html": "Choose your Titan set to match your damage type and the current Titan season. Keeping a complete 5/5 Titan set matters because the set bonus increases damage from weapons, drones, sentinels, and mechs."
     },
     {
       "type": "h2",
@@ -2239,48 +2248,6 @@
     },
     {
       "type": "h2",
-      "id": "weapon-tech-priorities",
-      "title": "Weapon Tech Priorities"
-    },
-    {
-      "type": "p",
-      "html": "<strong>Aerial Increase and Reduction take priority over weapon-specific upgrades.</strong>. Patch 1.7.820 (July 2026) extended aerial/ground/sea/boss damage attributes to apply to drones, mech spirits, and sentinels, not just weapons. Tyche's aerial passive, Ame-no-Uzume's aerial reduction, and the Legion Tech aerial slots all benefit. Prioritize both aerial increase and reduction to L10."
-    },
-    {
-      "type": "p",
-      "html": "For a full-Destroyer energy PVP build, the Weapon Tech investment order (after prioritizing Aerial Increase and Reduction) is:"
-    },
-    {
-      "type": "ol",
-      "items": [
-        {
-          "html": "MG: base attack -> crit rate -> crit damage -> attack rate",
-          "nested": null
-        },
-        {
-          "html": "WG: same four, in the same order",
-          "nested": null
-        },
-        {
-          "html": "Missile: same four, in the same order",
-          "nested": null
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "Keep MG, WG, Missile, and Shield at similar levels overall. MG and Missile get early priority because MG attack speed and the Inferno missile boost are high-impact."
-    },
-    {
-      "type": "p",
-      "html": "Legion Tech investment priorities for PVP: Sky Eagle Tech, Crystal Prism, and Eternal Pivot to level 80; everything else to level 60."
-    },
-    {
-      "type": "p",
-      "html": "Prism winggun is the only winggun that auto-targets and fires behind you, making it the right PVE choice if you're not running full Titan gear."
-    },
-    {
-      "type": "h2",
       "id": "equipment-management",
       "title": "Equipment Management"
     },
@@ -2290,7 +2257,63 @@
     },
     {
       "type": "p",
-      "html": "Military Rank is a special case. Unlike Legion Tech or Top Tech where unused stats produce BP bloat, Rank adds attack and HP that apply in every battle. Treat it as competitive BP, not padded BP."
+      "html": "If you do not yet have the matching Titan winggun, <strong>Prism Winggun</strong> is a reasonable interim PVE choice. A legion member recommends using it until you obtain Destroyer Winggun; this is a practical option, not a universal best-in-slot rule."
+    },
+    {
+      "type": "h1",
+      "id": "legion-technology",
+      "title": "Legion Technology"
+    },
+    {
+      "type": "p",
+      "html": "Legion Technology is where you upgrade <strong>Maingun, Winggun, Missile, and Armor</strong> stats, plus damage increases and reductions against specific enemy types. It uses Legion Points and Stars. This is a different system from Camp Technology."
+    },
+    {
+      "type": "h2",
+      "id": "weapon-tech-priorities",
+      "title": "PVP Upgrade Priorities"
+    },
+    {
+      "type": "p",
+      "html": "<strong>Develop the two aerial upgrades early.</strong> In Legion Technology, they are named “Increase damage against aerial enemies (including players)” under <strong>Damage Increase</strong> and “Reduce damage caused by aerial enemies (including players)” under <strong>Enemy Weakened</strong>. The first improves outgoing damage against other players, including damage from weapons, drones, sentinels, and mech spirits. The second reduces incoming damage from aerial opponents. Both can reach <strong>level 100</strong>, not level 10. Maxing them can be a long-term goal, but you do not need to finish both before improving weapon stats."
+    },
+    {
+      "type": "p",
+      "html": "For a <strong>full-Destroyer energy PVP build</strong>, one useful order for the weapon upgrades in Legion Technology is:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        {
+          "html": "<strong>Maingun:</strong> Base Attack → Crit Rate → Crit Damage → Attack Rate.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Winggun:</strong> Base Attack → Crit Rate → Crit Damage → Attack Rate.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Missile:</strong> Base Attack → Crit Rate → Crit Damage → Attack Rate.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "The reasoning for <strong>Winggun before Missile</strong> is steadier damage from its faster firing cycle; Missile hits harder per shot but fires less often. This order comes from a legion PVP recommendation, not a proven best order for every player. For example, if your Crit Rate is already strong, Attack Rate or Armor Base HP may be a better next purchase."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Keep Armor Base HP competitive.</strong> If you are losing because you cannot survive, improve HP rather than completing every weapon upgrade first. Players focused on PVP can put Ground/Sea, Boss, Normal Enemy, and Strong Foe bonuses lower on the list; keep those if Titan Challenge or Legion Hunt damage matters to you. Before resetting Legion Technology, check what you would lose in PVE."
+    },
+    {
+      "type": "h1",
+      "id": "military-rank",
+      "title": "Military Rank"
+    },
+    {
+      "type": "p",
+      "html": "Military Rank is <strong>separate from Legion Technology and Camp Tech</strong>. Its attack and HP upgrades benefit every battle, so unlike upgrades that affect only unused damage types, they provide useful combat strength rather than just BP."
     },
     {
       "type": "h1",
