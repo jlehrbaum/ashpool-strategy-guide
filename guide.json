@@ -49,32 +49,36 @@
     },
     {
       "type": "p",
-      "html": "The four systems <em>are</em> your build. Chip formations set the direction: are you trying to drop massive damage fast (Crit / Hit) or survive and outlast (Dodge)? Once chips pick the direction, sentinels, mech spirits, and engines amplify it."
+      "html": "<strong>Your build is more than your chip formation.</strong> Chips set your direction, while drones, sentinels, mech spirits, and engines help make it work. Pilots provide the foundation, and Camp Tech and gear strengthen the whole setup. Think about how these parts support one another, not just how much BP each upgrade adds."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Chip Formations:</strong> three saved stat combinations you swap between before fights. The primary choice.",
+          "html": "<strong>Chip Formations:</strong> three saved stat combinations you switch between depending on the fight.",
           "nested": null
         },
         {
-          "html": "<strong>Sentinels:</strong> abilities and stacking passive bonuses that reinforce your chip direction (heal for Dodge, crit damage for Crit, burn for burn).",
+          "html": "<strong>Drones:</strong> your damage and utility lineup, including burn, electric, reflect, and defensive effects.",
           "nested": null
         },
         {
-          "html": "<strong>Mech Spirits:</strong> active abilities, passive abilities, and collection-level combination bonuses.",
+          "html": "<strong>Sentinels:</strong> skills and stacking passives, such as healing, crit damage, and damage reduction.",
           "nested": null
         },
         {
-          "html": "<strong>Engines:</strong> one configurable stat boost per fight.",
+          "html": "<strong>Mech Spirits:</strong> equipped skills plus bonuses from your larger collection.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Engines:</strong> a stat boost you choose for the matchup.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "A defensive build might combine Dodge chips, heal from a Gridstar sentinel, Ladybug and Aqua Spirit mechs, and the Hit Rate engine. A crit build might combine Crit / Hit chips, crit-damage sentinel passives, Flame Stinger or Venom Scorpion mechs, and the Hit Rate engine against high-dodge opponents."
+      "html": "For example, a Dodge / Crit Resistance formation can pair with a healing Gridstar, defensive mechs, and the Crit Resistance engine. Against a burn-heavy opponent, swap to the Burn Decrease engine. On offense, a Crit / Hit Rate formation can combine crit-damage passives, offensive mechs, and the Hit Rate engine to help attacks land."
     },
     {
       "type": "h3",
@@ -259,7 +263,7 @@
     },
     {
       "type": "p",
-      "html": "Part 1 is about the thinking behind strong builds, before any specific stat or system. Build Philosophy covers how builds counter each other and where to invest your attention. Pilots covers the foundation stat that everything else sits on top of."
+      "html": "Start with the principles that make a build work: counters, specialization, and identifying the weakness that's costing you fights. The recommended PVE and PVP builds come next; the detailed system mechanics follow in Part 3."
     },
     {
       "type": "h1",
@@ -386,7 +390,7 @@
     },
     {
       "type": "p",
-      "html": "BP tells you how much someone has built. It doesn't tell you how well they've built it, or whether their build counters yours. A 30M BP player with a well-tuned consistency-and-scaling build can beat a 45M BP player whose investment is spread thin or focused on base stats, and lose to a 25M BP opponent who happens to counter their setup. Use BP as a rough screening signal, not an outcome predictor."
+      "html": "BP tells you how much someone has built. It doesn't tell you how well they've built it, or whether their build counters yours. A well-optimized 30M BP player can beat a poorly optimized 45M player, then lose to a 25M opponent whose setup counters theirs. Use BP as a rough screening signal, not a reliable prediction of the outcome."
     },
     {
       "type": "h2",
@@ -396,6 +400,474 @@
     {
       "type": "p",
       "html": "You won't get to fully specialize every build f2p. High-tier sentinels, deep mech combination bonuses, and recast materials are the slowest to accumulate, and that's by design. Pick one or two builds you actually use and concentrate your resources there. A defensive PVP build and a PVE burn build is a reasonable starting pair. Spread yourself across three or four builds in parallel and you end up with all of them slightly underbuilt and none able to beat their natural counters. The chip formation system (three saved slots) already pushes you toward this, treat those slots as commitments, not experiments."
+    },
+    {
+      "type": "h1",
+      "id": "part-2-situational-builds-and-tactics",
+      "title": "Part 2: Building for PVE and PVP"
+    },
+    {
+      "type": "p",
+      "html": "These four builds give you practical starting points for boss damage, PVP offense, PVP defense, and PVP burn. Read them first for the recommended setups; Part 3 explains the mechanics and investment choices behind them."
+    },
+    {
+      "type": "h2",
+      "id": "pve-burn-build",
+      "title": "PVE Burn Build"
+    },
+    {
+      "type": "p",
+      "html": "For bosses, <strong>reach 100% effective Burn Enhancement first</strong>. Then strengthen the damage your burning drones deal through Crit Rate, Crit Damage, and the Evil Eye / Star Envoy combination. Because Evil Eye's conversion improves as it levels, judge the value of additional crit by your actual damage, not by an assumed burn-crit cap."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "System",
+            "Setup",
+            "Notes"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Drones",
+            "3 burn drones (e.g., 2x Ninja + Sagittarius)",
+            "Core damage dealers. Star Envoy requires three burn drones to activate."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Chip Formation",
+            "Burn / Crit before 100% native burn (Formation 3); Crit / Hit after (Formation 1)",
+            "Before 100% native burn, F3 pulls dual duty with Burn and Crit as both primaries; burn chips with Crit Resistance secondary are the ones you'll want to hold for the eventual PVP burn conversion. Once native burn hits 100%, your Crit / Hit formation (F1) covers PVE on its own since no burn chips are needed to hit the cap. F3 then becomes available for the dedicated PVP Burn Build."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "Flashstrike / SavagePlate / Gridstar w/ gold crit damage + crit rate",
+            "Passives > base damage. Flashstrike is the preferred PVE sentinel at scale because its 20% damage boost applies to drones too."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Mech Spirits (3)",
+            "Star Envoy + Evil Eye + (Dragon Emperor or Berserk Dragon)",
+            "Star Envoy and Evil Eye are the key pair. Replace third slot with Magic Armor when below 100% burn."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "id": "pvp-defensive-build",
+      "title": "PVP Defensive Build"
+    },
+    {
+      "type": "p",
+      "html": "Survive and extend. The longer the fight, the more your healing and damage reduction compound."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "System",
+            "Setup",
+            "Notes"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Chip Formation",
+            "Dodge / Crit Resistance (Formation 2)",
+            "Dodge the direct hits, deny the crits that get through"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "Maxed Gridstar w/ gold heal",
+            "100% heal benefit at 40 stars"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Fighter",
+            "Hard Rock",
+            "HP bonus synergy"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Mech Spirits (3)",
+            "Ladybug + Berserk Dragon + Aqua Spirit",
+            "Triple survivability layer"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Drone",
+            "Sagittarius (burner for long fights); Apus is an accessible early alternative",
+            "Burn damage compounds over the long fights this build creates. Apus still works at lower BP, but tops out faster."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Engine",
+            "Burn Decrease vs. a burner, Crit Resistance otherwise",
+            "Burn Decrease is the one defensive gap this build can't close through dodge or heal. Against non-burners, Crit Resistance denies the big-damage spikes."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "This build routinely heals 600-700k HP over a fight on an 800k HP base. Gold heal on a maxed Gridstar, Ladybug's guaranteed restore, Berserk Dragon's damage reduction, and Aqua Spirit's emergency threshold stack into layers that are very hard to burst through."
+    },
+    {
+      "type": "h2",
+      "id": "pvp-offensive-build",
+      "title": "PVP Offensive Build"
+    },
+    {
+      "type": "p",
+      "html": "For matchups where your opponent has low Crit Resistance. Pair with enough Hit Rate to land attacks against high-Dodge opponents. Crit rate in PVP is capped at 80% net of opponent crit resistance, so raw crit above 80% is still useful against opponents running significant crit resistance."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "System",
+            "Setup",
+            "Notes"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Chip Formation",
+            "Crit / Hit Rate (Formation 1)",
+            "Land crits through opponent dodge"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "Stormquill or SavagePlate with gold crit damage + crit rate",
+            "Stormquill is a crit-oriented G-sentinel alternative; SavagePlate's 2-second cooldown fires the active more often."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Fighter",
+            "Conqueror",
+            "5-piece damage bonus for faster fights"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Mech Spirits (3)",
+            "Flame Stinger + Venom Scorpion + Battle Diva (or Gloom Moon when opponent dodge is high)",
+            "Crit-damage amplifier + finisher + crit-denial, swap Battle Diva for Gloom Moon vs high-dodge targets"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Engine",
+            "Hit Rate",
+            "Stack with Gloom Moon if swapped in"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "id": "pvp-burn-build",
+      "title": "PVP Burn Build"
+    },
+    {
+      "type": "p",
+      "html": "<em>Preference:</em> This is my recommended PVP build once your PVE formation no longer needs burn chips. It pressures Dodge and Crit opponents in different ways, and can sometimes beat significantly higher-BP players when the matchup favors it. Those results depend on the opponent's defenses, not just the build itself."
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Burn beats dodge.</strong> Burn stacks tick regardless of whether subsequent attacks land. Dodge opponents can duck your direct hits but not burn ticks already on them.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Burn pressures crit opponents too.</strong> Stacks keep ticking regardless of their defense. The Crit Resistance secondary denies their crit on you, so you're damaging them while they struggle to damage you.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "Weakness: a true heal-stacked opponent with sentinel sustain can out-heal burn ticks. For that matchup, swap in Rendclaw with heal-reduction."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "System",
+            "Setup",
+            "Notes"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Drones",
+            "3 burn drones (e.g., 2x Ninja + Sagittarius, or Lich + Sagi + Lyra at scale)",
+            "Star Envoy needs three burn drones."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Chip Formation",
+            "Burn / Crit Resistance (Formation 3)",
+            "Stack enough raw Burn Enhancement to overcome your opponent's Burn Decrease and reach the 100% effective cap. Higher raw burn helps against stronger burn defenses, but offers no extra benefit once the effective cap is reached for that matchup."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "Arcglow (sustain) or Glimshade (hybrid), with gold sentinel enhance and heal passives",
+            "Burn needs long fights to compound; a sustain sentinel keeps you in the fight long enough."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Mech Spirits (3)",
+            "Aqua Spirit + Star Envoy + Ladybug",
+            "Different from the PVE build: Aqua Spirit's emergency damage reduction and Ladybug's healing floor matter more in PVP, and Evil Eye's crit conversion is less relevant when you don't have the room to stack crit past the cap."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Engine",
+            "Crit Resistance (default) or Hit Rate (vs high-dodge targets)",
+            "Burn covers dodge opponents on offense; Crit Resistance covers crit opponents on defense."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "Don't switch to this formation too early. If your PVE damage still relies on burn chips, moving those chips to PVP will weaken your boss build. Keep the dedicated PVE burn formation until your other sources provide enough Burn Enhancement without it."
+    },
+    {
+      "type": "h2",
+      "id": "burn-in-pvp",
+      "title": "Burn in PVP"
+    },
+    {
+      "type": "p",
+      "html": "Burn is one of the strongest ways to fight dodge-heavy opponents. Once burn is applied, its damage continues even when subsequent attacks miss. And because burn builds damage over time, longer fights can work in your favor. That makes burn especially dangerous against opponents who rely on Dodge and healing to survive."
+    },
+    {
+      "type": "h3",
+      "id": "how-much-burn-do-you-need",
+      "title": "How much burn do you need?"
+    },
+    {
+      "type": "p",
+      "html": "Burn Enhancement has a 100% effective cap, but your opponent's Burn Decrease reduces what gets through."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "Opponent's Burn Decrease",
+            "Raw Burn Needed"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "0%",
+            "100%"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "50%",
+            "150%"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "100%",
+            "200%"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "In PVE, 100% raw burn is enough. In PVP, you may need considerably more to overcome your opponent's defenses. There's no benefit to exceeding the effective cap against a particular opponent, but extra raw Burn Enhancement lets you deal with opponents who have more Burn Decrease."
+    },
+    {
+      "type": "h3",
+      "id": "how-to-counter-burn",
+      "title": "How to counter burn"
+    },
+    {
+      "type": "p",
+      "html": "<strong>My recommendation is Dodge + Burn Decrease.</strong> Dodge protects you against regular attacks, while Burn Decrease reduces the damage from burn. Combined with healing and damage reduction, this gives you a strong defensive response."
+    },
+    {
+      "type": "p",
+      "html": "Start by equipping your Burn Decrease engine. If you're still taking too much damage, strengthen Burn Decrease through your chips or sentinel passives."
+    },
+    {
+      "type": "p",
+      "html": "Remember that Dodge does not stop burn damage that's already been applied. A defensive build that ignores Burn Decrease can be surprisingly vulnerable, no matter how high its Dodge is."
+    },
+    {
+      "type": "p",
+      "html": "<strong>The lesson:</strong> Use Burn to counter Dodge. Use Burn Decrease to counter Burn."
+    },
+    {
+      "type": "h2",
+      "id": "situational-swaps-for-pvp",
+      "title": "Situational Swaps for PVP"
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "Situation",
+            "Adjustment"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Opponent has high dodge",
+            "Switch to the PVP Burn Build (burn bypasses dodge). If staying on crit, equip Gloom Moon and Faeling and switch to the hit rate engine."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Opponent has high crit",
+            "Equip Battle Diva; switch to crit resistance engine (or stay on Formation 2 or 3, both of which already carry crit resistance as the secondary)."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Attacking a weakened target",
+            "Equip Flame Stinger for 25% dmg boost below 35% HP"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Opponent has heal-heavy build",
+            "Use a sentinel with gold heal reduction (SavagePlate counters a gold-heal Gridstar; Rendclaw with stacked heal- counters a Doomblast)."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Facing a burn-heavy opponent",
+            "Equip the Burn Decrease engine first. If burn is still winning the fight, add Burn Decrease from passives or chips. See the <a href=\"#burn-in-pvp\">Burn in PVP</a> section."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Running dodge or heal yourself",
+            "Watch for burn-heavy opponents. Swap to Burn Decrease when burn damage is the problem; Dodge and healing alone do not stop burn ticks."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Defending",
+            "Default to Dodge / Crit Resistance (Formation 2) with the Crit Resistance engine. Switch to the Burn Decrease engine against burn-heavy opponents."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "h1",
+      "id": "part-3-optimizing-your-builds",
+      "title": "Part 3: Optimizing Your Builds"
+    },
+    {
+      "type": "p",
+      "html": "The deeper reference behind the recommended builds. Start with pilots and chip formations, then use the sections on drones, sentinels, mech spirits, engines, Camp Tech, and Titan gear as needed. Each section explains what to prioritize and why."
+    },
+    {
+      "type": "h2",
+      "id": "quick-overview",
+      "title": "Understanding Your Tools"
+    },
+    {
+      "type": "p",
+      "html": "Quick reference for the equipment systems you combine with chips, pilots, and drones:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Sentinels:</strong> companion units with up to four passive abilities at four stars. Passives come in three rarity tiers (gold, purple, blue) and scale with star level, so a maxed low-rarity sentinel often outperforms a low-star high-rarity sentinel. You equip one at a time. Unlike drone passives, sentinel passives stack across slots.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Mech Spirits:</strong> a core skill and up to four attribute bonuses each. You equip three at a time and swap by matchup. Your whole mech collection contributes passive bonuses whether equipped or not, and the 14 combination bonuses (up to 22 levels each) make the collection as important as the equipped three.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Engines:</strong> one equipped stat boost per fight. Passive bonus grows ~5% per upgrade and doubles when equipped. A grade 7 hit rate engine gives 35% passively and 70% equipped.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "id": "how-they-work-together",
+      "title": "How to Build Around a Strategy"
+    },
+    {
+      "type": "p",
+      "html": "A strong build layers these systems to hit your caps. A PVE burn build combines burn chips, mech combination bonuses (~22% passive burn from mechs alone), sentinel passives, and Magic Armor to reach 100% burn, then stacks crit for Evil Eye conversion. For PVP, remember most caps are <em>net</em>: 160% dodge against 100% opponent hit rate is 60% effective, so raw dodge above 80% isn't wasted when opponents hit hard. Same logic applies to crit rate."
     },
     {
       "type": "h1",
@@ -913,7 +1385,7 @@
     },
     {
       "type": "p",
-      "html": "Chip Formations were added in January 2026 and fundamentally changed how builds work. Before that update, build improvement was mostly adding power through pilots and upgrading gear, with the main strategic choice being energy vs. physical. Chip Formations introduced <em>specialized</em> builds, three saved sets of stat chips you swap between to match the matchup. Picking the chip direction is now the primary build decision; everything else (sentinels, mechs, engines) is tuned to amplify it."
+      "html": "Chip Formations let you save three specialized sets of stat chips and choose the one that suits the fight. Your chip strategy determines whether you focus on dealing damage, avoiding attacks, or outlasting an opponent. Sentinels, mechs, engines, and drones should support that choice."
     },
     {
       "type": "p",
@@ -983,8 +1455,8 @@
           "header": false,
           "cells": [
             "Crit Rate (PVE)",
-            "80%, but extendable via Evil Eye",
-            "Hard cap at 80%, but Evil Eye converts overflow into burn crit (see below)."
+            "80% for direct weapon crits",
+            "Evil Eye separately grants crit chance to burning drones based on your crit rate. The cap on that converted chance needs more verification; see the advanced explanation below."
           ]
         }
       ]
@@ -1022,15 +1494,15 @@
     {
       "type": "h2",
       "id": "the-evil-eye-conversion-ceiling-pve",
-      "title": "The Evil Eye Conversion Ceiling (PVE)"
+      "title": "How Crit Works with Burn Drones"
     },
     {
       "type": "p",
-      "html": "Crit rate in PVE is capped at 80% for direct weapon crits, same as PVP. Evil Eye runs on a parallel track: it converts your full crit rate (net of enemy crit resistance) into burn crit rate at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit rate feeds the conversion. The 80% cap applies only to weapon crits, not to the burn crit Evil Eye generates, so every additional point of crit is still producing more burn crit damage past 80% raw."
+      "html": "Regular weapon crit chance is capped at 80%, but Evil Eye uses a separate conversion for burning drones. With Evil Eye equipped, your burning drones can crit using a portion of your crit rate, <strong>not only the amount above 80%</strong>. This is why additional raw Crit Rate can still help a PVE burn build after ordinary weapon crits hit their cap. The conversion depends on Evil Eye's level."
     },
     {
       "type": "p",
-      "html": "<strong>The conversion rate improves substantially as Evil Eye levels.</strong> At Level 1, every 10% raw crit becomes 2% burn crit. At max level, every 10% raw crit becomes 5.6% burn crit. So the raw crit needed to produce the same burn crit drops as Evil Eye levels up."
+      "html": "<strong>The conversion gets stronger as Evil Eye levels.</strong> At Level 1, 10% raw Crit Rate provides about 2% burn-drone crit chance. At max level, 10% raw Crit Rate provides about 5.6%. The table illustrates the conversion, not a confirmed stopping point."
     },
     {
       "type": "table",
@@ -1039,25 +1511,25 @@
           "header": true,
           "cells": [
             "Evil Eye Level",
-            "Conversion Rate",
-            "Raw Crit for 80% Burn Crit (cap)",
-            "Raw Crit for 100% Burn Crit (uncapped reference)"
+            "Illustrative Conversion",
+            "Raw Crit for 80% Converted Crit",
+            "Raw Crit for 100% Converted Crit"
           ]
         },
         {
           "header": false,
           "cells": [
             "Level 1",
-            "10% crit -> 2% burn crit",
+            "10% crit → ~2% burn-drone crit",
             "~400%",
-            "500%"
+            "~500%"
           ]
         },
         {
           "header": false,
           "cells": [
             "Max (~Level 13)",
-            "10% crit -> 5.6% burn crit",
+            "10% crit → ~5.6% burn-drone crit",
             "~143%",
             "~179%"
           ]
@@ -1067,16 +1539,16 @@
     {
       "type": "callout",
       "kind": "cap",
-      "label": "Hard cap",
-      "html": "There's also a <strong>cap on burn crit itself at ~80%</strong>. The 100% columns above are reference points for the raw conversion math; in practice the ceiling you're stacking toward is 80%, so the ~400% / ~143% numbers are the practical places to stop at the two ends of Evil Eye's range."
+      "label": "Not fully verified",
+      "html": "<strong>The cap on Evil Eye's converted crit chance is not firmly established by the combat-mechanics reference.</strong> Treat 80% and 100% in the table as illustrations of the conversion math, not proven ceilings. Check actual battle results before diverting a large investment away from Crit Rate."
     },
     {
       "type": "p",
-      "html": "Track your burn crit stat as your stop point, not raw crit. Low Evil Eye leaves lots of room (keep stacking); maxed Evil Eye tightens the ceiling (redirect past ~143% raw crit toward crit damage, hit rate, or other stats)."
+      "html": "In PVE, first reach 100% effective Burn Enhancement. Then invest in Crit Rate and Crit Damage for your burn drones, adjusting based on observed damage and the level of Evil Eye. Don't use an unverified raw-Crit or burn-crit ceiling as an automatic stopping rule."
     },
     {
       "type": "p",
-      "html": "If you don't run Evil Eye at all, the regular 80% PVE crit cap applies and there's no reason to push crit past that."
+      "html": "Without Evil Eye, ordinary weapon crits still follow their 80% effective cap, and burning drone skills don't gain Evil Eye's converted crit chance."
     },
     {
       "type": "h2",
@@ -1120,16 +1592,16 @@
     },
     {
       "type": "p",
-      "html": "Example from my setup: 22% burn enhancement from mech collection + ~20% from Magic Armor leaves ~60% to reach 100% raw from chips. That's the PVE finish line and the PVP starting line against opponents with burn resistance."
+      "html": "For example, 22% Burn Enhancement from mech collection bonuses and about 20% from an equipped mech leaves roughly 58% to reach the 100% PVE cap through chips or other sources. Against a PVP opponent with Burn Decrease, the raw target would be higher."
     },
     {
       "type": "h2",
       "id": "the-canonical-pairings",
-      "title": "The Canonical Pairings"
+      "title": "Useful Chip Pairings"
     },
     {
       "type": "p",
-      "html": "Over time our legion settled on a short list of chip-pair formations that cover the matchups you face. Mixing stats outside this list spreads your chips too thin and leaves you \"average at everything, strong at nothing\", the loss pattern that shows up most clearly in Star Scramble."
+      "html": "These five pairings are good starting points for common matchups. They're not the only viable combinations, but each concentrates resources on a clear purpose instead of spreading them thin."
     },
     {
       "type": "ul",
@@ -1285,7 +1757,7 @@
     },
     {
       "type": "p",
-      "html": "The Chip Factory's Auto Mode lets you run continuous chip manufacturing with conditions that pause production when something useful comes out. I configure it separately for each of my three formations."
+      "html": "The Chip Factory's Auto Mode can run chip manufacturing continuously and pause when a potentially useful chip appears. Configure its filters separately for each formation."
     },
     {
       "type": "p",
@@ -1345,474 +1817,6 @@
     {
       "type": "p",
       "html": "Separate from the primary pick: make sure your Hit Rate is high enough to land attacks against high-Dodge opponents. Hit Rate is a prerequisite for crit, not a substitute for the primary."
-    },
-    {
-      "type": "h1",
-      "id": "part-2-situational-builds-and-tactics",
-      "title": "Part 2: Building for PVE and PVP"
-    },
-    {
-      "type": "p",
-      "html": "Four build archetypes cover the matchups you actually face. Each has a role, a formation, and a set of situational swaps. Later sections (Part 3) cover the specific systems these builds pull from; this section is about combining them."
-    },
-    {
-      "type": "h2",
-      "id": "pve-burn-build",
-      "title": "PVE Burn Build"
-    },
-    {
-      "type": "p",
-      "html": "Hit 100% burn cap, then keep stacking crit until <strong>burn crit nears ~80%</strong> (its own cap). Evil Eye's conversion rate improves as it levels, so the raw-crit target moves with your Evil Eye level, which means tracking burn crit directly is more useful than aiming for a specific crit number. Once burn crit is near the cap, redirect to crit damage or other stats."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "System",
-            "Setup",
-            "Notes"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Drones",
-            "3 burn drones (e.g., 2x Ninja + Sagittarius)",
-            "Core damage dealers. Star Envoy requires three burn drones to activate."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Chip Formation",
-            "Burn / Crit before 100% native burn (Formation 3); Crit / Hit after (Formation 1)",
-            "Before 100% native burn, F3 pulls dual duty with Burn and Crit as both primaries; burn chips with Crit Resistance secondary are the ones you'll want to hold for the eventual PVP burn conversion. Once native burn hits 100%, your Crit / Hit formation (F1) covers PVE on its own since no burn chips are needed to hit the cap. F3 then becomes available for the dedicated PVP Burn Build."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "Flashstrike / SavagePlate / Gridstar w/ gold crit damage + crit rate",
-            "Passives > base damage. Flashstrike is the preferred PVE sentinel at scale because its 20% damage boost applies to drones too."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Mech Spirits (3)",
-            "Star Envoy + Evil Eye + (Dragon Emperor or Berserk Dragon)",
-            "Star Envoy and Evil Eye are the key pair. Replace third slot with Magic Armor when below 100% burn."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "h2",
-      "id": "pvp-defensive-build",
-      "title": "PVP Defensive Build"
-    },
-    {
-      "type": "p",
-      "html": "Survive and extend. The longer the fight, the more your healing and damage reduction compound."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "System",
-            "Setup",
-            "Notes"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Chip Formation",
-            "Dodge / Crit Resistance (Formation 2)",
-            "Dodge the direct hits, deny the crits that get through"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "Maxed Gridstar w/ gold heal",
-            "100% heal benefit at 40 stars"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Fighter",
-            "Hard Rock",
-            "HP bonus synergy"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Mech Spirits (3)",
-            "Ladybug + Berserk Dragon + Aqua Spirit",
-            "Triple survivability layer"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Drone",
-            "Sagittarius (burner for long fights); Apus is an accessible early alternative",
-            "Burn damage compounds over the long fights this build creates. Apus still works at lower BP, but tops out faster."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Engine",
-            "Burn Decrease vs. a burner, Crit Resistance otherwise",
-            "Burn Decrease is the one defensive gap this build can't close through dodge or heal. Against non-burners, Crit Resistance denies the big-damage spikes."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "This build routinely heals 600-700k HP over a fight on an 800k HP base. Gold heal on a maxed Gridstar, Ladybug's guaranteed restore, Berserk Dragon's damage reduction, and Aqua Spirit's emergency threshold stack into layers that are very hard to burst through."
-    },
-    {
-      "type": "h2",
-      "id": "pvp-offensive-build",
-      "title": "PVP Offensive Build"
-    },
-    {
-      "type": "p",
-      "html": "For matchups where your opponent has low Crit Resistance. Pair with enough Hit Rate to land attacks against high-Dodge opponents. Crit rate in PVP is capped at 80% net of opponent crit resistance, so raw crit above 80% is still useful against opponents running significant crit resistance."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "System",
-            "Setup",
-            "Notes"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Chip Formation",
-            "Crit / Hit Rate (Formation 1)",
-            "Land crits through opponent dodge"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "Stormquill or SavagePlate with gold crit damage + crit rate",
-            "Stormquill is a crit-oriented G-sentinel alternative; SavagePlate's 2-second cooldown fires the active more often."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Fighter",
-            "Conqueror",
-            "5-piece damage bonus for faster fights"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Mech Spirits (3)",
-            "Flame Stinger + Venom Scorpion + Battle Diva (or Gloom Moon when opponent dodge is high)",
-            "Crit-damage amplifier + finisher + crit-denial, swap Battle Diva for Gloom Moon vs high-dodge targets"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Engine",
-            "Hit Rate",
-            "Stack with Gloom Moon if swapped in"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "h2",
-      "id": "pvp-burn-build",
-      "title": "PVP Burn Build"
-    },
-    {
-      "type": "p",
-      "html": "My current main PVP build. Regularly beats opponents 10M BP ahead, sometimes 15M+. One formation covers both of the dominant PVP archetypes:"
-    },
-    {
-      "type": "ul",
-      "items": [
-        {
-          "html": "<strong>Burn beats dodge.</strong> Burn stacks tick regardless of whether subsequent attacks land. Dodge opponents can duck your direct hits but not burn ticks already on them.",
-          "nested": null
-        },
-        {
-          "html": "<strong>Burn pressures crit opponents too.</strong> Stacks keep ticking regardless of their defense. The Crit Resistance secondary denies their crit on you, so you're damaging them while they struggle to damage you.",
-          "nested": null
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "Weakness: a true heal-stacked opponent with sentinel sustain can out-heal burn ticks. For that matchup, swap in Rendclaw with heal-reduction."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "System",
-            "Setup",
-            "Notes"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Drones",
-            "3 burn drones (e.g., 2x Ninja + Sagittarius, or Lich + Sagi + Lyra at scale)",
-            "Star Envoy needs three burn drones."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Chip Formation",
-            "Burn / Crit Resistance (Formation 3)",
-            "No upper limit on burn chips here, in PVP you're racing to overcome opponent burn-decrease, not hitting a 100% raw cap. Keep stacking."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "Arcglow (sustain) or Glimshade (hybrid), with gold sentinel enhance and heal passives",
-            "Burn needs long fights to compound; a sustain sentinel keeps you in the fight long enough."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Mech Spirits (3)",
-            "Aqua Spirit + Star Envoy + Ladybug",
-            "Different from the PVE build: Aqua Spirit's emergency damage reduction and Ladybug's healing floor matter more in PVP, and Evil Eye's crit conversion is less relevant when you don't have the room to stack crit past the cap."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Engine",
-            "Crit Resistance (default) or Hit Rate (vs high-dodge targets)",
-            "Burn covers dodge opponents on offense; Crit Resistance covers crit opponents on defense."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "Don't move to this formation too early. Formation 3 pulls burn chips off your PVE formation, so if your PVP crit formation isn't already at ~100% native burn (from mech combos, sentinel passives, and Camp Tech alone), you'll spread burn chips thin across two formations and weaken your PVE output. Wait until native burn hits ~100% before switching."
-    },
-    {
-      "type": "h2",
-      "id": "burn-in-pvp",
-      "title": "Burn in PVP"
-    },
-    {
-      "type": "p",
-      "html": "Burn is one of the strongest ways to fight dodge-heavy opponents. Once burn is applied, its damage continues even when subsequent attacks miss. And because burn builds damage over time, longer fights can work in your favor. That makes burn especially dangerous against opponents who rely on Dodge and healing to survive."
-    },
-    {
-      "type": "h3",
-      "id": "how-much-burn-do-you-need",
-      "title": "How much burn do you need?"
-    },
-    {
-      "type": "p",
-      "html": "Burn Enhancement has a 100% effective cap, but your opponent's Burn Decrease reduces what gets through."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Opponent's Burn Decrease",
-            "Raw Burn Needed"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "0%",
-            "100%"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "50%",
-            "150%"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "100%",
-            "200%"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "In PVE, 100% raw burn is enough. In PVP, you may need considerably more to overcome your opponent's defenses. There's no benefit to exceeding the effective cap against a particular opponent, but extra raw Burn Enhancement lets you deal with opponents who have more Burn Decrease."
-    },
-    {
-      "type": "h3",
-      "id": "how-to-counter-burn",
-      "title": "How to counter burn"
-    },
-    {
-      "type": "p",
-      "html": "<strong>My recommendation is Dodge + Burn Decrease.</strong> Dodge protects you against regular attacks, while Burn Decrease reduces the damage from burn. Combined with healing and damage reduction, this gives you a strong defensive response."
-    },
-    {
-      "type": "p",
-      "html": "Start by equipping your Burn Decrease engine. If you're still taking too much damage, strengthen Burn Decrease through your chips or sentinel passives."
-    },
-    {
-      "type": "p",
-      "html": "Remember that Dodge does not stop burn damage that's already been applied. A defensive build that ignores Burn Decrease can be surprisingly vulnerable, no matter how high its Dodge is."
-    },
-    {
-      "type": "p",
-      "html": "<strong>The lesson:</strong> Use Burn to counter Dodge. Use Burn Decrease to counter Burn."
-    },
-    {
-      "type": "h2",
-      "id": "situational-swaps-for-pvp",
-      "title": "Situational Swaps for PVP"
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Situation",
-            "Adjustment"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Opponent has high dodge",
-            "Switch to the PVP Burn Build (burn bypasses dodge). If staying on crit, equip Gloom Moon and Faeling and switch to the hit rate engine."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Opponent has high crit",
-            "Equip Battle Diva; switch to crit resistance engine (or stay on Formation 2 or 3, both of which already carry crit resistance as the secondary)."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Attacking a weakened target",
-            "Equip Flame Stinger for 25% dmg boost below 35% HP"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Opponent has heal-heavy build",
-            "Use a sentinel with gold heal reduction (SavagePlate counters a gold-heal Gridstar; Rendclaw with stacked heal- counters a Doomblast)."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Facing a burn-heavy opponent",
-            "Switch to the burn decrease engine first. If you run dodge/heal, add burn resistance via sentinel passive or chip secondary. Dodge alone won't stop burn ticks. See the <a href=\"#burn-in-pvp\">Burn in PVP</a> section for full counter guidance."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Running dodge or heal yourself",
-            "Burn resistance is non-optional. Long fights favor whichever side has burn working for them, and dodge/heal builds want long fights."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Defending",
-            "Default to the hit rate engine plus Dodge / Crit Resistance (Formation 2)."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "h1",
-      "id": "part-3-optimizing-your-builds",
-      "title": "Part 3: Optimizing Your Builds"
-    },
-    {
-      "type": "p",
-      "html": "The technical reference. Each section below covers one system you'll tune when building: Burn Drones, Sentinels, Mech Spirits, Engines, Camp Technology, and Titan Sets & Weapon Tech. (Chip Formations is in Part 1 since it drives your build direction.) Brief overviews first, then drill into the sections you need."
-    },
-    {
-      "type": "h2",
-      "id": "quick-overview",
-      "title": "Understanding Your Tools"
-    },
-    {
-      "type": "p",
-      "html": "Short reference for the systems beyond chips (chip formations are in Part 1):"
-    },
-    {
-      "type": "ul",
-      "items": [
-        {
-          "html": "<strong>Sentinels:</strong> companion units with up to four passive abilities at four stars. Passives come in three rarity tiers (gold, purple, blue) and scale with star level, so a maxed low-rarity sentinel often outperforms a low-star high-rarity sentinel. You equip one at a time. Unlike drone passives, sentinel passives stack across slots.",
-          "nested": null
-        },
-        {
-          "html": "<strong>Mech Spirits:</strong> a core skill and up to four attribute bonuses each. You equip three at a time and swap by matchup. Your whole mech collection contributes passive bonuses whether equipped or not, and the 14 combination bonuses (up to 22 levels each) make the collection as important as the equipped three.",
-          "nested": null
-        },
-        {
-          "html": "<strong>Engines:</strong> one equipped stat boost per fight. Passive bonus grows ~5% per upgrade and doubles when equipped. A grade 7 hit rate engine gives 35% passively and 70% equipped.",
-          "nested": null
-        }
-      ]
-    },
-    {
-      "type": "h2",
-      "id": "how-they-work-together",
-      "title": "How to Build Around a Strategy"
-    },
-    {
-      "type": "p",
-      "html": "A strong build layers these systems to hit your caps. A PVE burn build combines burn chips, mech combination bonuses (~22% passive burn from mechs alone), sentinel passives, and Magic Armor to reach 100% burn, then stacks crit for Evil Eye conversion. For PVP, remember most caps are <em>net</em>: 160% dodge against 100% opponent hit rate is 60% effective, so raw dodge above 80% isn't wasted when opponents hit hard. Same logic applies to crit rate."
     },
     {
       "type": "h1",
@@ -2091,7 +2095,7 @@
     },
     {
       "type": "p",
-      "html": "SR-class (e.g., Arcglow, Glimshade): Reasonable mid-term targets, maxable in roughly 4–5 months. Personally planning to go with an Arcglow because heal enhancement is a benefit you can only get from sentinels. Glimshade is a reasonable alternative for crit builds, its heal effect only triggers against burning enemies, so it pairs naturally with a build that already equips at least one burn drone."
+      "html": "<strong>SR class (Arcglow, Glimshade):</strong> These can be strong medium-term upgrades but take months to develop. <em>Preference:</em> Arcglow is my preferred sustain upgrade because Heal Enhancement is particularly valuable in long fights. Glimshade fits builds with burning drones, which enable its conditional healing."
     },
     {
       "type": "p",
@@ -2099,7 +2103,7 @@
     },
     {
       "type": "p",
-      "html": "I plan to skip R sentinels as there aren't any attractive options and it would only delay my progression to SR. I plan to build an SR (Arcglow) and SSR (Doomblast) in parallel, picking up stars opportunistically over the next 6-18 months."
+      "html": "<em>Preference:</em> Skip R-class sentinels unless one fills a specific gap. I'd focus first on useful maxed G-class options, then build an SR for your main role. Treat any SSR as a long-term investment rather than a short-term upgrade."
     },
     {
       "type": "h3",
@@ -2199,32 +2203,32 @@
     {
       "type": "h3",
       "id": "recommended-progression",
-      "title": "Recommended Progression"
+      "title": "Recommended Spending Order"
     },
     {
       "type": "p",
-      "html": "The progression depends on your build. There's no universal Gridstar -> SavagePlate -> SR -> SSR ladder, different builds take different paths. Pick based on your intended build:"
+      "html": "<strong>Max a useful starter first, then add flexibility before chasing rarity.</strong> The right starter depends on your build; use the choices-by-build table above. A fully developed G-class sentinel with a good gold passive can outperform an underdeveloped SR or SSR."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Dodge / heal / burn builds:</strong> Max 2–3 Gridstars with varied passives (12 days each) -&gt; build an SR like Arcglow (4–5 months) -&gt; slowly build Doomblast as a long-term project. SavagePlate is optional on this path.",
+          "html": "<strong>Defensive or burn PVP:</strong> max Gridstar with gold Heal Enhancement, then build a second sentinel for a different counter. Arcglow is a long-term sustain upgrade.",
           "nested": null
         },
         {
-          "html": "<strong>Crit-focused builds:</strong> Max 2–3 Stormquills or a SavagePlate (SavagePlate is a heavier investment but offers the 2-second cooldown) -&gt; build Rendclaw as the long-term endgame SSR for crit-focused play.",
+          "html": "<strong>Crit offense:</strong> start with Stormquill or SavagePlate and prioritize Crit Damage. Consider more expensive options only when the extra skill or passive value justifies the cost.",
           "nested": null
         },
         {
-          "html": "<strong>PVE scaling:</strong> Max a Flashstrike early for Titan Challenge / Legion Hunt, it's a G-class so it maxes fast and its drone-amplifying damage boost is PVE meta.",
+          "html": "<strong>PVE:</strong> max Flashstrike for its damage boost, including drone damage, before chasing high-rarity alternatives.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "Along the way, buy at least one of most sentinels to unlock the 9 combination bonuses (each bonus is a one-time unlock per sentinel). Buy one of each SSR for their combination bonus even if you don't plan to use them yet, those bonuses are permanent once earned."
+      "html": "Once your main sentinel works well, invest in a second one with different passives so you can counter other builds. SR and SSR options cost substantially more tickets and overclock chips, so develop them only when you can sustain that investment. Unlock permanent combination bonuses when worthwhile, but don't sacrifice an essential starter upgrade just to collect a rare sentinel. <em>Preference:</em> build a small, strong roster before pursuing prestige or perfect rolls."
     },
     {
       "type": "h2",
@@ -2369,7 +2373,7 @@
     },
     {
       "type": "p",
-      "html": "Aim for two favorable gold passives on each primary sentinel. Start with one, keep rolling until you get a second that synergizes."
+      "html": "<strong>Start with one gold passive that meaningfully helps your build.</strong> Fill the other slots with useful supporting passives. A second synergistic gold is a long-term upgrade, not a prerequisite for an effective sentinel; don't let the chase stall progress elsewhere."
     },
     {
       "type": "table",
@@ -2450,90 +2454,6 @@
       "html": "Sentinel Enhancement is a <strong>multiplier on the primary attack/skill number only</strong> (not secondary skills), and it's multiplicative, not additive. A gold Sentinel Enhance at full strength takes a 440% skill to 440 × 1.75 = 770%. Attack and HP passives, by contrast, are flat values."
     },
     {
-      "type": "h2",
-      "id": "sentinel-spending-priorities-and-progression-timeline",
-      "title": "Where to Spend on Sentinels"
-    },
-    {
-      "type": "p",
-      "html": "Sentinels are a long-term investment, but you don't need the rarest ones to build something effective. A maxed G-class sentinel with strong passives can outperform an SR or SSR that still has a long way to go."
-    },
-    {
-      "type": "h3",
-      "id": "short-term-1-2-months",
-      "title": "Start with a sentinel that fits your build"
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Your focus",
-            "Recommended starter"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PVP defense",
-            "Gridstar with gold Heal Enhancement"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PVP crit offense",
-            "Stormquill or SavagePlate with gold Crit Damage"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PVE damage",
-            "Flashstrike with Crit Damage and Sentinel Enhancement"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PVP burn",
-            "Gridstar with healing and defensive passives"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "<strong>Max your starter before moving up in rarity.</strong> Fully leveled passives are often more valuable than a rarer sentinel with underdeveloped stats."
-    },
-    {
-      "type": "h3",
-      "id": "medium-to-long-term-4-months-to-1-5-years",
-      "title": "Build flexibility before chasing rarity"
-    },
-    {
-      "type": "p",
-      "html": "Once your main sentinel is strong, consider a second with different passives. A defensive sentinel might focus on Heal Enhancement, while another could counter opponents with strong healing. This gives you more ways to respond to difficult matchups without committing months of resources to a single rare sentinel."
-    },
-    {
-      "type": "h3",
-      "id": "on-ssr-sentinels",
-      "title": "When to invest in SR and SSR"
-    },
-    {
-      "type": "p",
-      "html": "SR and SSR sentinels have greater long-term potential, but they require substantially more tickets and overclock chips. Before committing, ask whether you can develop the sentinel far enough to outperform what you already have. Unlocking sentinel combination bonuses can be worthwhile even when you don't plan to use the sentinel itself."
-    },
-    {
-      "type": "p",
-      "html": "<em>Preference:</em> Max useful G-class sentinels first, build a small collection of strong passive combinations, and treat SR and SSR as long-term investments."
-    },
-    {
-      "type": "p",
-      "html": "<strong>A sentinel you can fully develop today is often more useful than a rare one you'll spend a year trying to finish.</strong>"
-    },
-    {
       "type": "h1",
       "id": "mech-spirits",
       "title": "Mech Spirits"
@@ -2563,7 +2483,7 @@
     {
       "type": "h3",
       "id": "my-pvp-offensive-defensive-hybrid-favorites-in-priority-order",
-      "title": "My PVP Offensive/Defensive Hybrid Favorites (in priority order)"
+      "title": "PVP All-Round Mechs"
     },
     {
       "type": "ul",
@@ -2597,7 +2517,7 @@
     {
       "type": "h3",
       "id": "my-pvp-defensive-favorites-in-priority-order",
-      "title": "My PVP Defensive Favorites (in priority order)"
+      "title": "PVP Defensive Mechs"
     },
     {
       "type": "ul",
@@ -2611,7 +2531,7 @@
     {
       "type": "h3",
       "id": "my-pvp-offensive-favorites-in-priority-order",
-      "title": "My PVP Offensive Favorites (in priority order)"
+      "title": "PVP Offensive Mechs"
     },
     {
       "type": "ul",
@@ -2633,13 +2553,13 @@
     {
       "type": "h3",
       "id": "my-pve-burn-formation-mechs-in-priority-order",
-      "title": "My PVE Burn Formation Mechs (in priority order)"
+      "title": "PVE Burn Mechs"
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "Evil Eye: Converts your crit rate (net of enemy crit resistance) into burn crit at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit feeds the conversion, and the 80% weapon-crit cap doesn't apply here. Conversion rate: ~10% crit to 2% burn crit at L1, improving to 10% to 5.6% at max. Combined with the ~80% burn crit cap, you stop seeing returns past ~400% raw crit at L1 and ~143% at max.",
+          "html": "<strong>Evil Eye:</strong> Lets burning drones crit using a portion of your Crit Rate, including Crit Rate below the weapon 80% cap. Conversion improves with level (roughly 10% Crit Rate to 2% converted crit at Level 1, versus 5.6% near max). The separate burn-drone crit ceiling is not sufficiently verified here; judge additional investment by actual damage rather than treating ~143% raw Crit Rate as a fixed stop.",
           "nested": null
         },
         {
@@ -2671,13 +2591,13 @@
     {
       "type": "h3",
       "id": "note-the-evil-eye-and-star-envoy-synergy",
-      "title": "Note: The Evil Eye and Star Envoy Synergy"
+      "title": "How Evil Eye and Star Envoy Work Together"
     },
     {
       "type": "callout",
       "kind": "synergy",
       "label": "Synergy",
-      "html": "Evil Eye and Star Envoy convert overflow stats into burn through parallel mechanics. Evil Eye routes overflow crit (above the 80% PVE cap) into burn crit. Star Envoy routes overflow burn enhancement (above the opponent's burn decrease) into reliable burn-damage stacks. In PVE, bosses have no burn decrease and no crit resistance, so both reach max effectiveness: every point of burn enhancement raises Star Envoy's trigger chance, and at 100% burn you get guaranteed triggers every third skill. The effects compound, Star Envoy's stacking burn-damage bonus amplifies the same burn ticks Evil Eye's burn crits are landing. Running both is what makes PVE crit-burn builds much stronger than burn-only."
+      "html": "<strong>Evil Eye and Star Envoy reinforce different parts of a burn build.</strong> Evil Eye gives burning drones a chance to crit based on a portion of your Crit Rate; it does not use only the Crit Rate above the 80% weapon cap. Star Envoy builds a burn-damage bonus through repeated drone skills. In PVE, where bosses generally have no Burn Decrease or Crit Resistance, both can contribute heavily to damage. The practical priority is 100% effective Burn Enhancement, then enough Crit Rate and Crit Damage to strengthen the drones' hits. Don't assume an unverified burn-crit cap when deciding where to stop."
     },
     {
       "type": "h1",
@@ -2933,7 +2853,7 @@
     },
     {
       "type": "p",
-      "html": "A full daily spend keeps you progressing on every system in parallel. If you can't cover all of it, these are the priorities in rough order, cut from the bottom."
+      "html": "This is a suggested daily spending plan, <strong>not a minimum required to compete</strong>. If your diamond income is lower, prioritize the upgrades that address your biggest weakness rather than trying to fund every system at once. The figures below describe a full routine, not a rule for every player."
     },
     {
       "type": "ul",
@@ -2958,7 +2878,7 @@
     },
     {
       "type": "p",
-      "html": "Full baseline is ~540💎/day from Collection Center. Hitting it keeps every system progressing; falling well short slows down the whole guide."
+      "html": "The full plan totals about 540💎 per day before optional shop purchases. Spending less means slower progress in some systems, not that your build stops being competitive. Pick the parts that matter most to you."
     },
     {
       "type": "h2",
@@ -2967,7 +2887,7 @@
     },
     {
       "type": "p",
-      "html": "Events rotate weekly: Mech, Pilot, Sentinel, Titan, Drone. Each pays tiered rewards for 100, 200, 300 purchases during the event window. Pulls only count if they happen in-event. Currency varies by event:"
+      "html": "Events rotate through Mech, Pilot, Sentinel, Titan, and Drone weeks. Save event-specific resources until their rewards apply. The milestones and currencies differ by event; the tested examples below are not a universal 100/200/300-purchase rule."
     },
     {
       "type": "ul",
@@ -2986,6 +2906,10 @@
         },
         {
           "html": "<strong>Sentinel week:</strong> 8,000 sentinel chips per round. Same 1 per 10 diamonds in the Resource tab.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Titan week:</strong> Save relevant Titan resources for the event and check its live reward thresholds before spending. This guide does not yet include a verified Titan-specific cost or optimal purchase cycle.",
           "nested": null
         }
       ]
