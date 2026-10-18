@@ -430,7 +430,6 @@
 <a href="#part-1-understanding-the-four-systems" class="toc-item toc-level-1" style="padding-left:12px">Part 1: Understanding the Fundamentals</a>
 <a href="#build-philosophy-how-to-think-about-builds" class="toc-item toc-level-2" style="padding-left:28px">Build Philosophy: How to Think About Builds</a>
 <a href="#every-build-has-a-counter" class="toc-item toc-level-3" style="padding-left:44px">Every Build Has a Counter</a>
-<a href="#the-layer-hierarchy" class="toc-item toc-level-3" style="padding-left:44px">The Layer Hierarchy</a>
 <a href="#pairing-primaries-with-secondaries" class="toc-item toc-level-3" style="padding-left:44px">Pairing Primaries with Secondaries</a>
 <a href="#on-bp-battle-power" class="toc-item toc-level-3" style="padding-left:44px">On BP (Battle Power)</a>
 <a href="#f2p-realities" class="toc-item toc-level-3" style="padding-left:44px">F2P Realities</a>
@@ -575,16 +574,12 @@
 <h1 id="part-1-understanding-the-four-systems">Part 1: Understanding the Fundamentals</h1>
 <p>Part 1 is about the thinking behind strong builds, before any specific stat or system. Build Philosophy covers how builds counter each other and where to invest your attention. Pilots covers the foundation stat that everything else sits on top of.</p>
 <h1 id="build-philosophy-how-to-think-about-builds">Build Philosophy: How to Think About Builds</h1>
-<p>The game has way more possible builds than you can afford to tune, especially f2p. Three ideas drive the rest of this section: every build has a counter, the layers you optimize matter more than your raw power level, and pairing a primary attribute with the right secondaries is what makes a build actually win.</p>
+<p>The game has way more possible builds than you can afford to tune, especially f2p. Two ideas drive the rest of this section: every build has a counter, and pairing a primary attribute with the right secondaries is what makes a build actually win.</p>
 <h2 id="every-build-has-a-counter">Every Build Has a Counter</h2>
 <p>There is no single dominant build. Every offensive style is vulnerable to a defensive style, and every defense has an attacker that can crack it. The strongest players accept this and aim for one of two outcomes:</p>
 <ul><li>Specialize the secondaries: Pair your primary attribute with the secondaries that enable it. Dodge beats high hit rate on direct attacks, but max effective dodge is 80%, so 20% of hits still land and can crit for huge damage, which means a dodge build also wants crit resistance (to blunt those hits) and heal (to outlast). Crit needs hit (so you can land attacks) and crit damage (so the crits matter). The combinations that win are dodge + crit resistance + heal, or crit + hit + crit damage. A build that stacks one primary without its enablers is weak.</li>
 <li>Overpower the primaries: Push your primary attribute high enough that the opponent&#x27;s secondary defenses can&#x27;t keep up. This is the brute-force path and tends to require deeper investment, but it&#x27;s effective when specialization isn&#x27;t an option.</li>
-</ul><h2 id="the-layer-hierarchy">The Layer Hierarchy</h2>
-<p>Layers in order of impact. Investing well in a higher layer beats investing more in a lower one.</p>
-<div class="table-wrap"><table><tr><th>Layer</th><th>What It Covers</th><th>Why It Matters</th></tr><tr><td>1. Consistency</td><td>Crit, hit, dodge, burn rate</td><td>If you can&#x27;t land hits or can&#x27;t avoid them, nothing else matters. This is the foundation.</td></tr><tr><td>2. Core scaling</td><td>Pilots, damage increase mechs, damage reduction mechs</td><td>Once you&#x27;re hitting consistently, this is what makes hits hurt and survives the ones that land.</td></tr><tr><td>3. Sustain / anti-sustain</td><td>Heal enhancement, heal reduction</td><td>Decides whether long fights favor you or your opponent. Critical against defensive builds.</td></tr><tr><td>4. Drone / sentinel / mech optimization</td><td>Landing the right passives, equipping the right ones</td><td>High-impact tuning. Gold passives can multiply effectiveness in any of the layers above.</td></tr><tr><td>5. Base stats</td><td>Raw HP, attack from gear</td><td>Lowest priority. Players with maxed Titan gear regularly lose to lower-stat opponents who built the layers above better.</td></tr></table></div>
-<p>Base stats at the bottom surprises most players, since that&#x27;s where the big visible numbers live. But a maxed-gear opponent who skipped the upper layers is one of the easier matchups you&#x27;ll face.</p>
-<h2 id="pairing-primaries-with-secondaries">Pairing Primaries with Secondaries</h2>
+</ul><h2 id="pairing-primaries-with-secondaries">Pairing Primaries with Secondaries</h2>
 <ul><li>Crit builds need crit resistance or hit rate, depending on the matchup. Against an opponent stacking dodge, you need hit rate to land your crits. Against an opponent stacking crit themselves, you need crit resistance to deny theirs. Then layer crit damage (passive sources) and damage increase (mechs) on top, fights end faster, which naturally counters healing-focused opponents.</li>
 <li>Dodge builds need heal. Dodge alone slows fights down; heal is what keeps you alive through the hits that do land. The Gridstar + Ladybug + Berserk Dragon + Aqua Spirit defensive build in Part 2 is a clean example.</li>
 <li>Burn builds (PVE) need crit (up to the Evil Eye ceiling) and crit damage. Once you&#x27;re at the 100% burn cap, crit is the multiplier that pushes damage further, and Evil Eye routes overflow into burn crit, making crit damage do double duty.</li>
@@ -771,7 +766,7 @@
 <h2 id="drones-and-crit-what-actually-converts">Drones and Crit: What Actually Converts</h2>
 <p><strong>Drone normal attacks don&#x27;t participate in the global crit system.</strong> A drone&#x27;s normal-attack crit rate is set by its Spot Weakness passive, period. Your global crit rate doesn&#x27;t buff it; opponent crit resistance doesn&#x27;t dampen it. No Spot Weakness = that drone never crits on normal attacks, which also means Raging Assault (crit damage multiplier) is wasted without Spot Weakness paired with it.</p>
 <ul>
-<li>Evil Eye&#x27;s crit → burn-crit conversion likely applies to drone skills and your weapon crit, not drone normal-attack ticks. Practical PVE conclusion is unchanged (stack crit anyway, it still boosts weapons and drone skills), but burn ticks from flaming status aren&#x27;t amplified by Evil Eye the way weapon crits are.</li>
+<li>With Evil Eye equipped, both drone normal attacks <em>and</em> drone skills from burning drones can crit. Evil Eye provides the crit chance (replacing Spot Weakness) and your global crit damage multiplier provides the damage (replacing Raging Assault). Burn ticks from flaming status themselves don&#x27;t crit, they&#x27;re a separate damage type with their own formula.</li>
 <li>Pair Spot Weakness with Raging Assault on any drone where you want normal-attack crits. Running one without the other is wasted investment.</li>
 </ul>
 <h2 id="progression-lineups">Progression Lineups</h2>
