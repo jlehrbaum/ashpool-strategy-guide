@@ -198,32 +198,6 @@
     margin-top: 4px;
     font-style: italic;
   }
-  .tag {
-    display: inline-block;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 1px 6px;
-    border-radius: 3px;
-    margin-right: 4px;
-    vertical-align: 1px;
-  }
-  .tag-mech {
-    background: rgba(80,180,120,0.14);
-    border: 1px solid rgba(80,180,120,0.4);
-    color: #7fcfa0;
-  }
-  .tag-community {
-    background: rgba(240,180,80,0.14);
-    border: 1px solid rgba(240,180,80,0.4);
-    color: #e6b369;
-  }
-  .tag-pref {
-    background: rgba(180,130,235,0.14);
-    border: 1px solid rgba(180,130,235,0.4);
-    color: #c2a0f0;
-  }
   /* Content links */
   #content a {
     color: var(--accent);
@@ -598,7 +572,6 @@
 <tr><td>Make smarter long-term investments</td><td><a href="#sentinel-investment-path">Sentinel Investment Path</a> and <a href="#mech-investment-strategy">Mech Investment Strategy</a></td></tr>
 </table></div>
 <p>The goal isn&#x27;t to build the strongest version of everything. It&#x27;s to build the right things, in the right order, so they work together.</p>
-<p class="doc-meta">Throughout the guide, you&#x27;ll see colored tags indicating confidence: <span class="tag tag-mech">Mechanic</span> for confirmed game mechanics, <span class="tag tag-community">Community</span> for widely-tested findings not yet officially confirmed, and <span class="tag tag-pref">Preference</span> for my personal choices where other reasonable choices exist.</p>
 <h1 id="part-1-understanding-the-four-systems">Part 1: Understanding the Fundamentals</h1>
 <p>Part 1 is about the thinking behind strong builds, before any specific stat or system. Build Philosophy covers how builds counter each other and where to invest your attention. Pilots covers the foundation stat that everything else sits on top of.</p>
 <h1 id="build-philosophy-how-to-think-about-builds">Build Philosophy: How to Think About Builds</h1>
@@ -628,7 +601,7 @@
 <li>Pilots compound with everything else, so a player with mediocre gear but well-developed pilots is unusually tough for their BP. Starting fresh, I&#x27;d put pilots first.</li>
 </ul>
 <h2 id="the-equipped-pilot-multiplier">The Equipped Pilot Bonus</h2>
-<p><span class="tag tag-community">Community</span> Each pilot contributes specific stats passively based on their star level and awakening (not all four stats, just the ones that pilot provides). When you <strong>equip</strong> a pilot, their contribution to those stats jumps substantially above the passive value, which means swapping your equipped pilot can produce big swings in whichever stats they cover.</p>
+<p>Each pilot contributes specific stats passively based on their star level and awakening (not all four stats, just the ones that pilot provides). When you <strong>equip</strong> a pilot, their contribution to those stats jumps substantially above the passive value, which means swapping your equipped pilot can produce big swings in whichever stats they cover.</p>
 <p>Example with Lancelot (an EDB/PD pilot):</p>
 <ul>
 <li>6-star SR Lancelot, sitting in your roster (passive): ~80 EDB and ~80 PD</li>
@@ -708,18 +681,18 @@
 <p>Most chip attributes have a cap. Exceeding it wastes chip slots.</p>
 <div class="table-wrap"><table><tr><th>Attribute</th><th>Cap</th><th>Notes</th></tr><tr><td>Burning Enhancement</td><td>100% net</td><td>Net of opponent burn resistance. PVE bosses have no burn resistance, so 100% raw = 100% net. PVP opponents may run burn reduce, so raw burn above 100% can be useful.</td></tr><tr><td>Electric Enhancement</td><td>100% net</td><td>Same rules as burn, net of opponent electric resistance.</td></tr><tr><td>Reflect Enhancement</td><td>100% net</td><td>Same rules as burn, net of opponent reflect resistance.</td></tr><tr><td>Dodge Rate</td><td>80% net vs players</td><td>Your dodge minus opponent&#x27;s hit rate; raw dodge can exceed 80%.</td></tr><tr><td>Crit Rate (PVP)</td><td>80% net vs players</td><td>Your crit rate minus opponent&#x27;s crit resistance; raw crit can exceed 80%.</td></tr><tr><td>Crit Rate (PVE)</td><td>80%, but extendable via Evil Eye</td><td>Hard cap at 80%, but Evil Eye converts overflow into burn crit (see below).</td></tr></table></div>
 <h2 id="the-evil-eye-conversion-ceiling-pve">The Evil Eye Conversion Ceiling (PVE)</h2>
-<p><span class="tag tag-mech">Mechanic</span> Crit rate in PVE is capped at 80% for direct weapon crits, same as PVP. Evil Eye runs on a parallel track: it converts your full crit rate (net of enemy crit resistance) into burn crit rate at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit rate feeds the conversion. The 80% cap applies only to weapon crits, not to the burn crit Evil Eye generates, so every additional point of crit is still producing more burn crit damage past 80% raw.</p>
-<p><span class="tag tag-mech">Mechanic</span> <strong>The conversion rate improves substantially as Evil Eye levels.</strong> At Level 1, every 10% raw crit becomes 2% burn crit. At max level, every 10% raw crit becomes 5.6% burn crit. So the raw crit needed to produce the same burn crit drops as Evil Eye levels up.</p>
+<p>Crit rate in PVE is capped at 80% for direct weapon crits, same as PVP. Evil Eye runs on a parallel track: it converts your full crit rate (net of enemy crit resistance) into burn crit rate at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit rate feeds the conversion. The 80% cap applies only to weapon crits, not to the burn crit Evil Eye generates, so every additional point of crit is still producing more burn crit damage past 80% raw.</p>
+<p><strong>The conversion rate improves substantially as Evil Eye levels.</strong> At Level 1, every 10% raw crit becomes 2% burn crit. At max level, every 10% raw crit becomes 5.6% burn crit. So the raw crit needed to produce the same burn crit drops as Evil Eye levels up.</p>
 <div class="table-wrap"><table>
 <tr><th>Evil Eye Level</th><th>Conversion Rate</th><th>Raw Crit for 80% Burn Crit (cap)</th><th>Raw Crit for 100% Burn Crit (uncapped reference)</th></tr>
 <tr><td>Level 1</td><td>10% crit -> 2% burn crit</td><td>~400%</td><td>500%</td></tr>
 <tr><td>Max (~Level 13)</td><td>10% crit -> 5.6% burn crit</td><td>~143%</td><td>~179%</td></tr>
 </table></div>
-<div class="callout callout-cap"><span class="callout-label">Hard cap</span><span class="tag tag-community">Community</span> There&#x27;s also a <strong>cap on burn crit itself at ~80%</strong>. The 100% columns above are reference points for the raw conversion math; in practice the ceiling you&#x27;re stacking toward is 80%, so the ~400% / ~143% numbers are the practical places to stop at the two ends of Evil Eye&#x27;s range.</div>
+<div class="callout callout-cap"><span class="callout-label">Hard cap</span>There&#x27;s also a <strong>cap on burn crit itself at ~80%</strong>. The 100% columns above are reference points for the raw conversion math; in practice the ceiling you&#x27;re stacking toward is 80%, so the ~400% / ~143% numbers are the practical places to stop at the two ends of Evil Eye&#x27;s range.</div>
 <p>Track your burn crit stat as your stop point, not raw crit. Low Evil Eye leaves lots of room (keep stacking); maxed Evil Eye tightens the ceiling (redirect past ~143% raw crit toward crit damage, hit rate, or other stats).</p>
 <p>If you don&#x27;t run Evil Eye at all, the regular 80% PVE crit cap applies and there&#x27;s no reason to push crit past that.</p>
 <h2 id="building-toward-the-burn-cap">Building Toward the Burn Cap</h2>
-<div class="callout callout-cap"><span class="callout-label">Hard cap</span><span class="tag tag-mech">Mechanic</span> The 100% cap on burn enhancement is always a <strong>net</strong> cap, raw burn minus opponent burn decrease. It never changes. What changes is how much raw burn you need to reach 100% net, depending on the matchup:</div>
+<div class="callout callout-cap"><span class="callout-label">Hard cap</span>The 100% cap on burn enhancement is always a <strong>net</strong> cap, raw burn minus opponent burn decrease. It never changes. What changes is how much raw burn you need to reach 100% net, depending on the matchup:</div>
 <ul>
 <li><strong>PVE:</strong> Bosses have no burn decrease, so 100% raw burn = 100% effective burn. Hard stop; past 100% raw does nothing.</li>
 <li><strong>PVP vs. opponent with no burn decrease:</strong> Same as PVE, 100% raw = 100% effective. Past 100% does nothing.</li>
@@ -741,7 +714,7 @@
 <p>You only run three of these at a time. The three you pick should match the roles your build needs to cover.</p>
 <h2 id="my-formation-setups">Formation Progression: Before, At, and After 100% Native Burn</h2>
 <p>The right three formations change as you progress. The key milestone is <strong>100% native burn</strong>, 100% from mech combos, sentinel passives, equipped mech skills, and Camp Tech alone (no burn chips). Hitting it frees up an entire chip formation for PVP specialization, because your crit/hit formation now reaches the PVE burn cap on its own.</p>
-<p><span class="tag tag-pref">Preference</span></p>
+<p></p>
 <ul>
 <li><strong>Stage 1, Below 100% native burn.</strong> You need a dedicated PVE burn formation to reach the cap. My three formations at this stage:
   <ul>
@@ -794,7 +767,7 @@
 <div class="table-wrap"><table><tr><th>Drone</th><th>Effect</th><th>Real Value</th></tr><tr><td>Lich</td><td>+15% to all burn damage, every burn tick, all the time</td><td>Highest. The bonus applies to every burn stack, every tick, across every burn drone you run, and is always active. It scales with everything else you stack.</td></tr><tr><td>Cerberus</td><td>Skill damage 255% + 3.5% per burn stack (max ~276% at 6 stacks)</td><td>Modest. Roughly +8% to one drone&#x27;s skill hit at full burn, not nothing, but it&#x27;s a one-time bonus on a single drone where Lich is multiplying everything.</td></tr><tr><td>Scorpion Lion</td><td>+1 burn stack when recoil is active</td><td>Lower than it looks and getting worse over time. Burn caps at 6 stacks and you reach the cap within 2–3 cycles of attacks anyway; past cap the extra stack typically just replaces an old one (FIFO queue) rather than adding new damage. The passive is also conditional on recoil being active, a niche that mattered when recoil drones were common and shrinks further every patch cycle that recoil stays out of the meta.</td></tr></table></div>
 <p>The pattern: burn drones with continuous, apply-to-all-burn bonuses beat drones with conditional, capped, or single-hit bonuses. Lich is the first type; Cerberus and Scorpion Lion are the second.</p>
 <h2 id="drones-and-crit-what-actually-converts">Drones and Crit: What Actually Converts</h2>
-<p><span class="tag tag-community">Community</span> <strong>Drone normal attacks don&#x27;t participate in the global crit system.</strong> A drone&#x27;s normal-attack crit rate is set by its Spot Weakness passive, period. Your global crit rate doesn&#x27;t buff it; opponent crit resistance doesn&#x27;t dampen it. No Spot Weakness = that drone never crits on normal attacks, which also means Raging Assault (crit damage multiplier) is wasted without Spot Weakness paired with it.</p>
+<p><strong>Drone normal attacks don&#x27;t participate in the global crit system.</strong> A drone&#x27;s normal-attack crit rate is set by its Spot Weakness passive, period. Your global crit rate doesn&#x27;t buff it; opponent crit resistance doesn&#x27;t dampen it. No Spot Weakness = that drone never crits on normal attacks, which also means Raging Assault (crit damage multiplier) is wasted without Spot Weakness paired with it.</p>
 <ul>
 <li>Evil Eye&#x27;s crit → burn-crit conversion likely applies to drone skills and your weapon crit, not drone normal-attack ticks. Practical PVE conclusion is unchanged (stack crit anyway, it still boosts weapons and drone skills), but burn ticks from flaming status aren&#x27;t amplified by Evil Eye the way weapon crits are.</li>
 <li>Pair Spot Weakness with Raging Assault on any drone where you want normal-attack crits. Running one without the other is wasted investment.</li>
@@ -830,7 +803,7 @@
 </table></div>
 <p>Investment order within a single row: starter first (always, stars scale passives, and the cheapest sentinel maxes fastest), then SR mid, then SSR as a long-term background project. Don&#x27;t skip the starter to buy SR early; a 4-star SR has worse passive values than a maxed G-class, so you&#x27;ll feel the drop even though BP goes up.</p>
 <h3 id="sentinel-firing-order">Sentinel Firing Order</h3>
-<p><span class="tag tag-community">Community</span> When two sentinels fire on the same cadence, the higher-BP player&#x27;s sentinel fires first. (This is different from mech spirits, where the attacker&#x27;s mechs all fire first, then the defender&#x27;s.) Not a build-defining rule, but worth knowing when you&#x27;re tuning around a damage-vs-sustain race.</p>
+<p>When two sentinels fire on the same cadence, the higher-BP player&#x27;s sentinel fires first. (This is different from mech spirits, where the attacker&#x27;s mechs all fire first, then the defender&#x27;s.) Not a build-defining rule, but worth knowing when you&#x27;re tuning around a damage-vs-sustain race.</p>
 <h2 id="pairing-sentinels-with-fighters-and-mechs">Pairing Sentinels with Fighters and Mechs</h2>
 <p>Start with the build goal, then pair each element. For an offensive build (quicker fights): SavagePlate + Conqueror fighter for the 5-gear damage bonus. For a defensive build: Gridstar with gold heal + Hardrock fighter for the HP bonus + defensive mechs (Berserk Dragon, Aqua Spirit, Ladybug). Drone choice matters too, Apus further amplifies the HP bonus on a defensive build.</p>
 <h2 id="sentinel-investment-path">Sentinel Investment Path</h2>
@@ -882,7 +855,7 @@
 <p>Mech spirits follow a repeating 5-level cycle. At levels 1 through 4, you unlock or upgrade one attribute bonus slot each level (one slot at level 1, up to four at level 4). At level 5, the core skill upgrades. The cycle repeats: levels 6–9 upgrade attribute slots, level 10 upgrades the core skill again, and so on.</p>
 <h2 id="mech-investment-strategy">Mech Investment Strategy</h2>
 <p>Once your pilots are in good shape, shift spend toward mechs. There&#x27;s a lot of cheap room to grow, and between the per-mech passive bonuses and the 14 combination bonuses (up to 22 levels each) the returns are big.</p>
-<h3 id="my-pvp-offensive-defensive-hybrid-favorites-in-priority-order">My PVP Offensive/Defensive Hybrid Favorites (in priority order) <span class="tag tag-pref">Preference</span></h3>
+<h3 id="my-pvp-offensive-defensive-hybrid-favorites-in-priority-order">My PVP Offensive/Defensive Hybrid Favorites (in priority order) </h3>
 <ul><li>Berserk Dragon: 10% final damage taken reduction at L3. Excellent all-rounder, almost always in my build.</li>
 <li>Aqua Spirit: at L5, the first time HP drops below 35.5%, gain 35% final damage decrease. Emergency brake that synergizes with heal builds to slow fights down.</li>
 <li>Gloom Moon: 24% hit rate at L5. Use against high-dodge opponents. Low-dodge opponent? Wastes a slot. Works in defensive builds too.</li>
@@ -897,7 +870,7 @@
 <li>Toad Lord: Strong against opponents running burners (burn-decrease variant) or low crit resistance. Niche but useful when the matchup calls for it.</li>
 </ul><h3 id="my-pve-burn-formation-mechs-in-priority-order">My PVE Burn Formation Mechs (in priority order)</h3>
 <ul><li>Evil Eye: Converts your crit rate (net of enemy crit resistance) into burn crit at a fraction of the original value. PVE bosses have no crit resistance, so your full raw crit feeds the conversion, and the 80% weapon-crit cap doesn&#x27;t apply here. Conversion rate: ~10% crit to 2% burn crit at L1, improving to 10% to 5.6% at max. Combined with the ~80% burn crit cap, you stop seeing returns past ~400% raw crit at L1 and ~143% at max.</li>
-<li>Star Envoy: With three burn drones equipped, every third drone skill has a chance to grant a 25% burn damage bonus, stacking up to 5x. <span class="tag tag-mech">Mechanic</span> Trigger chance scales 10% per 10% of burn-enhancement delta over the target&#x27;s burn decrease, up to 100%. Scales up with your net burn; below ~50% net burn the trigger is modest and another mech slot is usually better, near or above 100% it&#x27;s one of your strongest mechs. Burn damage bonus itself hits 85% at max level.</li>
+<li>Star Envoy: With three burn drones equipped, every third drone skill has a chance to grant a 25% burn damage bonus, stacking up to 5x. Trigger chance scales 10% per 10% of burn-enhancement delta over the target&#x27;s burn decrease, up to 100%. Scales up with your net burn; below ~50% net burn the trigger is modest and another mech slot is usually better, near or above 100% it&#x27;s one of your strongest mechs. Burn damage bonus itself hits 85% at max level.</li>
 <li>Dragon Emperor: 11% damage increase vs enemies above 60% HP at L3. Ideal for PVE since bosses stay above 60%.</li>
 <li>Magic Armor: 6.4% burn enhancement every 2s, stacking 3x at L1. Bridge mech, drop for Dragon Emperor once you&#x27;re at 100% burn without it.</li>
 <li>Rhino: 205% extra damage on sentinel skill releases + 5% burn enhancement stacking 5x at L2. Looks better on paper, doesn&#x27;t outperform Magic Armor for me.</li>
@@ -912,14 +885,14 @@
 <div class="table-wrap"><table><tr><th>Engine</th><th>Stat Boosted</th><th>When to Use</th></tr><tr><td>Hit Rate</td><td>Hit Rate</td><td>Punch through opponent dodge on offense; general-purpose pick when you don&#x27;t know the matchup</td></tr><tr><td>Crit Resistance</td><td>Crit Resistance</td><td>Deny crits against a high-crit, low-dodge opponent. Also my go-to defensive engine in Star Scramble.</td></tr><tr><td>Burn Decrease</td><td>Burning Decrease</td><td>Counter burn-heavy opponents (critical defensive layer for dodge/heal builds)</td></tr><tr><td>Electric Decrease</td><td>Electric Decrease</td><td>Counter electric-heavy opponents</td></tr><tr><td>Reflect Decrease</td><td>Reflect Decrease</td><td>Counter reflect-heavy opponents</td></tr></table></div>
 <p>Hit Rate and Crit Resistance are the two you&#x27;ll use most. The elemental decrease engines are situational, worth leveling over time but lower priority unless you&#x27;re seeing a specific damage type.</p>
 <h2 id="quick-decision-rule">Quick Decision Rule</h2>
-<p><span class="tag tag-pref">Preference</span> On offense or unsure, Hit Rate, it&#x27;s what makes the rest of your investments pay off. On Star Scramble defense, where fights span multiple attack attempts and heal/dodge can carry you through, I lean Crit Resistance to deny the big-damage spikes. Facing a known damage type? Pick the matching Decrease engine.</p>
+<p>On offense or unsure, Hit Rate, it&#x27;s what makes the rest of your investments pay off. On Star Scramble defense, where fights span multiple attack attempts and heal/dodge can carry you through, I lean Crit Resistance to deny the big-damage spikes. Facing a known damage type? Pick the matching Decrease engine.</p>
 <h1 id="camp-technology">Camp Technology</h1>
 <p>Camp Tech is a separate progression track and one of the highest-impact stat sources in the game. Four tabs: Basic, Advanced, Top Tech, Super Tech. Top and Super Tech (added v1.7.800, April 2026) are where most build-defining investment lives.</p>
 <p>Costs double every ~10 levels. BP inflation is a real risk, leveling unused stats converts diamonds into BP with no fight impact and hurts your matchmaking. Pick the stats you use, ignore the rest.</p>
 <h2 id="camp-tech-priority-path">Recommended Priority Path</h2>
 <p>Final Damage first, then PVP-specific stats, then burn enhancement for burn builds.</p>
 <ol>
-<li><span class="tag tag-community">Community</span> <strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD).</strong> Multipliers applied at the end of the damage calc, scaling all your damage (weapons, drones, mechs) and all your incoming damage reduction. Non-linear penalty below 50 FDI, damage drops hard, so getting past 50 is top priority. For Super Tech, both FDD slots to L60 first.</li>
+<li><strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD).</strong> Multipliers applied at the end of the damage calc, scaling all your damage (weapons, drones, mechs) and all your incoming damage reduction. Non-linear penalty below 50 FDI, damage drops hard, so getting past 50 is top priority. For Super Tech, both FDD slots to L60 first.</li>
 <li><strong>PVP Damage and PVP Damage Reduction.</strong> Core PVP scaling after FDI/FDD stabilize.</li>
 <li><strong>Burn Enhancement (Top Tech).</strong> One of the paths to native 100% burn without using chip slots. I currently get about 9% burn from Camp Tech.</li>
 <li><strong>Hit Rate, Crit Resistance, Dodge, Crit Rate (Top Tech, each to level 10, then cycle).</strong> Round out the stat profile after the big three above are in place.</li>
