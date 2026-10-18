@@ -11,10 +11,10 @@
       "Sentinels",
       "Resources"
     ],
-    "metaLine": "Updated Oct 17, 2026 · 9:26 PM PT",
+    "metaLine": "Updated Oct 17, 2026 · mechanics and progression review",
     "author": "ashpool",
     "legion": "GΛLΛXY • BLΛCKØUT",
-    "lastEditedAt": "2026-10-17T21:26:30-07:00"
+    "lastEditedAt": "2026-10-17T21:33:00-07:00"
   },
   "content": [
     {
@@ -182,7 +182,7 @@
           "nested": null
         },
         {
-          "html": "<strong>Critical hits kill you:</strong> add Crit Resistance.",
+          "html": "<strong>Critical hits kill you:</strong> add Crit Resistance to make crits less likely. If the crits that land hit too hard, add Crit Damage Reduction.",
           "nested": null
         },
         {
@@ -216,7 +216,7 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Dodge + Crit Resistance:</strong> avoid direct hits and reduce the danger of crits that land; healing helps in longer fights.",
+          "html": "<strong>Dodge + Crit Resistance:</strong> avoid direct hits and reduce the chance that hits become crits; healing helps in longer fights.",
           "nested": null
         },
         {
@@ -270,7 +270,7 @@
     },
     {
       "type": "p",
-      "html": "A good starting point is <strong>Crit + Hit Rate</strong> for PVP offense, <strong>Dodge + Crit Resistance</strong> for PVP defense, and <strong>Burn + Crit</strong> for PVE. Once you can reach 100% Burn Enhancement without burn chips, the third formation can become <strong>Burn + Crit Resistance</strong> for PVP. See <a href=\"#my-formation-setups\">Choosing Your Three Formations</a> for when to switch."
+      "html": "A good starting point is <strong>Crit + Hit Rate</strong> for PVP offense, <strong>Dodge + Crit Resistance</strong> for PVP defense, and <strong>Burn + Crit</strong> for PVE. Once you can reach 100% Burn Enhancement without burn chips, you may free the third formation for PVP Burn + Crit Resistance—provided your boss damage stays competitive without the dedicated PVE chips. See <a href=\"#my-formation-setups\">Choosing Your Three Formations</a> for when to switch."
     },
     {
       "type": "h2",
@@ -304,16 +304,16 @@
           "header": false,
           "cells": [
             "Chip Formation",
-            "Burn / Crit early; Crit / Hit Rate once 100% burn requires no chips",
-            "A dedicated PVE formation is useful until passive sources cover the burn cap. See <a href=\"#my-formation-setups\">Choosing Your Three Formations</a>."
+            "Burn / Crit while you need Burn chips; consider shared Crit / Hit Rate after 100% burn without chips",
+            "Sharing Crit / Hit Rate with PVP saves a formation, but may cost PVE damage versus a dedicated PVE-focused chip setup; compare boss results. See <a href=\"#my-formation-setups\">Choosing Your Three Formations</a>."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Flashstrike / SavagePlate / Gridstar w/ gold crit damage + crit rate",
-            "Passives > base damage. Flashstrike is the preferred PVE sentinel at scale because its 20% damage boost applies to drones too."
+            "Flashstrike: Gold, Purple and Blue Crit Damage + Gold Sentinel Enhance; alternatives: SavagePlate / Gridstar with useful Crit Rate or Crit Damage passives",
+            "Passives matter more than base damage. Flashstrike is the preferred PVE option here: its 20% damage boost also applies to drones. Its passive recipe is a specialized recommendation, not the best mix for every sentinel."
           ]
         },
         {
@@ -333,7 +333,7 @@
     },
     {
       "type": "p",
-      "html": "Win through survivability. Dodge avoids hits, Crit Resistance softens the ones that land, and healing extends the fight."
+      "html": "Win through survivability. Dodge avoids many direct hits, Crit Resistance makes enemy crits less likely, and healing extends the fight. Crit Damage Reduction is the stat that makes a crit smaller when it does land."
     },
     {
       "type": "table",
@@ -351,7 +351,7 @@
           "cells": [
             "Chip Formation",
             "Dodge / Crit Resistance (Formation 2)",
-            "Dodge the direct hits, deny the crits that get through"
+            "Dodge direct hits, then reduce the chance that landed hits crit. Crit Damage Reduction reduces the size of any crits that still land."
           ]
         },
         {
@@ -391,7 +391,7 @@
           "cells": [
             "Engine",
             "Burn Decrease vs. a burner, Crit Resistance otherwise",
-            "Burn Decrease is the one defensive gap this build can't close through dodge or heal. Against non-burners, Crit Resistance denies the big-damage spikes."
+            "Burn Decrease is the one defensive gap this build can't close through dodge or heal. Against non-burners, Crit Resistance reduces the chance of big crit spikes; it does not reduce damage from crits that still land."
           ]
         }
       ]
@@ -469,7 +469,7 @@
     },
     {
       "type": "p",
-      "html": "<em>Preference:</em> Burn + Crit Resistance is my recommended dedicated PVP burn formation. Burn can pressure high-Dodge opponents, while Crit Resistance helps against heavy crit damage."
+      "html": "<em>Preference:</em> Burn + Crit Resistance is my recommended dedicated PVP burn formation. Burn can pressure high-Dodge opponents, while Crit Resistance lowers the chance of enemy crits."
     },
     {
       "type": "p",
@@ -523,7 +523,7 @@
           "cells": [
             "Engine",
             "Crit Resistance (default)",
-            "Burn already works against Dodge. Choose Hit Rate only when landing more direct attacks matters in that matchup."
+            "Burn skills and ticks already pressure Dodge. Choose Hit Rate only when landing more direct attacks matters in that matchup."
           ]
         }
       ]
@@ -734,15 +734,15 @@
     {
       "type": "h2",
       "id": "stat-targets-by-bp",
-      "title": "Stat Targets by BP"
+      "title": "Pilot Benchmarks by BP"
     },
     {
       "type": "p",
-      "html": "The table below is a practical benchmark rather than an official game requirement: roughly +100 per 1M BP through 20M, then +50 per 1M afterward. Compare it with players you actually face and prioritize whichever of the four stats is lagging."
+      "html": "There is no universal pilot-stat target for each BP. The bands below preserve the guide’s original rough rule of thumb (+100 per 1M BP through 20M, then +50 per 1M afterward), but <strong>they are illustrations, not validated targets</strong>. Different players can put the same BP into very different upgrades."
     },
     {
       "type": "p",
-      "html": "PD and ED targets are relative, not absolute, aim to match or exceed the PDB/EDB opponents at your BP are running. Use the same table as a defensive benchmark: if peers hit these numbers on offense, you need PD/ED in that range to deny them the bonus damage zone (math below)."
+      "html": "Use <em>Attributes Comparison</em> to check the players you actually face. Prioritize Physical/Energy Defense against their corresponding Defense Break and check your own Defense Break against their Defense. Being near an opponent’s numbers is useful, but parity has no sudden damage breakpoint."
     },
     {
       "type": "table",
@@ -750,256 +750,56 @@
         {
           "header": true,
           "cells": [
-            "BP",
-            "Target (PDB / EDB / PD / ED)",
-            "BP",
-            "Target (PDB / EDB / PD / ED)"
+            "BP band",
+            "Illustrative range per stat*",
+            "How to use it"
           ]
         },
         {
           "header": false,
           "cells": [
-            "1M+",
-            "100",
-            "28M+",
-            "2400"
+            "1–10M",
+            "~100–1,000",
+            "Look for major gaps; the BP figure alone cannot tell you which stat to raise."
           ]
         },
         {
           "header": false,
           "cells": [
-            "2M+",
-            "200",
-            "29M+",
-            "2450"
+            "10–20M",
+            "~1,000–2,000",
+            "Compare PDB vs. enemy PD and EDB vs. enemy ED, then reverse for defense."
           ]
         },
         {
           "header": false,
           "cells": [
-            "3M+",
-            "300",
-            "30M+",
-            "2500"
+            "20–30M",
+            "~2,000–2,500",
+            "Use opponent profiles to decide which of your four stats is behind."
           ]
         },
         {
           "header": false,
           "cells": [
-            "4M+",
-            "400",
-            "31M+",
-            "2550"
+            "30–40M",
+            "~2,500–3,000",
+            "Avoid paying for BP alone when one defensive matchup is your actual weakness."
           ]
         },
         {
           "header": false,
           "cells": [
-            "5M+",
-            "500",
-            "32M+",
-            "2600"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "6M+",
-            "600",
-            "33M+",
-            "2650"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "7M+",
-            "700",
-            "34M+",
-            "2700"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "8M+",
-            "800",
-            "35M+",
-            "2750"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "9M+",
-            "900",
-            "36M+",
-            "2800"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "10M+",
-            "1000",
-            "37M+",
-            "2850"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "11M+",
-            "1100",
-            "38M+",
-            "2900"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "12M+",
-            "1200",
-            "39M+",
-            "2950"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "13M+",
-            "1300",
-            "40M+",
-            "3000"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "14M+",
-            "1400",
-            "41M+",
-            "3050"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "15M+",
-            "1500",
-            "42M+",
-            "3100"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "16M+",
-            "1600",
-            "43M+",
-            "3150"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "17M+",
-            "1700",
-            "44M+",
-            "3200"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "18M+",
-            "1800",
-            "45M+",
-            "3250"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "19M+",
-            "1900",
-            "46M+",
-            "3300"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "20M+",
-            "2000",
-            "47M+",
-            "3350"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "21M+",
-            "2050",
-            "48M+",
-            "3400"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "22M+",
-            "2100",
-            "49M+",
-            "3450"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "23M+",
-            "2150",
-            "50M+",
-            "3500"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "24M+",
-            "2200",
-            "51M+",
-            "3550"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "25M+",
-            "2250",
-            "52M+",
-            "3600"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "26M+",
-            "2300",
-            "53M+",
-            "3650"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "27M+",
-            "2350",
-            "54M+",
-            "3700"
+            "40–54M",
+            "~3,000–3,700",
+            "High BP includes very different builds; actual comparison matters more than the band."
           ]
         }
       ]
+    },
+    {
+      "type": "p",
+      "html": "*These are approximate values taken from the original guide’s heuristic for each of PDB, EDB, PD and ED, <strong>not</strong> official requirements or guarantees. Not every stat needs to sit at the same number. Prioritize the relevant attacker-versus-defender comparison in actual matchups."
     },
     {
       "type": "h2",
@@ -1038,11 +838,11 @@
     {
       "type": "h3",
       "id": "the-breakpoint",
-      "title": "The Breakpoint"
+      "title": "Reaching Parity"
     },
     {
       "type": "p",
-      "html": "The breakpoint is simple: Enemy Defense. Get to or above that number and the penalty zone disappears entirely. Below it, you are paying a multiplicative tax on every hit."
+      "html": "When your Defense Break matches the enemy’s Defense, the multiplier is 1.00×: neither a penalty nor a bonus. <strong>There is no sudden damage cliff or jump at parity.</strong> The multiplier changes smoothly as the gap closes. Getting near parity is valuable, but Defense Break above parity can still help; compare it with the value of your other upgrades."
     },
     {
       "type": "h3",
@@ -1105,7 +905,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Priority:</strong> close a major Break deficit first. Once you reach parity, more Defense Break still helps, but compare its value with other upgrades before spending."
+      "html": "<strong>Priority:</strong> close a major Break deficit first. Parity is a useful reference, not a point where returns abruptly change; compare further Defense Break with other upgrades before spending."
     },
     {
       "type": "h1",
@@ -1174,7 +974,7 @@
     },
     {
       "type": "p",
-      "html": "When passive sources reach 100% Burn Enhancement without chips, Crit / Hit Rate can handle PVE as well as PVP. That frees the third formation for PVP Burn."
+      "html": "When passive sources supply 100% Burn Enhancement without chips, you <em>can</em> use Crit / Hit Rate for both PVP offense and PVE, freeing the third formation for PVP Burn. That is a convenience choice, <strong>not proof that Crit / Hit Rate is the best boss formation</strong>. Hit Rate may add little against bosses with low Dodge. Test a more PVE-focused crit arrangement if you want maximum boss damage."
     },
     {
       "type": "table",
@@ -1190,7 +990,7 @@
           "header": false,
           "cells": [
             "Crit + Hit Rate",
-            "PVP offense and PVE"
+            "PVP offense; PVE if boss damage holds up"
           ]
         },
         {
@@ -1211,7 +1011,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Don’t switch early.</strong> If moving Burn chips hurts your PVE boss damage, keep the dedicated PVE formation. <em>Preference:</em> Crit / Hit Rate, Dodge / Crit Resistance, and Burn / Crit Resistance offer broad PVP coverage after the transition."
+      "html": "<strong>Don’t switch early.</strong> If dropping Burn chips hurts PVE boss damage—or a dedicated Crit-focused PVE formation performs better—keep the dedicated PVE formation. <em>Preference:</em> Crit / Hit Rate, Dodge / Crit Resistance, and Burn / Crit Resistance offer broad PVP coverage after the transition."
     },
     {
       "type": "h2",
@@ -1234,7 +1034,7 @@
           "nested": null
         },
         {
-          "html": "Opponent has high Dodge and high Hit Rate (hard to crit, hard to dodge)? Burn is often the right pick, it bypasses dodge entirely.",
+          "html": "Opponent has high Dodge and high Hit Rate (hard to crit, hard to dodge)? Burn is often the right pick, burn-drone skills land without a Dodge check and existing burn ticks keep dealing damage, though drone normal attacks can still miss.",
           "nested": null
         }
       ]
@@ -1449,7 +1249,7 @@
     },
     {
       "type": "p",
-      "html": "Burn is effective against Dodge because applied burn stacks keep ticking even if later attacks miss. It becomes more dangerous the longer a fight lasts."
+      "html": "Burn pressures Dodge because burning-drone skills do not make an ordinary Hit-versus-Dodge roll, and applied burn stacks keep ticking even if later attacks miss. <strong>Burning-drone normal attacks can still be dodged.</strong> Burn generally becomes more dangerous as stacks and longer-fight buffs accumulate."
     },
     {
       "type": "p",
@@ -1509,7 +1309,7 @@
     },
     {
       "type": "p",
-      "html": "Burn is one of the most flexible damage types in the game, strong in PVE against bosses, and useful in PVP because it bypasses dodge and scales over long fights (covered in Part 2). Choosing the right burn drones, and progressing them in the right order, is one of the higher-impact decisions you'll make."
+      "html": "Burn is one of the most flexible damage types in the game, strong in PVE against bosses, and useful in PVP because its skills and ongoing ticks do not depend on normal Hit-versus-Dodge rolls, and it scales over long fights (although drone normal attacks can still miss) (covered in Part 2). Choosing the right burn drones, and progressing them in the right order, is one of the higher-impact decisions you'll make."
     },
     {
       "type": "h2",
@@ -1518,7 +1318,7 @@
     },
     {
       "type": "p",
-      "html": "Start by maxing 1-2 Ninjas. They're cheap to level, and a maxed Ninja beats an under-leveled higher-rarity drone (same star-scaling logic that makes maxed Gridstars beat low-star SSRs). Two maxed Ninjas give you a working burn build today."
+      "html": "Start by maxing 1-2 Ninjas. They're cheap to level, and a maxed Ninja can outperform an under-leveled higher-rarity drone (same star-scaling logic that makes maxed Gridstars beat low-star SSRs). Two maxed Ninjas give you a working burn build today."
     },
     {
       "type": "h2",
@@ -1547,25 +1347,25 @@
         {
           "header": false,
           "cells": [
-            "Mid (R-tier path)",
+            "Mid (focus an R drone)",
             "2 maxed Ninjas + 1 maxed Lich",
-            "Strong, accessible, F2P-friendly endpoint"
+            "Accessible lineup that can remain useful while you add an SR later"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Mid (SR-tier path)",
+            "Mid (focus an SR drone)",
             "2 maxed Ninjas + 1 maxed SR (Sagittarius / Lyra / Fornax)",
-            "Most common F2P long-term lineup"
+            "Higher-ceiling option; only pursue when you can finish the SR"
           ]
         },
         {
           "header": false,
           "cells": [
             "Late (heavy spender)",
-            "Multiple maxed SRs",
-            "Higher ceiling but requires significant investment"
+            "Multiple developed SRs, or a strong mixed R/SR trio",
+            "Choose by passive synergy and completed upgrades, not rarity alone"
           ]
         }
       ]
@@ -1573,28 +1373,28 @@
     {
       "type": "h2",
       "id": "the-r-vs-sr-fork",
-      "title": "The R vs. SR Fork"
+      "title": "Choosing Your Next Drone Investment"
     },
     {
       "type": "p",
-      "html": "After Ninjas, pick one path, not both:"
+      "html": "After Ninjas, choose <strong>one drone to finish next</strong>. You can mix R and SR drones in the same lineup; the decision here is where to spend scarce upgrade resources first."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>R-tier:</strong> Faster to max, lower ceiling. Right for f2p and lightly-spending players. Options: Lich, Scorpion Lion, Cerberus.",
+          "html": "<strong>R-tier:</strong> Faster to max, lower ceiling. A practical next project for F2P and lighter spenders. Options: Lich, Scorpion Lion, Cerberus.",
           "nested": null
         },
         {
-          "html": "<strong>SR-tier:</strong> Slower and more expensive, higher ceiling. SR burners (Sagittarius, Lyra, Fornax) outperform R drones once leveled. The most common f2p long-term endpoint is 2x maxed Ninja + 1 maxed SR. Heavy spenders stack multiple SRs.",
+          "html": "<strong>SR-tier:</strong> Slower and more expensive, higher ceiling. SR burners (Sagittarius, Lyra, Fornax) outperform R drones once leveled. A practical next project once you can afford to develop one. Two maxed Ninjas plus one developed SR is useful; later, Lich + Sagittarius + Lyra or another mixed trio may be worth testing.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "The mistake is splitting investment across both tiers. You end up with under-leveled drones in both and no maxed lineup."
+      "html": "The mistake is spreading materials across several unfinished upgrades, not combining rarities. A developed R drone can belong alongside SR drones when its skill helps the whole team."
     },
     {
       "type": "h2",
@@ -1603,7 +1403,7 @@
     },
     {
       "type": "p",
-      "html": "Lich is meaningfully stronger than Cerberus or Scorpion Lion. The reasoning generalizes to how to evaluate burn drones in general."
+      "html": "<em>Preference:</em> I favor Lich among accessible R-tier burn drones because its listed burn bonus appears broadly useful. The exact advantage over Cerberus and Scorpion Lion depends on your lineup and still needs battle-log testing. In particular, the combat-mechanics paper has not verified how Lich combines with Sagittarius and Star Envoy."
     },
     {
       "type": "table",
@@ -1620,8 +1420,8 @@
           "header": false,
           "cells": [
             "Lich",
-            "+15% to all burn damage, every burn tick, all the time",
-            "Highest. The bonus applies to every burn stack, every tick, across every burn drone you run, and is always active. It scales with everything else you stack."
+            "Listed +15% burn-damage bonus; exact stacking with other burn buffs unverified",
+            "Likely valuable as a broad burn buff. The mechanics paper suggests Lich may add to the same Flaming bonus pool as Sagittarius and Star Envoy, but has not tested it. Do not assume it is a separate 1.15× multiplier on every tick."
           ]
         },
         {
@@ -1629,7 +1429,7 @@
           "cells": [
             "Cerberus",
             "Skill damage 255% + 3.5% per burn stack (max ~276% at 6 stacks)",
-            "Modest. Roughly +8% to one drone's skill hit at full burn, not nothing, but it's a one-time bonus on a single drone where Lich is multiplying everything."
+            "Narrower benefit: about +8% to Cerberus's own listed skill multiplier at six stacks (276% vs. 255%), before interactions with other effects. Its value relative to Lich still needs testing."
           ]
         },
         {
@@ -1637,14 +1437,14 @@
           "cells": [
             "Scorpion Lion",
             "+1 burn stack when recoil is active",
-            "Lower than it looks and getting worse over time. Burn caps at 6 stacks and you reach the cap within 2–3 cycles of attacks anyway; past cap the extra stack typically just replaces an old one (FIFO queue) rather than adding new damage. The passive is also conditional on recoil being active, a niche that mattered when recoil drones were common and shrinks further every patch cycle that recoil stays out of the meta."
+            "Situational. Burn has a six-stack FIFO limit, so an extra stack can replace an older one rather than increase the stack count. Its value depends on recoil being active and on which stack is displaced. Test it against your actual lineup."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "The pattern: burn drones with continuous, apply-to-all-burn bonuses beat drones with conditional, capped, or single-hit bonuses. Lich is the first type; Cerberus and Scorpion Lion are the second."
+      "html": "A good rule of thumb is to prefer bonuses that help the whole burn setup consistently over effects that need special conditions. Lich looks promising on that basis, but the exact ranking is a recommendation, not verified damage math."
     },
     {
       "type": "h2",
@@ -1751,11 +1551,11 @@
     {
       "type": "h3",
       "id": "odds-of-hitting-gold",
-      "title": "How many chances do you get?"
+      "title": "How Many Recasts Might It Take?"
     },
     {
       "type": "p",
-      "html": "Assuming each available slot has an independent 0.5% chance of producing your target passive:"
+      "html": "With each available passive slot assumed to have an independent 0.5% chance of offering the specific gold passive you want, the table gives the chance <em>per recast</em> and the average number of recasts to see it once. A recast checks every open slot; locking slots protects them but reduces the number of chances."
     },
     {
       "type": "table",
@@ -1764,42 +1564,52 @@
           "header": true,
           "cells": [
             "Available slots",
-            "Chance of target gold"
+            "Chance per recast",
+            "Average recasts",
+            "Cost if each recast is $3"
           ]
         },
         {
           "header": false,
           "cells": [
             "4",
-            "~1.99%"
+            "~1.99%",
+            "~50",
+            "~$151"
           ]
         },
         {
           "header": false,
           "cells": [
             "3",
-            "~1.49%"
+            "~1.49%",
+            "~67",
+            "~$201"
           ]
         },
         {
           "header": false,
           "cells": [
             "2",
-            "~1.00%"
+            "~1.00%",
+            "~100",
+            "~$301"
           ]
         },
         {
           "header": false,
           "cells": [
             "1",
-            "0.50%"
+            "0.50%",
+            "200",
+            "$600"
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "Locking a passive protects it, but also leaves fewer opportunities to find the next one. These are baseline estimates; the game doesn't fully explain how duplicate restrictions affect rerolls."
+      "html": "The dollar estimates assume a flat <strong>20 recast chips per recast</strong> and <strong>$3 per 20 chips</strong>. They exclude Protection Core costs and ignore free chips or free recasts, which can substantially reduce cash spending. Real costs can also differ if the game charges more when passives are locked. These averages are <strong>not guarantees</strong>; duplicate-passive restrictions and the game’s handling of unavailable outcomes are not fully documented."
     },
     {
       "type": "p",
@@ -1807,7 +1617,7 @@
     },
     {
       "type": "p",
-      "html": "<em>Preference:</em> Prioritize one excellent gold passive on each sentinel before spending heavily to chase a second. A strong gold paired with useful purples is already an effective sentinel. Perfect rolls are expensive, and those resources could improve other parts of your build."
+      "html": "<em>Preference:</em> Prioritize one excellent gold passive on each sentinel before spending heavily to chase a second. A strong gold paired with useful purples is already an effective sentinel. Perfect rolls can take hundreds of attempts and the same resources could improve other parts of your build. A second gold is worth chasing only when its expected benefit outweighs that cost."
     },
     {
       "type": "h3",
@@ -1903,7 +1713,7 @@
     },
     {
       "type": "p",
-      "html": "Quick-reference view. Pick the row that matches your build and invest in the budget tier you can sustain. SSR is a 1.5-year commitment, don't over-plan the SSR step until the earlier tiers are maxed."
+      "html": "Quick-reference view. Pick the row that matches your build and invest in the budget tier you can sustain. SSR is a long-term investment; a 1.5-year estimate assumes slower ticket income and/or overclock bottlenecks, rather than a steady 105 tickets/day. Don't over-plan it before the earlier tiers are maxed."
     },
     {
       "type": "table",
@@ -1914,7 +1724,7 @@
             "Build type",
             "Starter (G/N, days–weeks)",
             "Mid (SR, 4–5 months)",
-            "Endgame (SSR, 1.5 years)"
+            "Endgame (SSR, long-term)"
           ]
         },
         {
@@ -1939,7 +1749,7 @@
           "header": false,
           "cells": [
             "PVE burn / scaling",
-            "Flashstrike w/ 3x crit damage + sent enhance",
+            "Flashstrike w/ Gold, Purple and Blue Crit Damage + Gold Sentinel Enhance",
             "Glimshade (hybrid; needs ≥1 burn drone equipped)",
             "(none essential, PVE scales well without an SSR)"
           ]
@@ -1983,7 +1793,7 @@
     },
     {
       "type": "p",
-      "html": "Flashstrike (G-class), PVE / TC Meta: A G-sentinel that opens up a 2-second window with a 20% damage boost applied to all damage sources, drones included, on an 8-second cycle. That drone-amplifying effect is what makes it the preferred PVE sentinel for Titan Challenge and Legion Hunt. Target passives: 3x crit damage plus gold sentinel enhancement, this is a deliberate exception to the general PVE passive priorities (crit rate + crit damage + sent enhance), since Flashstrike's 2-second window makes stacked crit damage multiply during that burst more than mixed crit rate/crit damage would. Worth adding to your G-sentinel rotation once you're focused on PVE scaling."
+      "html": "Flashstrike (G-class), PVE / TC Meta: A G-sentinel that opens up a 2-second window with a 20% damage boost applied to all damage sources, drones included, on an 8-second cycle. That drone-amplifying effect is what makes it the preferred PVE sentinel for Titan Challenge and Legion Hunt. Target passives: Gold, Purple and Blue Crit Damage plus Gold Sentinel Enhancement, this is a deliberate exception to the general PVE passive priorities (crit rate + crit damage + sent enhance), since Flashstrike's 2-second window makes stacked crit damage multiply during that burst more than mixed crit rate/crit damage would. Worth adding to your G-sentinel rotation once you're focused on PVE scaling."
     },
     {
       "type": "p",
@@ -1995,7 +1805,7 @@
     },
     {
       "type": "p",
-      "html": "SSR-class (e.g., Doomblast, Rendclaw): Strictly long-term investments. Budget 1.5+ years to max unless spending heavily. The primary short-term reason to buy SSRs is the combination bonus (one of each). Only SavagePlate and Rendclaw share the 2-second skill cooldown. Doomblast fires every 4 seconds but its healing enhancement (+10%) stacks up to 5 times, giving it strong long-fight value once maxed."
+      "html": "SSR-class (e.g., Doomblast, Rendclaw): Strictly long-term investments. At 105 tickets/day, 38,000 tickets alone take about 362 days; completion can take longer if tickets or overclock chips are the bottleneck. A 1.5-year path is possible but not implied by that ticket rate. The primary short-term reason to buy SSRs is the combination bonus (one of each). Only SavagePlate and Rendclaw share the 2-second skill cooldown. Doomblast fires every 4 seconds but its healing enhancement (+10%) stacks up to 5 times, giving it strong long-fight value once maxed."
     },
     {
       "type": "p",
@@ -2085,14 +1895,14 @@
           "cells": [
             "SSR-class (e.g., Doomblast, Rendclaw)",
             "38,000 tickets (~950/star)",
-            "~1.5 years"
+            "~362 days at 105 tickets/day (tickets only); possibly longer"
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "Tickets are only one cost. Overclock chips are another major bottleneck: approximately 191k for G, 383k for N, 957k for R, 1.9M for SR, and 3.8M for SSR. The times above assume steady ticket income; actual progress varies by events and spending. <em>Preference:</em> skip R-class unless one directly fills a build gap."
+      "html": "Tickets are only one cost. Overclock chips are another major bottleneck: approximately 191k for G, 383k for N, 957k for R, 1.9M for SR, and 3.8M for SSR. The ticket-only SSR estimate is 38,000 ÷ 105 ≈ 362 days. Taking 1.5 years would imply about 69 tickets/day on average, or another bottleneck such as the 3.8M overclock-chip requirement. Real progress varies by event income, overclock chips and spending. <em>Preference:</em> skip R-class unless one directly fills a build gap."
     },
     {
       "type": "p",
@@ -2371,7 +2181,7 @@
       "type": "ol",
       "items": [
         {
-          "html": "<strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD).</strong> The net final-damage value is 100 + your FDI − opponent FDD. Damage falls especially sharply if that net value drops below 50. Prioritize these stats, particularly FDD against strong opponents; in Super Tech, the two FDD slots are strong early targets.",
+          "html": "<strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD).</strong> The net final-damage value is 100 + your FDI − opponent FDD. At a net value of 50, the damage multiplier is 0.50×; at 40, it is about 0.417×. The formula actually <em>softens</em> further reductions below 50—there is no sudden cliff. FDI and FDD still matter greatly, particularly FDD against strong opponents; in Super Tech, the two FDD slots are strong early targets.",
           "nested": null
         },
         {
