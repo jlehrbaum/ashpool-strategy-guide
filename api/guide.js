@@ -30,7 +30,9 @@ export default async function handler(req, res) {
     const body = loadGuide()
     res.setHeader('Content-Type', 'application/json; charset=utf-8')
     res.setHeader('Cache-Control', 'private, max-age=60')
-    res.setHeader('X-Session-Name', session.name || '')
+    // Discord display names can include emoji / non-ASCII, which aren't
+    // valid in raw HTTP header values. URL-encode here, decode client-side.
+    res.setHeader('X-Session-Name', encodeURIComponent(session.name || ''))
     res.status(200).send(body)
   } catch (err) {
     console.error('guide handler error:', err)

@@ -685,7 +685,11 @@
       wireUp();
 
       // Show the signed-in user and sign-out link in the sidebar.
-      const name = resp.headers.get('X-Session-Name');
+      // Server URL-encodes the header value because Discord names can
+      // include emoji / non-ASCII that aren't valid in raw header values.
+      const rawName = resp.headers.get('X-Session-Name') || '';
+      let name = '';
+      try { name = decodeURIComponent(rawName); } catch { name = rawName; }
       if (name) {
         const header = document.getElementById('sidebar-header');
         const bar = document.createElement('div');
