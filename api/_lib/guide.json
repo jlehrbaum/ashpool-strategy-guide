@@ -1,20 +1,20 @@
 {
   "meta": {
-    "eyebrow": "PVP · PVE · PROGRESSION",
+    "eyebrow": "PVE BURN · PVP MATCHUPS · PROGRESSION",
     "title": "Wing Fighter Strategy Guide",
-    "tagline": "Build smarter. Counter stronger opponents. Spend where it matters.",
+    "tagline": "Build for bosses. Counter your opponents. Invest in what actually wins fights.",
     "chips": [
+      "Start Here",
       "PVE Burn",
-      "PVP Builds",
+      "PVP Counters",
       "Pilots",
-      "Drones",
-      "Sentinels",
-      "Event Strategy"
+      "Events",
+      "Mechanics"
     ],
-    "metaLine": "Reviewed Oct 18, 2026 · restructured with Discord and mechanics validation",
+    "metaLine": "Revised Oct 18, 2026 · based on Blackout experience and game mechanics",
     "author": "ashpool",
     "legion": "GΛLΛXY • BLΛCKØUT",
-    "lastEditedAt": "2026-10-18T21:00:00-07:00"
+    "lastEditedAt": "2026-10-18T21:40:00-07:00"
   },
   "content": [
     {
@@ -24,12 +24,12 @@
     },
     {
       "type": "p",
-      "html": "Most losses have a reason you can identify: your Defense Break trails their Defense, your Crit gets stopped by Crit Resistance, or your Dodge gets beaten by Hit Rate. Check the matchup before buying another upgrade."
+      "html": "A higher Battle Power (BP) does not guarantee a win. You can lose because your Crit Rate cannot get past their Crit Resistance, your attacks miss their Dodge, or your Defense Break trails their Defense. This guide shows you what to check, what to build, and where to spend before the next fight."
     },
     {
       "type": "h2",
       "id": "start-priorities",
-      "title": "Three things to do first"
+      "title": "Start with these three priorities"
     },
     {
       "type": "table",
@@ -44,34 +44,34 @@
         {
           "header": false,
           "cells": [
-            "<strong>Build for bosses:</strong> get Burn Enhancement to 100%, then replace Burn chips with Crit chips as other upgrades cover that Burn.",
-            "Earn more from the PVE activities you play every day."
+            "Build your first boss formation around Burn Enhancement. Begin with Burn chips, then replace them with Crit Rate chips as other sources supply the Burn you need.",
+            "Burn is a strong foundation for boss damage. The long-term goal is 100% effective Burn Enhancement with as many chip slots as possible available for Crit."
           ]
         },
         {
           "header": false,
           "cells": [
-            "<strong>Invest in pilots:</strong> raise your chosen damage-type Defense Break and both PD and ED.",
-            "These stats matter in every fight, not just one piece of gear."
+            "Keep developing pilots, even when another upgrade gives more BP.",
+            "Invest in Defense Break for your gear type, plus both Physical and Energy Defense. These stats affect the whole fight, not just one weapon."
           ]
         },
         {
           "header": false,
           "cells": [
-            "<strong>Have a PVP counter ready:</strong> Crit needs Hit Rate vs Dodge; Dodge needs Crit Resistance; Burn needs to beat Burn Decrease.",
-            "Matchups win fights that raw BP alone cannot."
+            "Build one PvP formation you understand, then add a counter.",
+            "Crit needs enough Hit Rate to land attacks. Dodge benefits from Crit Resistance and healing. Burn pressures Dodge but can be reduced by Burn Decrease."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "You have three saved formations. Most players begin with a dedicated PVE build and a main PVP build; use the third for another counter. <strong>Keep a PVP-capable build in Formation 1</strong> if you play Hyper Battlefield proxy mode, which Blackout players report defaults to that slot."
+      "html": "You can save three complete formations. Most players start with one for bosses and one for PvP, then use the third to handle another matchup. <strong>Keep a PvP-ready build in Formation 1 if you use Hyper Battlefield proxy mode:</strong> Blackout players report that proxy mode defaults to that slot."
     },
     {
       "type": "h2",
       "id": "where-to-start",
-      "title": "Find what you need"
+      "title": "Go straight to the part you need"
     },
     {
       "type": "table",
@@ -127,21 +127,21 @@
     },
     {
       "type": "p",
-      "html": "Start with one strong PVE build and one PVP build you can develop. These are the components that define each strategy, not mandatory shopping lists for every slot."
+      "html": "You do not need to collect every recommended component before a build becomes useful. Start with the chips and a few core pieces, then improve the formation you can actually field. The tables highlight the important choices rather than listing every equipment slot."
     },
     {
       "type": "h2",
       "id": "build-philosophy-how-to-think-about-builds",
-      "title": "Read the matchup before you attack"
+      "title": "Check the opponent before choosing a build"
     },
     {
       "type": "p",
-      "html": "A strong build against one opponent can be weak against another. Check their Dodge, Hit Rate, Crit Resistance, Burn Decrease, Defense, and Defense Break before deciding whether to attack with Crit, Dodge, or Burn."
+      "html": "Look at what is stopping your damage and what threatens your survival. <strong>High Dodge?</strong> Add Hit Rate or use Burn. <strong>High Crit Resistance?</strong> Your Crit build may struggle. <strong>High Burn Decrease?</strong> Your Burn build will need more Burn Enhancement. Also compare your Defense Break with their Defense, and their damage type with your Physical or Energy Defense. You usually learn more from those stats than from BP alone."
     },
     {
       "type": "h2",
       "id": "pairing-primaries-with-secondaries",
-      "title": "Common chip pairs"
+      "title": "Choose chip stats that work together"
     },
     {
       "type": "table",
@@ -157,47 +157,51 @@
           "header": false,
           "cells": [
             "Crit / Hit Rate",
-            "You need both crits and enough hits to get through Dodge."
+            "Make Crit hits more likely to land against opponents with Dodge."
           ]
         },
         {
           "header": false,
           "cells": [
             "Dodge / Crit Resistance",
-            "You want to avoid direct attacks and prevent crit spikes from those that land."
+            "Avoid regular hits, then reduce the chance that any hits that land become critical hits."
           ]
         },
         {
           "header": false,
           "cells": [
             "Dodge / Hit Rate",
-            "You expect Dodge-versus-Dodge matchups."
+            "Use Dodge for defense while adding Hit Rate to fight other Dodge players."
           ]
         },
         {
           "header": false,
           "cells": [
             "Crit / Crit Resistance",
-            "You want Crit offense with more protection from enemy crits."
+            "Keep conventional Crit offense while adding protection against enemy crits."
           ]
         },
         {
           "header": false,
           "cells": [
             "Burn / Crit Resistance",
-            "You want sustained burn damage and protection in longer PVP fights."
+            "Let Burn do damage over time while limiting enemy crits in longer fights."
           ]
         }
       ]
     },
     {
+      "type": "p",
+      "html": "These are <strong>chip pairings</strong>, not five entirely different systems. The first stat sets your main approach; the second shores up its weakness. You can use the same pilot and much of the same equipment while switching between formations."
+    },
+    {
       "type": "h2",
       "id": "pve-burn-build",
-      "title": "PVE — Start with Burn, Grow into Crit"
+      "title": "PvE Burn: start with Burn chips, grow into Crit"
     },
     {
       "type": "p",
-      "html": "<strong>Reach 100% Burn Enhancement first.</strong> Initially, Burn chips will do much of the work. As Camp Tech, native stats, and sentinel passives add Burn Enhancement, swap those chips for Crit Rate while keeping Burn Enhancement at 100%. An advanced build can have all Crit chips and still deal maximum-enhancement Burn damage."
+      "html": "For a boss-focused formation, first reach <strong>100% effective Burn Enhancement</strong>. That is the maximum effective bonus against a boss with no Burn Decrease, not a special unlock. Early on, you will probably need Burn chips to get there. Over time, Camp Tech, native stats, and sentinel passives will provide more Burn Enhancement. Each time those sources improve, see whether you can replace a Burn chip with a Crit Rate chip <em>without dropping below 100% effective Burn Enhancement</em>. The long-term goal is maximum Burn Enhancement with all your chip slots helping Crit Rate."
     },
     {
       "type": "table",
@@ -213,55 +217,55 @@
           "header": false,
           "cells": [
             "Chips",
-            "Burn first; gradually replace with Crit Rate without falling below 100% Burn Enhancement."
+            "Use Burn chips to reach 100% Burn Enhancement. Replace them one at a time with Crit Rate chips when your non-chip Burn bonuses allow it."
           ]
         },
         {
           "header": false,
           "cells": [
             "Drones",
-            "Three Burn drones, commonly two Ninjas plus a developing Lich, Sagittarius, or Lyra."
+            "Equip three Burn drones; two developed Ninjas are a practical start. Build a third drone such as Lich, Sagittarius, or Lyra over time."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Flashstrike for its short Damage Boost window; compare boss results with your other leveled sentinels."
+            "Flashstrike provides a brief Damage Boost window. Use a developed alternative if it produces better boss results."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Evil Eye + Star Envoy (needs three Burn drones); choose the third for damage or missing Burn Enhancement."
+            "Evil Eye for Burn Crit conversion. Add Star Envoy (SSR) when available and equipped with three Burn drones. Use the third slot for damage or missing Burn Enhancement."
           ]
         },
         {
           "header": false,
           "cells": [
             "Pilot / gear",
-            "Equip the pilot matching your physical or energy gear; prioritize its Defense Break."
+            "Equip a pilot whose Defense Break matches your gear: PDB for physical, EDB for energy. Continue improving that stat."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "At max-level Evil Eye, about <strong>143% displayed Crit Rate</strong> produces 80% Burn Crit Rate against a target with no Crit Resistance. Treat that as a <em>PVE benchmark</em>, not a universal PVP target. Once Burn Enhancement and Burn Crit Rate are capped, keep increasing your relevant Defense Break. <a href=\"#the-evil-eye-conversion-ceiling-pve\">See the conversion table</a>."
+      "html": "At maximum Evil Eye level, about <strong>143% displayed Crit Rate</strong> converts into the 80% effective Burn Crit Rate cap <em>against a target with no Crit Resistance</em>. This is a useful PvE benchmark, not a target for every build or every opponent. Once both Burn Enhancement and Burn Crit Rate are at their caps, keep building your relevant Defense Break. The <a href=\"#the-evil-eye-conversion-ceiling-pve\">conversion table</a> shows the numbers."
     },
     {
       "type": "p",
-      "html": "Example: 90% native Burn Enhancement plus a +15% sentinel passive gives 105% raw (100% effective). That means zero Burn chips are needed for that PVE matchup."
+      "html": "For example, a player with 90% native Burn Enhancement and a sentinel passive that adds 15% has 105% on paper, but only 100% is effective against a boss with no Burn Decrease. That player no longer needs a Burn chip and can use those slots for Crit Rate. This is how an advanced PvE Burn build can end up using only Crit chips."
     },
     {
       "type": "h2",
       "id": "pvp-offensive-build",
-      "title": "PVP — Crit / Hit Rate"
+      "title": "PvP Crit: make sure your hits actually land"
     },
     {
       "type": "p",
-      "html": "Use this against opponents whose Crit Resistance you can overcome. Crit Rate is checked against their Crit Resistance; Hit Rate is checked against their Dodge. You need both to land meaningful weapon crits."
+      "html": "Use Crit when your opponent does not have enough Crit Resistance to stop it. There are <strong>two checks</strong>: Hit Rate versus their Dodge determines whether your normal attacks connect, and Crit Rate versus their Crit Resistance determines whether those hits become crits. High Crit Rate is not enough if you keep missing."
     },
     {
       "type": "table",
@@ -284,14 +288,14 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "SavagePlate for aggressive damage, or Stormquill for its enemy-damage debuff; develop useful Crit Damage and offensive passives."
+            "SavagePlate brings fast direct damage. Stormquill instead weakens enemy Damage Boost. Choose based on whether you need more offense or protection."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Toad Lord for regular weapon crits and Burn removal; use offensive or counter mechs such as Venom Scorpion, Flame Stinger, or Gloom Moon as appropriate."
+            "Toad Lord can build Crit Damage from normal weapon crits and remove Burn stacks. Other useful swaps include Venom Scorpion, Flame Stinger, and Gloom Moon, depending on what the opponent brings."
           ]
         },
         {
@@ -305,7 +309,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Choose a developed trio whose skills and passives fit your opponent; there is no universal Crit-drone recipe."
+            "Use developed drones whose skills help the matchup. This is a core recommendation, not a fixed three-drone recipe."
           ]
         },
         {
@@ -319,16 +323,20 @@
     },
     {
       "type": "p",
-      "html": "<strong>Don’t equip Evil Eye with Toad Lord.</strong> Blackout players report that Evil Eye converts away the normal weapon crits Toad Lord needs to trigger."
+      "html": "For example, against a player with very high Dodge but modest Crit Resistance, Crit/Hit can work well if your Hit Rate is high enough. Against someone with enormous Crit Resistance, adding more Hit Rate will not solve the real problem: you may need a different attack style."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Do not pair Toad Lord with Evil Eye.</strong> Toad Lord needs your fighter and weapons to crit. Blackout players report that Evil Eye redirects those crit opportunities into Burn Crit Rate, leaving Toad Lord unable to build its usual stacks. Keep Evil Eye in your PvE Burn/Crit setup, not this conventional PvP Crit setup."
     },
     {
       "type": "h2",
       "id": "pvp-defensive-build",
-      "title": "PVP — Dodge / Crit Resistance + Healing"
+      "title": "PvP Dodge/Heal: survive long enough to win"
     },
     {
       "type": "p",
-      "html": "This wins by staying alive. Dodge avoids many direct attacks, Crit Resistance prevents some of the crits that get through, and healing extends the fight. Burn is a weakness: once applied, its damage ticks cannot be dodged."
+      "html": "This formation wins by making incoming damage harder to land and recovering from hits that get through. Dodge avoids ordinary attacks, Crit Resistance reduces how often landed hits become crits, and healing keeps you alive in a long fight. <strong>Burn is the danger:</strong> once it is applied, its damage ticks keep going even when other attacks miss."
     },
     {
       "type": "table",
@@ -344,28 +352,28 @@
           "header": false,
           "cells": [
             "Chips",
-            "Dodge + Crit Resistance."
+            "Dodge + Crit Resistance: one stat helps you avoid ordinary hits; the other reduces crits on the hits that land."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Developed Gridstar with gold Healing Enhancement; Arcglow or Doomblast are longer-term sustain options."
+            "A developed Gridstar with gold Healing Enhancement is an accessible core. Arcglow and Doomblast offer different healing options as you progress."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Ladybug + Aqua Spirit + Berserk Dragon for healing and persistent defensive bonuses."
+            "Ladybug provides an emergency heal. Aqua Spirit and Berserk Dragon add lasting defense. Use the components you have while working toward this combination."
           ]
         },
         {
           "header": false,
           "cells": [
             "Drones",
-            "Sagittarius can add damage as the fight lasts; Apus is an accessible option. Choose the rest based on what you have developed."
+            "Sagittarius adds Burn damage during long fights; Apus is another accessible option. Fill the other drone positions with your best developed support rather than forcing an unfinished high-rarity drone."
           ]
         },
         {
@@ -386,16 +394,20 @@
     },
     {
       "type": "p",
-      "html": "Ladybug’s heal scales with Healing Enhancement, so it can become much larger than the percentage shown on the Mech Spirit. Aqua Spirit’s defensive buff continues after you heal back up."
+      "html": "Do not wait to own Aqua Spirit, Doomblast, and a perfect Gridstar before trying a defensive formation. A usable Dodge/Crit Resistance chip setup with your best available healing already teaches you which fights the strategy can survive."
+    },
+    {
+      "type": "p",
+      "html": "Ladybug heals a percentage of your maximum HP when you fall below its threshold. <strong>Healing Enhancement increases that heal</strong>, so a strong healing sentinel passive helps more than just the sentinel itself. Aqua Spirit also fits this strategy: its defensive bonus lasts for the rest of the battle, even if healing returns you to full HP."
     },
     {
       "type": "h2",
       "id": "pvp-burn-build",
-      "title": "PVP — Burn / Crit Resistance"
+      "title": "PvP Burn: outlast Dodge-focused opponents"
     },
     {
       "type": "p",
-      "html": "Burn works well against Dodge-heavy targets because Burn-drone skills and ongoing burn ticks don’t use the usual Hit-versus-Dodge check. It needs enough Burn Enhancement to offset the opponent’s Burn Decrease, and enough survivability for stacks to do their work."
+      "html": "Burn works well against high-Dodge players because Burn-drone skills do not use the normal Hit-versus-Dodge check, and Burn damage already applied keeps ticking. For this to work, your Burn Enhancement must overcome their Burn Decrease. You also need enough defense and healing to stay alive while the damage builds."
     },
     {
       "type": "table",
@@ -418,14 +430,14 @@
           "header": false,
           "cells": [
             "Drones",
-            "Three Burn drones for Star Envoy, such as two Ninjas + Sagittarius while developing Lich / Lyra."
+            "Use three Burn drones if you equip Star Envoy. Two Ninjas and Sagittarius are a practical early trio; a developed Lich or Lyra can change the best combination later."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Arcglow or Doomblast for long fights; Glimshade if you reliably apply Burn. Switch to anti-heal against strong sustain."
+            "Arcglow or Doomblast supports longer fights. Glimshade can heal when the target is burning. Against powerful healing builds, consider Heal Reduction instead."
           ]
         },
         {
@@ -453,12 +465,12 @@
     },
     {
       "type": "p",
-      "html": "<strong>This is not the same as PVE Crit/Burn.</strong> Your PVP Burn build focuses on Burn Enhancement, Crit Resistance, and survival. Evil Eye is the core of the PVE Burn/Crit conversion approach, not this recommended PVP formation."
+      "html": "<strong>This is a different strategy from PvE Burn/Crit.</strong> Your PvP Burn formation spends chip space on Burn Enhancement and Crit Resistance, then uses defensive Mech Spirits to survive. Evil Eye belongs to the PvE Crit-to-Burn conversion strategy we recommend, not this PvP formation."
     },
     {
       "type": "h2",
       "id": "situational-swaps-for-pvp",
-      "title": "Make the swap that matters"
+      "title": "What to change when a matchup goes badly"
     },
     {
       "type": "table",
@@ -474,42 +486,42 @@
           "header": false,
           "cells": [
             "High Dodge",
-            "Use Burn, or keep Crit and add Hit Rate (possibly Gloom Moon)."
+            "Try Burn. Or keep a Crit formation and add Hit Rate, possibly with Gloom Moon."
           ]
         },
         {
           "header": false,
           "cells": [
             "High Crit Rate",
-            "Increase Crit Resistance; consider Battle Diva."
+            "Equip more Crit Resistance. Battle Diva can also help in Crit-heavy matchups."
           ]
         },
         {
           "header": false,
           "cells": [
             "High Burn damage",
-            "Equip a Burn Decrease engine. Dodge cannot stop existing burn ticks."
+            "Switch to a Burn Decrease engine. Dodge does not remove Burn already applied."
           ]
         },
         {
           "header": false,
           "cells": [
             "Heavy healing",
-            "Use a Heal Reduction sentinel or appropriate passives."
+            "Try a sentinel or passive with Heal Reduction so the opponent cannot recover as easily."
           ]
         },
         {
           "header": false,
           "cells": [
             "High Defense vs your Defense Break",
-            "Improve the matching pilot stat, or choose a more favorable fight."
+            "Your attacks are being reduced by their Defense. Improve the Defense Break matching your gear, or choose a better matchup."
           ]
         },
         {
           "header": false,
           "cells": [
             "Your weapon crits rarely land",
-            "Check both Hit Rate vs Dodge and Crit Rate vs Crit Resistance."
+            "Check both sides of the equation: Hit Rate versus Dodge, then Crit Rate versus Crit Resistance."
           ]
         }
       ]
@@ -521,7 +533,7 @@
     },
     {
       "type": "p",
-      "html": "Each slot saves your complete build: chips, gear, pilot, drones, sentinel, and Mech Spirits. Switching slots restores them together. Most players dedicate one to PVE, one to their primary PVP style, and keep the third flexible."
+      "html": "Each formation slot remembers your <strong>full build</strong>: chips, equipment, pilot, drones, sentinel, and Mech Spirits. Switching slots changes them all together. That makes it practical to keep one formation for bosses and others for PvP. You may still change individual parts of a saved formation when the opponent calls for it."
     },
     {
       "type": "table",
@@ -537,7 +549,7 @@
           "header": false,
           "cells": [
             "Formation 1",
-            "<strong>PVP-capable build.</strong> Hyper Battlefield proxy mode has been reported to pull this slot automatically."
+            "A PvP-capable build is safest here because Blackout members report that Hyper Battlefield proxy mode selects this slot."
           ]
         },
         {
@@ -551,14 +563,14 @@
           "header": false,
           "cells": [
             "Formation 3",
-            "Dedicated PVE Burn, or flexible PVP Burn after your PVE Crit setup can share another formation."
+            "Often your dedicated PvE Burn formation. Advanced players may reuse a Crit formation for PvE and PvP, changing its drones and Mech Spirits for the mode."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "Slot numbers are not tied to a particular strategy, other than the important Hyper Battlefield proxy warning. If your PVE Crit build doubles as PVP Crit, switch out its PVE-only drones or mechs, including Evil Eye, before attacking players."
+      "html": "Formation numbers do not otherwise dictate a particular playstyle. If your PvE Crit build also serves as PvP Crit, remember to remove PvE-only pieces such as Evil Eye before attacking another player. And if you switch to PvE for a boss, check what is equipped before leaving yourself open to defense in Planet Wars or Military Drills."
     },
     {
       "type": "h2",
@@ -600,7 +612,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Watch out:</strong> switch back to PVP after doing boss activities if you might be attacked in Planet Wars or Military Drills."
+      "html": "<strong>Easy mistake:</strong> you finish a boss activity in your PvE formation, then someone attacks you in Planet Wars or Military Drills before you switch back. Unlike Star Scramble defense, those modes use what you have equipped <em>at that moment</em>."
     },
     {
       "type": "h1",
@@ -609,7 +621,7 @@
     },
     {
       "type": "p",
-      "html": "Upgrade the part of your build that is actually limiting you. Start with pilots, then improve the chips, drones, sentinels, and Mech Spirits you use most."
+      "html": "If you are not sure what to upgrade next, begin with pilots. Then look at the part of your main formation that is holding you back: chips that lack the right stats, unfinished drones, a weak sentinel passive, or Mech Spirits that do not support your strategy. The goal is a stronger working build, not progress in every system at once."
     },
     {
       "type": "h2",
@@ -618,19 +630,23 @@
     },
     {
       "type": "p",
-      "html": "BP shows how much you’ve upgraded, not how hard you are to beat. <strong>Keep pilot investment ahead of BP inflation.</strong> A lean build is one choice, not a goal by itself: raw strength also helps in Planet Wars and Military Drills."
+      "html": "Battle Power (BP) is a measure of progression, but it does not tell you how effective those upgrades are in combat. A player with fewer but better-matched upgrades can beat someone with more BP. Keep improving pilots as your BP grows. A lean build can help in some matchups, but raw strength is valuable too, especially in Planet Wars and Military Drills."
     },
     {
       "type": "p",
-      "html": "<strong>Star Scramble:</strong> Legion size is matched, and both total and average legion BP matter to how strong your opponent pool is. With equal-size legions, reducing average BP reduces total BP too. Lower-BP members are not dead weight: in Blackout we use them for <strong>item clears and fuel removal</strong>, allowing stronger members to finish opponents in a single hit. This is one reason team composition matters as much as the headline BP."
+      "html": "<strong>Star Scramble is a team decision.</strong> Legions are matched in comparable roster sizes, so both average BP and total BP describe the strength of the roster. With the same number of players, lowering the average also lowers the total. Blackout deliberately values some lower-BP members: they handle item clears and fuel removal, helping higher-BP teammates eliminate opponents in a single attack. Their contribution is tactical, not just a lower matchmaking number. The exact matchmaking formula is not published, so treat BP as an important factor, not the entire rule."
     },
     {
       "type": "p",
-      "html": "Hyper Battlefield tiers run from BF5 (easiest) to BF1 (hardest), with a particularly large jump from BF2 to BF1. Both BP and prior results appear to influence tier placement, but the actual formula is not published. Big roster changes or a first-place finish may move you up."
+      "html": "In a Star Scramble attack plan, that often means assigning smaller members the preparatory work and preserving strong attackers for high-value clears. Lower BP only helps if those players are active and have a useful role."
     },
     {
       "type": "p",
-      "html": "Some players pause gear progression around one-star rainbow or sentinel leveling at level 80 to stay lean; others prefer more raw strength. Some BP growth from Camp Tech and Mech passives is hard to avoid. The goal is to keep your pilot stats progressing, not to suppress every BP increase."
+      "html": "Hyper Battlefield has five tiers, from BF5 (easiest) to BF1 (hardest). The jump from BF2 to BF1 is especially steep. Legion BP and previous results both appear to matter: adding strong players may move you up, and winning BF2 may also push you into BF1. The promotion formula is not published, so do not assume a fixed BP cutoff."
+    },
+    {
+      "type": "p",
+      "html": "That is why leveling every sentinel past 80 or upgrading every piece of gear immediately is a choice, not an automatic priority. Some players pause gear around one-star rainbow to keep their BP efficient; others invest in extra raw strength for Planet Wars or Military Drills. Camp Tech and Mech passives can also increase BP. <strong>The better long-term habit is to keep your pilot investment moving ahead of BP inflation.</strong>"
     },
     {
       "type": "h2",
@@ -639,7 +655,7 @@
     },
     {
       "type": "p",
-      "html": "Pilots improve Physical and Energy Defense Break (PDB, EDB) and Physical and Energy Defense (PD, ED). These stats affect damage dealt and received across your build. Neglect them and you may lose badly to players with similar BP."
+      "html": "Pilots raise four combat stats: Physical Defense Break (PDB), Energy Defense Break (EDB), Physical Defense (PD), and Energy Defense (ED). The two Break stats help you deal more damage with matching gear. The two Defense stats help you survive attacks from other players. These affect far more than a single piece of equipment, which is why pilot development is such a good ongoing investment."
     },
     {
       "type": "h3",
@@ -661,32 +677,32 @@
           "header": false,
           "cells": [
             "PDB (Physical Defense Break)",
-            "Offensive, your physical attacks vs. opponent's PD",
-            "Higher than your opponent's PD"
+            "Helps your physical-damage attacks overcome the opponent’s PD.",
+            "Develop this if you use physical gear."
           ]
         },
         {
           "header": false,
           "cells": [
             "EDB (Energy Defense Break)",
-            "Offensive, your energy attacks vs. opponent's ED",
-            "Higher than your opponent's ED"
+            "Helps your energy-damage attacks overcome the opponent’s ED.",
+            "Develop this if you use energy gear."
           ]
         },
         {
           "header": false,
           "cells": [
             "PD (Physical Defense)",
-            "Defensive, opponent's physical attacks vs. your PD",
-            "Higher than your opponent's PDB"
+            "Protects you against an opponent’s physical attacks and PDB.",
+            "Keep improving it, whatever gear you use."
           ]
         },
         {
           "header": false,
           "cells": [
             "ED (Energy Defense)",
-            "Defensive, opponent's energy attacks vs. your ED",
-            "Higher than your opponent's EDB"
+            "Protects you against an opponent’s energy attacks and EDB.",
+            "Keep improving it, whatever gear you use."
           ]
         }
       ]
@@ -700,11 +716,11 @@
       "type": "ul",
       "items": [
         {
-          "html": "You need to be close enough on these stats to compete. If your offense (PDB/EDB) and defense (PD/ED) are roughly comparable to opponents at your BP, you can win by exploiting an advantage in chips, drones, sentinels, mechs, or passives. If your pilots lag, you're hunting for a much bigger exploitable gap elsewhere, and against a well-built opponent that gap may not exist.",
+          "html": "<strong>Pilot gaps explain a lot of losses.</strong> If your PDB or EDB trails their matching Defense by a wide margin, your damage suffers. If your PD or ED trails their Defense Break, you take more damage. A clever chip setup can help, but it cannot always overcome a large disadvantage in these underlying stats.",
           "nested": null
         },
         {
-          "html": "Pilots compound with everything else, so a player with mediocre gear but well-developed pilots is unusually tough for their BP. Starting fresh, I'd put pilots first.",
+          "html": "<strong>Keep developing pilots alongside everything else.</strong> Well-built pilots make every formation more competitive. Even when equipment upgrades look exciting, do not let your pilot stats fall behind.",
           "nested": null
         }
       ]
@@ -716,11 +732,11 @@
     },
     {
       "type": "p",
-      "html": "Exactly <strong>one pilot can be equipped</strong>, and switching it is free except that the full Star Scramble defensive build is locked during the event. Every pilot contributes its Defense and Defense Break even while unequipped. Equipping one increases <em>that pilot’s</em> contribution to approximately <strong>4×</strong>; the pilot’s skill passive does not get that multiplier."
+      "html": "You can equip <strong>one pilot at a time</strong>, and switching pilots is free. Every unlocked pilot still contributes Defense and Defense Break when unequipped, but the equipped pilot contributes about <strong>four times as much</strong>. The passive skill is shared either way; it does not get a four-times bonus. The one exception to free switching during play is your locked Star Scramble defensive formation."
     },
     {
       "type": "p",
-      "html": "Example: six-star SR Lancelot provides +80 EDB and +80 PD when unequipped, or +320 of each when equipped. Awakened, the example rises to +100 each unequipped or +400 each equipped."
+      "html": "For example, a six-star SR Lancelot contributes +80 EDB and +80 PD when unequipped. Put him in your equipped slot and those contributions become +320 each. After awakening, that rises to +100 unequipped or +400 equipped. That is why your first SR awakenings should focus on pilots you actually switch between."
     },
     {
       "type": "table",
@@ -753,7 +769,11 @@
     },
     {
       "type": "p",
-      "html": "Pick the first awakening based on the opponents you actually face. A physical player facing energy opponents more often may awaken Hestia before Freya. If you use both damage types, all four combinations are useful. Change equipped pilots between Star Scramble attacks; your defensive pilot is fixed once defense is submitted."
+      "html": "Choose your first awakened SR pilot based on <strong>the damage type you deal</strong> and <strong>the damage type you most often face</strong>. A physical player who meets lots of energy opponents may awaken Hestia before Freya. If you use both physical and energy gear, developing all four combinations gives you more options. You can change pilots before each Star Scramble attack, but the pilot in your defensive formation is locked for the event."
+    },
+    {
+      "type": "p",
+      "html": "There is no automatic “Freya first” or “Clotho first” rule. For a physical player, Freya helps when physical attacks are common, while Hestia or Brunhild helps against energy opponents. Your actual matchups decide which one you equip more often."
     },
     {
       "type": "h3",
@@ -762,11 +782,11 @@
     },
     {
       "type": "p",
-      "html": "A physical player should invest in PDB; an energy player should invest in EDB. But <strong>every player needs both PD and ED</strong>, because opponents use both damage types."
+      "html": "If you deal physical damage, build Physical Defense Break (PDB). If you deal energy damage, build Energy Defense Break (EDB). Every player should develop <strong>both Physical Defense (PD) and Energy Defense (ED)</strong>, because the opponent decides which damage type you need to survive."
     },
     {
       "type": "p",
-      "html": "Invest in both PDB and EDB only if you actually use both physical and energy gear. Otherwise, prioritize the Break stat matching your gear and keep both defenses strong."
+      "html": "You only need to develop both Break stats as priorities if you regularly play both physical and energy builds. Do not spend scarce pilot resources trying to maximize an offensive stat your gear cannot use."
     },
     {
       "type": "h3",
@@ -775,15 +795,19 @@
     },
     {
       "type": "p",
-      "html": "Unlock pilots broadly and complete the first <strong>two Pilot Badge evolutions</strong>, which have the same Badge requirements across rarities. Later evolutions require growing numbers of pilot-specific shards and, at high stars, additional rarity-based shards. Pilot-specific drops are often random; SR selectables are available in the Pilot Event, Hyper Battlefield shop, and some other sources."
+      "html": "Unlock pilots as you acquire them. The first two evolutions cost Pilot Badges and provide substantial gains relatively cheaply; their Badge requirements are the same for N, R, SR, and SSR. Later evolutions need increasing quantities of that specific pilot’s shards. At higher stars, they can also require extra shards from other pilots. Many pilot shards arrive as random drops, though SR selectables are available in the Pilot Event, Hyper Battlefield shop, and other sources."
     },
     {
       "type": "p",
-      "html": "A pilot reaches full regular evolution at <strong>six stars</strong>. Shards of that pilot acquired afterward become <strong>automatically usable extra shards</strong> of its rarity, with no manual conversion. When deciding which N or R pilot to finish next, weigh its immediate stat increase, required cost, and how many waiting shards will unlock."
+      "html": "At <strong>six stars</strong>, a pilot is fully evolved but not yet awakened. Any shards you already have beyond the amount needed to reach six stars, as well as future drops for that pilot, become automatically usable as extra shards of its rarity. You do not need to exchange them manually. That creates a useful trade-off: finishing a nearly complete N or R pilot can give you more stats <em>and</em> unlock a pile of extra shards for later awakenings."
     },
     {
       "type": "p",
-      "html": "Awaken the <strong>two SR pilots you actually equip</strong> for one damage type, or up to four if you routinely play both physical and energy. Then work on getting your N and R roster to six stars. After that, choose between accessible R awakenings for broad stats and stronger but much more expensive SR awakenings for their specific passive bonuses; there is no fixed universal order. SSR awakening is an exceptionally long-term goal because SSR shards are concentrated in special events."
+      "html": "A good early target is to awaken <strong>two SR pilots you plan to equip for your main damage type</strong>, or four if you routinely switch between physical and energy gear. These are alternate pilots, not four simultaneous equipped pilots. Then work toward six stars on your N and R roster, both for their stats and for the extra shards future drops provide. After that, decide whether to awaken R pilots for accessible gains or additional SR pilots for stronger specific passives. SR awakenings cost much more, so the best choice depends on the passive you need and the resources you have. SSR awakening remains a long-term goal because the shards are difficult to acquire outside special events."
+    },
+    {
+      "type": "p",
+      "html": "A useful way to choose the next six-star N or R pilot is to check three things together: how many shards it still needs, how much Defense or Defense Break it adds, and how many extra shards you will unlock immediately. Sometimes the stat gain matters most; sometimes the extra shards make the decision."
     },
     {
       "type": "table",
@@ -828,7 +852,7 @@
     },
     {
       "type": "p",
-      "html": "These costs use extra/generic shards, not more shards of the pilot being awakened. Additional Pilot Badges are also required. Example screenshots showed 1,800 Pilot Badges for an SR awakening, plus the three shard requirements above. Both evolved and awakened unequipped pilots continue contributing their Defense/Defense Break and passive bonuses."
+      "html": "These are <strong>extra shards</strong> that can be used across pilots of the same rarity, not additional copies of the specific pilot being awakened. Awakening also costs Pilot Badges. In one supplied SR example, awakening required 1,800 Pilot Badges along with the shards shown above. Pilots continue contributing their Defense, Defense Break, and passive bonuses even when they are not equipped."
     },
     {
       "type": "h3",
@@ -837,11 +861,11 @@
     },
     {
       "type": "p",
-      "html": "Training Guides raise a pilot’s passive skill from level 1 through level 10. Training increases <strong>the passive and BP</strong>, not Defense or Defense Break. Each level gives the same increment to the passive but successive levels cost more Training Guides. The training cost schedule is identical for N, R, SR, and SSR."
+      "html": "Training Guides improve a pilot’s <strong>passive ability</strong> from level 1 through level 10. They also increase BP, but do <strong>not</strong> increase Defense or Defense Break. Each training level adds the same amount to the passive, while later levels cost more Training Guides. At a given level, the cost is the same for N, R, SR, and SSR pilots."
     },
     {
       "type": "p",
-      "html": "Train several valuable SR and SSR PvP passives to moderate levels before pushing individual passives to level 10. Higher-rarity pilots generally have better passives for the same Training Guide costs. Some N and R passives primarily help PVE; leaving those untrained avoids BP growth that does little for PvP matchmaking. Do not skip a useful PvP passive merely to suppress BP."
+      "html": "That makes spreading Training Guides across several useful passives a good starting strategy. SR and SSR pilots usually offer stronger PvP passives for the same guide cost, so raise a few of those to moderate levels before pushing one all the way to 10. Some N and R passives are mainly useful in PvE; training them adds BP without strengthening your PvP performance. But <strong>do train a passive that helps you win PvP fights</strong>, even if it raises BP."
     },
     {
       "type": "h3",
@@ -850,11 +874,11 @@
     },
     {
       "type": "p",
-      "html": "<strong>Do not use fixed Defense / Defense Break targets per million BP.</strong> Older targets have become unreliable as the game added BP-inflating systems. Continuously prioritize pilots and compare actual opponents: raise PDB only for physical damage, EDB only for energy damage, and improve <strong>both PD and ED</strong> regardless of gear type. For players using physical and energy builds, all four stats matter."
+      "html": "Avoid old rules such as “you need X pilot points for every million BP.” Newer game systems have changed BP too much for those ratios to remain useful. Instead, compare yourself with actual opponents. Improve PDB for physical builds or EDB for energy builds, and keep both PD and ED moving forward. If you use both damage types, all four stats matter."
     },
     {
       "type": "p",
-      "html": "Use opponent attribute comparison to identify the gap that is losing fights. Pilots are a continuing priority, not an upgrade you complete once you hit a numerical BP benchmark."
+      "html": "Think of pilots as something you keep improving, not a checklist you finish. If your attacks do little damage against similar-BP opponents, compare your Defense Break with their Defense. If you die too quickly, check their Break against your PD or ED. Those comparisons tell you more than a universal BP benchmark."
     },
     {
       "type": "h2",
@@ -863,7 +887,7 @@
     },
     {
       "type": "p",
-      "html": "A chip formation is where you commit to a strategy: Crit/Hit, Dodge/Crit Resistance, or Burn/Crit Resistance. Other parts of the build should support it. The most important PVE chip progression is simple: <strong>reach 100% Burn Enhancement, then trade Burn chips for Crit as your non-chip Burn bonuses rise.</strong>"
+      "html": "Your chip choices give a formation its identity. A Crit/Hit formation aims to land powerful weapon hits; Dodge/Crit Resistance emphasizes survival; Burn/Crit Resistance wins through lasting damage. For PvE, the progression is slightly different: use Burn chips to reach the maximum Burn Enhancement, then replace them with Crit Rate chips as other sources take over. The rest of your build should support the chips you choose."
     },
     {
       "type": "h3",
@@ -872,7 +896,7 @@
     },
     {
       "type": "p",
-      "html": "Look at the useful attributes, not just a chip’s overall grade. A Crit/Hit setup needs both Crit Rate and Hit Rate. Dodge/Crit Resistance needs those two. In PVE, replace a Burn chip with Crit only if your total Burn Enhancement remains at the 100% effective cap."
+      "html": "The chip with the highest overall rating is not always the chip that helps your formation most. Check its actual stats. A Crit/Hit formation wants both Crit Rate and Hit Rate somewhere across its chips; a Dodge/Crit Resistance formation wants those two. In PvE, only replace a Burn chip with a Crit Rate chip if you can still maintain 100% effective Burn Enhancement for the boss you are fighting."
     },
     {
       "type": "h3",
@@ -881,15 +905,15 @@
     },
     {
       "type": "p",
-      "html": "For everyday production, use <strong>“Stop when chip rating increases.”</strong> It saves a lot of time, even though the rating occasionally overlooks a more useful combination of attributes."
+      "html": "For normal daily use, turn on <strong>“Stop when chip rating increases.”</strong> The Chip Factory will pause when it finds a chip rated above the one currently in that slot. It saves time and is a sensible default, even though the rating does not always capture the best combination of attributes."
     },
     {
       "type": "p",
-      "html": "When changing strategies, lower the minimum chip grade so less highly rated chips with the <em>right attributes</em> are not filtered out. Set the attributes for the formation you are farming: Crit + Hit Rate, Dodge + Crit Resistance, or Burn Enhancement as needed. Use OR to catch either stat; use AND only when you insist on both on one chip."
+      "html": "When you are changing builds, you may want to lower the minimum chip grade and look more closely at the results. A lower-rated chip with the right Burn or Crit stat can be a real improvement even if its overall score is worse. Set your target attributes to match the formation you are building. Use <strong>OR</strong> if either stat is useful; choose <strong>AND</strong> only if you require both attributes on the same chip."
     },
     {
       "type": "p",
-      "html": "There is no universal grade cutoff. Decide how much manual screening you are willing to do."
+      "html": "The trade-off is your time. Leave the rating check on when you want easy daily production; screen more results manually when you are hunting a very specific stat combination. There is no single minimum grade setting that is right for everyone."
     },
     {
       "type": "h2",
@@ -898,7 +922,7 @@
     },
     {
       "type": "p",
-      "html": "Burn works well for boss damage and remains useful in PVP against Dodge-heavy opponents. Burning-drone skills and burn ticks do not use the ordinary Hit-versus-Dodge check, although drone normal attacks do. Burn also gains value as stacks and longer-fight bonuses accumulate. The main decisions are which three burn drones to use and which one to develop next."
+      "html": "Burn is a reliable foundation for boss damage and helps in PvP against opponents who rely heavily on Dodge. Burning-drone <strong>skills</strong> and already-applied Burn damage do not depend on a normal Hit Rate roll, although drone normal attacks can miss. Choose three drones that work well together, then focus your upgrade resources on finishing them one at a time."
     },
     {
       "type": "h3",
@@ -907,7 +931,7 @@
     },
     {
       "type": "p",
-      "html": "Start by maxing 1-2 Ninjas. They're cheap to level, and a maxed Ninja can outperform an under-leveled higher-rarity drone (same star-scaling logic that makes maxed Gridstars beat low-star SSRs). Two maxed Ninjas give you a working burn build today."
+      "html": "Start with one Ninja and work toward two well-developed Ninjas if you are using a Burn lineup. They are relatively accessible, and a finished lower-rarity drone can contribute more than a higher-rarity one that is barely developed. You can use them while gradually building a stronger third drone instead of waiting for three expensive SR drones."
     },
     {
       "type": "h3",
@@ -928,33 +952,33 @@
         {
           "header": false,
           "cells": [
-            "Early (F2P starter)",
-            "1–2 maxed Ninjas + 1 unleveled R or SR",
-            "Ninjas carry the build while you progress your third drone"
+            "Getting started",
+            "One or two developed Ninjas, plus your best available third Burn drone",
+            "Use what you already have; do not wait for the perfect three-drone lineup."
           ]
         },
         {
           "header": false,
           "cells": [
-            "Mid (focus an R drone)",
-            "2 maxed Ninjas + 1 maxed Lich",
-            "Accessible lineup that can remain useful while you add an SR later"
+            "Developing an R drone",
+            "Two developed Ninjas + Lich",
+            "Lich’s Burn Damage bonus can help the trio while you save resources for later upgrades."
           ]
         },
         {
           "header": false,
           "cells": [
-            "Mid (focus an SR drone)",
-            "2 maxed Ninjas + 1 maxed SR (Sagittarius / Lyra / Fornax)",
-            "Higher-ceiling option; only pursue when you can finish the SR"
+            "Developing an SR drone",
+            "Two developed Ninjas + Sagittarius, Lyra, or another developed SR burner",
+            "A higher ceiling, but only invest heavily if you can keep progressing that drone."
           ]
         },
         {
           "header": false,
           "cells": [
-            "Late (heavy spender)",
-            "Multiple developed SRs, or a strong mixed R/SR trio",
-            "Choose by passive synergy and completed upgrades, not rarity alone"
+            "Advanced",
+            "Developed SR drones or a strong mixed R/SR trio",
+            "Pick by useful skills and completed upgrades, not rarity alone."
           ]
         }
       ]
@@ -966,28 +990,28 @@
     },
     {
       "type": "p",
-      "html": "After Ninjas, choose <strong>one drone to finish next</strong>. You can mix R and SR drones in the same lineup; the decision here is where to spend scarce upgrade resources first."
+      "html": "Once your Ninja foundation is working, choose <strong>one</strong> next drone to develop rather than spreading scarce copies and materials across several unfinished projects. You can mix R and SR drones within the same formation; the question is which one you can realistically finish."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>R-tier:</strong> Faster to max, lower ceiling. A practical next project for F2P and lighter spenders. Options: Lich, Scorpion Lion, Cerberus.",
+          "html": "<strong>R drones:</strong> Usually more accessible to complete. Lich is appealing because its skill buffs Burn damage across all drones. Cerberus and Scorpion Lion have more situational interactions.",
           "nested": null
         },
         {
-          "html": "<strong>SR-tier:</strong> Slower and more expensive, higher ceiling. SR burners (Sagittarius, Lyra, Fornax) outperform R drones once leveled. A practical next project once you can afford to develop one. Two maxed Ninjas plus one developed SR is useful; later, Lich + Sagittarius + Lyra or another mixed trio may be worth testing.",
+          "html": "<strong>SR drones:</strong> More expensive to develop but potentially stronger once invested in. Sagittarius, Lyra, and Fornax are choices to consider. A developed SR can eventually replace a Ninja, but a half-finished SR should not automatically displace a strong drone you already own.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "The mistake is spreading materials across several unfinished upgrades, not combining rarities. A developed R drone can belong alongside SR drones when its skill helps the whole team."
+      "html": "A developed R drone can still be valuable alongside SR drones when its skill supports the whole team. The mistake is not mixing rarities; it is spreading your resources so thin that none of the drones gets strong."
     },
     {
       "type": "p",
-      "html": "<strong>Burn mechanics worth knowing:</strong> at most six burn stacks can be active. Adding a seventh replaces the oldest. Burning-drone skills apply stacks; burning-drone normal attacks can still miss against Dodge. See <a href=\"#drones-and-crit-what-actually-converts\">Drone crit details</a> in the mechanics reference."
+      "html": "<strong>Burn stacks have a six-stack limit.</strong> A Burn-drone skill can add a stack, but adding a seventh does not create a seventh active stack: it replaces the oldest one. This matters when judging abilities that add extra stacks. Also remember that Burn-drone normal attacks can still miss, even though their skills and existing Burn damage do not use the normal Hit/Dodge check. The <a href=\"#drones-and-crit-what-actually-converts\">mechanics reference</a> covers drone critical hits."
     },
     {
       "type": "h3",
@@ -996,7 +1020,7 @@
     },
     {
       "type": "p",
-      "html": "A fully developed drone has five passive slots, each reaching level 7 after 35 passive upgrades. Full evolution requires <strong>48 copies total</strong> (the original and 47 others), because higher tiers need multiple duplicates. Drones of different rarities can be mixed within a formation."
+      "html": "A drone has five passive slots, and full evolution develops each passive to level 7. That is 35 passive-level upgrades in total and requires <strong>48 copies of that drone</strong>, including the original. Later star tiers consume multiple duplicates, so do not estimate the cost as one copy per upgrade. You can use drones of different rarities together."
     },
     {
       "type": "table",
@@ -1047,11 +1071,11 @@
     },
     {
       "type": "p",
-      "html": "Save or lock desirable gold and purple passive outcomes, rather than protecting a gold passive that does not help your build. Drone recasts are particularly efficient during Drone Events because Modified Chips count toward event milestones at 2× their number."
+      "html": "When recasting drone passives, keep gold or purple results that actually support your build. A gold passive with the wrong effect is not automatically worth protecting. Recasting during Drone Events is especially useful because each Modified Chip spent counts as two toward the event’s spending milestone."
     },
     {
       "type": "p",
-      "html": "<strong>Drone transposition costs 300 diamonds.</strong> Both drones must be the same rarity, at least five stars, and have no unsaved recast result. Transposition exchanges all five passive <em>types and colors</em> between the two drones, while the passive <em>levels</em> stay on their original drones. This lets a low-evolution same-rarity donor hunt a rare passive before transferring it to a heavily evolved main drone."
+      "html": "<strong>Transposition is a way to move good passive rolls to a better-developed drone.</strong> It costs 300 diamonds. Both drones must be the same rarity, have at least five stars, and have no unsaved recast results. The five passive <em>types and colors</em> switch places, but each drone keeps its own passive <em>levels</em>. For example, you can roll a great passive on a five-star donor, then transpose those passive types onto a much more evolved drone."
     },
     {
       "type": "p",
@@ -1059,7 +1083,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Avoid Experimental Quick Reload for Burn unless you have tested it.</strong> The July mechanics research observed cases where it slowed Burn ticks from one second to as much as 1.5 seconds, which can cost substantial boss damage."
+      "html": "<strong>Experimental Quick Reload deserves caution in Burn builds.</strong> The July mechanics research observed some situations where it increased the interval between Burn ticks from one second to as much as 1.5 seconds. That could reduce boss damage even if the passive sounds beneficial. Test it before committing to it."
     },
     {
       "type": "h2",
@@ -1068,7 +1092,7 @@
     },
     {
       "type": "p",
-      "html": "The right developed G or SR sentinel can outperform an unfinished SSR. Start with the role you need: healing, damage, anti-heal, or a Burn-compatible sustain skill. Don’t chase rarity just because it raises BP."
+      "html": "A well-developed N, G, or SR sentinel can be more useful than an unfinished SSR. Decide what the sentinel is supposed to do: heal you, deal damage, reduce enemy healing, or keep you alive while Burn builds up. Then develop passives that support that role."
     },
     {
       "type": "h3",
@@ -1091,23 +1115,23 @@
           "cells": [
             "Dodge / Heal",
             "Gridstar with gold Healing Enhancement",
-            "Arcglow or Doomblast"
+            "Arcglow for more sustain, or Doomblast as a longer-term SSR option"
           ]
         },
         {
           "header": false,
           "cells": [
             "Crit offense",
-            "SavagePlate for damage; Stormquill to weaken enemy damage",
-            "Rendclaw as an anti-heal counter"
+            "SavagePlate for repeated damage; Stormquill if you need to reduce enemy Damage Boost",
+            "Rendclaw when you need a stronger anti-heal answer"
           ]
         },
         {
           "header": false,
           "cells": [
             "PVE Burn/Crit",
-            "Flashstrike (N) for its short Damage Boost",
-            "Compare other developed sentinels against actual boss damage"
+            "Flashstrike (N) for its short Damage Boost window",
+            "Compare against other developed sentinels using actual boss damage"
           ]
         },
         {
@@ -1129,17 +1153,21 @@
       ]
     },
     {
+      "type": "p",
+      "html": "You can keep more than one sentinel for different jobs. For example, a healing-focused sentinel may be your default defense, while an anti-heal sentinel can be the better choice against someone who relies on Ladybug and other recovery."
+    },
+    {
       "type": "h3",
       "id": "core-mechanics",
       "title": "Leveling and evolution are different"
     },
     {
       "type": "p",
-      "html": "Every sentinel rarity (N, R, G, SR, SSR) has <strong>four passive slots</strong>. It takes <strong>40 total copies</strong> to fully evolve a sentinel and bring its passives to level 10. Evolution also raises Attack and HP; the passive upgrades are the main prize."
+      "html": "All five sentinel rarities (N, R, G, SR, and SSR) have <strong>four passive slots</strong>. Fully evolving one takes <strong>40 total copies</strong>, including the first copy, and raises all four passives to level 10. Evolution also increases Attack and HP, but improving the passive bonuses is usually the biggest reason to pursue all 40 copies."
     },
     {
       "type": "p",
-      "html": "Overclock Chips increase sentinel level and are recoverable when you reset. Get the sentinel to <strong>level 80</strong> to max the active skill. Levels 81–150 add Attack, HP, and BP at sharply higher costs, but do not improve the skill. Going above 80 is a choice between raw strength and a leaner BP."
+      "html": "Sentinel <strong>level</strong> is separate from evolution. Overclock Chips raise the level and improve the active skill up to <strong>level 80</strong>. Levels 81–150 cost sharply more chips and raise raw stats and BP without making the skill stronger. Level 80 is a practical stopping point for many players, but pushing higher can make sense when raw strength is the goal. If you reset a sentinel, you can recover the Overclock Chips."
     },
     {
       "type": "h3",
@@ -1188,15 +1216,19 @@
     },
     {
       "type": "p",
-      "html": "At level 10, Healing Enhancement is +100% gold, +80% purple, and +60% blue. They add together. Gold Sentinel Enhancement is +75%, and multiplies direct sentinel healing or damage separately. <strong>It does not multiply Ladybug or Cheat Death healing.</strong> Enemy Healing Reduction and Sentinel Reduction can cancel the corresponding bonuses."
+      "html": "At passive level 10, Healing Enhancement provides <strong>+100% for gold, +80% for purple, and +60% for blue</strong>. These bonuses add together. Gold Sentinel Enhancement adds +75% at level 10 and acts as a separate multiplier for eligible sentinel damage and healing. It does not multiply Ladybug or Cheat Death healing. Enemy Healing Reduction and Sentinel Reduction can offset the corresponding bonuses."
     },
     {
       "type": "p",
-      "html": "<strong>Healing exceptions:</strong> Ladybug and Cheat Death benefit from Healing Enhancement; Apus’s HP gain does not. Glimshade’s heal benefits from Healing Enhancement, but its heal does not receive the Sentinel Enhancement multiplier, according to the mechanics PDF."
+      "html": "<strong>Not every heal uses the same bonuses.</strong> Ladybug and Cheat Death benefit from Healing Enhancement; Apus’s HP recovery does not. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not from the Sentinel Enhancement multiplier. This is why “more Sentinel Enhancement” is not always the best answer for a healing build."
     },
     {
       "type": "p",
-      "html": "Get one useful gold passive first. A second perfect gold is expensive to chase. An affordable extra Arcglow or Gridstar copy may offer a better starting roll than repeated protected recasts."
+      "html": "Start by looking for <strong>one gold passive that really helps the build</strong>. A second perfect gold can be expensive to chase. For more accessible sentinels, buying and merging another copy with a strong first roll may be better value than repeatedly spending resources to protect and recast passives."
+    },
+    {
+      "type": "p",
+      "html": "This is also why the <a href=\"#the-reverse-merge-technique\">reverse-merge technique</a> matters: it lets you transfer evolution progress onto a newer copy with a better passive roll."
     },
     {
       "type": "h3",
@@ -1205,7 +1237,7 @@
     },
     {
       "type": "p",
-      "html": "Every sentinel recast costs exactly <strong>20 Recast Cores</strong>. Locking slots does not change that; it adds Protection Cores spent <strong>every recast</strong>."
+      "html": "Every sentinel recast costs <strong>20 Recast Cores</strong>, regardless of the number of locked passive slots. Locking slots protects good rolls, but each lock adds a <em>separate</em> Protection Core cost on every attempt:"
     },
     {
       "type": "table",
@@ -1249,7 +1281,7 @@
     },
     {
       "type": "p",
-      "html": "A first paid pack of 15 Protection Cores has cost $3; that makes locking 1/2/3 slots equivalent to roughly $4/$8/$20 in Protection Cores alone at that pack price. Later packs can be more expensive. Use scarce cores mainly for valuable SSR projects. <a href=\"#odds-of-hitting-gold\">See recast odds and assumptions</a>."
+      "html": "Protection Cores are particularly expensive. At the first-pack rate of 15 for $3 (where available), locking one slot uses about $4 of Protection Cores per recast; two cost about $8; three about $20. Those amounts are <em>in addition to</em> the 20 Recast Cores. Later paid packs can be more expensive. Save the costly recasts for the sentinels where a better passive will make the most difference. The <a href=\"#odds-of-hitting-gold\">reference section</a> models the odds of finding a specific gold passive."
     },
     {
       "type": "h3",
@@ -1258,11 +1290,11 @@
     },
     {
       "type": "p",
-      "html": "Choose the <strong>sentinel you keep</strong> (with your desired passive) and the developed <strong>sentinel you sacrifice</strong>. Merging transfers the evolution stars to the one you keep; its existing passives remain, and newly opened slots roll new passives. Every roll on the sacrificed sentinel disappears."
+      "html": "<strong>Reverse merging lets you keep a great passive on a newer copy.</strong> Select the <em>sentinel you keep</em>, which has the passive you want, and the developed <em>sentinel you sacrifice</em>. The kept sentinel retains its existing passive rolls and receives the evolution stars. New passive slots gain new random rolls. All passive rolls on the sacrificed sentinel disappear."
     },
     {
       "type": "p",
-      "html": "Example: keep a one-star Arcglow with gold Healing Enhancement and sacrifice an old 40-star Arcglow. You end up with the evolved sentinel retaining that gold passive. <strong>Level down the one you sacrifice first</strong> to recover its Overclock Chips."
+      "html": "For example, suppose you have an old 40-star Arcglow with mediocre passives and find a one-star Arcglow with gold Healing Enhancement. Keep the one-star copy and sacrifice the 40-star copy into it. You keep the gold passive and end up with a developed Arcglow. <strong>Level down the old sentinel before sacrificing it</strong> so you recover the Overclock Chips."
     },
     {
       "type": "h3",
@@ -1316,7 +1348,7 @@
     },
     {
       "type": "p",
-      "html": "Doomblast’s new +10% Healing Enhancement stack applies <em>after</em> each heal. Flashstrike’s short Damage Boost may benefit burns applied while it is active, but the exact timing interaction has not been independently tested."
+      "html": "Doomblast’s Healing Enhancement stacks build over time: each 10% stack begins <em>after</em) the heal that triggered it, so the next heal benefits. Flashstrike’s two-second Damage Boost can be helpful for damage dealt during that window, but the exact interaction with newly applied Burn stacks has not been independently tested."
     },
     {
       "type": "h2",
@@ -1325,7 +1357,7 @@
     },
     {
       "type": "p",
-      "html": "You equip three Mech Spirits. Unused spirits can still contribute through collection stats and combination bonuses. Combination bonuses need to be activated after you collect the required spirits; choose upgrades for the skills you use and the bonuses you can realistically unlock."
+      "html": "You can equip <strong>three Mech Spirits</strong> at a time. Their active skills should support your formation, but unequipped spirits still contribute collection stats and can help unlock named combination bonuses. Once you collect all spirits for a combination, activate that bonus in-game. Prioritize useful skills and combinations you can realistically reach instead of upgrading everything evenly."
     },
     {
       "type": "h3",
@@ -1336,22 +1368,26 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Aqua Spirit (SSR):</strong> +35% Final Damage Decrease after the first HP drop below 30% at skill level 1, or below 96% at skill level 13. Buff persists for the rest of battle, even after healing. Especially good in healing builds.",
+          "html": "<strong>Aqua Spirit (SSR):</strong> Its Emergency Shield grants +35% Final Damage Decrease the first time your HP crosses its threshold. At skill level 1 that threshold is below 30% HP; at level 13 it rises to below 96%. The protection lasts until the battle ends, even after you heal. That makes it especially valuable in healing builds.",
           "nested": null
         },
         {
-          "html": "<strong>Berserk Dragon (SR):</strong> +10% Final Damage Decrease at level 1 to +34% at level 13, active from the beginning for the whole battle.",
+          "html": "<strong>Berserk Dragon (SR):</strong> Grants Final Damage Decrease from the start of the fight until the end: +10% at skill level 1, reaching +34% at level 13. Unlike Aqua Spirit, it has no low-HP trigger.",
           "nested": null
         },
         {
-          "html": "<strong>Ladybug (N):</strong> heals once when HP first falls below 30%: 6.25% max HP at skill level 1 to 21.25% at skill level 13, PVP only. Scales with Healing Enhancement. N-class Ladybug has no selectable; the Mech Event is the main way to collect it.",
+          "html": "<strong>Ladybug (N):</strong> Heals the first time your HP falls below 30% in PvP. It restores 6.25% of maximum HP at skill level 1, growing to 21.25% at level 13. Healing Enhancement improves the result. Ladybug cannot be chosen with selectable Mech rewards, so Mech Event pulls are the main way to develop it.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "These protection stats do not translate into a literal 69% reduction of damage taken. Aqua Spirit and Berserk Dragon stack in the same Final Damage Decrease system."
+      "html": "For a healing formation, the synergy is straightforward: Aqua Spirit reduces damage after it triggers, Ladybug restores HP at low health, and Berserk Dragon adds protection from the start. Each is valuable alone, so build toward the combination instead of waiting for all three."
+    },
+    {
+      "type": "p",
+      "html": "Aqua Spirit and Berserk Dragon contribute to the same Final Damage Decrease stat. Their listed +35% and +34% bonuses are valuable together, but do <strong>not</strong> interpret them as a literal 69% reduction in every incoming hit: the combat formula also depends on the attacker’s other damage modifiers."
     },
     {
       "type": "h3",
@@ -1362,15 +1398,15 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Toad Lord (SR):</strong> every 2 seconds, weapon critical hits can dispel three Burn stacks on you and add Crit Damage for the battle, up to eight stacks. +7.5% per stack at level 1 (+60% total) or +25.5% at level 13 (+204%). Stronger when your weapon crits actually land; weaker versus high Crit Resistance. Do not combine with Evil Eye.",
+          "html": "<strong>Toad Lord (SR):</strong> Conventional weapon crits can trigger its effect every two seconds. Each trigger removes three Burn stacks <em>from you</em> and increases Crit Damage until the battle ends, up to eight stacks. At skill level 1, eight stacks total +60% Crit Damage; at level 13 they total +204%. It is less reliable against opponents with strong Crit Resistance. Do not pair it with Evil Eye, which Blackout players report removes the normal weapon crit opportunities Toad Lord needs.",
           "nested": null
         },
         {
-          "html": "<strong>Venom Scorpion:</strong> supports a conventional Crit attack when you can get through the opponent’s Crit Resistance.",
+          "html": "<strong>Venom Scorpion:</strong> Useful with conventional Crit offense when the opponent’s Crit Resistance does not prevent most of your crits. Against high resistance, expect less value.",
           "nested": null
         },
         {
-          "html": "<strong>Flame Stinger:</strong> finisher against low-HP opponents. Gloom Moon and Battle Diva are alternative matchup counters.",
+          "html": "<strong>Flame Stinger:</strong> A damage-finishing option when the opponent is low on HP. Gloom Moon is a Hit Rate counter for high Dodge; Battle Diva helps against heavy Crit.",
           "nested": null
         }
       ]
@@ -1384,15 +1420,15 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Evil Eye (SR):</strong> converts eligible Crit Rate to Burn Crit Rate (10% → about 2% at skill level 1; 10% → 5.6% at level 13) and grants +25.5% Burn Damage Boost at maximum. Use with the PVE Burn/Crit setup, not Toad Lord.",
+          "html": "<strong>Evil Eye (SR):</strong> Converts Crit Rate remaining after the target’s Crit Resistance into Burn Crit Rate. At skill level 1, every 10% eligible Crit Rate produces about 2% Burn Crit Rate; at level 13, it produces 5.6% and adds +25.5% Burn Damage Boost. It is a cornerstone of this PvE strategy, not a replacement for normal weapon Crit in PvP.",
           "nested": null
         },
         {
-          "html": "<strong>Star Envoy (SSR):</strong> requires three equipped Burn drones. Every third Burn-drone skill can add Burn Damage Boost, up to five stacks. The activation chance rises with your Burn Enhancement above enemy Burn Decrease. Up to +125% total at level 1, +425% at level 13 (five additive stacks).",
+          "html": "<strong>Star Envoy (SSR):</strong> Requires three equipped Burn drones. Every third Burn-drone skill has a chance to add a stack of Burn Damage Boost, up to five stacks. The activation chance increases as your Burn Enhancement exceeds the enemy’s Burn Decrease. The maximum stacked bonus is +125% at skill level 1 or +425% at level 13. This is a valuable long-term target, not something a new player must own to begin a Burn build.",
           "nested": null
         },
         {
-          "html": "<strong>Third slot:</strong> consider Dragon Emperor or another damage mech; use Magic Armor when you still need Burn Enhancement.",
+          "html": "<strong>Third slot:</strong> Use Dragon Emperor or another damage-focused spirit if available. Magic Armor can help while you are still short of 100% Burn Enhancement.",
           "nested": null
         }
       ]
@@ -1404,7 +1440,7 @@
     },
     {
       "type": "p",
-      "html": "Mech Spirits build four attribute bonuses over each group of four levels, with their main skill upgraded every fifth level. Collection and combination bonuses can help even when the spirit is not equipped. Target useful skills and reachable combinations rather than upgrading every spirit evenly."
+      "html": "Mech Spirits improve their attribute bonuses during each four-level stretch. Every fifth level upgrades their main skill. The skill reaches level 13 when the spirit reaches level 60. You also get some benefits from spirits that are not equipped, so plan upgrades around the active skills and collection bonuses you can actually use."
     },
     {
       "type": "h2",
@@ -1453,7 +1489,11 @@
     },
     {
       "type": "p",
-      "html": "Only one engine is equipped at a time. Read its equipped and shared bonuses at your current grade rather than assuming a universal multiplier."
+      "html": "A sensible starting rule is Hit Rate for general offense, Crit Resistance for defense against ordinary Crit builds, and Burn Decrease when you know the opponent relies heavily on Burn. Change the engine when the matchup changes."
+    },
+    {
+      "type": "p",
+      "html": "You can equip one engine at a time. Different engine grades can have equipped and shared bonuses, so check the values in your own game screen rather than assuming every engine offers the same multiplier."
     },
     {
       "type": "h2",
@@ -1462,45 +1502,45 @@
     },
     {
       "type": "p",
-      "html": "Use <strong>Camp → Super Technology</strong> for Final Damage Increase and Final Damage Decrease. Use <strong>Top Technology</strong> to fill matchup gaps such as Crit Rate, Dodge, Hit Rate, Crit Resistance, or Burn Enhancement. Don’t confuse these with Legion Technology, which is a separate set of upgrades."
+      "html": "Camp Technology, Super Technology, and Legion Technology are <strong>separate upgrade systems</strong>. Camp’s Top Technology lets you improve matchup stats such as Crit Rate, Dodge, Hit Rate, Crit Resistance, and Burn Enhancement. Camp’s Super Technology includes Final Damage Increase and Final Damage Decrease, which affect damage more broadly. The best next upgrade depends on what your main formation needs."
     },
     {
       "type": "p",
-      "html": "For PVP, compare the next affordable FDI/FDD upgrade with PVP Damage and Damage Reduction. For PVE Burn, Top Technology Burn Enhancement can free chip slots for Crit Rate. Upgrade the line that changes your next fight rather than chasing raw BP."
+      "html": "For PvP, compare affordable Final Damage Increase, Final Damage Decrease, PvP Damage, and PvP Damage Reduction upgrades. For PvE Burn, more Burn Enhancement from Top Technology may let you remove a Burn chip and add Crit Rate. Before spending, ask whether the upgrade fixes a problem you are actually seeing in battles."
     },
     {
       "type": "h3",
       "id": "camp-tech-priority-path",
-      "title": "Recommended Priority Path"
+      "title": "A practical order for Camp upgrades"
     },
     {
       "type": "p",
-      "html": "<strong>For PVP, compare Final Damage Increase/Decrease first</strong>, then PVP damage and reduction, and then your build’s specific gaps. This is a practical priority framework, not a universal purchase sequence. If an upgrade is locked or very expensive, spend where the next attainable level helps your actual matchups."
+      "html": "These are priorities to compare, <strong>not</strong> a requirement to complete one category before touching another. Later levels can become very expensive, so a cheaper improvement in your second priority may be better than the next level in your first."
     },
     {
       "type": "ol",
       "items": [
         {
-          "html": "<strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD).</strong> The net final-damage value is 100 + your FDI − opponent FDD. At a net value of 50, the damage multiplier is 0.50×; at 40, it is about 0.417×. The formula actually <em>softens</em> further reductions below 50—there is no sudden cliff. FDI and FDD still matter greatly, particularly FDD against strong opponents; Crystal Prism and Eternal Pivot are early FDD options in Super Technology; Source Essence provides another FDD path if you have unlocked it.",
+          "html": "<strong>Final Damage Increase (FDI) and Final Damage Decrease (FDD):</strong> useful broad PvP improvements. FDI helps your outgoing damage; FDD helps reduce incoming damage. Prioritize whichever is affordable and addresses your current losses. The exact formula belongs in the mechanics reference, not in your first upgrade decision.",
           "nested": null
         },
         {
-          "html": "<strong>PVP Damage and PVP Damage Reduction.</strong> Core PVP scaling after FDI/FDD stabilize.",
+          "html": "<strong>PvP Damage and PvP Damage Reduction:</strong> another set of broadly useful PvP bonuses. Compare the cost of the next level with FDI/FDD rather than assuming you must max one track first.",
           "nested": null
         },
         {
-          "html": "<strong>Burn Enhancement (Top Tech).</strong> Adds to the sources that can get a PVE build to 100% raw Burn Enhancement without dedicating chip slots to Burn.",
+          "html": "<strong>Burn Enhancement:</strong> especially valuable to a PvE Burn build until you can keep 100% effective Burn Enhancement without using Burn chips.",
           "nested": null
         },
         {
-          "html": "<strong>Hit Rate, Crit Resistance, Dodge, Crit Rate (Top Technology). Raise the stats that address real matchup gaps; level 10 can be a review point, not a required stop or a fixed rotation.</strong> Round out the stat profile after the big three above are in place.",
+          "html": "<strong>Hit Rate, Crit Resistance, Dodge, and Crit Rate:</strong> buy the stats that solve an actual problem in your matchups. Level 10 can be a convenient place to reassess costs, but it is not a required stopping point.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "Basic Camp Technology provides Maingun, Winggun, Missile Attack, and HP upgrades across individual camps. Buy inexpensive upgrades with real value to the equipment you use; early camps can be less costly than later ones. Compare Attack and HP needs rather than assuming a single fixed order is optimal for every fighter."
+      "html": "Basic Camp Technology upgrades Maingun, Winggun, Missile Attack, and HP across different camps. Some early levels may be quite cheap. Compare the price with the actual benefit to your fighter instead of following one fixed order for everyone."
     },
     {
       "type": "h3",
@@ -1509,7 +1549,7 @@
     },
     {
       "type": "p",
-      "html": "Inside <strong>Camp → Super Technology</strong>, SkyEagle Tech provides Final Damage Increase. Crystal Prism Tech and Eternal Pivot Tech provide Final Damage Decrease; Source Essence Tech is another FDD source when unlocked. One legion recommendation was to take the first three named options toward level 80 and other accessible Super Technologies toward level 60. That is a <strong>player’s investment plan, not a mandatory sequence</strong>, and availability and costs can change."
+      "html": "Inside <strong>Camp → Super Technology</strong>, SkyEagle Tech provides FDI. Crystal Prism and Eternal Pivot provide FDD, and Source Essence provides another FDD path once unlocked. A Blackout recommendation has been to work toward level 80 on the first three and level 60 on other accessible lines. Treat that as one player’s plan; the right next level depends on what you have unlocked, current costs, and the opponents you face."
     },
     {
       "type": "h2",
@@ -1518,7 +1558,7 @@
     },
     {
       "type": "p",
-      "html": "Choose a Titan gear set that matches your fighter and the content you play. Completing a matching five-piece Titan setup increases adjusted weapon attack in the combat-mechanics model, which also feeds drone, sentinel, and mech damage. Do not confuse the <strong>fighter</strong> with the <strong>equipment set</strong> needed to qualify for a bonus."
+      "html": "Titan sets are more than the stats printed on individual weapons. A complete matching five-piece set can increase the adjusted attack used by weapon damage and by drones, sentinels, and Mech Spirits. Make sure you are counting the actual equipped Titan pieces; owning or equipping a matching fighter alone does not give you a five-piece gear bonus."
     },
     {
       "type": "h3",
@@ -1529,22 +1569,22 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Conqueror (physical).</strong> Pair the Conqueror fighter with matching Titan equipment to obtain the appropriate set bonuses. The fighter name and the gear-set name refer to different items.",
+          "html": "<strong>Conqueror (physical):</strong> Use matching Conqueror Titan equipment with your Conqueror fighter to get the applicable set bonuses. The fighter and gear-set requirements are different things.",
           "nested": null
         },
         {
-          "html": "<strong>Destroyer (energy).</strong> A common choice for energy builds. Titan Challenge modifiers can change how different sets perform, so check the active season and your actual damage before committing shards.",
+          "html": "<strong>Destroyer (energy):</strong> A popular energy-damage direction. Titan Challenge seasons can favor different equipment, so compare your damage in the current season before spending scarce shards.",
           "nested": null
         },
         {
-          "html": "<strong>Thor (energy).</strong> An alternative energy set, often lower priority than Destroyer for a dedicated Destroyer build. Certain Titan seasons may reward particular Thor pieces; compare the active season and your owned pieces before spending shards.",
+          "html": "<strong>Thor (energy):</strong> Another energy set. It may be worth developing certain pieces for a Titan season, but evaluate them against the Destroyer pieces you already have.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "The combat-mechanics paper models a <strong>1.3× adjusted-attack factor for a complete five-piece Titan setup</strong>. Since drones, sentinels, and mechs scale with that adjusted attack, breaking the set can cost more than the swapped equipment appears to gain. This is a reason to <strong>compare complete sets</strong>, not proof that every mixed-gear setup always loses; test a change against the mode you play."
+      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, breaking the set may cost more damage than the new piece appears to add. This does not prove that every mixed setup is worse. Compare complete builds in the game mode you care about."
     },
     {
       "type": "h3",
@@ -1553,11 +1593,11 @@
     },
     {
       "type": "p",
-      "html": "Keep the gear needed for your active Titan set before reclaiming surplus pieces. Avoid downgrading or using spare pieces as upgrade material without checking the resulting attribute loss and resource return. Non-Titan equipment is <strong>not all interchangeable</strong>; compare actual stats and effects instead of assuming every normal piece performs the same."
+      "html": "Before reclaiming or downgrading gear, check what it contributes to your active Titan set and how much upgrade material you will recover. Two pieces with similar-looking BP may offer different combat stats or effects. Do not assume every non-Titan piece is interchangeable."
     },
     {
       "type": "p",
-      "html": "If you do not yet have the matching Titan winggun, <strong>Prism Winggun</strong> is a reasonable interim PVE choice. A legion member recommends using it until you obtain Destroyer Winggun; this is a practical option, not a universal best-in-slot rule."
+      "html": "If you do not have the matching Titan Winggun yet, Prism Winggun can be a useful temporary PvE choice. This comes from a Blackout player recommendation, not a tested rule that it is always the best interim option."
     },
     {
       "type": "h2",
@@ -1566,7 +1606,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Legion Technology</strong> upgrades weapon/armor stats and bonuses against specific enemy categories. In the game it is divided into <strong>Equipment Reinforce, Damage Increase, and Enemy Weakened</strong>. It uses Legion Points and Stars. This is separate from Camp Technology and Super Technology."
+      "html": "Legion Technology is separate from Camp upgrades. It has three branches: <strong>Equipment Reinforce</strong> for weapon and armor stats, <strong>Damage Increase</strong> for damage bonuses against target types, and <strong>Enemy Weakened</strong> for reducing damage taken from those types. It uses Legion Points and Stars."
     },
     {
       "type": "h3",
@@ -1575,36 +1615,36 @@
     },
     {
       "type": "p",
-      "html": "<strong>Prioritize the two aerial-specific lines for PVP.</strong> In <strong>Legion Technology → Damage Increase</strong>, the upgrade is “Increase damage against aerial enemies (including players).” The defensive counterpart is in <strong>Legion Technology → Enemy Weakened</strong>: “Reduce damage from aerial enemies (including players).” These affect fights with other players and the maximum listed level is 100 for each. The offensive aerial bonus is useful across multiple damage sources, so it often offers broader value than a single-weapon upgrade. <strong>These are long-term priorities, not requirements to max both before upgrading anything else.</strong>"
+      "html": "For PvP, pay attention to two upgrades that explicitly include other players: <strong>“Increase damage against aerial enemies (including players)”</strong> in Damage Increase, and <strong>“Reduce damage from aerial enemies (including players)”</strong> in Enemy Weakened. Their listed maximum level is 100. These can help across a wide range of PvP attacks and defenses, so they deserve sustained investment. That does not mean you must max both before improving your weapons."
     },
     {
       "type": "p",
-      "html": "In <strong>Legion Technology → Equipment Reinforce</strong>, each weapon has upgrades to Base Attack, Attack Rate, Crit Rate and Crit Damage. For a Destroyer energy PVP build, here is a practical way to decide which to raise next:"
+      "html": "Equipment Reinforce lets you improve individual weapons through Base Attack, Attack Rate, Crit Rate, and Crit Damage. Instead of following one universal ranking, start by looking at what damage your current weapons actually contribute:"
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Start with the weapon dealing meaningful damage.</strong> Compare current Maingun, Winggun and Missile stats rather than assuming the same order for every build.",
+          "html": "<strong>Upgrade a weapon that matters to your damage.</strong> Compare Maingun, Winggun, and Missile performance in your current formation. The best choice may differ between Conqueror and Destroyer.",
           "nested": null
         },
         {
-          "html": "<strong>Base Attack</strong> is broadly useful when that weapon contributes significant damage. <strong>Crit Rate</strong> matters when you still have effective crit headroom, and <strong>Crit Damage</strong> is stronger when crits happen often.",
+          "html": "<strong>Choose the stat for the situation.</strong> Base Attack raises direct output. Crit Rate matters when your attacks can still gain from more crits, including against PvP Crit Resistance. Crit Damage helps most when you already land crits reliably.",
           "nested": null
         },
         {
-          "html": "<strong>Attack Rate</strong> increases the number of attacks, so it can be competitive with raw damage upgrades. Compare costs and current rates; it does not belong permanently at the bottom of a universal ranking.",
+          "html": "<strong>Do not dismiss Attack Rate.</strong> More attacks can compete with bigger hits. Compare current cooldowns, damage, and upgrade prices; a single fixed order cannot capture every build.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "There is no demonstrated universal sequence of Base Attack → Crit Rate → Crit Damage → Attack Rate. In the mechanics reference, rainbow Titan Winggun has a base cooldown of about 1.6 seconds and damage coefficient of 0.09; Missile has about 4 seconds and 0.225, respectively. Those factors approximately offset <em>before</em> individual weapon attack values, attack-speed upgrades, crit effects and other bonuses. The right next level depends on your current build and its cost."
+      "html": "For example, the mechanics model lists a rainbow Titan Winggun at roughly 1.6 seconds between shots with a damage coefficient of 0.09, and Missile at about four seconds with a coefficient of 0.225. Those numbers partly offset one another before considering weapon attack values, crits, and other bonuses. The point is not to memorize them; it is to compare what the weapon actually contributes before spending."
     },
     {
       "type": "p",
-      "html": "<strong>Keep Armor Base HP competitive.</strong> If you are losing because you cannot survive, improve HP rather than completing every weapon upgrade first. Players focused on PVP can put Ground/Sea, Boss, Normal Enemy, and Strong Foe bonuses lower on the list; keep those if Titan Challenge or Legion Hunt damage matters to you. Before resetting Legion Technology, check what you would lose in PVE."
+      "html": "Keep Armor Base HP in mind too. If you are dying before your damage can matter, more survivability may help more than the next weapon upgrade. If PvP is your main focus, aerial-enemy bonuses usually deserve attention ahead of bonuses limited to bosses or ground/sea enemies. Check what you would lose in PvE before resetting any Legion Technology."
     },
     {
       "type": "h1",
@@ -1613,16 +1653,16 @@
     },
     {
       "type": "p",
-      "html": "Event progress resets. A good month of saving can produce much more than spending the same resources a little at a time. The milestones below are current guide benchmarks; check the live event screen before spending."
+      "html": "Most event milestones reset when a new event starts. Saving enough to reach a meaningful reward threshold is often better than spending every ticket or chip as soon as you get it. Use the table below to plan, then check the live event screen before committing: rewards and thresholds can change."
     },
     {
       "type": "h2",
       "id": "the-weekly-event-cycle",
-      "title": "Event targets at a glance"
+      "title": "Know the milestone before you spend"
     },
     {
       "type": "p",
-      "html": "Save event-specific currencies because milestone progress resets for each new event. Within an event, several events permit up to <strong>four reward rounds</strong>. The weekly theme schedule and current reward values can change, so confirm the live milestone screen before committing."
+      "html": "Several events let you complete up to four reward rounds in one event. A full round gives the complete milestone rewards, but the best stopping point is not always the end of a round. The Mech Event is the clearest example: its early milestones can be valuable enough to justify stopping at 100 pulls."
     },
     {
       "type": "table",
@@ -1684,7 +1724,11 @@
     },
     {
       "type": "p",
-      "html": "A full Mech Event round is 400 pulls, but the earliest 100 pulls in a reward round can be especially valuable. A practical plan is <strong>100 pulls</strong> when resources are limited, or <strong>500 pulls</strong> when affordable: finish one 400-pull round and collect the attractive first 100 pulls of the next. The precise reward table can change; verify it in the live event. Ladybug has no N-class selectable, so frequent Mech Event pulls are the main way to progress it."
+      "html": "The Mech Event has <strong>400 pulls per full reward round</strong>. Because the rewards in the first 100 pulls can be especially attractive, two practical stopping points are <strong>100 pulls</strong> when resources are limited, or <strong>500 pulls</strong> if you can afford to finish a 400-pull round and claim the first 100 pulls of the second. Do not assume 400 is always the best place to stop. Check the current reward screen before spending, as the exact rewards have not been independently verified for every event. Ladybug has no N-class selectable, so random Mech Event pulls are particularly important for developing it."
+    },
+    {
+      "type": "p",
+      "html": "This does <strong>not</strong> mean you should spend 100 pulls in every Mech Event no matter what. Check how close you are to a larger target, what rewards are currently offered, and whether you are saving for another event."
     },
     {
       "type": "h2",
@@ -1693,15 +1737,15 @@
     },
     {
       "type": "p",
-      "html": "Drone Event milestones count <strong>8,000 Rhenite of qualifying spend per round</strong>; up to four rounds are available and the progress resets at each event. Purchased drones can be resold for <strong>80%</strong> of their purchase price, but their full purchase price counts toward the milestone. Without refreshes, an 8,000-spend round therefore costs a theoretical net 1,600 Rhenite."
+      "html": "The Drone Event tracks <strong>8,000 Rhenite of qualifying spend</strong> for each complete reward round. Up to four rounds are possible, and progress resets at the next event. When you buy a drone, its full price counts toward the milestone. If you sell it afterward, you get <strong>80% of its purchase price back</strong>. That means 8,000 Rhenite spent entirely on drones costs only 1,600 Rhenite net after reselling them."
     },
     {
       "type": "p",
-      "html": "Refreshing the shop costs 10 Rhenite and counts toward progress but cannot be refunded. If a round spends 8,000 total including refreshes, approximate net spend is <strong>1,600 + 80% of refresh costs</strong>; overshooting the threshold adds some expense. A documented example with 26 refreshes and 7,800 in drone purchases totals 8,060 milestone spend and 1,820 net cost after 80% refunds."
+      "html": "Shop refreshes cost 10 Rhenite each. They count toward event spend, but unlike drone purchases, cannot be resold or refunded. So a round that reaches exactly 8,000 total spend costs roughly <strong>1,600 plus 80% of what you spent on refreshes</strong>. For example: 26 refreshes cost 260, plus drone purchases of 7,800, for 8,060 total event credit. Selling the drones returns 6,240, leaving 1,820 net Rhenite spent. The slight overshoot above 8,000 is included in that example."
     },
     {
       "type": "p",
-      "html": "Drone recasts spend Modified Chips that count at <strong>2× their quantity</strong> toward Drone Event progress; those chips are consumed rather than refunded. Save meaningful recasts for the event. The exact cost of a round depends on purchases, refreshes, and recasts. Use the <a href=\"https://drone-calc-nu.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Drone Event Calculator</a> to model your inventory. Players with a Volley Vortex pass may find all four rounds easier; without it, two or three rounds are achievable for some active players."
+      "html": "Drone recasts are another way to contribute: each Modified Chip spent on recasting counts as <strong>two</strong> toward the Drone Event milestone. You do not get those chips back, so save useful recasts for event weeks rather than rerolling just to fill a meter. Your net Rhenite cost depends on purchases, refunds, refreshes, and recasts. The <a href=\"https://drone-calc-nu.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Drone Event Calculator</a> can help plan a round. With a Volley Vortex pass, completing four rounds may be easier; some active players can complete two or three without one."
     },
     {
       "type": "h2",
@@ -1710,7 +1754,7 @@
     },
     {
       "type": "p",
-      "html": "The Pilot Event requires <strong>300 pulls per full reward round</strong> and permits up to four rounds; progress resets between events. Save tickets so you can finish a round rather than spending into incomplete milestones. Many active players can manage one round and occasionally two with diamonds. SR pilot selectables from the event can target the equipped pilots you intend to awaken."
+      "html": "A full Pilot Event reward round takes <strong>300 pulls</strong>, and up to four rounds may be completed in one event. Milestone progress resets between events. Save Recruitment Tickets until you can reach a full round rather than buying scattered partial rewards. Active players may manage one round, and sometimes two with diamonds. SR pilot selectables are especially useful for developing the pilots you plan to equip and awaken."
     },
     {
       "type": "h2",
@@ -1719,23 +1763,23 @@
     },
     {
       "type": "p",
-      "html": "A full Sentinel Event reward round requires <strong>8,000 Sentinel Chips spent</strong>. Milestone progress resets each event and can repeat up to four rounds (32,000 spent). Skipping an event to save for a full round is usually better than spending partway toward an expiring milestone. Completing a round grants a selectable SSR in addition to SSR copies bought during the round."
+      "html": "A full Sentinel Event reward round requires <strong>8,000 Sentinel Chips spent</strong>. Progress resets at the next event, and up to four rounds (32,000 total spend) can be completed in one event. If you cannot reach 8,000, saving for the next event is often better than spending partway toward a milestone you will lose. Finishing a round awards a selectable SSR sentinel in addition to anything purchased from the shop."
     },
     {
       "type": "p",
-      "html": "Shop refreshes: four free daily refreshes, or paid refreshes costing 10 Sentinel Chips each; both count toward the SSR refresh counters. One SSR is guaranteed every 20 refreshes, and bonus random SSR appearances do not reset that counter. These refresh counters persist between events."
+      "html": "The shop offers <strong>four free refreshes a day</strong>. Paid refreshes cost 10 Sentinel Chips each. Free and paid refreshes advance the SSR refresh counters, which carry over between events. One SSR is guaranteed after every 20 refreshes in that counter. A random bonus SSR can appear earlier without resetting the 20-refresh count."
     },
     {
       "type": "p",
-      "html": "Pick a preferred SSR. After <strong>five appearances of a nonpreferred SSR</strong> (you do not need to buy them), the next refresh guarantees your preferred SSR. This counter carries between events, and changing preferred selection does not reset it. An appearance of the preferred SSR resets the counter whether purchased or not."
+      "html": "There is also a separate preferred-SSR counter. Choose the SSR you want. After <strong>five nonpreferred SSR appearances</strong>, the next refresh guarantees your preferred SSR; you do not have to buy those five to advance the counter. Changing your preferred selection does not reset it. When the preferred SSR appears, the counter resets even if you do not buy that copy."
     },
     {
       "type": "p",
-      "html": "You can use free refreshes before the next event to leave a preferred SSR on the shop screen, then stop refreshing until the event starts so the purchase counts toward the new milestone. Each SSR costs 1,000 chips, with one copy per appearance. A full round may yield roughly four to five preferred copies from refreshes plus the selectable milestone reward, depending on luck and spending. Extra low-rarity sentinel purchases can fill remaining milestone spend, but manage inventory slots (additional slots have cost 500 diamonds)."
+      "html": "One useful tactic is to use the free refreshes <em>before</em> the event until your preferred SSR appears in the shop. Then stop refreshing. When the event starts, purchase that SSR so its 1,000-chip price counts toward the new 8,000-chip milestone. You can buy only one copy per SSR appearance. Depending on refreshes and luck, a full event round may produce roughly four or five preferred copies through the shop, plus the selectable SSR reward. Lower-rarity purchases can help finish the spending milestone, but watch your inventory space. Extra slots have cost 500 diamonds."
     },
     {
       "type": "p",
-      "html": "A 40-copy SSR is a long-term goal, not a quick upgrade. Collecting all required sentinels for a combo bonus activates it manually; do not assume its persistence after selling a component without testing."
+      "html": "Fully evolving an SSR sentinel requires 40 total copies, so treat it as a long-term investment. Collecting the right sentinels for a combination can also provide a bonus. Activate that bonus manually once you have the required sentinels; its behavior after selling one of them has not been verified."
     },
     {
       "type": "h2",
@@ -1744,11 +1788,15 @@
     },
     {
       "type": "p",
-      "html": "A possible full daily routine is 140 diamonds for engine parts, 300 across three challenge resources, and 100 for Chip Factory parts, or <strong>540 diamonds a day</strong> before optional shop items. That is an <em>example</em>, not a baseline every player should fund."
+      "html": "Before refreshing a daily challenge or buying shop resources, ask what you are trying to finish: a pilot awakening, a drone evolution, a sentinel passive, or an event round. That answer should determine your diamond spending."
     },
     {
       "type": "p",
-      "html": "Don’t stretch to buy everything. Use diamonds on whichever upgrade is holding back your main formation, while protecting the savings needed for event milestones."
+      "html": "One full daily spending routine has been roughly <strong>540 diamonds</strong>: 140 on engine parts, 100 each on three daily challenge resources (300 total), and 100 on Chip Factory parts. This is an example of an aggressive routine, <strong>not a requirement</strong> or a target for every player. Check which supplies you are actually short of before buying any of them."
+    },
+    {
+      "type": "p",
+      "html": "If your diamonds are limited, it is better to fund the upgrade that helps your current build most than to buy a little of everything. Leave room to save for the Pilot, Mech, Sentinel, or Drone Event milestone you are planning to complete."
     },
     {
       "type": "h1",
@@ -1757,7 +1805,7 @@
     },
     {
       "type": "p",
-      "html": "The details below are for players who want exact formulas, stat caps, recast odds, or uncertain drone interactions. You can use the main guide without reading these first."
+      "html": "This section keeps the exact numbers and less certain interactions in one place. Use it when you need to calculate a matchup, compare a particular passive, or check whether an assumed cap is real. You do not need to read it before making progress with the main guide."
     },
     {
       "type": "h2",
@@ -1766,7 +1814,7 @@
     },
     {
       "type": "p",
-      "html": "Defense Break (your offensive stat) is compared against the opponent's Defense (their defensive stat). The difference between the two, not the raw values, drives a damage multiplier on top of everything else you've built. The same math applies in reverse on incoming damage: opponent's PDB vs. your PD, and opponent's EDB vs. your ED."
+      "html": "Defense Break is an offensive stat; Defense is the matching defensive stat. For physical damage, compare your PDB against the target’s PD. For energy damage, compare your EDB against the target’s ED. The <strong>difference</strong> between those values changes your outgoing damage. Reverse the comparison to understand incoming damage: their PDB versus your PD, or their EDB versus your ED."
     },
     {
       "type": "h3",
@@ -1791,7 +1839,7 @@
     },
     {
       "type": "p",
-      "html": "The only thing that matters is the gap: Your Break minus Enemy Defense. That gap places you in one of three zones: below (penalty), equal (neutral, 1.00x), or above (bonus). The same logic applies on the defensive side: when your PD exceeds an opponent's PDB, they are in their penalty zone against you."
+      "html": "You only need the gap between Break and Defense to apply the formula. At equal values, the multiplier is 1.00×. A positive gap increases damage; a negative gap reduces it. For example, if your PDB is 300 above their PD, the bonus-side formula gives 1.30× before other modifiers. The reverse comparison tells you how well your defenses hold up against the opponent."
     },
     {
       "type": "h3",
@@ -1800,7 +1848,7 @@
     },
     {
       "type": "p",
-      "html": "When your Defense Break matches the enemy’s Defense, the multiplier is 1.00×: neither a penalty nor a bonus. <strong>There is no sudden damage cliff or jump at parity.</strong> The multiplier changes smoothly as the gap closes. Getting near parity is valuable, but Defense Break above parity can still help; compare it with the value of your other upgrades."
+      "html": "When your Break equals their Defense, damage is at the neutral 1.00× multiplier. The effect changes <strong>smoothly</strong> as the gap changes: parity is a convenient comparison point, not a sudden cliff. Increasing Defense Break above parity can still help, so do not stop just because the two numbers match."
     },
     {
       "type": "h3",
@@ -1809,7 +1857,7 @@
     },
     {
       "type": "p",
-      "html": "A positive Break gap increases damage, while a negative gap reduces it. The effects are reciprocal rather than mirror-image percentage changes:"
+      "html": "Below parity, a given negative gap reduces damage by less than the same positive gap increases it. That is because the penalty uses a reciprocal formula. The table shows both directions so you can see the size of the difference:"
     },
     {
       "type": "table",
@@ -1863,7 +1911,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Priority:</strong> close a major Break deficit first. Parity is a useful reference, not a point where returns abruptly change; compare further Defense Break with other upgrades before spending."
+      "html": "When your Break is far below the opponent’s Defense, closing that gap can be a very valuable upgrade. But the formula has no magic threshold: compare the cost of more Break with your other available improvements."
     },
     {
       "type": "h2",
@@ -1872,7 +1920,7 @@
     },
     {
       "type": "p",
-      "html": "Most important caps apply after your opponent's counters. Going above a cap isn't necessarily wasted in PVP."
+      "html": "Most of these are <strong>effective caps</strong> after accounting for the opponent’s defenses. A displayed stat above a cap may still help in PvP because the opponent cancels some of it. For example, 150% displayed Crit Rate against 70% Crit Resistance leaves 80% effective Crit Rate."
     },
     {
       "type": "table",
@@ -1942,28 +1990,28 @@
     },
     {
       "type": "p",
-      "html": "Hit, dodge, and crit don't apply to every attack. Knowing what's on and off the dice roll matters for passive priorities and for how you think about damage sources:"
+      "html": "Different attacks follow different rules. Normal weapon hits and drone normal attacks can miss against Dodge. Drone skills, sentinel skills, and Mech Spirit skills generally do not use that same Hit Rate roll. This is why a Burn-drone skill can still damage a high-Dodge opponent even if ordinary attacks miss."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Hit and Dodge apply to:</strong> weapon and drone normal attacks. Weapon crit chance uses global and weapon-specific stats; drone normal attacks normally use Spot Weakness for crit chance.",
+          "html": "<strong>Normal weapon and drone attacks:</strong> Hit Rate and Dodge matter. Weapon crit chance uses global and weapon-specific stats; drone normal attacks normally need Spot Weakness to crit.",
           "nested": null
         },
         {
-          "html": "<strong>Always hit, normally do not crit:</strong> drone skills, sentinel skills, and mech skills. Their damage does not depend on Hit Rate.",
+          "html": "<strong>Drone, sentinel, and Mech Spirit skills:</strong> generally hit without the normal Hit Rate check, and normally do not crit.",
           "nested": null
         },
         {
-          "html": "<strong>Evil Eye exception:</strong> equipped Evil Eye allows burning-drone normal attacks and skills to crit using its conversion of Crit Rate.",
+          "html": "<strong>With Evil Eye:</strong> Burn-drone normal attacks and skills gain a special way to crit using converted Crit Rate.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "These differences matter when choosing passives. For example, Sentinel Enhancement improves sentinel skills that do not need a Hit Rate roll."
+      "html": "This distinction explains why a sentinel that deals damage through a skill does not need Hit Rate in the same way your normal weapon attacks do. It also explains why improving Dodge cannot stop a Burn skill that has already applied its damage-over-time effect."
     },
     {
       "type": "h2",
@@ -1975,6 +2023,10 @@
       "kind": "cap",
       "label": "Hard cap",
       "html": "The burning-drone enhancement multiplier is capped at <strong>2.0×</strong> (a maximum +100% effective enhancement), and floored at <strong>1.0×</strong>. In the combat-mechanics model, the net bonus depends on your Burning Enhancement minus the enemy’s Burning Decrease. That means how much raw enhancement you need depends on the actual target:"
+    },
+    {
+      "type": "p",
+      "html": "A quick example: against an opponent with 50% Burn Decrease, 100% raw Burn Enhancement leaves you with only 50% effective enhancement. Reaching the full 100% effective bonus would require 150% raw. This is why “100% Burn” is a natural PvE target but not always enough for PvP."
     },
     {
       "type": "ul",
@@ -1999,11 +2051,11 @@
     },
     {
       "type": "p",
-      "html": "For a target with zero Burning Decrease, 100% raw Burning Enhancement reaches the cap. Against a player with Burning Decrease, up to <strong>100% plus the opponent’s Burning Decrease</strong> can be useful. Importantly, the mechanics model floors the elemental multiplier at 1.0×: Burning Decrease can cancel an enhancement bonus, but does not reduce burning-drone damage below its unenhanced baseline through this multiplier alone."
+      "html": "The central rule is <strong>effective Burn Enhancement = your raw Burn Enhancement minus the target’s Burn Decrease, capped at +100% and floored at 0%</strong> for this damage multiplier. Against a boss with no Burn Decrease, 100% raw is enough. Against a PvP opponent with 50% Burn Decrease, you would need 150% raw to reach the same 100% effective bonus. The floor means Burn Decrease can remove this bonus but does not push this multiplier below its unenhanced 1.0× baseline."
     },
     {
       "type": "p",
-      "html": "For PVE, once chips, sentinel passives, mech bonuses, and Camp Tech reach the cap together, use remaining chip slots for Crit or other damage stats."
+      "html": "Once your other bonuses supply enough Burn Enhancement against a PvE boss, change spare Burn chips into Crit Rate chips. That is the foundation of the advanced PvE Burn/Crit progression described earlier."
     },
     {
       "type": "h2",
@@ -2012,11 +2064,11 @@
     },
     {
       "type": "p",
-      "html": "Ordinary direct-hit Crit Rate is effectively capped at <strong>80%</strong> after subtracting the opponent’s Crit Resistance, but the displayed Crit Rate stat can be much higher. <strong>Burn Crit Rate also has an 80% effective cap.</strong> Evil Eye (SR Mech Spirit) converts eligible Crit Rate above the target’s Crit Resistance into Burn Crit Rate. The conversion uses the full eligible Crit Rate, including amounts above the ordinary 80% crit cap, until Burn Crit Rate itself reaches 80%."
+      "html": "There are two separate numbers to keep in mind: <strong>displayed Crit Rate</strong> and <strong>effective critical-hit chance</strong>. Regular critical hits cannot exceed an 80% effective chance after subtracting the target’s Crit Resistance. Your displayed Crit Rate, however, can rise much higher. Evil Eye uses the eligible displayed Crit Rate, including the amount above 80%, to create Burn Crit Rate. Burn Crit Rate has its own 80% effective cap."
     },
     {
       "type": "p",
-      "html": "At Evil Eye skill level 1, each 10% eligible Crit Rate produces about 2% Burn Crit Rate; at level 13 (Mech Level 60), each 10% produces 5.6% and the skill also grants +25.5% Burn Damage Boost at the start of battle. Against a PVE target assumed to have no Crit Resistance, max Evil Eye needs approximately <strong>142.9% displayed Crit Rate</strong> to reach 80% Burn Crit Rate. PVE Crit Resistance is believed to be zero but has not been definitively verified."
+      "html": "Evil Eye (SR Mech Spirit) converts Crit Rate left after the target’s Crit Resistance. At skill level 1, 10% eligible Crit Rate converts to about 2% Burn Crit Rate. At level 13 (Mech Spirit level 60), 10% converts to 5.6%, and Evil Eye also grants +25.5% Burn Damage Boost at battle start. If the PvE target has no Crit Resistance, approximately <strong>142.9% displayed Crit Rate</strong> reaches the 80% Burn Crit Rate cap at maximum Evil Eye. Players generally observe little or no PvE Crit Resistance, but that assumption has not been independently verified for every enemy."
     },
     {
       "type": "table",
@@ -2067,7 +2119,7 @@
     },
     {
       "type": "p",
-      "html": "For PVE Burn, first achieve 100% effective Burn Enhancement, then reach 80% effective Burn Crit Rate, then keep increasing your relevant Defense Break. Additional Crit Rate beyond the PVE cap is still useful if you share this formation with a PVP Crit build, because PVP opponents may have significant Crit Resistance. <strong>Remove Evil Eye for PVP:</strong> legion battle experience indicates that its conversion eliminates the normal weapon crits required by Toad Lord; do not recommend the two together."
+      "html": "For PvE Burn, the useful sequence is: first reach 100% effective Burn Enhancement; then build Crit Rate until Evil Eye can reach 80% effective Burn Crit Rate; then keep improving Defense Break for your chosen gear type. More Crit Rate beyond the PvE target may still help when you switch that formation to conventional PvP Crit and face high Crit Resistance. <strong>Remove Evil Eye for that PvP setup.</strong> Blackout players report that its conversion leaves Toad Lord without the normal weapon crits required to trigger, so the two should not be recommended together."
     },
     {
       "type": "h2",
@@ -2076,17 +2128,17 @@
     },
     {
       "type": "p",
-      "html": "Without Evil Eye, drone normal attacks do not use global Crit Rate. They need the Spot Weakness passive to crit, and Raging Assault increases the damage of those crits. Spot Weakness still has value by itself; Raging Assault without a way to crit does not."
+      "html": "Without Evil Eye, drone normal attacks do not use your ordinary global Crit Rate. They need the <strong>Spot Weakness</strong> passive to crit. <strong>Raging Assault</strong> increases the damage of those drone crits, so it is most useful when you already have a way to land them. Spot Weakness can work on its own; Raging Assault does little for a drone that cannot crit."
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>With Evil Eye:</strong> burning-drone normal attacks and skills can crit using Evil Eye’s converted Crit Rate and the global Crit Damage multiplier. These replace the ordinary Spot Weakness / Raging Assault interaction for those attacks.",
+          "html": "<strong>With Evil Eye:</strong> Burn-drone normal attacks and skills can crit using Evil Eye’s converted Crit Rate and the global Crit Damage multiplier. That replaces their normal Spot Weakness/Raging Assault crit calculation for these attacks.",
           "nested": null
         },
         {
-          "html": "<strong>Burn ticks:</strong> the damage-over-time effect does not itself crit; it uses its own burn damage mechanics.",
+          "html": "<strong>Burn ticks:</strong> The separate damage-over-time ticks do not themselves crit. Burn Crit Rate refers to the eligible Burn-drone attacks, not every individual damage-over-time tick.",
           "nested": null
         }
       ]
@@ -2098,7 +2150,7 @@
     },
     {
       "type": "p",
-      "html": "<em>Preference:</em> I favor Lich among accessible R-tier burn drones because its listed burn bonus appears broadly useful. The exact advantage over Cerberus and Scorpion Lion depends on your lineup and still needs battle-log testing. In particular, the combat-mechanics paper has not verified how Lich combines with Sagittarius and Star Envoy."
+      "html": "<strong>My current preference is Lich</strong> among accessible R Burn drones, because its skill helps Burn damage across your whole drone trio. Cerberus and Scorpion Lion depend more on specific conditions. The July mechanics research did not prove an exact damage ranking, and Lich’s interaction with Sagittarius or Star Envoy is still uncertain."
     },
     {
       "type": "table",
@@ -2116,7 +2168,7 @@
           "cells": [
             "Lich",
             "Listed +15% burn-damage bonus; exact stacking with other burn buffs unverified",
-            "Likely valuable as a broad burn buff. The mechanics paper suggests Lich may add to the same Flaming bonus pool as Sagittarius and Star Envoy, but has not tested it. Do not assume it is a separate 1.15× multiplier on every tick."
+            "A broadly useful team bonus, but do not count it as an independent 1.15× multiplier on every Burn tick. It may share the same bonus pool as other Burn buffs."
           ]
         },
         {
@@ -2124,7 +2176,7 @@
           "cells": [
             "Cerberus",
             "255% skill coefficient and +3.5% listed bonus per Burn stack; exact interaction unverified",
-            "Mechanics research suspects a multiplicative bonus, possibly additive with Lyra’s stack modifier. Do not assume 255% + (6 × 3.5%) or a fixed ranking against Lich."
+            "The bonus depends on current Burn stacks. Mechanics research suspects it multiplies the skill’s damage rather than simply adding to its listed coefficient, but the exact interaction needs testing."
           ]
         },
         {
@@ -2132,14 +2184,14 @@
           "cells": [
             "Scorpion Lion",
             "+1 burn stack when recoil is active",
-            "Situational. Burn has a six-stack FIFO limit, so an extra stack can replace an older one rather than increase the stack count. Its value depends on recoil being active and on which stack is displaced. Test it against your actual lineup."
+            "More Burn stacks can help under the six-stack limit, but a new stack replaces the oldest when the target is already full. The recoil condition also has to be met."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "A good rule of thumb is to prefer bonuses that help the whole burn setup consistently over effects that need special conditions. Lich looks promising on that basis, but the exact ranking is a recommendation, not verified damage math."
+      "html": "If you cannot test every drone combination, favor a bonus that helps your full Burn setup reliably. Treat Lich as a practical recommendation, not a mathematically proven winner against the other R drones."
     },
     {
       "type": "h2",
@@ -2153,7 +2205,7 @@
     },
     {
       "type": "p",
-      "html": "Your fully developed sentinel may offer several passive slots, in gold, purple, or blue. The published per-slot rates below are useful for planning; <strong>confirm how many slots are actually available on the sentinel you are rerolling</strong> and remember that duplicate-family restrictions may change the effective chances."
+      "html": "Each developed sentinel can have up to four passive slots. The rates below describe what a given <em>available</em> slot might roll, not your chance of getting a perfect full set. Some passive combinations are restricted, so the exact odds after you lock several slots are not fully documented."
     },
     {
       "type": "table",
@@ -2197,7 +2249,7 @@
     },
     {
       "type": "p",
-      "html": "Finding a gold passive isn't particularly rare. Finding <strong>the right gold passive</strong> is a different story."
+      "html": "Gold rolls are uncommon but not impossibly rare. <strong>A specific gold passive</strong>, such as Gold Healing Enhancement, is much harder to find."
     },
     {
       "type": "h3",
@@ -2206,7 +2258,7 @@
     },
     {
       "type": "p",
-      "html": "The table assumes each available slot independently has a 0.5% chance of yielding <strong>one particular gold passive</strong>. That is an illustrative planning model, not a guarantee of the game’s duplicate-handling behavior. A recast rerolls the unlocked slots; locking one protects it but leaves fewer chances. <strong>Use your actual number of open slots</strong> rather than assuming every sentinel offers four."
+      "html": "This is a planning estimate, not a promise about the game’s actual random-number behavior. It assumes that every unlocked passive slot has an independent 0.5% chance to roll the <strong>one specific gold passive</strong> you want. Locking a good existing roll protects it but leaves fewer open slots for the next attempt."
     },
     {
       "type": "table",
@@ -2260,15 +2312,15 @@
     },
     {
       "type": "p",
-      "html": "Dollar estimates assume <strong>20 Recast Cores per attempt</strong> at $3 per 20 and exclude all Protection Cores. Locking slots <strong>never changes the 20 Recast Core cost</strong>; the separate Protection Core cost is explained above. These are averages, not guaranteed outcomes, and ignore free materials. Duplicate-passive restrictions may affect the real odds."
+      "html": "The dollar estimates assume 20 Recast Cores per attempt at $3 for 20. They exclude the separate cost of Protection Cores, which can become much larger once you lock slots. They also ignore free materials. Duplicate-passive rules could affect the real probability. Treat the table as a way to understand <em>why</em> perfect recasts get expensive, not as a spending recommendation."
     },
     {
       "type": "p",
-      "html": "Your legion reports that different colors of the same passive can coexist on a developed sentinel (for example, gold and purple Heal Enhancement). Do not plan on two copies of the same color and type. Because duplicate eligibility is not fully documented in the supplied mechanics paper, confirm the available combinations in-game before buying recast materials."
+      "html": "Different colors of the same passive can coexist: for example, Gold Healing Enhancement and Purple Healing Enhancement can occupy separate sentinel slots. You cannot rely on getting two copies of the same type and color. The exact handling when some rolls are unavailable is not fully documented, so treat the probabilities as estimates."
     },
     {
       "type": "p",
-      "html": "<em>Preference:</em> Prioritize one excellent gold passive on each sentinel before spending heavily to chase a second. A strong gold paired with useful purples is already an effective sentinel. Perfect rolls can take hundreds of attempts and the same resources could improve other parts of your build. A second gold is worth chasing only when its expected benefit outweighs that cost."
+      "html": "A sentinel with one great gold passive and several useful supporting passives is already a success. The odds of landing a second exact gold can be expensive, and those same materials might make your drones, pilots, or another sentinel stronger. Chase a second ideal gold when the rest of your build is ready for that investment."
     },
     {
       "type": "h2",
@@ -2277,7 +2329,7 @@
     },
     {
       "type": "p",
-      "html": "Limited battle-log observations suggest that, when sentinels fire at the same time, the higher-BP player’s sentinel may act first. The supplied mechanics reference explicitly notes that more testing is needed; treat this as a possible timing factor, not a confirmed rule."
+      "html": "Some Blackout battle logs suggest that when two sentinels fire at the same instant, the higher-BP player’s sentinel may activate first. This is not confirmed by controlled testing, so do not build a strategy that depends on that firing order."
     }
   ]
 }
