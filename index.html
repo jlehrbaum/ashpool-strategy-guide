@@ -104,6 +104,21 @@
     flex-shrink: 0;
   }
   .session-signout:hover { text-decoration: underline; }
+  .download-bar {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.75rem;
+  }
+  .download-link {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .download-link::before { content: "⬇ "; opacity: 0.7; }
+  .download-link:hover { text-decoration: underline; }
 
   #toc {
     overflow-y: auto;
@@ -136,6 +151,18 @@
     margin-top: 8px;
     font-size: 0.85rem;
   }
+  /* Parts (and Start Here) are a layer above sections even though both are
+     h1 in the content. Elevate them visually in the TOC. */
+  .toc-part {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .toc-part:first-child { border-top: none; margin-top: 0; padding-top: 4px; }
   .toc-level-2 { }
   .toc-level-3 { color: var(--text-dim); font-size: 0.8rem; }
 
@@ -420,6 +447,19 @@
   #toc::-webkit-scrollbar-track { background: transparent; }
   #toc::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
+  @media print {
+    body { background: white; color: black; }
+    #sidebar, #toc-toggle, #toc-overlay, #search, #no-results, .doc-chips { display: none !important; }
+    #main { margin-left: 0; padding: 0; max-width: 100%; }
+    .title-block { padding-top: 0; }
+    #content { color: black; }
+    h1, h2, h3, p, li, td, th, strong, em { color: black !important; }
+    .callout { border-left-width: 3px; background: #f3f3f3 !important; }
+    a, #content a { color: #1a4bd1 !important; }
+    .toc-item, .tag, .session-bar, .download-bar { display: none !important; }
+    table, .table-wrap { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+  }
   @media (max-width: 700px) {
     :root { --sidebar-w: 0px; }
     #toc-toggle { display: block; }
@@ -548,7 +588,9 @@
     TOC.innerHTML = entries.map(e => {
       const pad = TOC_PAD[e.level] || 12;
       const level = e.level.slice(1); // "1","2","3"
-      return `<a href="#${e.id}" class="toc-item toc-level-${level}" style="padding-left:${pad}px">${e.title}</a>`;
+      const isPart = e.level === 'h1' && /^(Part \d|Start Here)/i.test(stripTags(e.title));
+      const partCls = isPart ? ' toc-part' : '';
+      return `<a href="#${e.id}" class="toc-item toc-level-${level}${partCls}" style="padding-left:${pad}px">${e.title}</a>`;
     }).join('\n');
   }
 
@@ -683,6 +725,7 @@
       const tocEntries = renderContent(guide.content || []);
       renderToc(tocEntries);
       wireUp();
+      wireDownloads(guide);
 
       // Show the signed-in user and sign-out link in the sidebar.
       // Server URL-encodes the header value because Discord names can
@@ -705,6 +748,127 @@
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  // ─────────────────────────────────────────────────────────────────────
+  // Downloads: JSON (raw structure) and Markdown (AI-friendly plain text).
+  // Also supports browser-print → PDF via Cmd+P.
+  // ─────────────────────────────────────────────────────────────────────
+
+  function wireDownloads(guide) {
+    const header = document.getElementById('sidebar-header');
+    const bar = document.createElement('div');
+    bar.className = 'download-bar';
+    bar.innerHTML =
+      '<a class="download-link" href="#" data-fmt="md">Download Markdown</a>' +
+      '<a class="download-link" href="#" data-fmt="json">Download JSON</a>';
+    header.appendChild(bar);
+
+    bar.addEventListener('click', (e) => {
+      const a = e.target.closest('a[data-fmt]');
+      if (!a) return;
+      e.preventDefault();
+      const fmt = a.getAttribute('data-fmt');
+      if (fmt === 'json') {
+        downloadFile('wing-fighter-strategy-guide.json', JSON.stringify(guide, null, 2), 'application/json');
+      } else {
+        downloadFile('wing-fighter-strategy-guide.md', guideToMarkdown(guide), 'text/markdown;charset=utf-8');
+      }
+    });
+  }
+
+  function downloadFile(filename, data, mime) {
+    const blob = new Blob([data], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function guideToMarkdown(guide) {
+    const lines = [];
+    const m = guide.meta || {};
+    if (m.title) lines.push('# ' + stripTags(m.title));
+    if (m.tagline) lines.push('', stripTags(m.tagline));
+    if (m.metaLine) lines.push('', '_' + stripTags(m.metaLine) + '_');
+    if (m.author || m.legion) {
+      lines.push('', `_${stripTags(m.author || '')}${m.legion ? ' — ' + stripTags(m.legion) : ''}_`);
+    }
+    lines.push('');
+
+    for (const b of guide.content || []) {
+      switch (b.type) {
+        case 'h1': lines.push('', '## ' + stripTags(b.title), ''); break;
+        case 'h2': lines.push('', '### ' + stripTags(b.title), ''); break;
+        case 'h3': lines.push('', '#### ' + stripTags(b.title), ''); break;
+        case 'p': lines.push(htmlToMd(b.html || ''), ''); break;
+        case 'ul': lines.push(listToMd(b.items, '- ', 0), ''); break;
+        case 'ol': lines.push(listToMd(b.items, '1. ', 0), ''); break;
+        case 'table': lines.push(tableToMd(b.rows || []), ''); break;
+        case 'callout':
+          const label = b.label ? `**[${stripTags(b.label).toUpperCase()}]** ` : '';
+          lines.push('> ' + label + htmlToMd(b.html || '').replace(/\n/g, '\n> '), '');
+          break;
+      }
+    }
+    return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
+  }
+
+  function listToMd(items, marker, depth) {
+    if (!items || !items.length) return '';
+    const indent = '  '.repeat(depth);
+    return items.map(it => {
+      let out = indent + marker + htmlToMd(it.html || '');
+      if (it.nested && it.nested.length) {
+        for (const n of it.nested) {
+          const m = n.type === 'ol' ? '1. ' : '- ';
+          out += '\n' + listToMd(n.items, m, depth + 1);
+        }
+      }
+      return out;
+    }).join('\n');
+  }
+
+  function tableToMd(rows) {
+    if (!rows.length) return '';
+    const headerRow = rows[0].header ? rows[0] : null;
+    const bodyRows = headerRow ? rows.slice(1) : rows;
+    const cols = (headerRow ? headerRow.cells : rows[0].cells).length;
+    const out = [];
+    const hdrCells = headerRow ? headerRow.cells.map(c => htmlToMd(c).replace(/\|/g, '\\|')) :
+                                 Array(cols).fill(' ');
+    out.push('| ' + hdrCells.join(' | ') + ' |');
+    out.push('|' + ' --- |'.repeat(cols));
+    for (const r of bodyRows) {
+      out.push('| ' + r.cells.map(c => htmlToMd(c).replace(/\|/g, '\\|').replace(/\n/g, ' ')).join(' | ') + ' |');
+    }
+    return out.join('\n');
+  }
+
+  function htmlToMd(html) {
+    // Lightweight HTML → markdown for the subset we actually use.
+    let s = String(html);
+    s = s.replace(/<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => `[${stripTags(text)}](${href})`);
+    s = s.replace(/<strong>([\s\S]*?)<\/strong>/gi, '**$1**');
+    s = s.replace(/<b>([\s\S]*?)<\/b>/gi, '**$1**');
+    s = s.replace(/<em>([\s\S]*?)<\/em>/gi, '*$1*');
+    s = s.replace(/<i>([\s\S]*?)<\/i>/gi, '*$1*');
+    s = s.replace(/<code>([\s\S]*?)<\/code>/gi, '`$1`');
+    s = s.replace(/<br\s*\/?>/gi, '\n');
+    s = s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+         .replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&nbsp;/g, ' ');
+    s = s.replace(/<[^>]+>/g, ''); // strip anything remaining
+    return s.trim();
+  }
+
+  function stripTags(html) {
+    return String(html).replace(/<[^>]+>/g, '')
+      .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&nbsp;/g, ' ').trim();
   }
 
   init();
