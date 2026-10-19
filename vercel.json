@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/guide.js": {
+      "includeFiles": "api/_lib/guide.json"
+    }
+  }
+}

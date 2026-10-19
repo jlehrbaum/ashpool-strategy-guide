@@ -82,6 +82,28 @@
     margin-top: 6px;
     min-height: 1.2em;
   }
+  .session-bar {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.75rem;
+    gap: 8px;
+  }
+  .session-name {
+    color: var(--text-dim);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .session-signout {
+    color: var(--accent);
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .session-signout:hover { text-decoration: underline; }
 
   #toc {
     overflow-y: auto;
@@ -649,18 +671,36 @@
 
   async function init() {
     try {
-      const resp = await fetch('./guide.json', { cache: 'no-cache' });
+      const resp = await fetch('/api/guide', { cache: 'no-cache', credentials: 'same-origin' });
+      if (resp.status === 401) {
+        // Not signed in. Bounce to Discord OAuth.
+        window.location.replace('/api/auth/discord/authorize');
+        return;
+      }
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       const guide = await resp.json();
       renderMeta(guide.meta || {});
       const tocEntries = renderContent(guide.content || []);
       renderToc(tocEntries);
       wireUp();
+
+      // Show the signed-in user and sign-out link in the sidebar.
+      const name = resp.headers.get('X-Session-Name');
+      if (name) {
+        const header = document.getElementById('sidebar-header');
+        const bar = document.createElement('div');
+        bar.className = 'session-bar';
+        bar.innerHTML = `<span class="session-name">${escapeHtml(name)}</span><a class="session-signout" href="/api/auth/logout">Sign out</a>`;
+        header.appendChild(bar);
+      }
     } catch (err) {
-      CONTENT.innerHTML = '<p style="color:#e05a3a">Could not load guide content: ' + err.message +
-        '. If you\'re opening this file directly, use a local web server so fetch can read guide.json.</p>';
+      CONTENT.innerHTML = '<p style="color:#e05a3a">Could not load guide content: ' + err.message + '</p>';
       console.error(err);
     }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
   init();
