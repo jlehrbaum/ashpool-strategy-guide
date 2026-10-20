@@ -15,7 +15,7 @@
     "metaLine": "Revised Oct 19, 2026",
     "author": "ashpool",
     "legion": "GΛLΛXY • BLΛCKØUT",
-    "lastEditedAt": "2026-10-19T08:00:00-07:00"
+    "lastEditedAt": "2026-10-19T18:01:00-07:00"
   },
   "content": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "type": "p",
-      "html": "Winning in PvP is about more than Battle Power (BP). Crit is useless if your attacks miss or the opponent resists it. Dodge is less reliable against high Hit Rate, and Burn can punish Dodge but struggles against Burn Decrease. This guide explains how to spot those matchups, choose a formation that can win, and invest in the upgrades that make the biggest difference. It also covers PvE boss damage and the events that help you build faster."
+      "html": "Before attacking in PvP, look for a matchup you can actually win. Against a Dodge specialist, compare your Hit Rate with their Dodge. Against a Crit specialist, compare your Crit Resistance with their Crit Rate. If your counter is far behind, don’t force the attack: look for another target or consider a mirror matchup where your own Dodge or Crit is stronger. Pilots matter especially in those mirror fights, along with your drones, sentinel, and the rest of your build. This guide explains those choices, how to strengthen your formations, and how to spend resources wisely."
     },
     {
       "type": "h2",
@@ -46,7 +46,7 @@
           "header": false,
           "cells": [
             "Learn to read PvP matchups before attacking.",
-            "Compare Crit with Crit Resistance, Hit Rate with Dodge, Burn Enhancement with Burn Decrease, and your Defense Break with their Defense. Your best formation depends on the opponent."
+            "Check the opponent’s main strength and decide whether you have a credible counter. Hit Rate answers Dodge; Crit Resistance answers Crit. If the relevant stat falls far short, consider a different target before using an attack."
           ]
         },
         {
@@ -128,7 +128,7 @@
     },
     {
       "type": "p",
-      "html": "Start with the opponent. Your Crit, Dodge, or Burn formation will not win every fight, and you do not need every rare component before a build works. Choose the chip stats that answer the matchup, then support them with the pilots, drones, sentinels, and Mech Spirits you already have. A separate PvE Burn setup helps you earn boss rewards."
+      "html": "Start with the opponent’s build, not your favorite formation. Against high Dodge, check whether your Hit Rate is close to or above it; against high Crit, check whether your Crit Resistance is close to or above it. If you cannot counter their main stat, you can sometimes win a mirror matchup: Dodge versus Dodge when your Dodge substantially exceeds their Hit Rate, or Crit versus Crit when your offense is stronger. Those fights depend heavily on the overall quality of your build, especially pilots, drones, and sentinel. If neither route gives you a real advantage, choose another target."
     },
     {
       "type": "h2",
@@ -137,7 +137,7 @@
     },
     {
       "type": "p",
-      "html": "Look at what is stopping your damage and what threatens your survival. <strong>High Dodge?</strong> Add Hit Rate or use Burn. <strong>High Crit Resistance?</strong> Your Crit build may struggle. <strong>High Burn Decrease?</strong> Your Burn build will need more Burn Enhancement. Also compare your Defense Break with their Defense, and their damage type with your Physical or Energy Defense. You usually learn more from those stats than from BP alone."
+      "html": "<strong>First, identify the opponent’s main offensive or defensive strategy.</strong> Against Dodge, compare <em>your Hit Rate</em> with <em>their Dodge</em>; if your Hit is close to or above their Dodge, your Hit-focused formation is a strong option (often paired with Crit). Against a high-Crit opponent, compare <em>your Crit Resistance</em> with <em>their Crit Rate</em>; if your resistance is close to or above their Crit, favor your Crit-Resistance formation (often paired with Dodge). These are <strong>two different decisions</strong>. Against Burn, look for Burn Decrease and enough survivability. Also compare Defense Break and Defense, but do not choose solely by BP."
     },
     {
       "type": "h2",
@@ -158,28 +158,28 @@
           "header": false,
           "cells": [
             "Crit / Hit Rate",
-            "Make Crit hits more likely to land against opponents with Dodge."
+            "First choice against high Dodge when your Hit Rate is close to or above their Dodge. If your Hit falls far short, don’t assume Crit will carry the matchup."
           ]
         },
         {
           "header": false,
           "cells": [
             "Dodge / Crit Resistance",
-            "Avoid regular hits, then reduce the chance that any hits that land become critical hits."
+            "First choice against high Crit when your Crit Resistance is close to or above their Crit Rate. If the resistance gap is too large, look for a different advantage."
           ]
         },
         {
           "header": false,
           "cells": [
             "Dodge / Hit Rate",
-            "Use Dodge for defense while adding Hit Rate to fight other Dodge players."
+            "A possible Dodge-versus-Dodge choice when your own Dodge is much higher than their Hit Rate. Compare pilots, drones, and sentinel strength before committing."
           ]
         },
         {
           "header": false,
           "cells": [
             "Crit / Crit Resistance",
-            "Keep conventional Crit offense while adding protection against enemy crits."
+            "Can support a Crit-versus-Crit fight. If you cannot counter their Crit with resistance, consider whether your damage and overall build are stronger instead."
           ]
         },
         {
@@ -193,16 +193,16 @@
     },
     {
       "type": "p",
-      "html": "These are <strong>chip pairings</strong>, not five entirely different systems. The first stat sets your main approach; the second shores up its weakness. You can use the same pilot and much of the same equipment while switching between formations."
+      "html": "These stats do different jobs: <strong>Hit Rate counters Dodge; Crit Resistance counters Crit.</strong> Common chip pairings combine each counter with a second strength. But a counter only helps if you have enough of it. When you do not, mirror fights can work if your own specialty and supporting systems are stronger. Pilots are particularly important. <strong>It is also fine to skip a bad matchup</strong> instead of spending an attack hoping for the best."
     },
     {
       "type": "h2",
       "id": "pvp-offensive-build",
-      "title": "PvP Crit: make sure your hits actually land"
+      "title": "PvP Crit / Hit: counter Dodge and hit hard"
     },
     {
       "type": "p",
-      "html": "Use Crit when your opponent does not have enough Crit Resistance to stop it. There are <strong>two checks</strong>: Hit Rate versus their Dodge determines whether your normal attacks connect, and Crit Rate versus their Crit Resistance determines whether those hits become crits. High Crit Rate is not enough if you keep missing."
+      "html": "Use this formation against a Dodge-focused player when <strong>your Hit Rate is close to or higher than their Dodge</strong>. Hit is what answers Dodge; Crit is the damage stat commonly paired with it. If your Hit is nowhere near their Dodge, expect too many misses and consider another target. One alternative is Dodge versus Dodge, but only if your Dodge greatly exceeds their Hit Rate and you have the stronger supporting build, especially pilots, drones, and sentinel."
     },
     {
       "type": "table",
@@ -239,7 +239,7 @@
           "header": false,
           "cells": [
             "Engine",
-            "Hit Rate when the opponent has high Dodge."
+            "Hit Rate when your opponent relies on Dodge and the extra Hit helps you reach or exceed their Dodge."
           ]
         },
         {
@@ -260,7 +260,7 @@
     },
     {
       "type": "p",
-      "html": "For example, against a player with very high Dodge but modest Crit Resistance, Crit/Hit can work well if your Hit Rate is high enough. Against someone with enormous Crit Resistance, adding more Hit Rate will not solve the real problem: you may need a different attack style."
+      "html": "Example: if an opponent has high Dodge and your Hit Rate nearly matches it, Crit/Hit is a sensible attack. If your Hit Rate is far below their Dodge, switch plans rather than forcing the same formation. If your own Dodge is far above their Hit Rate, Dodge/Dodge may win through survival and stronger pilots, drones, and sentinel. Otherwise, save the attack for a more favorable target. The point is to find an advantage you can explain before fighting."
     },
     {
       "type": "p",
@@ -269,11 +269,11 @@
     {
       "type": "h2",
       "id": "pvp-defensive-build",
-      "title": "PvP Dodge/Heal: survive long enough to win"
+      "title": "PvP Dodge / Crit Resistance: counter Crit and survive"
     },
     {
       "type": "p",
-      "html": "This formation wins by making incoming damage harder to land and recovering from hits that get through. Dodge avoids ordinary attacks, Crit Resistance reduces how often landed hits become crits, and healing keeps you alive in a long fight. <strong>Burn is the danger:</strong> once it is applied, its damage ticks keep going even when other attacks miss."
+      "html": "Use this formation against high-Crit opponents when <strong>your Crit Resistance is close to or above their Crit Rate</strong>. Crit Resistance is the counter to Crit; Dodge provides a separate way to avoid direct attacks, and healing can prolong the fight. If their Crit is much higher than your resistance, this may not be the right counter. You could consider Crit versus Crit instead, but only when your own damage and supporting build can win that exchange. If not, look for another target. Burn is a separate threat because applied Burn ticks cannot be dodged."
     },
     {
       "type": "table",
@@ -289,7 +289,7 @@
           "header": false,
           "cells": [
             "Chips",
-            "Dodge + Crit Resistance: one stat helps you avoid ordinary hits; the other reduces crits on the hits that land."
+            "Dodge + Crit Resistance. Choose it particularly when your Crit Resistance is close to or higher than an opponent’s Crit Rate. Dodge separately helps you avoid ordinary hits."
           ]
         },
         {
@@ -317,7 +317,7 @@
           "header": false,
           "cells": [
             "Engine",
-            "Crit Resistance normally; switch to Burn Decrease against Burn-heavy attackers."
+            "Crit Resistance when you want to counter a Crit-focused opponent; choose Burn Decrease against Burn-heavy attackers."
           ]
         },
         {
@@ -331,7 +331,7 @@
     },
     {
       "type": "p",
-      "html": "Do not wait to own Aqua Spirit, Doomblast, and a perfect Gridstar before trying a defensive formation. A usable Dodge/Crit Resistance chip setup with your best available healing already teaches you which fights the strategy can survive."
+      "html": "You do not need perfect endgame components to use a defensive formation, but the matchup still matters. First check whether your Crit Resistance can meaningfully offset enemy Crit. For a Dodge mirror, compare your Dodge with their Hit Rate: a large advantage can keep you alive while your pilots, drones, and sentinel decide the fight. Stronger pilots are often the difference between two players with similar chip strategies."
     },
     {
       "type": "p",
@@ -487,14 +487,28 @@
           "header": false,
           "cells": [
             "High Dodge",
-            "Try Burn. Or keep a Crit formation and add Hit Rate, possibly with Gloom Moon."
+            "If your Hit Rate is close to or higher than their Dodge, try Crit/Hit. If your Hit is far below their Dodge, consider a Dodge mirror only if your Dodge greatly exceeds their Hit Rate and your pilots/drones/sentinel are stronger. Otherwise skip the target or use a credible alternative."
           ]
         },
         {
           "header": false,
           "cells": [
             "High Crit Rate",
-            "Equip more Crit Resistance. Battle Diva can also help in Crit-heavy matchups."
+            "If your Crit Resistance is close to or higher than their Crit Rate, try Dodge/Crit Resistance. If it falls far short, a Crit-versus-Crit attack is possible only when your own offensive power and supporting systems are stronger. Otherwise choose another target."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Dodge versus Dodge",
+            "A mirror fight can work if your Dodge is far higher than their Hit Rate. Check pilots first, then drones and sentinel. Without that supporting advantage, both sides may survive without you gaining the upper hand."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Crit versus Crit",
+            "If your Crit Resistance cannot counter their Crit, compare your own Crit offense and full build. You need stronger pilots, drones, sentinel, or another decisive advantage; matching their Crit build alone is not enough."
           ]
         },
         {
@@ -521,8 +535,8 @@
         {
           "header": false,
           "cells": [
-            "Your weapon crits rarely land",
-            "Check both sides of the equation: Hit Rate versus Dodge, then Crit Rate versus Crit Resistance."
+            "Your normal attacks miss or fail to crit",
+            "Diagnose the right stat separately: misses point to Hit Rate versus Dodge; hits that rarely crit point to Crit Rate versus Crit Resistance. For choosing a formation, start with which opponent strategy you can counter best."
           ]
         }
       ]
@@ -534,7 +548,7 @@
     },
     {
       "type": "p",
-      "html": "Each of the three saved formations remembers your <strong>complete build</strong>: chips, equipment, pilot, drones, sentinel, and Mech Spirits. Switching formations changes them together. Use your slots for PvP matchups you face regularly and a PvE build for boss damage. You can still fine-tune a saved formation before a particular fight."
+      "html": "Each of the three saved formations remembers your <strong>complete build</strong>: chips, equipment, pilot, drones, sentinel, and Mech Spirits. Switching slots restores them together. Keep options that answer the opponents you face most often, but remember that <strong>having three formations does not mean one must be a good attack against every opponent</strong>. Sometimes choosing a different target is the strongest move."
     },
     {
       "type": "table",
@@ -571,7 +585,7 @@
     },
     {
       "type": "p",
-      "html": "Formation numbers do not otherwise dictate a particular playstyle. If your PvE Crit build also serves as PvP Crit, remember to remove PvE-only pieces such as Evil Eye before attacking another player. And if you switch to PvE for a boss, check what is equipped before leaving yourself open to defense in Planet Wars or Military Drills."
+      "html": "Formation numbers do not dictate a particular playstyle. Keep different options ready so you can choose Hit against Dodge or Crit Resistance against Crit, depending on the opponent’s actual stats. If your PvE Crit build also serves as PvP Crit, remove PvE-only pieces such as Evil Eye before attacking another player. And after a boss fight, check what is equipped before defending in Planet Wars or Military Drills."
     },
     {
       "type": "h2",
@@ -1490,7 +1504,7 @@
     },
     {
       "type": "p",
-      "html": "A sensible starting rule is Hit Rate for general offense, Crit Resistance for defense against ordinary Crit builds, and Burn Decrease when you know the opponent relies heavily on Burn. Change the engine when the matchup changes."
+      "html": "Choose the engine that strengthens the counter you need: <strong>Hit Rate against Dodge</strong>, <strong>Crit Resistance against Crit</strong>, or <strong>Burn Decrease against Burn</strong>. Check the opponent’s actual stats before switching; a defensive engine is not automatically better just because you are defending, and an offensive engine is not automatically better just because you are attacking."
     },
     {
       "type": "p",
