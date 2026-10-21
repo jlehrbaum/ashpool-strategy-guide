@@ -12,10 +12,10 @@
       "Events & Resources",
       "Mechanics"
     ],
-    "metaLine": "Revised Oct 20, 2026",
+    "metaLine": "Revised Oct 21, 2026",
     "author": "ashpool",
     "legion": "GΛLΛXY • BLΛCKØUT",
-    "lastEditedAt": "2026-10-20"
+    "lastEditedAt": "2026-10-21T07:25:00-07:00"
   },
   "content": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "type": "p",
-      "html": "The best PvP formation depends on who you are fighting. Dodge / Crit Resistance is my preferred default defense, with Crit / Hit as the other essential PvP setup. A third Burn / Crit Resistance formation adds a strong option once you can afford to dedicate a slot to it. This guide explains how to choose between those builds, when to skip a bad matchup, and where to invest so your pilots, drones, and sentinels can back up the strategy."
+      "html": "My default PvP defense is <strong>Dodge / Crit Resistance</strong>. For offense, I now use <strong>Burn / Crit Resistance</strong> in most fights on my main account, although <strong>Crit / Hit</strong> is still a core build and may be easier to prioritize earlier. The goal is to choose a formation that actually handles the opponent’s strengths, then back it up with strong pilots, drones, and sentinels. This guide explains those matchups, how to develop all three formations, and where to spend limited resources."
     },
     {
       "type": "h2",
@@ -46,35 +46,35 @@
           "header": false,
           "cells": [
             "1. Develop Dodge / Crit Resistance",
-            "My preferred default PvP defense. With enough Dodge, you can avoid up to 80% of ordinary attacks. Enough Crit Resistance can make the hits that get through normal hits rather than crits."
+            "Default PvP defense. With enough Dodge, avoid up to 80% of ordinary attacks. High Crit Resistance can make the hits that get through normal rather than critical hits."
           ]
         },
         {
           "header": false,
           "cells": [
-            "2. Develop Crit / Hit",
-            "Hit Rate gives you a way to attack Dodge specialists; Crit Rate gives connected attacks a better chance to crit. Both must be compared with the opponent’s corresponding counter stat."
+            "2. Build Crit / Hit alongside it",
+            "Your answer to Dodge specialists when Hit Rate is close to or higher than their Dodge. You will also use this chip formation for a developing PvE Burn/Crit setup as Burn bonuses improve."
           ]
         },
         {
           "header": false,
           "cells": [
-            "3. Keep improving pilots",
-            "Choose Defense Break for your damage type, but build both Physical and Energy Defense. Especially in mirror matchups, pilots can decide who wins."
+            "3. Keep investing in pilots",
+            "Use Defense Break for your own gear type and build both defenses. Particularly in mirror matchups, the strength of your pilots often decides the fight."
           ]
         },
         {
           "header": false,
           "cells": [
-            "4. Add Burn / Crit Resistance when you have room",
-            "A strong third PvP option when you do not need a dedicated PvE slot, or when your PvE Crit build already reaches 100% Burn Enhancement without Burn chips."
+            "4. Develop PvE Burn and explore PvP Burn",
+            "Build PvE Burn Enhancement to 100%, then replace Burn chips with Crit chips as other bonuses grow. Burn / Crit Resistance can become your main offensive PvP build, not merely a spare third choice. Its earliest practical place in progression needs more testing."
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "You are able to save <strong>three complete formations</strong>, but you do not have to fill all three immediately. If you use Hyper Battlefield proxy mode, keep a PvP-ready build in Formation 1: players have reported that proxy mode defaults to that slot."
+      "html": "You are able to save <strong>three complete formations</strong>. Build chips for all three in parallel; the Chip Factory produces random attributes, and its filters can keep chips useful to different builds. Formation 1 should be PvP-ready for Hyper Battlefield proxy mode."
     },
     {
       "type": "h2",
@@ -108,7 +108,7 @@
         {
           "header": false,
           "cells": [
-            "Add another PvP option",
+            "Develop a Burn offense",
             "<a href=\"#pvp-burn-build\">Burn / Crit Resistance</a>"
           ]
         },
@@ -143,13 +143,66 @@
       ]
     },
     {
+      "type": "h2",
+      "id": "my-formation-setups",
+      "title": "Plan Your Three Saved Formations"
+    },
+    {
+      "type": "p",
+      "html": "You can save <strong>three complete formations</strong>, including their chips, gear, pilot, drones, sentinel, and Mech Spirits. The Chip Factory produces random chips, so you can develop three chip sets in parallel rather than waiting until the first is finished. Most players should target three useful attributes or attribute families in Auto Mode at a time, and only broaden to four to six when they have a clear reason to keep more kinds of chips. A common early arrangement is Dodge / Crit Resistance, Crit / Hit, and a dedicated PvE Burn formation. On an advanced account, Crit can also serve PvE once other sources provide 100% Burn Enhancement, allowing a dedicated PvP Burn / Crit Resistance formation."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "Formation use",
+            "Practical guidance"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "PvP default defense",
+            "Dodge / Crit Resistance. Especially useful as a saved defensive formation for Star Scramble."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "PvP attacking option",
+            "Crit / Hit. Switch to it when your Hit meaningfully answers the opponent’s Dodge."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Third formation",
+            "Often dedicated PvE Burn early on. At higher progression, Burn / Crit Resistance can become the primary offensive PvP build. Crit / Crit Resistance is situational, not an automatic interim third build."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Hyper Battlefield proxy reminder",
+            "Keep a PvP-ready build in Formation 1; players report that proxy mode defaults there."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "<strong>Hyper Battlefield exception:</strong> Formation 1 matters. Proxy mode has been reported to default to that slot, so keep a PvP-ready formation there. In other modes, use the remaining slots around what you play. A shared PvE Crit / PvP Crit formation still needs PvE-only drones or mechs such as Evil Eye swapped out before PvP. Planet Wars and Military Drills defend with whatever is equipped when the attack arrives."
+    },
+    {
       "type": "h1",
       "id": "part-2-situational-builds-and-tactics",
       "title": "Part 1 — Choose Your PvP Formation"
     },
     {
       "type": "p",
-      "html": "These are ranked by how I would prioritize them for PvP: <strong>1. Dodge / Crit Resistance, 2. Crit / Hit, 3. Burn / Crit Resistance.</strong> The first two cover most of the fights you need to plan for. Burn is a valuable third option, but only once your PvE needs and resources allow it. The ranking is a starting point, not a reason to attack an opponent whose stats counter your chosen formation."
+      "html": "For PvP, I recommend <strong>Dodge / Crit Resistance as the default defense</strong>, with <strong>Crit / Hit</strong> as an important counter to Dodge. <strong>Burn / Crit Resistance has become my primary offensive build</strong> on my advanced account: its damage cannot be stopped by ordinary Dodge checks, but it needs enough healing and protection to survive while Burn ramps up. For newer players, the best point to introduce PvP Burn is still worth testing; a dedicated PvE Burn formation often takes one of the three slots early on."
     },
     {
       "type": "h2",
@@ -179,28 +232,28 @@
           "header": false,
           "cells": [
             "1. Dodge / Crit Resistance",
-            "Preferred default PvP defense. Dodge can avoid up to 80% of ordinary attacks when your Dodge is sufficiently above enemy Hit. High Crit Resistance can prevent the remaining hits from becoming crits."
+            "Preferred default defense, especially across repeated Star Scramble attacks. High Dodge avoids most ordinary hits; Crit Resistance reduces the risk of critical damage from those that connect. Healing helps you recover between attackers."
           ]
         },
         {
           "header": false,
           "cells": [
             "2. Crit / Hit",
-            "Core attacking formation. Hit counters Dodge when it is close to or above enemy Dodge; Crit can make landed hits more damaging when the enemy lacks enough Crit Resistance."
+            "Core PvP option and useful against Dodge specialists when your Hit is competitive with their Dodge. High Crit still needs to overcome enemy Crit Resistance."
           ]
         },
         {
           "header": false,
           "cells": [
-            "3. Burn / Crit Resistance",
-            "Additional PvP option. Burn-drone skills and applied Burn damage bypass ordinary Dodge checks. Pair with healing and protection because damage builds over time."
+            "Advanced offensive favorite: Burn / Crit Resistance",
+            "My main-account offensive default in most fights. Three Burn drones apply damage that builds over time and is not stopped by Dodge, while Crit Resistance, healing, and protection buy the time to win. Worth testing earlier in progression, not automatically relegating to slot three."
           ]
         },
         {
           "header": false,
           "cells": [
             "Alternative: Crit / Crit Resistance",
-            "A useful intermediate PvP formation if you still need a separate Burn-chip PvE setup and cannot dedicate the third slot to PvP Burn."
+            "Useful situational combination, but not a default top-three recommendation. I previously used it before switching to Crit / Hit so I would retain a Hit-focused counter after adopting Dodge / Crit Resistance for defense."
           ]
         },
         {
@@ -221,7 +274,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Why Dodge / Crit Resistance is the defensive default:</strong> Dodge and Crit Resistance answer different threats. When Dodge avoids most ordinary attacks, the few that land are less dangerous if your resistance prevents critical hits. You can swap Crit Resistance for Burn Decrease against a Burn-heavy field, but this gives up a broadly useful defense against Crit. The best attack still depends on the specific opponent, not just this ranking."
+      "html": "<strong>Why I defend with Dodge / Crit Resistance:</strong> Dodge can avoid up to 80% of ordinary hits when the attacker’s Hit is low enough. High Crit Resistance then makes the remaining hits much less likely to crit. Just as importantly, Dodge fits a healing defense: if the first attacker cannot kill you, your healing may force the next attacker to fight through recovered HP. My theory is that Burn may be less reliable for defending against several consecutive attacks because its damage ramps late; it can win a fight but leave you weakened before the next one. This has not yet been established through large-scale battle data. Burn Decrease is a reasonable defensive secondary against Burn-heavy opponents, but replacing Crit Resistance exposes you to more common Crit attacks."
     },
     {
       "type": "h2",
@@ -230,7 +283,7 @@
     },
     {
       "type": "p",
-      "html": "This is my preferred first PvP formation. If your Dodge is high enough relative to the attacker’s Hit Rate, you can avoid up to <strong>80% of ordinary hits</strong>. Of the attacks that get through, sufficiently high Crit Resistance can prevent critical hits, leaving normal damage instead. The two defenses work independently, which makes the pairing particularly reliable against conventional Crit builds. It does not block Burn damage already applied, so Burn-heavy opponents are an important exception."
+      "html": "This is my preferred <strong>default defense</strong>, not necessarily my most-used offensive formation. With enough Dodge relative to enemy Hit, you can avoid up to 80% of ordinary attacks. Crit Resistance separately makes successful hits less likely to be critical. That creates room for healing: if an attacker fails to eliminate you, the next attacker may have to chew through HP you recovered. This is especially useful when defending against repeated attacks in Star Scramble. Burn skills and existing Burn ticks remain a weakness because they bypass ordinary Dodge checks."
     },
     {
       "type": "table",
@@ -253,14 +306,14 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "A developed Gridstar with gold Healing Enhancement is an accessible core. Arcglow and Doomblast offer different healing options as you progress."
+            "A strong Gridstar with Healing Enhancement is the affordable starting point. Arcglow and especially Doomblast can provide much stronger healing as you progress, but getting multiple ideal passives on them through recasting is costly. Gridstars are cheap enough to buy repeatedly until you find two or three valuable passives, then use <a href=\"#the-reverse-merge-technique\">reverse merging</a> to keep the best copy."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Ladybug provides an emergency heal. Aqua Spirit and Berserk Dragon add lasting defense. Use the components you have while working toward this combination."
+            "Ladybug adds a low-HP heal; Aqua Spirit protects you for the rest of the battle once triggered; Berserk Dragon protects from the start."
           ]
         },
         {
@@ -292,7 +345,7 @@
     },
     {
       "type": "p",
-      "html": "Ladybug heals a percentage of your maximum HP when you fall below its threshold. <strong>Healing Enhancement increases that heal</strong>, so a strong healing sentinel passive helps more than just the sentinel itself. Aqua Spirit also fits this strategy: its defensive bonus lasts for the rest of the battle, even if healing returns you to full HP."
+      "html": "The defensive payoff is not just surviving one fight. A healing build may recover enough HP that the next attacker still faces a difficult target. Ladybug heals based on maximum HP, and Healing Enhancement strengthens that heal. Aqua Spirit’s damage reduction persists after healing brings your HP back up. This is why I currently favor Dodge / Crit Resistance over Burn as a default Star Scramble defense, although the repeated-attack comparison is still a theory rather than a result backed by a large battle dataset."
     },
     {
       "type": "h2",
@@ -301,7 +354,7 @@
     },
     {
       "type": "p",
-      "html": "This is my second core PvP build. Against high Dodge, use it when your <strong>Hit Rate is close to or above their Dodge</strong>. Hit gives attacks a better chance to connect; Crit improves the chance that a landed hit becomes a critical hit, after the enemy’s Crit Resistance is accounted for. If your Hit is far below their Dodge, look for another matchup instead of assuming more Crit will solve the problem."
+      "html": "Crit / Hit remains essential when you need to counter a Dodge specialist. Compare <strong>your Hit Rate with their Dodge</strong>: if it is close or higher, normal attacks have a reasonable chance to connect. Crit Rate is a separate advantage, depending on the opponent’s Crit Resistance. If your Hit is far below their Dodge, <strong>consider switching to Burn / Crit Resistance</strong>, since Burn-drone skills and applied Burn cannot be dodged. Otherwise consider a Dodge mirror with a strong stat and pilot advantage, or choose another target."
     },
     {
       "type": "table",
@@ -368,11 +421,11 @@
     {
       "type": "h2",
       "id": "pvp-burn-build",
-      "title": "3. Burn / Crit Resistance — Your Third PvP Build"
+      "title": "Burn / Crit Resistance — My Main PvP Offense"
     },
     {
       "type": "p",
-      "html": "Burn / Crit Resistance is my preferred third PvP formation <strong>if you have room for it</strong>. Burn-drone skills cannot be dodged through the normal Hit-versus-Dodge check, and Burn damage that has already been applied continues to tick. That makes this build useful against both Dodge / Crit Resistance and Crit / Hit opponents. Burn needs time to build, though: combine it with healing and enough defense to survive while your damage accumulates. Strong Burn Decrease is its natural counter."
+      "html": "On my main account, <strong>Burn / Crit Resistance is my default PvP offensive formation</strong> and accounts for roughly 80% of my attacks. Three Burn drones provide damage that Dodge cannot stop through ordinary Hit checks, while Crit Resistance helps blunt conventional Crit opponents. Because Burn builds damage over time, healing and survivability are essential: you need to stay alive long enough for the damage to win. This strength on offense does not automatically make it the best Star Scramble defense, where surviving <em>multiple</em> attackers matters. How early newer players should prioritize PvP Burn is a question I want to investigate further; I may test it as a primary option on my smaller account."
     },
     {
       "type": "table",
@@ -395,7 +448,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Use three Burn drones if you equip Star Envoy. Two Ninjas and Sagittarius are a practical early trio; a developed Lich or Lyra can change the best combination later."
+            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two developed Ninjas plus Sagittarius can get you started. Later consider Lich, Sagittarius, and Lyra based on <a href=\"#burn-drones\">the drone progression advice</a>."
           ]
         },
         {
@@ -409,7 +462,7 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Star Envoy + Aqua Spirit + Ladybug is a defensive Burn combination."
+            "Aqua Spirit + Star Envoy + Ladybug is one strong sustain-oriented combination. <strong>Evil Eye is usually a poor fit here</strong>: this formation invests in Burn Enhancement and Crit Resistance rather than enough Crit Rate for meaningful conversion. Reserve Evil Eye for your PvE Burn/Crit setup."
           ]
         },
         {
@@ -430,7 +483,7 @@
     },
     {
       "type": "p",
-      "html": "Most players need a dedicated PvE formation while they still use Burn chips to reach the 100% PvE Burn Enhancement cap. If you do not prioritize PvE, or your PvE Crit setup already reaches 100% Burn Enhancement without any Burn chips, you can use the freed formation for PvP Burn / Crit Resistance. Until then, <strong>Crit / Crit Resistance</strong> is a useful alternative third PvP build. PvP Burn differs from PvE Burn/Crit: prioritize sustain and Crit Resistance here; Evil Eye belongs to the PvE conversion setup."
+      "html": "<strong>Formation planning:</strong> A developing player usually needs a dedicated PvE Burn formation to reach 100% Burn Enhancement with chips. Alongside Dodge / Crit Resistance and Crit / Hit, that fills the three saved slots. Once native stats, Camp Tech, sentinel passives, and mech bonuses allow PvE Burn to reach 100% without Burn chips, the Crit formation can serve PvE too, with drone and Mech Spirit swaps. That frees a saved formation for PvP Burn / Crit Resistance. <strong>Open question:</strong> given how strong Burn has become on my main account, it may be worth prioritizing it earlier instead of waiting for that progression milestone. I have not tested that enough to recommend a universal starting order. Crit / Crit Resistance is a useful niche option I once ran, but it does not fit easily into a three-formation plan: I ultimately replaced it with Crit / Hit so I could retain a reliable Hit counter."
     },
     {
       "type": "h2",
@@ -439,7 +492,7 @@
     },
     {
       "type": "p",
-      "html": "For a boss-focused formation, first reach <strong>100% effective Burn Enhancement</strong>. That is the maximum effective bonus against a boss with no Burn Decrease, not a special unlock. Early on, you will probably need Burn chips to get there. Over time, Camp Tech, native stats, and sentinel passives will provide more Burn Enhancement. Each time those sources improve, see whether you can replace a Burn chip with a Crit Rate chip <em>without dropping below 100% effective Burn Enhancement</em>. The long-term goal is maximum Burn Enhancement with all your chip slots helping Crit Rate."
+      "html": "For PvE bosses, reach <strong>100% effective Burn Enhancement</strong> first. Bosses do not have Burn Decrease, so 100% is the useful cap against them. At first you will likely need Burn chips. As native bonuses, Camp Tech, sentinel passives, and <strong>Mech Spirit passive and combination bonuses</strong> increase, swap individual Burn chips for Crit Rate chips without dropping under 100% Burn Enhancement. The advanced result can be a PvE Burn build with no Burn chips, using Crit Rate instead to power Evil Eye’s conversion."
     },
     {
       "type": "table",
@@ -462,14 +515,14 @@
           "header": false,
           "cells": [
             "Drones",
-            "Equip three Burn drones; two developed Ninjas are a practical start. Build a third drone such as Lich, Sagittarius, or Lyra over time."
+            "Equip three Burn drones. Two developed Ninjas are a good foundation; work toward Lich, Sagittarius, or Lyra as the third. See <a href=\"#burn-drones\">Burn Drones</a> for their different roles and an upgrade path."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Flashstrike provides a brief Damage Boost window. Use a developed alternative if it produces better boss results."
+            "I currently use SavagePlate with gold and blue Crit Damage passives. I am developing a Flashstrike with gold Crit Damage to see whether its damage-boost skill can outperform that SavagePlate. Compare actual boss results rather than assuming the newer sentinel wins."
           ]
         },
         {
@@ -490,11 +543,11 @@
     },
     {
       "type": "p",
-      "html": "At maximum Evil Eye level, about <strong>143% displayed Crit Rate</strong> converts into the 80% effective Burn Crit Rate cap <em>against a target with no Crit Resistance</em>. This is a useful PvE benchmark, not a target for every build or every opponent. Once both Burn Enhancement and Burn Crit Rate are at their caps, keep building your relevant Defense Break. The <a href=\"#the-evil-eye-conversion-ceiling-pve\">conversion table</a> shows the numbers."
+      "html": "At maximum Evil Eye level, approximately <strong>143% displayed Crit Rate</strong> reaches the 80% Burn Crit Rate cap against bosses, which have no Crit Resistance. After maximizing Burn Enhancement and Burn Crit Rate, keep investing in the Defense Break stat matching your gear. The <a href=\"#the-evil-eye-conversion-ceiling-pve\">conversion table</a> shows the calculation."
     },
     {
       "type": "p",
-      "html": "For example, a player with 90% native Burn Enhancement and a sentinel passive that adds 15% has 105% on paper, but only 100% is effective against a boss with no Burn Decrease. That player no longer needs a Burn chip and can use those slots for Crit Rate. This is how an advanced PvE Burn build can end up using only Crit chips."
+      "html": "For example, a player with 90% native Burn Enhancement and a sentinel passive that adds 15% has 105% on paper, but only 100% is effective against a boss. That player no longer needs a Burn chip and can use those slots for Crit Rate. This is how an advanced PvE Burn build can end up using only Crit chips."
     },
     {
       "type": "h2",
@@ -515,7 +568,7 @@
           "header": false,
           "cells": [
             "High Dodge",
-            "Compare your Hit with their Dodge. If close or higher, try Crit / Hit. If not, consider a Dodge mirror only with a strong Dodge advantage and better pilots, drones, and sentinel. Otherwise skip."
+            "Compare your Hit against their Dodge. Use Crit / Hit when close or higher. If not, a Burn formation bypasses their Dodge through Burn-drone skills; a Dodge mirror can also work with much better Dodge and stronger pilots, drones, and sentinel. If none is favorable, skip."
           ]
         },
         {
@@ -529,7 +582,7 @@
           "header": false,
           "cells": [
             "Burn-heavy opponent",
-            "Use Burn Decrease; once Burn is applied, Dodge cannot stop its ticks."
+            "Burn Decrease is one defense. Another is a fast Crit attack if their Crit Resistance is low enough: Burn takes time to ramp, and Crit may win first. Toad Lord can also remove Burn stacks when your weapons crit. Do not choose that route against high Crit Resistance."
           ]
         },
         {
@@ -543,7 +596,7 @@
           "header": false,
           "cells": [
             "Weak attacks",
-            "Compare the Defense Break matching your gear with the opponent’s Defense. If badly behind, upgrade or choose another target."
+            "Compare your relevant Defense Break with their Defense. If you own <strong>both well-developed physical and energy Titan sets</strong>, you may exploit an uneven defense, such as high PD but weak ED, by switching gear and pilot. This is an advanced option; otherwise look for a better target rather than assuming a quick upgrade is possible."
           ]
         },
         {
@@ -554,59 +607,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "h2",
-      "id": "my-formation-setups",
-      "title": "Save formations around your priorities"
-    },
-    {
-      "type": "p",
-      "html": "You can save <strong>three complete formations</strong>. Each one remembers chips, equipment, pilot, drones, sentinel, and Mech Spirits, so switching is quick. Your strongest default PvP defense is usually Dodge / Crit Resistance, and Crit / Hit is the other core formation. Use the third slot for a dedicated PvE build while you need one, then consider PvP Burn / Crit Resistance when your resources allow it."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Formation use",
-            "Practical guidance"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PvP default defense",
-            "Dodge / Crit Resistance. Especially useful as a saved defensive formation for Star Scramble."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PvP attacking option",
-            "Crit / Hit. Switch to it when your Hit meaningfully answers the opponent’s Dodge."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Third formation",
-            "Often dedicated PvE Burn early on. Later, PvP Burn / Crit Resistance if PvE no longer needs a dedicated chip formation; Crit / Crit Resistance is another practical interim option."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Hyper Battlefield proxy reminder",
-            "Keep a PvP-ready build in Formation 1; players report that proxy mode defaults there."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "The slot numbers are not a required order: arrange them for the modes you play. A PvE Crit build can double as a PvP Crit build, but swap out PvE-only drones and Mech Spirits such as Evil Eye before PvP. After bosses, return to your PvP setup before leaving yourself exposed in Planet Wars or Military Drills."
     },
     {
       "type": "h2",
@@ -643,6 +643,13 @@
             "Planet Wars / Military Drills",
             "Whatever you have equipped at the moment they attack, even if it is your PVE build."
           ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Hyper Battlefield",
+            "Your formation locks when you spawn and choose it. After dying and respawning, you can choose or change the formation again. Proxy mode defaults to Formation 1."
+          ]
         }
       ]
     },
@@ -670,7 +677,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Star Scramble is a team decision.</strong> Legions are matched in comparable roster sizes, so both average BP and total BP describe the strength of the roster. With the same number of players, lowering the average also lowers the total. Blackout deliberately values some lower-BP members: they handle item clears and fuel removal, helping higher-BP teammates eliminate opponents in a single attack. Their contribution is tactical, not just a lower matchmaking number. The exact matchmaking formula is not published, so treat BP as an important factor, not the entire rule."
+      "html": "<strong>Star Scramble is a team decision.</strong> Legions are matched in comparable roster sizes, so both average BP and total BP describe the strength of the roster. With the same number of players, lowering the average also lowers the total. In our Star Scramble strategy, lower-BP members play a deliberate role: they handle item clears and fuel removal, helping higher-BP teammates eliminate opponents in a single attack. Their contribution is tactical, not just a lower matchmaking number. The exact matchmaking formula is not published, so treat BP as an important factor, not the entire rule."
     },
     {
       "type": "p",
@@ -941,7 +948,7 @@
     },
     {
       "type": "p",
-      "html": "For normal daily use, turn on <strong>“Stop when chip rating increases.”</strong> The Chip Factory will pause when it finds a chip rated above the one currently in that slot. It saves time and is a sensible default, even though the rating does not always capture the best combination of attributes."
+      "html": "For everyday Chip Factory production, <strong>“Stop when chip rating increases”</strong> is a useful time-saver. Manufactured chips have random attributes, so your filters can keep pieces useful to multiple formations at once. Usually select <strong>three attribute targets</strong> that match what you are building; the interface can accommodate roughly three to six kinds, but keeping too many creates extra screening work. Check the actual chip attributes before replacing an equipped chip: a higher rating is not always a better fit."
     },
     {
       "type": "p",
@@ -1585,7 +1592,7 @@
     },
     {
       "type": "p",
-      "html": "Inside <strong>Camp → Super Technology</strong>, SkyEagle Tech provides FDI. Crystal Prism and Eternal Pivot provide FDD, and Source Essence provides another FDD path once unlocked. A Blackout recommendation has been to work toward level 80 on the first three and level 60 on other accessible lines. Treat that as one player’s plan; the right next level depends on what you have unlocked, current costs, and the opponents you face."
+      "html": "Inside <strong>Camp → Super Technology</strong>, SkyEagle Tech provides FDI. Crystal Prism and Eternal Pivot provide FDD, and Source Essence provides another FDD path once unlocked. One approach I have seen is to work toward level 80 on the first three and level 60 on other accessible lines. Treat that as one player’s plan; the right next level depends on what you have unlocked, current costs, and the opponents you face."
     },
     {
       "type": "h2",
@@ -1633,7 +1640,7 @@
     },
     {
       "type": "p",
-      "html": "If you do not have the matching Titan Winggun yet, Prism Winggun can be a useful temporary PvE choice. This comes from a Blackout player recommendation, not a tested rule that it is always the best interim option."
+      "html": "If you do not have the matching Titan Winggun yet, Prism Winggun can be a useful temporary PvE choice. This is an option I have learned about, not a tested rule that it is always the best interim option."
     },
     {
       "type": "h2",
@@ -1974,7 +1981,7 @@
           "cells": [
             "Burning Enhancement",
             "100% net",
-            "Effective after opponent Burn Decrease. PVE bosses generally have none; PVP may require more than 100% raw to reach the cap."
+            "Effective after opponent Burn Decrease. PVE bosses have none; PVP may require more than 100% raw to reach the cap."
           ]
         },
         {
@@ -2087,7 +2094,7 @@
     },
     {
       "type": "p",
-      "html": "The central rule is <strong>effective Burn Enhancement = your raw Burn Enhancement minus the target’s Burn Decrease, capped at +100% and floored at 0%</strong> for this damage multiplier. Against a boss with no Burn Decrease, 100% raw is enough. Against a PvP opponent with 50% Burn Decrease, you would need 150% raw to reach the same 100% effective bonus. The floor means Burn Decrease can remove this bonus but does not push this multiplier below its unenhanced 1.0× baseline."
+      "html": "The central rule is <strong>effective Burn Enhancement = your raw Burn Enhancement minus the target’s Burn Decrease, capped at +100% and floored at 0%</strong> for this damage multiplier. Against a boss, 100% raw is enough. Against a PvP opponent with 50% Burn Decrease, you would need 150% raw to reach the same 100% effective bonus. The floor means Burn Decrease can remove this bonus but does not push this multiplier below its unenhanced 1.0× baseline."
     },
     {
       "type": "p",
@@ -2365,7 +2372,7 @@
     },
     {
       "type": "p",
-      "html": "Some Blackout battle logs suggest that when two sentinels fire at the same instant, the higher-BP player’s sentinel may activate first. This is not confirmed by controlled testing, so do not build a strategy that depends on that firing order."
+      "html": "Some battle logs I have seen suggest that when two sentinels fire at the same instant, the higher-BP player’s sentinel may activate first. This is not confirmed by controlled testing, so do not build a strategy that depends on that firing order."
     }
   ]
 }
