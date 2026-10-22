@@ -104,20 +104,20 @@
     {
       "type": "h2",
       "id": "start-priorities",
-      "title": "Choosing and improving your formations"
+      "title": "Choosing Your Formations"
     },
     {
       "type": "p",
-      "html": "The first decision is which opponents you want your formations to handle. A Dodge build makes you harder to hit; Crit / Hit gives you a way to attack other Dodge players; and Burn can hurt opponents who rely on avoiding normal attacks. You can save three complete formations, so it is worth developing different answers rather than forcing one build into every fight. The trade-off is that many players also need a formation for boss damage."
+      "html": "You can save three formations, but how you build them matters. Carefully choosing which stats to focus on gives you different ways to counter opponents in PvP. Dodge / Crit Resistance, Crit / Hit, and Burn / Crit Resistance each have their strengths, and knowing when to use them can make a huge difference. The challenge is balancing those PvP options with the need for a dedicated PvE formation."
     },
     {
       "type": "h2",
       "id": "my-formation-setups",
-      "title": "How to use your three formation slots"
+      "title": "Planning Your Three Formations"
     },
     {
       "type": "p",
-      "html": "You can save three complete formations, including chips, gear, a pilot, drones, a sentinel, and Mech Spirits. Manufacturing produces random chips, which means a useful chip for one formation may appear while you are hunting for another. Set the Chip Factory filters to keep the attributes you need across your formations, typically three attribute types to begin with. You can select more, up to six, when you have a reason to collect additional types. That way, all three chip sets improve as you play, even if one build gets most of your attention."
+      "html": "Each formation saves its chips, gear, pilot, drones, sentinel, and Mech Spirits. You can improve the chips for all three at once: the Chip Factory produces random attributes, and its filters let you keep chips for several builds. What takes longer is developing the drones, sentinels, pilots, and other bonuses that make those chips effective."
     },
     {
       "type": "table",
@@ -170,7 +170,7 @@
     },
     {
       "type": "p",
-      "html": "The right formation depends on the opponent. Dodge / Crit Resistance is my preferred default defense, especially for Star Scramble. Crit / Hit counters Dodge when your Hit Rate can keep up. Burn / Crit Resistance has become my main PvP offense on my primary account, but it needs enough healing and protection to survive while Burn damage builds. Those are my priorities, not a universal ranking for every account: what you can build well, and who you fight most, should determine your choices."
+      "html": "I rely on Dodge / Crit Resistance for defense and use Burn / Crit Resistance for most attacks on my main account. Crit / Hit remains important, particularly against players with high Dodge and little Burn protection. Those are my current choices, not a rule for every account: the best attack depends on the opponent and what you have developed."
     },
     {
       "type": "h2",
@@ -179,7 +179,7 @@
     },
     {
       "type": "p",
-      "html": "Start with their strongest stats. If they rely on Dodge, compare your Hit Rate with their Dodge. If they rely on Crit, compare your Crit Resistance with their Crit Rate. When your counter is too far behind, consider a different formation instead of forcing the fight. Dodge versus Dodge can work when your Dodge greatly exceeds their Hit, and Crit versus Crit can work when your offense is stronger. Those mirror fights depend especially on pilot Defense and Defense Break, with drones and the sentinel also making a difference. If neither approach looks favorable, choose another target."
+      "html": "Check the opponent’s main stats before choosing an attack. Against Dodge, see how your Hit Rate compares with their Dodge; if you cannot get close, a Burn formation may be safer. Against Crit, compare your Crit Resistance with their Crit Rate. A mirror matchup can work too, but only when your supporting build is stronger, especially your pilots. If you cannot find an advantage, save the attack for another target."
     },
     {
       "type": "h2",
@@ -247,7 +247,7 @@
     },
     {
       "type": "p",
-      "html": "Dodge / Crit Resistance is the defense I trust most against unfamiliar opponents, not a guarantee against every build. At the effective cap, Dodge avoids up to 80% of ordinary hits. Crit Resistance independently reduces the chance that hits which connect will crit. That combination gives your healing a chance to recover the damage you take. If you regularly face Burn, Dodge / Burn Decrease is worth considering, but losing Crit Resistance leaves you more exposed to conventional Crit offense."
+      "html": "Dodge / Crit Resistance is my preferred Star Scramble defense. Dodge can avoid up to 80% of ordinary hits when the opponent cannot overcome it with Hit Rate. Crit Resistance does a different job: it can keep the hits that get through from becoming critical hits. A build with strong Dodge but poor Crit Resistance can still be vulnerable to Crit specialists."
     },
     {
       "type": "table",
@@ -309,7 +309,7 @@
     },
     {
       "type": "p",
-      "html": "Star Scramble defense may face repeated attackers. If someone fails to kill your Dodge/Heal formation, its healing can make the next attacker work through much of that HP again. Burn takes longer to ramp up; you may win the first fight but finish it with less HP for the next one. That's why I currently prefer Dodge / Crit Resistance on defense and Burn / Crit Resistance on offense. It's a working theory based on experience, not a statistical finding across hundreds of defensive battles. Opponent composition and your own healing still matter."
+      "html": "For Star Scramble defense, I care about what happens after the first attack. If an opponent fails to kill a Dodge/Heal formation, healing may restore enough HP to make the next attacker work through it again. Burn damage usually takes longer to build. You might win with Burn but finish the fight with less HP, leaving an easier target for the next attack. That is my current theory about why Dodge/Heal is a better default defense; I have not tested it across a large set of battles."
     },
     {
       "type": "h2",
@@ -318,7 +318,7 @@
     },
     {
       "type": "p",
-      "html": "Crit / Hit is the option I want when facing a Dodge specialist. First compare your Hit Rate with their Dodge. If they're close, or your Hit is higher, your attacks have a reasonable chance to connect. Then compare Crit Rate with their Crit Resistance to judge how often those hits will crit. If your Hit is too far behind, extra Crit won't fix the missed attacks. Switch to a Burn formation, try a favorable mirror matchup if your pilots and supporting build are stronger, or find another target. A fast Crit build can also be a strong attack into Burn when the opponent has low Crit Resistance: it may win before Burn damage ramps up, and Toad Lord can remove Burn stacks when your weapons crit."
+      "html": "Crit / Hit is a useful attack against Dodge players when your Hit Rate is close to, or higher than, their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. If your Hit is far behind their Dodge, switch to Burn or look for another target."
     },
     {
       "type": "table",
@@ -376,7 +376,7 @@
     },
     {
       "type": "p",
-      "html": "If Burn is not an option, a Dodge mirror can work when your own Dodge far exceeds their Hit. Check pilots, drones, and the sentinel before choosing it; being difficult to hit is not enough if you cannot deal enough damage. Otherwise, look for a better target."
+      "html": "You can also try Dodge against Dodge when your Dodge is much higher than their Hit. That matchup depends heavily on pilots, drones, and your sentinel: avoiding attacks will not help if you cannot finish the fight. The same principle applies to Crit mirrors when you cannot counter the opponent’s Crit with enough Crit Resistance."
     },
     {
       "type": "p",
@@ -389,7 +389,7 @@
     },
     {
       "type": "p",
-      "html": "On my main account, <strong>Burn / Crit Resistance is my default PvP offense</strong>, used for roughly 80% of attacks. Three Burn drones apply damage that bypasses the ordinary Hit-versus-Dodge check on their skills and ongoing Burn, while Crit Resistance helps against weapon-Crit opponents. The trade-off is time: Burn becomes dangerous as stacks and bonuses build, so you need healing or damage reduction to survive the opening. Fast Crit can still beat Burn if your Crit Rate gets through their resistance and you kill them before the damage ramps up. I don't assume Burn must always come after Crit / Hit in a newer player's progression; I want to test whether it deserves an earlier place on a smaller account."
+      "html": "Burn / Crit Resistance is my main PvP offense on my primary account, used for roughly 80% of my attacks. Three Burn drones deal damage through skills and applied Burn stacks that Dodge cannot avoid. Crit Resistance protects you against fast Crit attacks while Burn builds over time. Healing is important because you have to stay alive long enough for that damage to add up."
     },
     {
       "type": "table",
@@ -447,7 +447,7 @@
     },
     {
       "type": "p",
-      "html": "The usual constraint on a newer account is not chip collection; you can improve chips for all three formations in parallel. It is that a dedicated PvE Burn setup often needs Burn chips to reach 100% Burn Enhancement. As native bonuses, Camp Tech, mech combinations, and sentinel passives improve, you can replace those chips with Crit chips and make that formation useful in both modes after swapping PvE-specific pieces. That frees a slot for PvP Burn. Alternatively, you can test prioritizing PvP Burn earlier and accept the PvE trade-off; I haven't yet established which path works best for newer accounts."
+      "html": "You do not have to stop developing other formations to work on Burn: chip manufacturing produces candidates for all three at once. The harder question is whether you can spare a formation slot. Earlier in progression, you may need Burn chips for your dedicated PvE boss build. Once native Burn Enhancement, Camp Tech, sentinel passives, and Mech Spirit bonuses provide enough, you can replace those PvE Burn chips with Crit and reconsider how to use your third formation. I am also interested in testing whether Burn / Crit Resistance should be an earlier PvP priority on a smaller account."
     },
     {
       "type": "h2",
@@ -456,7 +456,7 @@
     },
     {
       "type": "p",
-      "html": "PvE Burn starts with one goal: reach 100% Burn Enhancement against bosses. Bosses do not have Burn Decrease, so anything above that does not add more enhancement against them. Early on, Burn chips will probably supply part of it. Later, native bonuses, Camp Tech, sentinel passives, and Mech Spirit passives and combinations can replace those chips. Swap to Crit Rate chips one at a time, checking that Burn Enhancement remains at 100% after each change."
+      "html": "For PvE bosses, start by reaching 100% Burn Enhancement. Bosses do not have Burn Decrease, so Burn Enhancement above 100% will not increase damage further. Early on, Burn chips may be necessary. As you gain Burn Enhancement from other sources, replace those chips with Crit Rate chips one at a time, making sure Burn Enhancement stays at 100%."
     },
     {
       "type": "table",
@@ -628,16 +628,16 @@
     },
     {
       "type": "p",
-      "html": "Once you know which fights you want to win, the next question is which upgrades will change the result. A good place to start is pilots: their Defense and Defense Break affect almost every matchup. After that, look for the actual weakness in the formation you use, whether it is the wrong chip attributes, an unfinished drone, a poor sentinel passive, or Mech Spirits that do not complement the build."
+      "html": "Pilots are a good place to check when a matchup feels harder than it should. Their Defense Break and Defense affect the damage you deal and take. After that, look at the attribute you need most for the formation: Hit, Crit Resistance, healing, or the Burn bonuses your drones rely on."
     },
     {
       "type": "h2",
       "id": "on-bp-battle-power",
-      "title": "Be strong for your BP"
+      "title": "Strength vs. Battle Power"
     },
     {
       "type": "p",
-      "html": "BP measures overall progression, but not how efficiently your build fights. That is why a lower-BP player can beat someone stronger on paper. Keep pilot development moving as your BP grows. A lean build has advantages in BP-based competition, but added raw strength can still be valuable in Planet Wars and Military Drills."
+      "html": "BP measures progression, but players with similar BP can perform very differently. Pilot stats are a major reason. As your BP grows through equipment and other upgrades, keep investing in pilots so your Defense and Defense Break do not fall behind. Extra BP can help in raw-strength modes, but it can also make matchmaking harder."
     },
     {
       "type": "p",
@@ -776,11 +776,7 @@
     },
     {
       "type": "p",
-      "html": "Choose your first awakened SR pilot based on <strong>the damage type you deal</strong> and <strong>the damage type you most often face</strong>. A physical player who meets lots of energy opponents may awaken Hestia before Freya. If you use both physical and energy gear, developing all four combinations gives you more options. You can change pilots before each Star Scramble attack, but the pilot in your defensive formation is locked for the event."
-    },
-    {
-      "type": "p",
-      "html": "For example, a physical player who usually fights energy opponents may get more value from awakening Hestia before Freya. If the opposition changes, the best equipped pilot may change too; swapping between battles is free."
+      "html": "Choose your first SR awakening for the damage type you use and the opponents you encounter most. A physical player facing mostly energy damage might pick Hestia before Freya; an energy player facing physical damage might pick Lancelot before Clotho. Since switching equipped pilots is free, having both defensive variants gives you options."
     },
     {
       "type": "h3",
@@ -789,7 +785,7 @@
     },
     {
       "type": "p",
-      "html": "If you deal physical damage, build Physical Defense Break (PDB). If you deal energy damage, build Energy Defense Break (EDB). Every player should develop <strong>both Physical Defense (PD) and Energy Defense (ED)</strong>, because the opponent decides which damage type you need to survive."
+      "html": "If you deal physical damage, Physical Defense Break (PDB) is your offensive priority. If you deal energy damage, focus on Energy Defense Break (EDB). You need both Physical Defense (PD) and Energy Defense (ED), because your opponents may use either damage type."
     },
     {
       "type": "p",
@@ -814,7 +810,7 @@
     },
     {
       "type": "p",
-      "html": "A useful way to choose the next six-star N or R pilot is to check three things together: how many shards it still needs, how much Defense or Defense Break it adds, and how many extra shards you will unlock immediately. Sometimes the stat gain matters most; sometimes the extra shards make the decision."
+      "html": "When choosing the next N or R pilot to reach six stars, check the upgrade cost, the Defense or Defense Break you gain, and how many extra shards become usable afterward. Sometimes a pilot with a large stockpile of extra shards is worth finishing first; sometimes the immediate stat gain matters more."
     },
     {
       "type": "table",
@@ -885,16 +881,16 @@
     },
     {
       "type": "p",
-      "html": "Think of pilots as something you keep improving, not a checklist you finish. If your attacks do little damage against similar-BP opponents, compare your Defense Break with their Defense. If you die too quickly, check their Break against your PD or ED. Those comparisons tell you more than a universal BP benchmark."
+      "html": "Pilot stats do not become “done” when you reach a certain BP. Compare your Defense and Defense Break with players you actually face and keep strengthening the ones that matter to your gear and opponents."
     },
     {
       "type": "h2",
       "id": "chip-formations",
-      "title": "Chips — Build toward two useful stats"
+      "title": "Chips — Focus on the Stats That Matter"
     },
     {
       "type": "p",
-      "html": "Chips decide the main stats your formation emphasizes. In PvP, the most useful pairings give you an answer to a common opponent: Hit against Dodge, or Crit Resistance against Crit, with Crit and Dodge respectively supplying the other half of the build. For PvE Burn, chips initially help reach 100% Burn Enhancement and gradually shift toward Crit as other bonuses grow. <strong>Commit your chips to a clear pair of attributes.</strong> Being somewhat good at three unrelated stats often leaves you unable to counter an opponent whose main stat is much higher. A focused Hit build can actually overcome Dodge; a focused Crit Resistance build can actually shut down crits."
+      "html": "Chips let you concentrate on the stats that matter in a matchup. Hit counters Dodge; Crit Resistance counters Crit. That is why Crit / Hit and Dodge / Crit Resistance are useful pairs: each combines a counter with a second stat that supports how the formation fights."
     },
     {
       "type": "h3",
@@ -903,7 +899,7 @@
     },
     {
       "type": "p",
-      "html": "The chip with the highest overall rating is not always the chip that helps your formation most. Check its actual stats. A Crit/Hit formation wants both Crit Rate and Hit Rate somewhere across its chips; a Dodge/Crit Resistance formation wants those two. In PvE, only replace a Burn chip with a Crit Rate chip if you can still maintain 100% effective Burn Enhancement for the boss you are fighting."
+      "html": "Do not choose chips by overall rating alone. For Crit / Hit, look for Crit Rate and Hit Rate. For Dodge / Crit Resistance, look for Dodge and Crit Resistance. A chip with a lower rating can still be better if it improves the stat you need to beat your opponents."
     },
     {
       "type": "h3",
@@ -920,16 +916,16 @@
     },
     {
       "type": "p",
-      "html": "The trade-off is your time. Leave the rating check on when you want easy daily production; screen more results manually when you are hunting a very specific stat combination. There is no single minimum grade setting that is right for everyone."
+      "html": "For everyday manufacturing, leaving “Stop when chip rating increases” on saves time. When you are looking for a specific attribute, lower the minimum grade and inspect more results manually. That takes longer but can reveal upgrades the rating check misses."
     },
     {
       "type": "h2",
       "id": "burn-drones",
-      "title": "Drones — Develop one strong trio"
+      "title": "Burn Drones"
     },
     {
       "type": "p",
-      "html": "For a Burn formation, the drones are not just supporting equipment: they deliver much of the damage. Start with a trio that works now, then strengthen it one drone at a time. Mixing rarities is fine if a developed lower-rarity drone contributes more than an unfinished expensive one."
+      "html": "In Burn builds, your three drones supply much of the damage. A finished lower-rarity drone can be more useful than a barely developed SR, so compare what each drone contributes before committing resources."
     },
     {
       "type": "h3",
@@ -997,7 +993,7 @@
     },
     {
       "type": "p",
-      "html": "Once your Ninja foundation is working, choose <strong>one</strong> next drone to develop rather than spreading scarce copies and materials across several unfinished projects. You can mix R and SR drones within the same formation; the question is which one you can realistically finish."
+      "html": "After developing Ninja, pick the next drone you want to finish. Lich is an accessible R option; Sagittarius and Lyra are longer-term SR choices. You can use R and SR drones together, and a developed Lich may still earn a place beside stronger SR drones because its skill helps the whole trio."
     },
     {
       "type": "ul",
@@ -1014,7 +1010,7 @@
     },
     {
       "type": "p",
-      "html": "A developed R drone can still be valuable alongside SR drones when its skill supports the whole team. The mistake is not mixing rarities; it is spreading your resources so thin that none of the drones gets strong."
+      "html": "A finished R drone can still be useful beside SR drones. Compare its skill and passives with what an unfinished SR actually gives you."
     },
     {
       "type": "p",
@@ -1095,11 +1091,11 @@
     {
       "type": "h2",
       "id": "sentinels",
-      "title": "Sentinels — Choose a job, then build passives"
+      "title": "Sentinels"
     },
     {
       "type": "p",
-      "html": "A sentinel should fill a clear role in your formation: sustain, direct damage, or a counter such as Healing Reduction. Its active skill matters, but the passive bonuses you develop can matter just as much. That is why a well-developed low-rarity sentinel can be more useful than a rare one with poor passives."
+      "html": "A sentinel can keep you alive, deal damage, or counter an opponent’s healing. Choose it for the role you need and the passives you can develop. An inexpensive sentinel with excellent passives can outperform a more expensive one with poor rolls."
     },
     {
       "type": "h3",
@@ -1161,7 +1157,7 @@
     },
     {
       "type": "p",
-      "html": "Keep sentinels for distinct jobs. A healing sentinel can serve as your default defense, while one with Heal Reduction is better against a player who relies on Ladybug or other recovery. For inexpensive G-class sentinels such as Gridstar, you can buy copies repeatedly and look for two or three desirable passives, then reverse-merge the best roll into your developed copy. Save scarce Recast and Protection Cores for SR and especially SSR sentinels, where purchasing replacements is much more expensive."
+      "html": "For defense, a Gridstar with good Healing Enhancement passives is a strong starting point. Against heavy healing, keep a separate sentinel with Healing Reduction. Buying more inexpensive Gridstars may be cheaper than repeatedly recasting one; save costly recast materials for rarer sentinels."
     },
     {
       "type": "h3",
@@ -1231,11 +1227,7 @@
     },
     {
       "type": "p",
-      "html": "Look for a gold passive that clearly improves the build, but don't spend heavily on perfect recasts too early. <strong>For an inexpensive Gridstar, keep buying copies and compare their naturally rolled passives</strong>—sometimes you get two or three useful ones without locking and recasting at all. Then use reverse merging to preserve the better copy's rolls while transferring evolution. Save costly recast materials for rare sentinels whose copies are hard to buy."
-    },
-    {
-      "type": "p",
-      "html": "This is also why the <a href=\"#the-reverse-merge-technique\">reverse-merge technique</a> matters: it lets you transfer evolution progress onto a newer copy with a better passive roll."
+      "html": "On inexpensive sentinels, check new copies for useful passive combinations before spending heavily on recasts. Finding two or three desirable passives naturally can save a lot of Protection Cores. Reverse merging then lets you keep those passives without losing the evolution progress on your existing sentinel."
     },
     {
       "type": "h3",
@@ -1360,11 +1352,11 @@
     {
       "type": "h2",
       "id": "mech-spirits",
-      "title": "Mech Spirits — Equip the three that fit"
+      "title": "Mech Spirits"
     },
     {
       "type": "p",
-      "html": "You can equip three Mech Spirits. Their best combinations depend on the rest of the formation: a healing defense wants protection and recovery, conventional Crit offense wants bonuses that reward weapon crits, and PvE Burn wants to strengthen burning drones. Some unequipped spirits also contribute passive or combination bonuses."
+      "html": "You can equip three Mech Spirits. Pick them for the formation you are using: healing and damage reduction for a long defensive fight, weapon-crit bonuses for Crit offense, or Burn-specific bonuses for PvE. Mech Spirit combinations and passive bonuses also improve your account even when the spirit is not equipped."
     },
     {
       "type": "h3",
@@ -1452,7 +1444,7 @@
     {
       "type": "h2",
       "id": "engines",
-      "title": "Engines — Counter the damage you face"
+      "title": "Engines"
     },
     {
       "type": "table",
@@ -1496,7 +1488,7 @@
     },
     {
       "type": "p",
-      "html": "The engine is one of the easiest pieces to change for a matchup. Choose Hit Rate when you need to get through Dodge, Crit Resistance when you need protection against Crit, or Burn Decrease against an opponent whose damage comes from Burn. Use the values on the actual engine you own, not just its name."
+      "html": "Choose the engine for the opponent. Hit Rate helps against Dodge. Crit Resistance protects against Crit. Burn Decrease reduces damage from Burn builds. Those counters matter more than simply equipping whichever engine has the highest BP."
     },
     {
       "type": "p",
@@ -1505,11 +1497,11 @@
     {
       "type": "h2",
       "id": "camp-technology",
-      "title": "Camp Tech — Buy the stat that helps"
+      "title": "Camp Technology"
     },
     {
       "type": "p",
-      "html": "Camp Technology and Super Technology provide stats that can improve a formation even when its chips and equipment have stopped changing. Some bonuses help almost every PvP fight, while others, such as Burn Enhancement, are valuable for a particular build. Legion Technology is a separate investment and is covered later."
+      "html": "Camp Technology and Super Technology can fill gaps that chips cannot easily cover. For PvP, look at damage and damage reduction bonuses. For PvE Burn, extra Burn Enhancement from Camp Tech can free a chip slot for Crit Rate."
     },
     {
       "type": "p",
@@ -1522,7 +1514,7 @@
     },
     {
       "type": "p",
-      "html": "These are priorities to compare, <strong>not</strong> a requirement to complete one category before touching another. Later levels can become very expensive, so a cheaper improvement in your second priority may be better than the next level in your first."
+      "html": "Upgrade costs rise as you progress, so compare what the next available level actually gives you. A cheap PvP Damage Reduction upgrade may help more than another expensive level of Final Damage Decrease."
     },
     {
       "type": "ol",
@@ -1565,7 +1557,7 @@
     },
     {
       "type": "p",
-      "html": "Titan gear determines whether your attacks count as physical or energy damage and can provide important set bonuses. That choice affects which pilot Defense Break stat you should emphasize. Compare complete equipment sets, not just the BP displayed on one weapon."
+      "html": "Titan gear affects your damage type and the Defense Break stat you need from pilots. A complete matching set can also improve the attack value used by weapons and other damage sources, so compare the full set before swapping a single piece."
     },
     {
       "type": "h3",
@@ -1600,7 +1592,7 @@
     },
     {
       "type": "p",
-      "html": "Before reclaiming or downgrading gear, check what it contributes to your active Titan set and how much upgrade material you will recover. Two pieces with similar-looking BP may offer different combat stats or effects. Do not assume every non-Titan piece is interchangeable."
+      "html": "Before using gear as upgrade material, check whether it is part of a matching Titan set and what you would lose by removing it. Two pieces with similar BP may still produce very different damage."
     },
     {
       "type": "p",
@@ -1651,7 +1643,7 @@
     },
     {
       "type": "p",
-      "html": "Keep Armor Base HP in mind too. If you are dying before your damage can matter, more survivability may help more than the next weapon upgrade. If PvP is your main focus, aerial-enemy bonuses usually deserve attention ahead of bonuses limited to bosses or ground/sea enemies. Check what you would lose in PvE before resetting any Legion Technology."
+      "html": "If you are dying before you can do meaningful damage, Armor HP may be more useful than another weapon upgrade. For PvP, prioritize the aerial-enemy bonuses that apply to other players over bonuses meant mainly for bosses or ground targets."
     },
     {
       "type": "h1",
@@ -1660,7 +1652,7 @@
     },
     {
       "type": "p",
-      "html": "Once you know which upgrades you want, events determine when to spend. Several events give much better rewards when you reach particular milestones, and progress usually resets at the next event. Saving for an entire reward round is often better than spending a little every week, although the Mech Event has a useful shorter stopping point."
+      "html": "Event milestones change the value of when you spend. If you are close to completing a reward round, saving tickets or currency for the next event may be better than spending a little now and losing that progress when the event resets."
     },
     {
       "type": "h2",
@@ -1669,7 +1661,7 @@
     },
     {
       "type": "p",
-      "html": "Several events offer as many as four reward rounds. The best target is not necessarily the end of the first round: for example, the Mech Event has strong early rewards at 100 pulls, so 500 pulls can be better than stopping at 400 if you have enough saved."
+      "html": "Check the reward milestones before spending. Several events allow four rounds, but the best stopping point differs: the Mech Event, for example, can make 100 or 500 pulls more attractive than stopping at 400."
     },
     {
       "type": "table",
@@ -1795,7 +1787,7 @@
     },
     {
       "type": "p",
-      "html": "Before refreshing a daily challenge or buying shop resources, ask what you are trying to finish: a pilot awakening, a drone evolution, a sentinel passive, or an event round. That answer should determine your diamond spending."
+      "html": "Decide which upgrade you are working toward before spending daily diamonds. A pilot awakening, drone evolution, sentinel passive, and event milestone draw on different resources; buying a little of each may delay the one that matters most right now."
     },
     {
       "type": "p",
@@ -1803,7 +1795,7 @@
     },
     {
       "type": "p",
-      "html": "If your diamonds are limited, it is better to fund the upgrade that helps your current build most than to buy a little of everything. Leave room to save for the Pilot, Mech, Sentinel, or Drone Event milestone you are planning to complete."
+      "html": "If diamonds are limited, prioritize the resources needed for your next meaningful upgrade and keep enough in reserve for event milestones."
     },
     {
       "type": "h1",
@@ -1812,7 +1804,7 @@
     },
     {
       "type": "p",
-      "html": "The sections above focus on choices you make in the game. Here are the calculations and less-certain interactions behind them, including the exact Defense Break formula, Crit conversion, Burn caps, and recasting odds."
+      "html": "The reference below covers the numbers behind the recommendations: Defense Break, stat caps, Burn Crit conversion, drone effects, and recast odds."
     },
     {
       "type": "h2",
@@ -2198,7 +2190,7 @@
     },
     {
       "type": "p",
-      "html": "If you cannot test every drone combination, favor a bonus that helps your full Burn setup reliably. Treat Lich as a practical recommendation, not a mathematically proven winner against the other R drones."
+      "html": "Lich is my preferred R Burn drone because its listed bonus helps the whole trio. Cerberus and Scorpion Lion may work better in particular combinations, but I have not seen enough testing to rank them definitively."
     },
     {
       "type": "h2",
