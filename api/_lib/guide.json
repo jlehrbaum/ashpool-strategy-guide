@@ -25,61 +25,20 @@
     },
     {
       "type": "p",
-      "html": "My default PvP defense is <strong>Dodge / Crit Resistance</strong>. For offense, I now use <strong>Burn / Crit Resistance</strong> in most fights on my main account, although <strong>Crit / Hit</strong> is still a core build and may be easier to prioritize earlier. The goal is to choose a formation that actually handles the opponent’s strengths, then back it up with strong pilots, drones, and sentinels. This guide explains those matchups, how to develop all three formations, and where to spend limited resources."
-    },
-    {
-      "type": "h2",
-      "id": "start-priorities",
-      "title": "Where to focus first"
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Priority",
-            "Why it matters"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "1. Develop Dodge / Crit Resistance",
-            "Default PvP defense. With enough Dodge, avoid up to 80% of ordinary attacks. High Crit Resistance can make the hits that get through normal rather than critical hits."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "2. Build Crit / Hit alongside it",
-            "Your answer to Dodge specialists when Hit Rate is close to or higher than their Dodge. You will also use this chip formation for a developing PvE Burn/Crit setup as Burn bonuses improve."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "3. Keep investing in pilots",
-            "Use Defense Break for your own gear type and build both defenses. Particularly in mirror matchups, the strength of your pilots often decides the fight."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "4. Develop PvE Burn and explore PvP Burn",
-            "Build PvE Burn Enhancement to 100%, then replace Burn chips with Crit chips as other bonuses grow. Burn / Crit Resistance can become your main offensive PvP build, not merely a spare third choice. Its earliest practical place in progression needs more testing."
-          ]
-        }
-      ]
+      "html": "One of the most interesting things about Wing Fighter is that the player with more Battle Power (BP) does not always win. You can beat someone much stronger on paper, then lose to someone weaker. Often, the difference is not how much you have upgraded. It is <strong>how your build matches up against theirs</strong>."
     },
     {
       "type": "p",
-      "html": "You are able to save <strong>three complete formations</strong>. Build chips for all three in parallel; the Chip Factory produces random attributes, and its filters can keep chips useful to different builds. Formation 1 should be PvP-ready for Hyper Battlefield proxy mode."
+      "html": "That is what got me interested in figuring out how this game really works. Which stats counter each other? Why does one formation survive an attack that destroys another? When is a new drone or sentinel actually an improvement, and when are you just spending resources to raise BP? The more I have tested, compared notes, and dug into the mechanics, the more I have found that good decisions matter as much as raw power."
+    },
+    {
+      "type": "p",
+      "html": "This is my working guide to those decisions, with PvP as the main focus. It covers how to size up an opponent, choose a formation, strengthen the parts of your build that matter, and get more from limited resources. There is also a dedicated PvE section, because boss damage is important for progression. Some recommendations are well established; others are things I am still testing, and I will call out the difference."
     },
     {
       "type": "h2",
       "id": "where-to-start",
-      "title": "Go straight to the part you need"
+      "title": "Find what you need"
     },
     {
       "type": "table",
@@ -141,6 +100,59 @@
           ]
         }
       ]
+    },
+    {
+      "type": "h2",
+      "id": "start-priorities",
+      "title": "A practical starting point"
+    },
+    {
+      "type": "p",
+      "html": "You do not need to master every system at once. Start by building formations that give you options against different opponents, and keep improving your pilots as you go. You can manufacture chips for multiple formations at the same time, so there is no reason to finish one chip set before starting another."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "Priority",
+            "Why it matters"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "1. Develop Dodge / Crit Resistance",
+            "Default PvP defense. With enough Dodge, avoid up to 80% of ordinary attacks. High Crit Resistance can make the hits that get through normal rather than critical hits."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "2. Build Crit / Hit alongside it",
+            "Your answer to Dodge specialists when Hit Rate is close to or higher than their Dodge. You will also use this chip formation for a developing PvE Burn/Crit setup as Burn bonuses improve."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "3. Keep investing in pilots",
+            "Use Defense Break for your own gear type and build both defenses. Particularly in mirror matchups, the strength of your pilots often decides the fight."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "4. Develop PvE Burn and explore PvP Burn",
+            "Build PvE Burn Enhancement to 100%, then replace Burn chips with Crit chips as other bonuses grow. Burn / Crit Resistance can become your main offensive PvP build, not merely a spare third choice. Its earliest practical place in progression needs more testing."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "Those are priorities for developing an account, <strong>not a ranking of which formation is strongest in every fight</strong>. On my main account, Burn / Crit Resistance is now my most-used PvP offense. I am still exploring whether newer players should build it sooner. The next section explains how to choose among the formations, rather than assuming any one will win every matchup."
     },
     {
       "type": "h2",
