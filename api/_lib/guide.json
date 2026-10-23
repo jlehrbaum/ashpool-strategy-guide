@@ -117,7 +117,7 @@
     },
     {
       "type": "p",
-      "html": "Each formation saves its chips, gear, pilot, drones, sentinel, and Mech Spirits. You can improve the chips for all three at once: the Chip Factory produces random attributes, and its filters let you keep chips for several builds. What takes longer is developing the drones, sentinels, pilots, and other bonuses that make those chips effective."
+      "html": "Each formation saves its chips, gear, pilot, drones, sentinel, and Mech Spirits. Chip manufacturing is one of the most important parts of improving your formations. Set up Auto Mode for all three formations and run it daily. As your Chip Factory levels up, the quality of chips improves, giving you opportunities to strengthen all three builds."
     },
     {
       "type": "table",
@@ -140,21 +140,14 @@
           "header": false,
           "cells": [
             "PvP attacking option",
-            "Crit / Hit. Switch to it when your Hit meaningfully answers the opponent’s Dodge."
+            "Crit / Hit. Switch to it when your Hit Rate exceeds the opponent’s Dodge Rate."
           ]
         },
         {
           "header": false,
           "cells": [
             "Third formation",
-            "Often dedicated PvE Burn early on. At higher progression, Burn / Crit Resistance can become the primary offensive PvP build. Crit / Crit Resistance is situational, not an automatic interim third build."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Hyper Battlefield proxy reminder",
-            "Keep a PvP-ready build in Formation 1; players report that proxy mode defaults there."
+            "Most players use their third formation for PvE Burn. As native Burn Enhancement increases, you can gradually replace Burn chips with Crit chips. Once you reach 100% native Burn Enhancement, your Crit formation can serve both PvE and PvP, freeing the third slot for another PvP build. My preference is Burn / Crit Resistance, though I’m exploring whether it deserves priority earlier in progression."
           ]
         }
       ]
@@ -170,7 +163,11 @@
     },
     {
       "type": "p",
-      "html": "I rely on Dodge / Crit Resistance for defense and use Burn / Crit Resistance for most attacks on my main account. Crit / Hit remains important, particularly against players with high Dodge and little Burn protection. Those are my current choices, not a rule for every account: the best attack depends on the opponent and what you have developed."
+      "html": "I rely on Dodge / Crit Resistance for defense and use Burn / Crit Resistance for most attacks on my main account. Crit / Hit remains important, particularly against players with high Dodge and little Burn protection."
+    },
+    {
+      "type": "p",
+      "html": "Burn / Crit Resistance has become my primary PvP offensive build, but it takes some investment to make it effective. You’ll want three well-developed Burn drones and a strong healing sentinel to survive while Burn damage builds. Star Envoy strengthens your Burn damage, Aqua Spirit reduces incoming damage, and Ladybug provides additional healing. Berserk Dragon is another strong defensive option."
     },
     {
       "type": "h2",
@@ -318,7 +315,7 @@
     },
     {
       "type": "p",
-      "html": "Crit / Hit is a useful attack against Dodge players when your Hit Rate is close to, or higher than, their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. If your Hit is far behind their Dodge, switch to Burn or look for another target."
+      "html": "Crit / Hit is a useful attack against Dodge players when your Hit Rate exceeds their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. If your Hit is far behind their Dodge, switch to Burn or look for another target."
     },
     {
       "type": "table",
@@ -540,7 +537,7 @@
           "header": false,
           "cells": [
             "High Dodge",
-            "Compare your Hit against their Dodge. Use Crit / Hit when close or higher. If not, a Burn formation bypasses their Dodge through Burn-drone skills; a Dodge mirror can also work with much better Dodge and stronger pilots, drones, and sentinel. If none is favorable, skip."
+            "Compare your Hit against their Dodge. Use Crit / Hit when it exceeds their Dodge. If not, a Burn formation bypasses their Dodge through Burn-drone skills; a Dodge mirror can also work with much better Dodge and stronger pilots, drones, and sentinel. If none is favorable, skip."
           ]
         },
         {
