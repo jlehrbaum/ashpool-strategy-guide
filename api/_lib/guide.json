@@ -88,7 +88,7 @@
         {
           "header": false,
           "cells": [
-            "Counter Dodge specialists",
+            "Counter Dodge or Burn builds",
             "<a href=\"#pvp-offensive-build\">Crit / Hit</a>"
           ]
         },
@@ -138,7 +138,7 @@
     },
     {
       "type": "p",
-      "html": "My most-used PvP offense is Burn / Crit Resistance, while Dodge / Crit Resistance is my preferred Star Scramble defense. Crit / Hit gives me another way to attack high-Dodge opponents when my Hit Rate is strong enough."
+      "html": "My most-used PvP offense is Burn / Crit Resistance, while Dodge / Crit Resistance is my preferred Star Scramble defense. Crit / Hit gives me another way to attack high-Dodge opponents when my Hit Rate is strong enough, or potentially defeat Burn builds before their damage ramps up."
     },
     {
       "type": "p",
@@ -186,14 +186,14 @@
           "header": false,
           "cells": [
             "Crit / Hit",
-            "Useful against high-Dodge opponents when your Hit Rate exceeds their Dodge. Crit damage is most effective when their Crit Resistance is low. I use it less often now that my PvP Burn build is developed."
+            "Useful against high-Dodge opponents when your Hit Rate exceeds their Dodge. It can also counter Burn builds by dealing enough damage to win before their Burn stacks become overwhelming. That depends heavily on the opponent’s Crit Resistance, which is why many PvP Burn builds invest in it."
           ]
         },
         {
           "header": false,
           "cells": [
-            "PvE Burn → Burn / Crit",
-            "Boss-damage progression: reach 100% effective Burn Enhancement, then replace Burn chips with Crit Rate as non-chip Burn bonuses grow. Eventually, one Crit formation can serve PvE and PvP, freeing a slot for another PvP build."
+            "PvE Burn / Crit",
+            "Your boss-damage build. Start with Burn chips to reach 100% Burn Enhancement. As you gain more Burn Enhancement from other sources, replace those chips with Crit Rate to increase your damage."
           ]
         },
         {
@@ -374,11 +374,11 @@
     {
       "type": "h2",
       "id": "pvp-offensive-build",
-      "title": "3. Crit / Hit — Attack Dodge"
+      "title": "3. Crit / Hit — Counter Dodge or Burn"
     },
     {
       "type": "p",
-      "html": "Crit / Hit is a useful attack against Dodge players when your Hit Rate exceeds their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. If your Hit is far behind their Dodge, switch to Burn or look for another target."
+      "html": "Crit / Hit is useful against high-Dodge opponents when your Hit Rate exceeds their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. It can also counter Burn builds by winning quickly, before Burn damage builds up. That depends on the opponent’s Crit Resistance, which is why many PvP Burn builds prioritize it. If your Hit falls far behind their Dodge or their Crit Resistance neutralizes your Crit, consider a different formation or target."
     },
     {
       "type": "table",
