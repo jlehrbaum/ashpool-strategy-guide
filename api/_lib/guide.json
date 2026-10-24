@@ -556,20 +556,6 @@
             "Heavy healing",
             "Try Heal Reduction from your sentinel or passives."
           ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Weak attacks",
-            "Compare your relevant Defense Break with their Defense. If you own <strong>both well-developed physical and energy Titan sets</strong>, you may exploit an uneven defense, such as high PD but weak ED, by switching gear and pilot. This is an advanced option; otherwise look for a better target rather than assuming a quick upgrade is possible."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Attacks missing vs. hits not critting",
-            "These are separate: misses are about Hit versus Dodge; ordinary hits not critting are about Crit versus Crit Resistance."
-          ]
         }
       ]
     },
@@ -891,7 +877,11 @@
     },
     {
       "type": "p",
-      "html": "Chips let you concentrate on the stats that matter in a matchup. Hit counters Dodge; Crit Resistance counters Crit. That is why Crit / Hit and Dodge / Crit Resistance are useful pairs: each combines a counter with a second stat that supports how the formation fights."
+      "html": "<strong>Your chips are the foundation of each formation.</strong> The attributes you prioritize determine the type of build you’re creating, whether that’s Dodge / Crit Resistance, Crit / Hit, or Burn / Crit Resistance. From there, you choose your drones, sentinel, Mech Spirits, and other equipment to support that strategy."
+    },
+    {
+      "type": "p",
+      "html": "Chip manufacturing is a long-term investment. Set up Auto Mode to look for the attributes you want across all three formations, and run it daily. As your Chip Factory levels up, it produces better-quality chips, helping you strengthen each build over time."
     },
     {
       "type": "h3",
