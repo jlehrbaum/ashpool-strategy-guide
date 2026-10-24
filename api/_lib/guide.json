@@ -142,7 +142,7 @@
     },
     {
       "type": "p",
-      "html": "Burn / Crit Resistance has become my primary PvP offensive build, but it takes some investment to make it effective. You’ll want three well-developed Burn drones and a strong healing sentinel to survive while Burn damage builds. Star Envoy strengthens your Burn damage, Aqua Spirit reduces incoming damage, and Ladybug provides additional healing. Berserk Dragon is another strong defensive option."
+      "html": "Burn / Crit Resistance has become my primary PvP offensive build, but it takes some investment to make it effective. You’ll want three well-developed Burn drones and a strong healing sentinel to survive while Burn damage builds. Star Envoy strengthens your Burn damage, Aqua Spirit reduces incoming damage, and Ladybug provides a one-time emergency heal when HP first drops below 30% in PvP. Berserk Dragon is another strong defensive option."
     },
     {
       "type": "h2",
@@ -270,14 +270,14 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Ladybug adds a low-HP heal; Aqua Spirit protects you for the rest of the battle once triggered; Berserk Dragon protects from the start."
+            "Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP; Aqua Spirit protects you for the rest of the battle once triggered; Berserk Dragon protects from the start."
           ]
         },
         {
           "header": false,
           "cells": [
             "Drones",
-            "Sagittarius adds Burn damage during long fights; Apus is another accessible option. Fill the other drone positions with your best developed support rather than forcing an unfinished high-rarity drone."
+            "Sagittarius adds Burn damage during long fights. Apus is especially useful for Dodge/Heal: its first three skill activations each increase maximum and current HP by 5% of base HP, up to 15% total. That increases survivability and strengthens percentage-of-Max-HP healing from Ladybug and Blood Bat."
           ]
         },
         {
@@ -290,8 +290,8 @@
         {
           "header": false,
           "cells": [
-            "Pilot / gear",
-            "A defensive pilot and fighter appropriate to the opposing damage type; Hardrock is one established option."
+            "Fighter / gear",
+            "For physical builds, Hardrock is worth testing for its additional HP, particularly in Dodge/Heal formations. However, I’ve found that using the full Conqueror setup wins more fights, likely because its additional damage outweighs Hardrock’s HP advantage."
           ]
         }
       ]
@@ -302,7 +302,7 @@
     },
     {
       "type": "p",
-      "html": "This is also why I favor Dodge / Crit Resistance for Star Scramble defense. Paired with strong healing, it gives you a better chance of surviving multiple attackers. If an opponent can’t finish you off, the next attacker has to deal with your Cheat Death and Ladybug abilities again. Burn damage typically ramps up later in a fight, so a Burn defender may win but finish with less HP. I think that makes Dodge / Heal a stronger default defense across successive attacks, although I haven’t tested the theory across a large sample of battles."
+      "html": "This is also why I favor Dodge / Crit Resistance for Star Scramble defense. Paired with strong healing, it gives you a better chance of surviving multiple attackers. If an opponent can’t finish you off, the next attacker has to deal with your Cheat Death and Ladybug emergency-heal abilities again, if their HP thresholds are reached. Burn damage typically ramps up later in a fight, so a Burn defender may win but finish with less HP. I think that makes Dodge / Heal a stronger default defense across successive attacks, although I haven’t tested the theory across a large sample of battles."
     },
     {
       "type": "h2",
@@ -356,13 +356,6 @@
           "cells": [
             "Drones",
             "Use developed drones whose skills help the matchup. This is a core recommendation, not a fixed three-drone recipe."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Pilot / gear",
-            "Match PDB or EDB to your gear and PD or ED to the opponent’s damage type."
           ]
         }
       ]
@@ -419,7 +412,7 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Aqua Spirit + Star Envoy are the central PvP Burn choices. Use Ladybug as the third when your Healing Enhancement makes its recovery strong; Berserk Dragon can be the better third while your healing is still underdeveloped. <strong>Evil Eye is usually a poor fit here</strong>: this formation invests in Burn Enhancement and Crit Resistance rather than enough Crit Rate for meaningful conversion. Reserve Evil Eye for your PvE Burn/Crit setup."
+            "Aqua Spirit + Star Envoy are the central PvP Burn choices. Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP; Berserk Dragon instead reduces incoming damage from the start of battle. Compare both based on the matchup and their upgrade levels. <strong>Evil Eye is usually a poor fit here</strong>: this formation invests in Burn Enhancement and Crit Resistance rather than enough Crit Rate for meaningful conversion. Reserve Evil Eye for your PvE Burn/Crit setup."
           ]
         },
         {
@@ -427,13 +420,6 @@
           "cells": [
             "Engine",
             "Crit Resistance by default; matchup-specific counters as needed."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Pilot / gear",
-            "Match your Defense Break to your gear and your equipped pilot’s Defense to the threats you face."
           ]
         }
       ]
@@ -495,13 +481,6 @@
           "cells": [
             "Mech Spirits",
             "Evil Eye for Burn Crit conversion. Add Star Envoy (SSR) when available and equipped with three Burn drones. Use the third slot for damage or missing Burn Enhancement."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Pilot / gear",
-            "Equip a pilot whose Defense Break matches your gear: PDB for physical, EDB for energy. Continue improving that stat."
           ]
         }
       ]
@@ -1214,7 +1193,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Not every heal uses the same bonuses.</strong> Ladybug and Cheat Death benefit from Healing Enhancement; Apus’s HP recovery does not. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not from the Sentinel Enhancement multiplier. This is why “more Sentinel Enhancement” is not always the best answer for a healing build."
+      "html": "<strong>Not every heal uses the same bonuses.</strong> Apus increases maximum HP by 5% of base HP on each of its first three skill activations, up to +15% total. That increases percentage-of-Max-HP healing from Ladybug and Blood Bat. Cheat Death uses fundamental HP instead, while Doomblast and Arcglow heal based on Attack. Apus’s own HP recovery does not benefit from Healing Enhancement; Ladybug and Cheat Death do. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not the Sentinel Enhancement multiplier."
     },
     {
       "type": "p",
@@ -1374,14 +1353,14 @@
           "nested": null
         },
         {
-          "html": "<strong>Ladybug (N):</strong> Heals the first time your HP falls below 30% in PvP. It restores 6.25% of maximum HP at skill level 1, growing to 21.25% at level 13. Healing Enhancement improves the result. Ladybug cannot be chosen with selectable Mech rewards, so Mech Event pulls are the main way to develop it.",
+          "html": "<strong>Ladybug (N):</strong> Provides a one-time emergency heal when your HP first falls below 30% in a PvP battle. It restores 6.25% of maximum HP at skill level 1, growing to 21.25% at level 13. Healing Enhancement improves the result. Ladybug cannot be chosen with selectable Mech rewards, so Mech Event pulls are the main way to develop it.",
           "nested": null
         }
       ]
     },
     {
       "type": "p",
-      "html": "For a Dodge/Heal defense, Aqua Spirit and Ladybug work particularly well once Healing Enhancement is developed: damage reduction persists after Aqua Spirit activates, and Ladybug restores HP at the danger point. Berserk Dragon supplies protection from the start. For <strong>PvP Burn</strong>, prioritize Star Envoy and Aqua Spirit; choose Ladybug as the third if your Healing Enhancement makes its heal powerful, or Berserk Dragon while that healing is still weak. This is a practical substitution, not a fixed trio for every account."
+      "html": "For a Dodge/Heal defense, Aqua Spirit and Ladybug work particularly well once Healing Enhancement is developed: damage reduction persists after Aqua Spirit activates, and Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP. Berserk Dragon supplies protection from the start. For <strong>PvP Burn</strong>, prioritize Star Envoy and Aqua Spirit; Ladybug provides an emergency heal below 30% HP, while Berserk Dragon reduces incoming damage from the start. The better third spirit depends on your opponent and how far you have developed each option. This is a practical substitution, not a fixed trio for every account."
     },
     {
       "type": "p",
