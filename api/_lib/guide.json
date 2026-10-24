@@ -284,7 +284,7 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is a poor fit for this formation</strong>, since it prioritizes Burn Enhancement and Crit Resistance rather than the Crit Rate needed for meaningful conversion. Save Evil Eye for PvE Burn/Crit."
+            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is better suited to PvE Burn/Crit.</strong> It converts only the Crit Rate above the target’s Crit Resistance into Burn Crit Rate. PvE bosses have no Crit Resistance, so the conversion works well. In PvP, this formation focuses its chips on Burn Enhancement to overcome enemy Burn Decrease, and on Crit Resistance for defense. That leaves too little Crit Rate above enemy Crit Resistance for Evil Eye to contribute much."
           ]
         },
         {
@@ -298,7 +298,7 @@
     },
     {
       "type": "p",
-      "html": "I’m interested in testing whether Burn / Crit Resistance should become a PvP priority earlier in progression, including on my smaller account. It’s already my primary offensive formation on my main account. The trade-off for newer players is usually their need for a dedicated PvE Burn formation; the next section explains how that changes as Burn Enhancement grows."
+      "html": "I’m interested in testing whether Burn / Crit Resistance should become a PvP priority earlier in progression, including on my smaller account. It’s already my primary offensive formation on my main account. The trade-off for newer players is usually their need for a dedicated PvE Burn formation; see <a href=\"#pve-burn-build\">PvE Burn progression</a> for how that changes as Burn Enhancement grows."
     },
     {
       "type": "h2",
