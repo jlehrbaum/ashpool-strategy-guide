@@ -232,6 +232,7 @@
     margin-bottom: 16px;
   }
   .doc-chip {
+    display: inline-block;
     font-size: 0.75rem;
     font-weight: 600;
     padding: 3px 10px;
@@ -240,6 +241,12 @@
     border: 1px solid rgba(108,142,245,0.3);
     color: var(--accent);
     letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  a.doc-chip:hover {
+    background: rgba(108,142,245,0.22);
+    border-color: rgba(108,142,245,0.55);
   }
   .doc-meta {
     font-size: 0.8rem;
@@ -511,7 +518,14 @@
     if (m.tagline) parts.push(`<p class="doc-tagline">${m.tagline}</p>`);
     if (m.chips && m.chips.length) {
       parts.push('<div class="doc-chips">' +
-        m.chips.map(c => `<span class="doc-chip">${c}</span>`).join('') +
+        m.chips.map(c => {
+          // Chip can be a plain string (decorative) or {label, href} (clickable).
+          if (typeof c === 'string') return `<span class="doc-chip">${c}</span>`;
+          const label = c.label || '';
+          return c.href
+            ? `<a class="doc-chip" href="${c.href}">${label}</a>`
+            : `<span class="doc-chip">${label}</span>`;
+        }).join('') +
         '</div>');
     }
     if (m.metaLine) parts.push(`<p class="doc-meta">${m.metaLine}</p>`);

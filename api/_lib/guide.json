@@ -4,13 +4,34 @@
     "title": "Wing Fighter Strategy Guide",
     "tagline": "Build stronger PvP formations. Understand your opponents. Invest where it counts.",
     "chips": [
-      "Start Here",
-      "PvP Builds",
-      "Pilots",
-      "Drones",
-      "Sentinels",
-      "Events & Resources",
-      "Mechanics"
+      {
+        "label": "Start Here",
+        "href": "#start-here"
+      },
+      {
+        "label": "PvP Builds",
+        "href": "#part-2-situational-builds-and-tactics"
+      },
+      {
+        "label": "Pilots",
+        "href": "#pilots-the-foundation"
+      },
+      {
+        "label": "Drones",
+        "href": "#burn-drones"
+      },
+      {
+        "label": "Sentinels",
+        "href": "#sentinels"
+      },
+      {
+        "label": "Events & Resources",
+        "href": "#part-4-resource-and-event-economy"
+      },
+      {
+        "label": "Mechanics",
+        "href": "#part-1-understanding-the-four-systems"
+      }
     ],
     "metaLine": "Revised Oct 21, 2026",
     "author": "ashpool",
