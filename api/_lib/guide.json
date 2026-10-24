@@ -344,7 +344,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Sagittarius adds Burn damage during long fights. Apus is especially useful for Dodge/Heal: its first three skill activations each increase maximum and current HP by 5% of base HP, up to 15% total. That increases survivability and strengthens percentage-of-Max-HP healing from Ladybug and Blood Bat."
+            "Apus would be my ideal choice for Dodge/Heal. Its first three skill activations increase maximum and current HP by 5% of base HP each, up to 15% total. This improves survivability and increases healing from Mech Spirits like Ladybug or Blood Bat. In practice, I use three Burn drones because developing separate drone lineups for each formation is expensive. Sagittarius is still useful in Dodge/Heal, particularly in longer fights, because Flaming increases the combined damage from your Burn stacks."
           ]
         },
         {
@@ -401,7 +401,7 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "SavagePlate brings fast direct damage. Stormquill instead weakens enemy Damage Boost. Choose based on whether you need more offense or protection."
+            "SavagePlate provides fast direct damage. Stormquill reduces enemy Damage Boost and, as a G-rarity sentinel, is much cheaper to fully evolve. Rendclaw is another strong option, but as an SSR sentinel, it’s a longer-term investment."
           ]
         },
         {
@@ -429,10 +429,6 @@
     },
     {
       "type": "p",
-      "html": "You can also try Dodge against Dodge when your Dodge is much higher than their Hit. That matchup depends heavily on pilots, drones, and your sentinel: avoiding attacks will not help if you cannot finish the fight. The same principle applies to Crit mirrors when you cannot counter the opponent’s Crit with enough Crit Resistance."
-    },
-    {
-      "type": "p",
       "html": "<strong>Toad Lord needs successful weapon crits.</strong> When your Crit Rate is sufficiently above enemy Crit Resistance, it can build Crit Damage and remove Burn stacks from you, making conventional Crit a useful answer to some Burn builds. Against high-Crit-Resistance opponents, Toad Lord and Venom Scorpion both lose much of their value. <strong>Do not pair Toad Lord with Evil Eye.</strong> Evil Eye converts away the normal weapon crits Toad Lord needs to trigger its ability."
     },
     {
@@ -442,15 +438,36 @@
     },
     {
       "type": "p",
-      "html": "For boss damage, start by reaching 100% effective Burn Enhancement using Burn chips plus bonuses from Camp Tech, Mech Spirits, and sentinel passives. That is the first goal of a developing PvE formation."
+      "html": "As you gain Burn Enhancement from Camp Tech, Mech Spirits, and sentinel passives, you can gradually replace Burn chips with Crit Rate chips."
     },
     {
       "type": "p",
-      "html": "As non-chip Burn Enhancement grows, replace Burn chips with Crit Rate one at a time while keeping at least 100% total. For example, with 80% from other sources, you need only 20% from chips; with 90% plus a 15% sentinel passive, you can remove Burn chips entirely."
+      "html": "For example, if you have 80% Burn Enhancement without chips, you only need another 20% from chips to reach the 100% cap. Once your other bonuses reach 100%, you can replace all your Burn chips with Crit Rate."
     },
     {
       "type": "p",
-      "html": "Once you can reach 100% Burn Enhancement without chips, use Crit chips to develop Evil Eye’s Burn Crit conversion. At maximum Evil Eye level, about 143% displayed Crit Rate reaches the 80% Burn Crit Rate cap against a boss with no Crit Resistance. Keep improving Defense Break for your chosen gear type as well. A shared Crit formation can then cover PvE and PvP, with the appropriate drone and Mech Spirit swaps, freeing the third slot for another PvP build."
+      "html": "This is where Evil Eye becomes especially powerful. It converts a portion of your Crit Rate into Burn Crit Rate, depending on its level. Against a boss with no Crit Resistance:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Level 1:</strong> 100% Crit Rate × 20% conversion = 20% Burn Crit Rate. You’d need 400% Crit Rate to reach the 80% cap.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Level 13:</strong> 100% Crit Rate × 56% conversion = 56% Burn Crit Rate. You’d need only 143% Crit Rate to reach the 80% cap.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "Once you reach the Burn Enhancement and Burn Crit Rate caps, focus on increasing <strong>Crit Damage and Defense Break</strong> to boost your damage further."
+    },
+    {
+      "type": "p",
+      "html": "Eventually, you can use the same Crit chips for PvE and PvP, swapping drones and Mech Spirits depending on the fight. That frees up your third formation for another PvP build."
     },
     {
       "type": "table",
