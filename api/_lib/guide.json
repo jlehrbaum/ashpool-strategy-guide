@@ -74,6 +74,13 @@
         {
           "header": false,
           "cells": [
+            "Develop a Burn offense",
+            "<a href=\"#pvp-burn-build\">Burn / Crit Resistance</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
             "Choose a PvP defense",
             "<a href=\"#pvp-defensive-build\">Dodge / Crit Resistance</a>"
           ]
@@ -83,13 +90,6 @@
           "cells": [
             "Counter Dodge specialists",
             "<a href=\"#pvp-offensive-build\">Crit / Hit</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Develop a Burn offense",
-            "<a href=\"#pvp-burn-build\">Burn / Crit Resistance</a>"
           ]
         },
         {
@@ -129,7 +129,7 @@
     },
     {
       "type": "p",
-      "html": "You can save three formations, but how you build them matters. Choosing the right combination of stats gives you important advantages in PvP. Dodge / Crit Resistance, Crit / Hit, and Burn / Crit Resistance each have their strengths, and knowing when to use them can make a huge difference. The key is choosing your formations carefully and investing in the stats that make each one effective."
+      "html": "You can save three formations. I use Burn / Crit Resistance for most PvP attacks, Dodge / Crit Resistance for defense, and Crit / Hit when a matchup favors it. Early on, you will usually also need a dedicated PvE Burn formation. Your chip choices define each build, so invest in the stats and supporting equipment that make its strategy work."
     },
     {
       "type": "h1",
@@ -138,7 +138,7 @@
     },
     {
       "type": "p",
-      "html": "I rely on Dodge / Crit Resistance for defense and use Burn / Crit Resistance for most attacks on my main account. Crit / Hit remains important, particularly against players with high Dodge and little Burn protection."
+      "html": "My most-used PvP offense is Burn / Crit Resistance, while Dodge / Crit Resistance is my preferred Star Scramble defense. Crit / Hit gives me another way to attack high-Dodge opponents when my Hit Rate is strong enough."
     },
     {
       "type": "p",
@@ -171,6 +171,13 @@
         {
           "header": false,
           "cells": [
+            "Burn / Crit Resistance",
+            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop through burn skills and ticks. Healing, Crit Resistance, and damage reduction help you survive while Burn builds. It may be worth prioritizing earlier; I am still testing that."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
             "Dodge / Crit Resistance",
             "My preferred Star Scramble defense, but useful for offense too against opponents with low Hit. Dodge avoids normal hits, Crit Resistance stops crits when high enough, and healing helps you outlast opponents."
           ]
@@ -185,8 +192,8 @@
         {
           "header": false,
           "cells": [
-            "Burn / Crit Resistance",
-            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop through burn skills and ticks. Healing, Crit Resistance, and damage reduction help you survive while Burn builds. It may be worth prioritizing earlier; I am still testing that."
+            "PvE Burn → Burn / Crit",
+            "Boss-damage progression: reach 100% effective Burn Enhancement, then replace Burn chips with Crit Rate as non-chip Burn bonuses grow. Eventually, one Crit formation can serve PvE and PvP, freeing a slot for another PvP build."
           ]
         },
         {
@@ -214,7 +221,7 @@
     },
     {
       "type": "p",
-      "html": "Most players initially use one of their three formations for PvE Burn. As native Burn Enhancement increases, you can gradually replace Burn chips with Crit chips. Once native Burn Enhancement reaches 100%, your Crit formation can serve both PvE and PvP, freeing the third slot for another PvP build. My preference is Burn / Crit Resistance, though I am exploring whether it deserves priority earlier in progression."
+      "html": "Early in progression, a dedicated PvE Burn formation often takes one of your three slots. The PvE section explains how growing non-chip Burn Enhancement lets you transition to Crit chips and eventually free that slot for another PvP build."
     },
     {
       "type": "h2",
@@ -235,8 +242,68 @@
     },
     {
       "type": "h2",
+      "id": "pvp-burn-build",
+      "title": "1. Burn / Crit Resistance — My Main PvP Offense"
+    },
+    {
+      "type": "p",
+      "html": "Burn / Crit Resistance is my main PvP offense on my primary account, used for roughly 80% of my attacks. Three Burn drones deal damage through skills and applied Burn stacks that Dodge cannot avoid. Crit Resistance protects you against fast Crit attacks while Burn builds over time. Healing is important because you have to stay alive long enough for that damage to add up."
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "Component",
+            "What to use"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Chips",
+            "Burn Enhancement + Crit Resistance."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Drones",
+            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "Arcglow or Doomblast supports longer fights. Glimshade can heal when the target is burning. Against powerful healing builds, consider Heal Reduction instead."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Mech Spirits",
+            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is a poor fit for this formation</strong>, since it prioritizes Burn Enhancement and Crit Resistance rather than the Crit Rate needed for meaningful conversion. Save Evil Eye for PvE Burn/Crit."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Engine",
+            "Crit Resistance by default; matchup-specific counters as needed."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "I’m interested in testing whether Burn / Crit Resistance should become a PvP priority earlier in progression, including on my smaller account. It’s already my primary offensive formation on my main account. The trade-off for newer players is usually their need for a dedicated PvE Burn formation; the next section explains how that changes as Burn Enhancement grows."
+    },
+    {
+      "type": "h2",
       "id": "pvp-defensive-build",
-      "title": "1. Dodge / Crit Resistance — Default PvP Defense"
+      "title": "2. Dodge / Crit Resistance — Default PvP Defense"
     },
     {
       "type": "p",
@@ -307,7 +374,7 @@
     {
       "type": "h2",
       "id": "pvp-offensive-build",
-      "title": "2. Crit / Hit — Attack Dodge"
+      "title": "3. Crit / Hit — Attack Dodge"
     },
     {
       "type": "p",
@@ -366,84 +433,24 @@
     },
     {
       "type": "p",
-      "html": "<strong>Toad Lord needs successful weapon crits.</strong> When your Crit Rate is sufficiently above enemy Crit Resistance, it can build Crit Damage and remove Burn stacks from you, making conventional Crit a useful answer to some Burn builds. Against high-Crit-Resistance opponents, Toad Lord and Venom Scorpion both lose much of their value. Do not pair Toad Lord with Evil Eye: player discussions report that Evil Eye converts away the normal weapon crit opportunities Toad Lord needs. This is an observed interaction, not a controlled result established by the mechanics reference."
-    },
-    {
-      "type": "h2",
-      "id": "pvp-burn-build",
-      "title": "Burn / Crit Resistance — My Main PvP Offense"
-    },
-    {
-      "type": "p",
-      "html": "Burn / Crit Resistance is my main PvP offense on my primary account, used for roughly 80% of my attacks. Three Burn drones deal damage through skills and applied Burn stacks that Dodge cannot avoid. Crit Resistance protects you against fast Crit attacks while Burn builds over time. Healing is important because you have to stay alive long enough for that damage to add up."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Component",
-            "What to use"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Chips",
-            "Burn Enhancement + Crit Resistance."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Drones",
-            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "Arcglow or Doomblast supports longer fights. Glimshade can heal when the target is burning. Against powerful healing builds, consider Heal Reduction instead."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Mech Spirits",
-            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is a poor fit for this formation</strong>, since it prioritizes Burn Enhancement and Crit Resistance rather than the Crit Rate needed for meaningful conversion. Save Evil Eye for PvE Burn/Crit."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Engine",
-            "Crit Resistance by default; matchup-specific counters as needed."
-          ]
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "I’m interested in testing whether Burn / Crit Resistance should become a PvP priority earlier in progression, including on my smaller account. It’s already my primary offensive formation on my main account. The trade-off for newer players is usually their need for a dedicated PvE Burn formation; the next section explains how that changes as Burn Enhancement grows."
+      "html": "<strong>Toad Lord needs successful weapon crits.</strong> When your Crit Rate is sufficiently above enemy Crit Resistance, it can build Crit Damage and remove Burn stacks from you, making conventional Crit a useful answer to some Burn builds. Against high-Crit-Resistance opponents, Toad Lord and Venom Scorpion both lose much of their value. <strong>Do not pair Toad Lord with Evil Eye.</strong> Evil Eye converts away the normal weapon crits Toad Lord needs to trigger its ability."
     },
     {
       "type": "h2",
       "id": "pve-burn-build",
-      "title": "PvE Burn: start with Burn chips, grow into Crit"
+      "title": "4. PvE Burn — Start with Burn chips, grow into Crit"
     },
     {
       "type": "p",
-      "html": "Earlier in the game, you’ll likely need a dedicated PvE Burn formation to maximize boss damage. Your first goal is to reach 100% Burn Enhancement using a combination of Burn chips and native bonuses from Camp Tech, Mech Spirits, and sentinel passives."
+      "html": "For boss damage, start by reaching 100% effective Burn Enhancement using Burn chips plus bonuses from Camp Tech, Mech Spirits, and sentinel passives. That is the first goal of a developing PvE formation."
     },
     {
       "type": "p",
-      "html": "As your native Burn Enhancement increases, you can start replacing Burn chips with Crit chips, as long as your total stays at or above 100%. For example, if you have 80% native Burn Enhancement, you only need another 20% from chips."
+      "html": "As non-chip Burn Enhancement grows, replace Burn chips with Crit Rate one at a time while keeping at least 100% total. For example, with 80% from other sources, you need only 20% from chips; with 90% plus a 15% sentinel passive, you can remove Burn chips entirely."
     },
     {
       "type": "p",
-      "html": "Eventually, when you reach 100% native Burn Enhancement, you can replace your remaining Burn chips with Crit. Your Crit formation can then serve double duty in PvE and PvP, with some drone and Mech Spirit adjustments. That frees your third formation for another PvP build, such as Burn / Crit Resistance."
+      "html": "Once you can reach 100% Burn Enhancement without chips, use Crit chips to develop Evil Eye’s Burn Crit conversion. At maximum Evil Eye level, about 143% displayed Crit Rate reaches the 80% Burn Crit Rate cap against a boss with no Crit Resistance. Keep improving Defense Break for your chosen gear type as well. A shared Crit formation can then cover PvE and PvP, with the appropriate drone and Mech Spirit swaps, freeing the third slot for another PvP build."
     },
     {
       "type": "table",
@@ -466,14 +473,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Equip three Burn drones. Two developed Ninjas are a good foundation; work toward Lich, Sagittarius, or Lyra as the third. See <a href=\"#burn-drones\">Burn Drones</a> for their different roles and an upgrade path."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Sentinel",
-            "I currently use SavagePlate with gold and blue Crit Damage passives. I am developing a Flashstrike with gold Crit Damage to see whether its damage-boost skill can outperform that SavagePlate. Compare actual boss results rather than assuming the newer sentinel wins."
+            "Equip three Burn drones. Two maxed Ninjas are inexpensive to develop, and their +10% drone Crit Rate helps a PvE Burn/Crit setup with Evil Eye. Sagittarius adds Flaming, increasing the combined damage from all your Burn stacks. Lich or Lyra may become useful as you develop them. See <a href=\"#burn-drones\">Burn Drones</a> for progression advice."
           ]
         },
         {
@@ -482,16 +482,23 @@
             "Mech Spirits",
             "Evil Eye for Burn Crit conversion. Add Star Envoy (SSR) when available and equipped with three Burn drones. Use the third slot for damage or missing Burn Enhancement."
           ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Sentinel",
+            "I currently use SavagePlate with gold and blue Crit Damage passives. I am developing a Flashstrike with gold Crit Damage to see whether its damage-boost skill can outperform that SavagePlate. Compare actual boss results rather than assuming the newer sentinel wins."
+          ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "At maximum Evil Eye level, about 143% displayed Crit Rate gives an 80% Burn Crit Rate against a boss with no Crit Resistance. Once you have both maximum Burn Enhancement and effective Burn Crit Rate, continue improving Defense Break for the damage type you use. The reference section has the conversion math."
+      "html": "Evil Eye’s exact conversion and the 80% Burn Crit cap are explained in the <a href=\"#the-evil-eye-conversion-ceiling-pve\">mechanics reference</a>."
     },
     {
       "type": "p",
-      "html": "For example, 90% native Burn Enhancement plus 15% from a sentinel passive reaches 105% on paper, or 100% effective against bosses. That means no Burn chips are needed, and you can use Crit chips across the formation. See the chip progression above for when to start swapping before reaching 100% native Burn Enhancement."
+      "html": "In PvP, remember to remove Evil Eye when switching to conventional Crit offense, particularly if you use Toad Lord."
     },
     {
       "type": "h2",
@@ -1379,7 +1386,7 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Toad Lord (SR):</strong> Conventional weapon crits can trigger its effect every two seconds. Each trigger removes three Burn stacks <em>from you</em> and increases Crit Damage until the battle ends, up to eight stacks. At skill level 1, eight stacks total +60% Crit Damage; at level 13 they total +204%. It is less reliable against opponents with strong Crit Resistance. Do not pair it with Evil Eye, which players report removes the normal weapon crit opportunities Toad Lord needs. Against Burn builds stacked with Crit Resistance, it may barely trigger, so do not assume it will reliably clear their Burn.",
+          "html": "<strong>Toad Lord (SR):</strong> Conventional weapon crits can trigger its effect every two seconds. Each trigger removes three Burn stacks <em>from you</em> and increases Crit Damage until the battle ends, up to eight stacks. At skill level 1, eight stacks total +60% Crit Damage; at level 13 they total +204%. It is less reliable against opponents with strong Crit Resistance. Do not pair it with Evil Eye, which removes the normal weapon crits Toad Lord needs. Against Burn builds stacked with Crit Resistance, it may barely trigger, so do not assume it will reliably clear their Burn.",
           "nested": null
         },
         {
@@ -2100,7 +2107,7 @@
     },
     {
       "type": "p",
-      "html": "For PvE Burn, the useful sequence is: first reach 100% effective Burn Enhancement; then build Crit Rate until Evil Eye can reach 80% effective Burn Crit Rate; then keep improving Defense Break for your chosen gear type. More Crit Rate beyond the PvE target may still help when you switch that formation to conventional PvP Crit and face high Crit Resistance. <strong>Remove Evil Eye for that PvP setup.</strong> Players report that its conversion leaves Toad Lord without the normal weapon crits required to trigger, so the two should not be recommended together."
+      "html": "For PvE Burn, the useful sequence is: first reach 100% effective Burn Enhancement; then build Crit Rate until Evil Eye can reach 80% effective Burn Crit Rate; then keep improving Defense Break for your chosen gear type. More Crit Rate beyond the PvE target may still help when you switch that formation to conventional PvP Crit and face high Crit Resistance. <strong>Remove Evil Eye for that PvP setup.</strong> Evil Eye converts away the normal weapon crits Toad Lord needs, so do not pair them."
     },
     {
       "type": "h2",
