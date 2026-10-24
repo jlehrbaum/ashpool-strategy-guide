@@ -172,7 +172,7 @@
           "header": false,
           "cells": [
             "Burn / Crit Resistance",
-            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop through burn skills and ticks. Healing, Crit Resistance, and damage reduction help you survive while Burn builds. It may be worth prioritizing earlier; I am still testing that."
+            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop through burn skills and ticks. Healing, Crit Resistance, and damage reduction help you survive while Burn builds."
           ]
         },
         {
@@ -270,7 +270,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
+            "Use <strong>three well-developed Burn drones</strong>. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
           ]
         },
         {
@@ -422,7 +422,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Use developed drones whose skills help the matchup. This is a core recommendation, not a fixed three-drone recipe."
+            "Use developed drones whose skills help against the opponent’s build."
           ]
         }
       ]
@@ -934,7 +934,7 @@
           "cells": [
             "Getting started",
             "One or two developed Ninjas, plus your best available third Burn drone",
-            "Use what you already have; do not wait for the perfect three-drone lineup."
+            "Start with the Burn drones you have developed, then work toward two maxed Ninjas and Sagittarius."
           ]
         },
         {
@@ -1332,7 +1332,7 @@
     },
     {
       "type": "p",
-      "html": "Doomblast’s Healing Enhancement stacks build over time: each 10% stack begins <em>after</em) the heal that triggered it, so the next heal benefits. Flashstrike’s two-second Damage Boost can be helpful for damage dealt during that window, but the exact interaction with newly applied Burn stacks has not been independently tested."
+      "html": "Doomblast’s Healing Enhancement stacks build over time: each 10% stack begins <em>after</em> the heal that triggered it, so the next heal benefits. Flashstrike’s two-second Damage Boost can be helpful for damage dealt during that window, but the exact interaction with newly applied Burn stacks has not been independently tested."
     },
     {
       "type": "h2",
@@ -1412,7 +1412,7 @@
           "nested": null
         },
         {
-          "html": "<strong>Star Envoy (SSR):</strong> Requires three equipped Burn drones. Every third Burn-drone skill has a chance to add a stack of Burn Damage Boost, up to five stacks. The activation chance increases as your Burn Enhancement exceeds the enemy’s Burn Decrease. The maximum stacked bonus is +125% at skill level 1 or +425% at level 13. This is a valuable long-term target, not something a new player must own to begin a Burn build.",
+          "html": "<strong>Star Envoy (SSR):</strong> Requires three equipped Burn drones. Every third Burn-drone skill has a chance to add a stack of Burn Damage Boost, up to five stacks. The activation chance increases as your Burn Enhancement exceeds the enemy’s Burn Decrease. The maximum stacked bonus is +125% at skill level 1 or +425% at level 13. Star Envoy is a powerful long-term upgrade for Burn builds.",
           "nested": null
         },
         {
@@ -1528,7 +1528,7 @@
     },
     {
       "type": "p",
-      "html": "Basic Camp Technology upgrades Maingun, Winggun, Missile Attack, and HP across different camps. Some early levels may be quite cheap. Compare the price with the actual benefit to your fighter instead of following one fixed order for everyone."
+      "html": "Basic Camp Technology upgrades Maingun, Winggun, Missile Attack, and HP across different camps. Some early levels may be quite cheap. Compare the price of each upgrade with the benefit to your fighter."
     },
     {
       "type": "h3",
@@ -1572,7 +1572,7 @@
     },
     {
       "type": "p",
-      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, breaking the set may cost more damage than the new piece appears to add. This does not prove that every mixed setup is worse. Compare complete builds in the game mode you care about."
+      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, breaking the set may cost more damage than the new piece appears to add. Compare the complete Titan set against mixed equipment in the game mode you care about."
     },
     {
       "type": "h3",
@@ -1607,7 +1607,7 @@
     },
     {
       "type": "p",
-      "html": "Equipment Reinforce lets you improve individual weapons through Base Attack, Attack Rate, Crit Rate, and Crit Damage. Instead of following one universal ranking, start by looking at what damage your current weapons actually contribute:"
+      "html": "Equipment Reinforce lets you improve individual weapons through Base Attack, Attack Rate, Crit Rate, and Crit Damage. Prioritize the weapons that contribute the most damage to your current formation, accounting for upgrade costs:"
     },
     {
       "type": "ul",
