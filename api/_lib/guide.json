@@ -142,7 +142,7 @@
     },
     {
       "type": "p",
-      "html": "Burn / Crit Resistance has become my primary PvP offensive build, but it takes some investment to make it effective. You’ll want three well-developed Burn drones and a strong healing sentinel to survive while Burn damage builds. Star Envoy strengthens your Burn damage, Aqua Spirit reduces incoming damage, and Ladybug provides a one-time emergency heal when HP first drops below 30% in PvP. Berserk Dragon is another strong defensive option."
+      "html": "Burn / Crit Resistance has become my primary PvP offensive build, but it takes some investment to make it effective. You’ll want three well-developed Burn drones and a strong healing sentinel to survive while Burn damage builds. Star Envoy strengthens Burn damage, and Aqua Spirit reduces incoming damage. For the third Mech Spirit, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming Ladybug and Lantern, but the best choice can depend on the opponent, equipment, and Mech Spirit levels."
     },
     {
       "type": "h2",
@@ -398,7 +398,7 @@
           "header": false,
           "cells": [
             "Drones",
-            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two developed Ninjas plus Sagittarius can get you started. Later consider Lich, Sagittarius, and Lyra based on <a href=\"#burn-drones\">the drone progression advice</a>."
+            "Use <strong>three Burn drones</strong> as a core part of the build, whether or not you own Star Envoy. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
           ]
         },
         {
@@ -412,7 +412,7 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Aqua Spirit + Star Envoy are the central PvP Burn choices. Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP; Berserk Dragon instead reduces incoming damage from the start of battle. Compare both based on the matchup and their upgrade levels. <strong>Evil Eye is usually a poor fit here</strong>: this formation invests in Burn Enhancement and Crit Resistance rather than enough Crit Rate for meaningful conversion. Reserve Evil Eye for your PvE Burn/Crit setup."
+            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is a poor fit for this formation</strong>, since it prioritizes Burn Enhancement and Crit Resistance rather than the Crit Rate needed for meaningful conversion. Save Evil Eye for PvE Burn/Crit."
           ]
         },
         {
@@ -1353,6 +1353,10 @@
           "nested": null
         },
         {
+          "html": "<strong>Lantern:</strong> Increases Healing Enhancement starting four seconds into the battle, from +17% at skill level 1 to +53% at level 13. It is worth testing as a third Mech Spirit when healing helps you survive long PvP fights.",
+          "nested": null
+        },
+        {
           "html": "<strong>Ladybug (N):</strong> Provides a one-time emergency heal when your HP first falls below 30% in a PvP battle. It restores 6.25% of maximum HP at skill level 1, growing to 21.25% at level 13. Healing Enhancement improves the result. Ladybug cannot be chosen with selectable Mech rewards, so Mech Event pulls are the main way to develop it.",
           "nested": null
         }
@@ -1360,7 +1364,7 @@
     },
     {
       "type": "p",
-      "html": "For a Dodge/Heal defense, Aqua Spirit and Ladybug work particularly well once Healing Enhancement is developed: damage reduction persists after Aqua Spirit activates, and Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP. Berserk Dragon supplies protection from the start. For <strong>PvP Burn</strong>, prioritize Star Envoy and Aqua Spirit; Ladybug provides an emergency heal below 30% HP, while Berserk Dragon reduces incoming damage from the start. The better third spirit depends on your opponent and how far you have developed each option. This is a practical substitution, not a fixed trio for every account."
+      "html": "For a Dodge/Heal defense, Aqua Spirit and Ladybug work particularly well once Healing Enhancement is developed: damage reduction persists after Aqua Spirit activates, and Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP. Berserk Dragon supplies protection from the start; Lantern can instead increase Healing Enhancement after four seconds. For <strong>PvP Burn</strong>, prioritize Star Envoy and Aqua Spirit, then compare Berserk Dragon, Ladybug, and Lantern for the third slot. In my recent testing, Berserk Dragon is winning more fights than the other two, although the matchup, equipment, and Mech Spirit levels can change the result."
     },
     {
       "type": "p",
