@@ -129,7 +129,7 @@
     },
     {
       "type": "p",
-      "html": "You can save three formations. I use Burn / Crit Resistance for most PvP attacks, Dodge / Crit Resistance for defense, and Crit / Hit when a matchup favors it. Early on, you will usually also need a dedicated PvE Burn formation. Your chip choices define each build, so invest in the stats and supporting equipment that make its strategy work."
+      "html": "<strong>Your chips are the foundation of each formation.</strong> The attributes you prioritize determine the type of build you’re creating, whether that’s Burn / Crit Resistance, Dodge / Crit Resistance, or Crit / Hit. From there, choose your drones, sentinel, Mech Spirits, and equipment to support that strategy. You can save three different formations to prepare for different opponents and game modes. See <a href=\"#chip-formations\">Chips — Focus on the Stats That Matter</a> for manufacturing and upgrade advice."
     },
     {
       "type": "h1",
@@ -459,7 +459,7 @@
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Evil Eye for Burn Crit conversion. Add Star Envoy (SSR) when available and equipped with three Burn drones. Use the third slot for damage or missing Burn Enhancement."
+            "Evil Eye converts Crit Rate into Burn Crit Rate, while Star Envoy increases Burn damage with three equipped Burn drones. For the third Mech Spirit, use Dragon Emperor or Crimson Shadow. Both increase PvE damage. I currently prefer Dragon Emperor, but Crimson Shadow can perform just as well or better. Compare their damage bonuses at your current skill levels."
           ]
         },
         {
@@ -589,11 +589,7 @@
     },
     {
       "type": "p",
-      "html": "<strong>Star Scramble is a team decision.</strong> Legions are matched in comparable roster sizes, so both average BP and total BP describe the strength of the roster. With the same number of players, lowering the average also lowers the total. In our Star Scramble strategy, lower-BP members play a deliberate role: they handle item clears and fuel removal, helping higher-BP teammates eliminate opponents in a single attack. Their contribution is tactical, not just a lower matchmaking number. The exact matchmaking formula is not published, so treat BP as an important factor, not the entire rule."
-    },
-    {
-      "type": "p",
-      "html": "In a Star Scramble attack plan, that often means assigning smaller members the preparatory work and preserving strong attackers for high-value clears. Lower BP only helps if those players are active and have a useful role."
+      "html": "<strong>Higher BP isn't always better in team events.</strong> Star Scramble matchmaking and Hyper Battlefield placement appear to depend partly on legion BP, so unnecessary BP growth can lead to tougher opponents without making your team more competitive. The goal is to stay lean: improve your PvP strength without adding BP that doesn't help you fight. <strong>Legion Technology is one of the biggest opportunities to avoid wasted BP.</strong> Upgrading attributes like Electric or Reflect Enhancement when your formations don't use them adds BP with little benefit. Some Top Tech and equipment upgrades can also increase BP faster than your actual PvP effectiveness. That doesn't mean avoiding Attack, HP, or equipment upgrades. Those can make you stronger. The question is whether the improvement is worth the additional BP. A lean legion can also benefit from lower-BP members who clear defensive items and reduce enemy fuel, leaving stronger attackers available for one-hit kills. The goal is a team that punches above its weight."
     },
     {
       "type": "p",
@@ -691,7 +687,7 @@
     },
     {
       "type": "p",
-      "html": "You can equip <strong>one pilot at a time</strong>, and switching pilots is free. Every unlocked pilot still contributes Defense and Defense Break when unequipped, but the equipped pilot contributes about <strong>four times as much</strong>. The passive skill is shared either way; it does not get a four-times bonus. The one exception to free switching during play is your locked Star Scramble defensive formation."
+      "html": "Every pilot you’ve unlocked contributes Defense, Defense Break, and passive bonuses, even when they’re not equipped.<br><br>You can equip one pilot at a time. That pilot contributes <strong>4× its normal Defense and Defense Break</strong>, making your choice especially important in PvP. The multiplier does not apply to passive bonuses.<br><br>Switching pilots is free, so choose the one that best matches your opponent. In Star Scramble, your defensive pilot is locked once the event begins."
     },
     {
       "type": "p",
@@ -728,7 +724,7 @@
     },
     {
       "type": "p",
-      "html": "Choose your first SR awakening for the damage type you use and the opponents you encounter most. A physical player facing mostly energy damage might pick Hestia before Freya; an energy player facing physical damage might pick Lancelot before Clotho. Since switching equipped pilots is free, having both defensive variants gives you options."
+      "html": "Choose your first SR awakening for the damage type you use and the opponents you encounter most. A physical player facing mostly energy-based opponents might pick Hestia before Freya, because both provide Physical Defense Break, but Hestia adds Energy Defense instead of Physical Defense; an energy player facing physical damage might pick Lancelot before Clotho. Since switching equipped pilots is free, having both defensive variants gives you options."
     },
     {
       "type": "h3",
@@ -816,29 +812,16 @@
     },
     {
       "type": "p",
-      "html": "Training Guides improve a pilot’s <strong>passive ability</strong> from level 1 through level 10. They also increase BP, but do <strong>not</strong> increase Defense or Defense Break. Each training level adds the same amount to the passive, while later levels cost more Training Guides. At a given level, the cost is the same for N, R, SR, and SSR pilots."
+      "html": "Training Guides improve a pilot's passive ability, up to level 10. Each level provides the same increase in effectiveness, but costs progressively more Guides. The cost is identical across pilot rarities, making SR and SSR pilots with strong PvP abilities particularly good investments."
     },
     {
       "type": "p",
-      "html": "That makes spreading Training Guides across several useful passives a good starting strategy. SR and SSR pilots usually offer stronger PvP passives for the same guide cost, so raise a few of those to moderate levels before pushing one all the way to 10. Some N and R passives are mainly useful in PvE; training them adds BP without strengthening your PvP performance. But <strong>do train a passive that helps you win PvP fights</strong>, even if it raises BP."
-    },
-    {
-      "type": "h3",
-      "id": "stat-targets-by-bp",
-      "title": "Forget fixed BP-to-pilot targets"
-    },
-    {
-      "type": "p",
-      "html": "Avoid old rules such as “you need X pilot points for every million BP.” Newer game systems have changed BP too much for those ratios to remain useful. Instead, compare yourself with actual opponents. Improve PDB for physical builds or EDB for energy builds, and keep both PD and ED moving forward. If you use both damage types, all four stats matter."
+      "html": "<strong>Focus on passives that help you win PvP fights.</strong> It's generally more efficient to develop several useful pilots before maxing out one. Training also increases BP, but it doesn't improve Defense or Defense Break, so be selective. <strong>Do not invest Training Guides in N and R pilots whose abilities only benefit PvE.</strong> They inflate your BP without improving your PvP performance."
     },
     {
       "type": "h2",
       "id": "chip-formations",
       "title": "Chips — Focus on the Stats That Matter"
-    },
-    {
-      "type": "p",
-      "html": "<strong>Your chips are the foundation of each formation.</strong> The attributes you prioritize determine the type of build you’re creating, whether that’s Dodge / Crit Resistance, Crit / Hit, or Burn / Crit Resistance. From there, you choose your drones, sentinel, Mech Spirits, and other equipment to support that strategy."
     },
     {
       "type": "p",
@@ -1387,7 +1370,7 @@
           "nested": null
         },
         {
-          "html": "<strong>Third slot:</strong> Use Dragon Emperor or another damage-focused spirit if available. Magic Armor can help while you are still short of 100% Burn Enhancement.",
+          "html": "<strong>Third Mech Spirit:</strong> Use Dragon Emperor or Crimson Shadow. Both increase PvE damage. I currently prefer Dragon Emperor, but testing has shown that Crimson Shadow can perform just as well or better. Compare their damage bonuses at your current skill levels to see which performs best.",
           "nested": null
         }
       ]
