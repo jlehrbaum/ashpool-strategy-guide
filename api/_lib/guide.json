@@ -202,7 +202,7 @@
     },
     {
       "type": "p",
-      "html": "Burn / Crit Resistance is my main PvP offense on my primary account, used for roughly 80% of my attacks. Three Burn drones deal damage through skills and applied Burn stacks that Dodge cannot avoid. Crit Resistance protects you against fast Crit attacks while Burn builds over time. Healing is important because you have to stay alive long enough for that damage to add up."
+      "html": "Burn / Crit Resistance is my primary PvP offense, used for roughly 80% of my attacks. Its biggest advantage is that Burn damage cannot be dodged and grows stronger as the fight progresses. The challenge is surviving long enough for that damage to build. Crit Resistance helps protect against fast Crit attacks, while healing and damage reduction keep you in the fight."
     },
     {
       "type": "table",
@@ -225,39 +225,53 @@
           "header": false,
           "cells": [
             "Drones",
-            "Use <strong>three well-developed Burn drones</strong>. Two maxed Ninjas plus Sagittarius are a strong starting Burn lineup. Ninjas are inexpensive to fully evolve, and their active skill adds 10% drone Crit Rate, making them particularly useful in PvE Burn/Crit builds with Evil Eye. Sagittarius adds Flaming, which increases the combined damage from all your Burn stacks. Together, they offer a strong foundation while you develop <a href=\"#burn-drones\">higher-rarity drones</a>."
+            "Three well-developed Burn drones. Two maxed Ninjas plus Sagittarius are a strong starting lineup. Ninjas are inexpensive to fully evolve, while Sagittarius’s Flaming increases the combined damage from all your Burn stacks."
           ]
         },
         {
           "header": false,
           "cells": [
             "Sentinel",
-            "Burn damage builds over time, so surviving the early part of the fight is essential. Arcglow and Doomblast provide healing that keeps you alive while Burn stacks and damage bonuses accumulate. Doomblast also increases Healing Enhancement as the fight progresses. Glimshade is another option, healing when the target is burning."
+            "Arcglow or Doomblast for healing. Doomblast also increases Healing Enhancement as the fight progresses. Glimshade is another option, healing when the target is burning."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three."
+            "Aqua Spirit and Star Envoy are my core choices. For the third slot, Berserk Dragon provides damage reduction, Ladybug provides emergency healing, and Lantern increases Healing Enhancement. In my testing, Berserk Dragon is currently winning more fights than the other two, but it’s worth testing all three."
           ]
         },
         {
           "header": false,
           "cells": [
             "Engine",
-            "Crit Resistance by default; matchup-specific counters as needed."
+            "Crit Resistance by default, with matchup-specific counters when needed."
           ]
         }
       ]
     },
     {
-      "type": "p",
-      "html": "<strong>What about Evil Eye?</strong> Given how powerful it is for PvE Burn, you might expect it to work just as well in PvP. The difference is how you build your chips. In PvP, you want to concentrate on one offensive attribute so you can overcome your opponent’s resistance. For Burn / Crit Resistance, that means prioritizing Burn Enhancement, with Crit Resistance providing protection against Crit attacks. Evil Eye converts Crit Rate above your opponent’s Crit Resistance into Burn Crit Rate. This works extremely well in PvE because bosses have no Crit Resistance, allowing you to invest in both Burn Enhancement and Crit Rate. But in PvP, spreading your chips across Burn and Crit would weaken your ability to overcome either resistance. With your chips focused on Burn, Evil Eye has too little Crit Rate to convert into meaningful damage."
+      "type": "h3",
+      "id": "what-about-evil-eye",
+      "title": "What about Evil Eye?"
     },
     {
       "type": "p",
-      "html": "I’m interested in testing whether Burn / Crit Resistance should become a PvP priority earlier in progression, including on my smaller account. It’s already my primary offensive formation on my main account. The trade-off for newer players is usually their need for a dedicated PvE Burn formation; see <a href=\"#pve-burn-build\">PvE Burn progression</a> for how that changes as Burn Enhancement grows."
+      "html": "Given how powerful Evil Eye is in PvE Burn builds, you might expect it to work just as well in PvP. The difference is how you invest in your chips."
+    },
+    {
+      "type": "p",
+      "html": "In PvP, you want to concentrate on one offensive attribute to overcome your opponent’s resistance. For this build, that’s Burn Enhancement, with Crit Resistance for defense. Evil Eye converts only the Crit Rate above your opponent’s Crit Resistance into Burn Crit Rate. It works extremely well in PvE, where bosses have no Crit Resistance. But splitting your PvP chips between Burn and Crit makes it harder to overcome either resistance, leaving too little Crit Rate for Evil Eye to be effective."
+    },
+    {
+      "type": "h3",
+      "id": "when-to-build-pvp-burn",
+      "title": "When should you build this?"
+    },
+    {
+      "type": "p",
+      "html": "I’m testing whether Burn / Crit Resistance deserves priority earlier in progression, including on my smaller account. The main trade-off is that newer players often need a dedicated PvE Burn formation. As you gain more Burn Enhancement without chips, you can move your PvE build toward Crit and eventually free a formation slot for PvP Burn. See <a href=\"#pve-burn-build\">PvE Burn progression</a>."
     },
     {
       "type": "h2",
@@ -266,7 +280,7 @@
     },
     {
       "type": "p",
-      "html": "Dodge and Crit Resistance work particularly well together. With enough Dodge, you can avoid up to 80% of normal attacks. And if your Crit Resistance is high enough to offset your opponent’s Crit Rate, the attacks that get through won’t be critical hits."
+      "html": "Dodge / Crit Resistance is my preferred Star Scramble defense. Dodge can avoid up to 80% of ordinary attacks, while Crit Resistance prevents critical hits when it exceeds your opponent's Crit Rate. Combined with strong healing, this gives you a better chance of surviving multiple attacks."
     },
     {
       "type": "table",
@@ -289,21 +303,21 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "A strong Gridstar with Healing Enhancement is the affordable starting point. Arcglow and especially Doomblast can provide much stronger healing as you progress, but getting multiple ideal passives on them through recasting is costly. Gridstars are cheap enough to buy repeatedly until you find two or three valuable passives, then use <a href=\"#the-reverse-merge-technique\">reverse merging</a> to keep the best copy."
+            "Gridstar with Healing Enhancement is an affordable starting point. Arcglow provides stronger healing, and Doomblast is a longer-term SSR option. See <a href=\"#sentinels\">Sentinels</a> for passives and upgrade advice."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP; Aqua Spirit protects you for the rest of the battle once triggered; Berserk Dragon protects from the start."
+            "Aqua Spirit provides lasting damage reduction after triggering; Ladybug gives an emergency heal when HP first drops below 30%; Berserk Dragon reduces incoming damage from the beginning of the fight."
           ]
         },
         {
           "header": false,
           "cells": [
             "Drones",
-            "Apus would be my ideal choice for Dodge/Heal. Its first three skill activations increase maximum and current HP by 5% of base HP each, up to 15% total. This improves survivability and increases healing from Mech Spirits like Ladybug or Blood Bat. In practice, I use three Burn drones because developing separate drone lineups for each formation is expensive. Sagittarius is still useful in Dodge/Heal, particularly in longer fights, because Flaming increases the combined damage from your Burn stacks."
+            "Apus would be my ideal choice for Dodge/Heal because it increases maximum HP and improves healing from Ladybug or Blood Bat. In practice, I use three Burn drones across formations to concentrate my upgrade resources."
           ]
         },
         {
@@ -324,11 +338,11 @@
     },
     {
       "type": "p",
-      "html": "Use this when your Crit Resistance is close to or above the opponent’s Crit Rate and your Dodge is strong relative to their Hit. Against another Dodge player, you can also win a mirror if your Dodge is much higher than their Hit, but check pilots, drones, and sentinel before committing. If you regularly face Burn instead of Crit, swapping the secondary stat to Burn Decrease is reasonable; it is less versatile as a default defense because it leaves you vulnerable to Crit-focused attackers."
+      "html": "If an attacker fails to eliminate you in Star Scramble, Cheat Death and Ladybug can trigger again in the next battle. This makes Dodge/Heal particularly effective for defending against successive attackers."
     },
     {
       "type": "p",
-      "html": "This is also why I favor Dodge / Crit Resistance for Star Scramble defense. Paired with strong healing, it gives you a better chance of surviving multiple attackers. If an opponent can’t finish you off, the next attacker has to deal with your Cheat Death and Ladybug emergency-heal abilities again, if their HP thresholds are reached. Burn damage typically ramps up later in a fight, so a Burn defender may win but finish with less HP. I think that makes Dodge / Heal a stronger default defense across successive attacks, although I haven’t tested the theory across a large sample of battles."
+      "html": "<strong>Why I use Burn drones instead of Apus:</strong> Apus's first three activations each add 5% of base HP to maximum and current HP, for a total of 15%. That also strengthens healing from Mech Spirits like Ladybug or Blood Bat. Developing separate drone lineups is expensive, so I use my three Burn drones across formations. Sagittarius still contributes Flaming, which increases the combined damage from all Burn stacks in longer fights."
     },
     {
       "type": "h2",
@@ -337,7 +351,7 @@
     },
     {
       "type": "p",
-      "html": "Crit / Hit is useful against high-Dodge opponents when your Hit Rate exceeds their Dodge. Hit Rate determines how often ordinary attacks connect; Crit Rate determines how often connected attacks become critical hits after the opponent’s Crit Resistance is accounted for. It can also counter Burn builds by winning quickly, before Burn damage builds up. That depends on the opponent’s Crit Resistance, which is why many PvP Burn builds prioritize it. If your Hit falls far behind their Dodge or their Crit Resistance neutralizes your Crit, consider a different formation or target."
+      "html": "Crit / Hit gives you two ways to counter an opponent. Against high Dodge, Hit Rate helps your attacks connect, while Crit Rate increases the chance of critical damage. Against Burn builds, the advantage is speed: Crit can deliver heavy damage early, potentially winning before Burn stacks and damage bonuses build up. That depends on overcoming the opponent's Crit Resistance, which is why many PvP Burn formations invest heavily in it."
     },
     {
       "type": "table",
@@ -376,13 +390,6 @@
             "Engine",
             "Hit Rate when your opponent relies on Dodge and the extra Hit helps you reach or exceed their Dodge."
           ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Drones",
-            "Use developed drones whose skills help against the opponent’s build."
-          ]
         }
       ]
     },
@@ -397,11 +404,15 @@
     },
     {
       "type": "p",
-      "html": "As you gain Burn Enhancement from Camp Tech, Mech Spirits, and sentinel passives, you can gradually replace Burn chips with Crit Rate chips."
+      "html": "PvE Burn/Crit is my primary approach to boss damage. The goal is to reach 100% Burn Enhancement, then build Crit Rate so Evil Eye can convert it into Burn Crit Rate."
     },
     {
       "type": "p",
-      "html": "For example, if you have 80% Burn Enhancement without chips, you only need another 20% from chips to reach the 100% cap. Once your other bonuses reach 100%, you can replace all your Burn chips with Crit Rate."
+      "html": "Early on, you'll need Burn chips to reach the 100% cap. As you gain Burn Enhancement from Camp Tech, Mech Spirits, and sentinel passives, you can replace those chips with Crit Rate which increases your total damage."
+    },
+    {
+      "type": "p",
+      "html": "For example, with 80% Burn Enhancement from other sources, you need only 20% from chips. Once those other bonuses reach 100%, all your chips can focus on Crit Rate."
     },
     {
       "type": "p",
@@ -423,10 +434,6 @@
     {
       "type": "p",
       "html": "Once you reach the Burn Enhancement and Burn Crit Rate caps, focus on increasing <strong>Crit Damage and Defense Break</strong> to boost your damage further."
-    },
-    {
-      "type": "p",
-      "html": "Eventually, you can use the same Crit chips for PvE and PvP, swapping drones and Mech Spirits for each fight. <strong>Remove Evil Eye when switching to conventional PvP Crit, especially if using Toad Lord.</strong> This frees your third formation for another PvP build."
     },
     {
       "type": "table",
@@ -474,12 +481,16 @@
     },
     {
       "type": "p",
-      "html": "Before attacking, compare the opponent’s key combat stats with your own. Pilot Defense and Defense Break can make a major difference, even when your chip attributes look favorable. The matchup table below shows which formations to consider and when to skip."
+      "html": "Eventually, you can use the same Crit chips for PvE and PvP, swapping drones and Mech Spirits for each fight. <strong>Remove Evil Eye when switching to conventional PvP Crit, especially if using Toad Lord.</strong> That frees your third formation for another PvP build."
     },
     {
       "type": "h2",
       "id": "situational-swaps-for-pvp",
       "title": "When a matchup is worth attacking"
+    },
+    {
+      "type": "p",
+      "html": "Before attacking, compare the opponent's combat stats with your own. Pilot Defense and Defense Break can make a major difference even when your chip attributes look favorable. The table below shows which formations to consider and when to skip."
     },
     {
       "type": "table",
@@ -582,23 +593,19 @@
     },
     {
       "type": "p",
-      "html": "BP measures progression, but players with similar BP can perform very differently. Pilot stats are a major reason. As your BP grows through equipment and other upgrades, keep investing in pilots so your Defense and Defense Break do not fall behind. Extra BP can help in raw-strength modes, but it can also make matchmaking harder."
+      "html": "Battle Power (BP) measures progression, but it does not reliably predict who wins. Pilots, chip matchups, healing, and damage bonuses can make a lower-BP player much stronger in PvP."
     },
     {
       "type": "p",
-      "html": "<strong>Higher BP isn't always better in team events.</strong> Star Scramble matchmaking and Hyper Battlefield placement appear to depend partly on legion BP, so unnecessary BP growth can lead to tougher opponents without making your team more competitive. The goal is to stay lean: improve your PvP strength without adding BP that doesn't help you fight. <strong>Legion Technology is one of the biggest opportunities to avoid wasted BP.</strong> Upgrading attributes like Electric or Reflect Enhancement when your formations don't use them adds BP with little benefit. Some Top Tech and equipment upgrades can also increase BP faster than your actual PvP effectiveness. That doesn't mean avoiding Attack, HP, or equipment upgrades. Those can make you stronger. The question is whether the improvement is worth the additional BP. A lean legion can also benefit from lower-BP members who clear defensive items and reduce enemy fuel, leaving stronger attackers available for one-hit kills. The goal is a team that punches above its weight."
+      "html": "<strong>Stay lean for team events.</strong> Star Scramble matchmaking and Hyper Battlefield placement appear to consider legion BP, so increasing BP without a comparable improvement in fighting strength can make your next opponent harder. Legion Technology is a common source of wasted BP: Electric or Reflect Enhancement adds little if you do not use those attributes. Choose Top Tech and equipment upgrades for the fights you actually play, not just the BP they add."
     },
     {
       "type": "p",
-      "html": "Hyper Battlefield has five tiers, from BF5 (easiest) to BF1 (hardest). The jump from BF2 to BF1 is especially steep. Legion BP and previous results both appear to matter: adding strong players may move you up, and winning BF2 may also push you into BF1. The promotion formula is not published, so do not assume a fixed BP cutoff."
+      "html": "Attack, HP, and better equipment can absolutely be worth the BP. The trade-off is especially clear with sentinels: leveling beyond 80 adds stats and BP, but does not improve the active skill. In Star Scramble, lower-BP players also contribute by clearing defensive items and reducing enemy fuel so stronger teammates can focus on one-hit kills."
     },
     {
       "type": "p",
-      "html": "Leveling sentinels beyond 80 and continuing to upgrade gear increases your raw strength, but also raises BP. That extra strength is valuable in Planet Wars and Military Drills, but higher BP can lead to tougher Star Scramble matchups for your legion or even push you into a tougher arena for Hyper Battlefield."
-    },
-    {
-      "type": "p",
-      "html": "There’s no universal stopping point. The important thing is to keep improving your pilots, chips, and mechs so your combat effectiveness keeps pace with your BP."
+      "html": "Hyper Battlefield has five tiers, BF5 through BF1, and BF1 is a substantial jump from BF2. Legion BP and past results both appear to affect placement, but the exact formula is not published. <strong>Invest in combat effectiveness first, and let BP follow.</strong>"
     },
     {
       "type": "h2",
@@ -680,15 +687,53 @@
     {
       "type": "h3",
       "id": "the-equipped-pilot-multiplier",
-      "title": "Equip the pilot for this matchup"
+      "title": "Equip the right pilot for each fight"
     },
     {
       "type": "p",
-      "html": "Every pilot you’ve unlocked contributes Defense, Defense Break, and passive bonuses, even when they’re not equipped.<br><br>You can equip one pilot at a time. That pilot contributes <strong>4× its normal Defense and Defense Break</strong>, making your choice especially important in PvP. The multiplier does not apply to passive bonuses.<br><br>Switching pilots is free, so choose the one that best matches your opponent. In Star Scramble, your defensive pilot is locked once the event begins."
+      "html": "Your equipped pilot should match both the type of damage you deal and the type of damage your opponent deals."
     },
     {
       "type": "p",
-      "html": "For example, a six-star SR Lancelot contributes +80 EDB and +80 PD when unequipped. Put him in your equipped slot and those contributions become +320 each. After awakening, that rises to +100 unequipped or +400 equipped. That is why your first SR awakenings should focus on pilots you actually switch between."
+      "html": "<strong>If you use physical equipment:</strong>"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Freya (PDB / PD)</strong> — Against physical opponents.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Hestia (PDB / ED)</strong> — Against energy opponents.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "<strong>If you use energy equipment:</strong>"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Lancelot (EDB / PD)</strong> — Against physical opponents.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Clotho (EDB / ED)</strong> — Against energy opponents.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "<strong>Why does switching matter?</strong> Every pilot you’ve unlocked contributes Defense, Defense Break, and passive bonuses, even when unequipped. But your equipped pilot contributes <strong>4× its normal Defense and Defense Break</strong>. The multiplier does not apply to passive bonuses."
+    },
+    {
+      "type": "p",
+      "html": "Here’s an example using awakened SR pilots. Assume all four combat stats start at 2,500, including the bonuses from your unequipped pilots."
     },
     {
       "type": "table",
@@ -696,45 +741,66 @@
         {
           "header": true,
           "cells": [
-            "Own damage type",
-            "Against physical damage",
-            "Against energy damage"
+            "Equipped pilot",
+            "PDB",
+            "EDB",
+            "PD",
+            "ED"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Physical",
-            "Freya (PDB / PD)",
-            "Brunhild or Hestia (PDB / ED)"
+            "Freya",
+            "<strong>2,800</strong>",
+            "2,500",
+            "<strong>2,800</strong>",
+            "2,500"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Energy",
-            "Lancelot (EDB / PD)",
-            "Clotho (EDB / ED)"
+            "Hestia",
+            "<strong>2,800</strong>",
+            "2,500",
+            "2,500",
+            "<strong>2,800</strong>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Lancelot",
+            "2,500",
+            "<strong>2,800</strong>",
+            "<strong>2,800</strong>",
+            "2,500"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Clotho",
+            "2,500",
+            "<strong>2,860</strong>",
+            "2,500",
+            "<strong>2,740</strong>"
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "Choose your first SR awakening for the damage type you use and the opponents you encounter most. A physical player facing mostly energy-based opponents might pick Hestia before Freya, because both provide Physical Defense Break, but Hestia adds Energy Defense instead of Physical Defense; an energy player facing physical damage might pick Lancelot before Clotho. Since switching equipped pilots is free, having both defensive variants gives you options."
-    },
-    {
-      "type": "h3",
-      "id": "don-t-specialize-defensively",
-      "title": "Build one Break type; defend against both"
+      "html": "For Freya, Hestia, and Lancelot, awakening gives +100 to each of their two stats. Equipping them multiplies that to +400, adding 300 above their unequipped contribution. Clotho has different awakened stats: +120 EDB and +80 ED, giving her an additional 360 EDB and 240 ED when equipped."
     },
     {
       "type": "p",
-      "html": "Focus on the Defense Break stat that matches your gear: Physical Defense Break (PDB) for physical builds and Energy Defense Break (EDB) for energy builds. Regardless of your damage type, keep investing in both Physical Defense (PD) and Energy Defense (ED), since you’ll face opponents using both."
+      "html": "<strong>Example:</strong> You’re using physical equipment and facing an energy-based opponent. Switching from Freya to Hestia keeps your Physical Defense Break at 2,800 while increasing your Energy Defense from 2,500 to 2,800. You gain protection against their attacks without giving up offensive strength."
     },
     {
       "type": "p",
-      "html": "If you use both physical and energy gear sets, all four stats are important."
+      "html": "Switching pilots is free, so choose the right one before each fight. Your Star Scramble defensive pilot is locked once the event begins."
     },
     {
       "type": "h3",
@@ -743,19 +809,52 @@
     },
     {
       "type": "p",
-      "html": "Unlock pilots as you acquire them. The first two evolutions cost Pilot Badges and provide substantial gains relatively cheaply; their Badge requirements are the same for N, R, SR, and SSR. Later evolutions need increasing quantities of that specific pilot’s shards. At higher stars, they can also require extra shards from other pilots. Many pilot shards arrive as random drops, though SR selectables are available in the Pilot Event, Hyper Battlefield shop, and other sources."
+      "html": "<strong>Your first priority is awakening two SR pilots for your main damage type</strong>, one providing Physical Defense and the other Energy Defense. This lets you switch pilots based on your opponent while keeping the Defense Break stat that supports your attacks."
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Energy equipment:</strong> Awaken Lancelot (EDB / PD) and Clotho (EDB / ED).",
+          "nested": null
+        },
+        {
+          "html": "<strong>Physical equipment:</strong> Awaken Freya (PDB / PD) and Hestia (PDB / ED).",
+          "nested": null
+        }
+      ]
     },
     {
       "type": "p",
-      "html": "Once a pilot reaches six stars, any additional shards automatically become extra shards that can be used toward other pilots’ evolutions and awakenings. If you already have a stockpile of shards for an N or R pilot, finishing its sixth star may make a substantial amount usable immediately."
+      "html": "<strong>How pilot upgrades work</strong>"
     },
     {
       "type": "p",
-      "html": "A good early target is to awaken <strong>two SR pilots you plan to equip for your main damage type</strong>, or four if you routinely switch between physical and energy gear. These are alternate pilots, not four simultaneous equipped pilots. Then work toward six stars on your N and R roster, both for their stats and for the extra shards future drops provide. After that, decide whether to awaken R pilots for accessible gains or additional SR pilots for stronger specific passives. SR awakenings cost much more, so the best choice depends on the passive you need and the resources you have. SSR awakening remains a long-term goal because the shards are difficult to acquire outside special events."
+      "html": "The first two evolutions use Pilot Badges and are relatively inexpensive. Later evolutions require shards for that specific pilot, with increasing costs as you approach six stars."
     },
     {
       "type": "p",
-      "html": "When choosing the next N or R pilot to reach six stars, check the upgrade cost, the Defense or Defense Break you gain, and how many extra shards become usable afterward. Sometimes a pilot with a large stockpile of extra shards is worth finishing first; sometimes the immediate stat gain matters more."
+      "html": "Once a pilot reaches six stars, any additional shards for that pilot become extra shards that can be used to evolve or awaken other pilots of the same rarity."
+    },
+    {
+      "type": "p",
+      "html": "<strong>How to spend your shards</strong>"
+    },
+    {
+      "type": "p",
+      "html": "Save your selectable SR shards for the pilots you plan to equip and awaken."
+    },
+    {
+      "type": "p",
+      "html": "While collecting SR shards, continue developing your N and R pilots, especially those close to six stars. These upgrades improve your stats and make future drops of those pilots’ shards available for other upgrades."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Manage your N and R extra shards carefully.</strong> R shards can become a bottleneck when awakening your second SR pilot. Make sure you have enough N and R extra shards available when you’re ready to awaken, rather than using them on other upgrades."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Extra shards needed for awakening</strong>"
     },
     {
       "type": "table",
@@ -800,7 +899,23 @@
     },
     {
       "type": "p",
-      "html": "These are <strong>extra shards</strong> that can be used across pilots of the same rarity, not additional copies of the specific pilot being awakened. Awakening also costs Pilot Badges. In one supplied SR example, awakening required 1,800 Pilot Badges along with the shards shown above. Pilots continue contributing their Defense, Defense Break, and passive bonuses even when they are not equipped."
+      "html": "These costs are in addition to Pilot Badges. <strong>Every SR pilot awakening requires 1,800 Pilot Badges</strong>, plus 1,500 N, 800 R, and 800 SR extra shards."
+    },
+    {
+      "type": "p",
+      "html": "<strong>What comes after your first two SR awakenings?</strong>"
+    },
+    {
+      "type": "p",
+      "html": "Continue developing your N and R roster to six stars. Then evaluate additional SR or R awakenings based on the stats and passive bonuses they provide."
+    },
+    {
+      "type": "p",
+      "html": "If you regularly use both physical and energy equipment, consider awakening all four SR pilots so you can switch between both damage and defense types."
+    },
+    {
+      "type": "p",
+      "html": "SSR awakenings are a longer-term investment because their shards are difficult to acquire."
     },
     {
       "type": "h3",
@@ -862,16 +977,11 @@
     {
       "type": "h3",
       "id": "foundation-two-maxed-ninjas",
-      "title": "Foundation: Two Maxed Ninjas"
+      "title": "How to develop your Burn drones"
     },
     {
       "type": "p",
-      "html": "Start with one Ninja and work toward two well-developed Ninjas if you are using a Burn lineup. They are relatively accessible, and a finished lower-rarity drone can contribute more than a higher-rarity one that is barely developed. You can use them while gradually building a stronger third drone instead of waiting for three expensive SR drones."
-    },
-    {
-      "type": "h3",
-      "id": "progression-lineups",
-      "title": "Progression Lineups"
+      "html": "<strong>Start with Ninja.</strong> It is inexpensive to fully evolve and gives you a developed Burn drone sooner than an R or SR option. Build toward two maxed Ninjas and a strong third drone. Sagittarius adds Flaming, increasing the combined damage of your Burn stacks; Lich is a more accessible R option that buffs Burn damage across your drone lineup."
     },
     {
       "type": "table",
@@ -880,69 +990,39 @@
           "header": true,
           "cells": [
             "Stage",
-            "Lineup",
-            "Notes"
+            "What to develop",
+            "Why"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Getting started",
-            "One or two developed Ninjas, plus your best available third Burn drone",
-            "Start with the Burn drones you have developed, then work toward two maxed Ninjas and Sagittarius."
+            "Starting out",
+            "One Ninja, then a second",
+            "Affordable Burn damage while you accumulate resources"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Developing an R drone",
-            "Two developed Ninjas + Lich",
-            "Lich’s Burn Damage bonus can help the trio while you save resources for later upgrades."
+            "Third drone",
+            "Sagittarius, Lich, or another developed Burn drone",
+            "Choose useful skills and upgrades you can complete"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Developing an SR drone",
-            "Two developed Ninjas + Sagittarius, Lyra, or another developed SR burner",
-            "A higher ceiling, but only invest heavily if you can keep progressing that drone."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Advanced",
-            "Developed SR drones or a strong mixed R/SR trio",
-            "Pick by useful skills and completed upgrades, not rarity alone."
+            "Longer term",
+            "Developed Sagittarius, Lyra, Fornax, or a strong R/SR mix",
+            "Replace a Ninja when the new drone actually improves your results"
           ]
         }
       ]
     },
     {
-      "type": "h3",
-      "id": "the-r-vs-sr-fork",
-      "title": "After Ninja, pick one drone to finish"
-    },
-    {
       "type": "p",
-      "html": "After developing Ninja, pick the next drone you want to finish. Lich is an accessible R option; Sagittarius and Lyra are longer-term SR choices. A developed Lich can remain useful beside SR drones because its skill increases Burn damage for the trio."
-    },
-    {
-      "type": "ul",
-      "items": [
-        {
-          "html": "<strong>R drones:</strong> Usually more accessible to complete. Lich is appealing because its skill buffs Burn damage across all drones. Cerberus and Scorpion Lion have more situational interactions.",
-          "nested": null
-        },
-        {
-          "html": "<strong>SR drones:</strong> More expensive to develop but potentially stronger once invested in. Sagittarius, Lyra, and Fornax are choices to consider. A developed SR can eventually replace a Ninja, but a half-finished SR should not automatically displace a strong drone you already own.",
-          "nested": null
-        }
-      ]
-    },
-    {
-      "type": "p",
-      "html": "The choice between R and SR drones depends on the skills you need and the evolution progress you can afford. Compare your actual boss results before replacing a developed drone."
+      "html": "R drones are usually cheaper to develop than SR drones. Lich offers a team-wide Burn benefit; Cerberus and Scorpion Lion are more situational. SR drones can become stronger with enough investment, but compare boss and PvP results before replacing a completed drone."
     },
     {
       "type": "p",
@@ -1158,14 +1238,6 @@
       "html": "<strong>Not every heal uses the same bonuses.</strong> Apus increases maximum HP by 5% of base HP on each of its first three skill activations, up to +15% total. That increases percentage-of-Max-HP healing from Ladybug and Blood Bat. Cheat Death uses fundamental HP instead, while Doomblast and Arcglow heal based on Attack. Apus’s own HP recovery does not benefit from Healing Enhancement; Ladybug and Cheat Death do. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not the Sentinel Enhancement multiplier."
     },
     {
-      "type": "p",
-      "html": "Gridstar shows why passive quality matters. Each inexpensive new copy starts with one passive, so you can look for a gold Healing Enhancement roll and then transfer your existing evolution progress through <a href=\"#the-reverse-merge-technique\">reverse merging</a>."
-    },
-    {
-      "type": "p",
-      "html": "I currently have four or five strong Gridstars with different passive combinations, plus a spare with less useful passives that I’m saving for my next reverse merge. This approach lets me keep improving my Gridstars without spending heavily on recasting materials."
-    },
-    {
       "type": "h3",
       "id": "sentinel-recast-lock-cost",
       "title": "The real cost of a sentinel recast"
@@ -1222,6 +1294,10 @@
       "type": "h3",
       "id": "the-reverse-merge-technique",
       "title": "Keep the better passive, not the older sentinel"
+    },
+    {
+      "type": "p",
+      "html": "Gridstar shows why passive quality matters. Each inexpensive new copy starts with one passive, so you can look for a gold Healing Enhancement roll and then transfer your existing evolution progress through <a href=\"#the-reverse-merge-technique\">reverse merging</a>."
     },
     {
       "type": "p",
@@ -1322,7 +1398,7 @@
     },
     {
       "type": "p",
-      "html": "For a Dodge/Heal defense, Aqua Spirit and Ladybug work particularly well once Healing Enhancement is developed: damage reduction persists after Aqua Spirit activates, and Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP. Berserk Dragon supplies protection from the start; Lantern can instead increase Healing Enhancement after four seconds. For <strong>PvP Burn</strong>, prioritize Star Envoy and Aqua Spirit, then compare Berserk Dragon, Ladybug, and Lantern for the third slot. In my recent testing, Berserk Dragon is winning more fights than the other two, although the matchup, equipment, and Mech Spirit levels can change the result."
+      "html": "Aqua Spirit’s protection stays active after the HP threshold is crossed, even if you heal afterward. Ladybug supplies a separate one-time emergency heal when HP first falls below 30%. For PvP Burn, damage reduction can be more valuable than another heal: in my testing, Berserk Dragon currently wins more fights in the third slot than Ladybug or Lantern, though matchups and Mech Spirit levels matter."
     },
     {
       "type": "p",
@@ -1428,7 +1504,7 @@
     },
     {
       "type": "p",
-      "html": "You can equip one engine at a time. Different engine grades can have equipped and shared bonuses, so check the values in your own game screen rather than assuming every engine offers the same multiplier."
+      "html": "You equip one engine, but some engine grades also offer shared bonuses. Compare the equipped and shared values when choosing which to develop."
     },
     {
       "type": "h2",
@@ -1442,11 +1518,11 @@
     {
       "type": "h3",
       "id": "camp-tech-priority-path",
-      "title": "A practical order for Camp upgrades"
+      "title": "Prioritize upgrades that help your formations"
     },
     {
       "type": "p",
-      "html": "Upgrade costs rise as you progress, so compare what the next available level actually gives you. A cheap PvP Damage Reduction upgrade may help more than another expensive level of Final Damage Decrease."
+      "html": "Start with broadly useful PvP damage and protection bonuses, then improve attributes that address your current matchups. Check the cost of the next level before investing."
     },
     {
       "type": "ol",
@@ -1480,7 +1556,7 @@
     },
     {
       "type": "p",
-      "html": "Inside <strong>Camp → Super Technology</strong>, SkyEagle Tech provides FDI. Crystal Prism and Eternal Pivot provide FDD, and Source Essence provides another FDD path once unlocked. One approach I have seen is to work toward level 80 on the first three and level 60 on other accessible lines. Treat that as one player’s plan; the right next level depends on what you have unlocked, current costs, and the opponents you face."
+      "html": "In <strong>Camp → Super Technology</strong>, SkyEagle Tech increases Final Damage Increase. Crystal Prism, Eternal Pivot, and later Source Essence provide Final Damage Decrease. These are useful across several PvP formations. Compare the next upgrade cost and effect rather than chasing one fixed level target."
     },
     {
       "type": "h2",
@@ -1515,7 +1591,7 @@
     },
     {
       "type": "p",
-      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, breaking the set may cost more damage than the new piece appears to add. Compare the complete Titan set against mixed equipment in the game mode you care about."
+      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, replacing one piece can cost more than its individual stats suggest. My full Conqueror setup has also won more fights than switching to Hardrock for extra HP. Compare complete builds in actual fights, including their set bonuses."
     },
     {
       "type": "h3",
@@ -1537,7 +1613,7 @@
     },
     {
       "type": "p",
-      "html": "Legion Technology offers bonuses to particular weapons and enemy types. For PvP, two of its upgrades explicitly affect other players, making them useful across several formations instead of only one damage style."
+      "html": "Focus Legion Technology on upgrades that help your actual formations. The aerial-enemy damage and damage-reduction bonuses explicitly include other players, making them valuable across PvP builds. Unused Electric or Reflect attributes can add BP without helping you fight."
     },
     {
       "type": "h3",
@@ -1556,7 +1632,7 @@
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Upgrade a weapon that matters to your damage.</strong> Compare Maingun, Winggun, and Missile performance in your current formation. The best choice may differ between Conqueror and Destroyer.",
+          "html": "<strong>Compare your weapons.</strong> Maingun, Winggun, and Missile contribute differently in Conqueror and Destroyer builds. Upgrade the one with the strongest payoff for its next cost.",
           "nested": null
         },
         {
@@ -1659,7 +1735,7 @@
     },
     {
       "type": "p",
-      "html": "This does <strong>not</strong> mean you should spend 100 pulls in every Mech Event no matter what. Check how close you are to a larger target, what rewards are currently offered, and whether you are saving for another event."
+      "html": "Choose your stopping point based on the current rewards and how close you are to the next round."
     },
     {
       "type": "h2",
@@ -1668,11 +1744,11 @@
     },
     {
       "type": "p",
-      "html": "The Drone Event tracks <strong>8,000 Rhenite of qualifying spend</strong> for each complete reward round. Up to four rounds are possible, and progress resets at the next event. When you buy a drone, its full price counts toward the milestone. If you sell it afterward, you get <strong>80% of its purchase price back</strong>. That means 8,000 Rhenite spent entirely on drones costs only 1,600 Rhenite net after reselling them."
+      "html": "A full Drone Event round takes <strong>8,000 Rhenite in qualifying spend</strong>, with up to four rounds. Buying a drone counts at full price, but selling it returns <strong>80%</strong> of what you paid. If all 8,000 is spent on drones and resold, the net cost is 1,600 Rhenite. Progress resets between events."
     },
     {
       "type": "p",
-      "html": "Shop refreshes cost 10 Rhenite each. They count toward event spend, but unlike drone purchases, cannot be resold or refunded. So a round that reaches exactly 8,000 total spend costs roughly <strong>1,600 plus 80% of what you spent on refreshes</strong>. For example: 26 refreshes cost 260, plus drone purchases of 7,800, for 8,060 total event credit. Selling the drones returns 6,240, leaving 1,820 net Rhenite spent. The slight overshoot above 8,000 is included in that example."
+      "html": "Refreshes cost 10 Rhenite and count toward the milestone, but cannot be refunded. For example, 26 refreshes cost 260, plus 7,800 in drone purchases, for 8,060 event credit. Selling the drones returns 6,240, so the net cost is <strong>1,820 Rhenite</strong>. Drone recasts also count toward the event; budget for them separately."
     },
     {
       "type": "p",
@@ -1723,7 +1799,7 @@
     },
     {
       "type": "p",
-      "html": "One full daily spending routine has been roughly <strong>540 diamonds</strong>: 140 on engine parts, 100 each on three daily challenge resources (300 total), and 100 on Chip Factory parts. This is an example of an aggressive routine, <strong>not a requirement</strong> or a target for every player. Check which supplies you are actually short of before buying any of them."
+      "html": "An aggressive daily routine can cost about <strong>540 diamonds</strong>: 140 for engine parts, 300 across three challenge resources, and 100 for Chip Factory parts. Spend based on your current bottleneck rather than treating this as a daily requirement."
     },
     {
       "type": "h1",
@@ -1978,11 +2054,11 @@
     },
     {
       "type": "p",
-      "html": "The central rule is <strong>effective Burn Enhancement = your raw Burn Enhancement minus the target’s Burn Decrease, capped at +100% and floored at 0%</strong> for this damage multiplier. Against a boss, 100% raw is enough. Against a PvP opponent with 50% Burn Decrease, you would need 150% raw to reach the same 100% effective bonus. The floor means Burn Decrease can remove this bonus but does not push this multiplier below its unenhanced 1.0× baseline."
+      "html": "In this multiplier, <strong>effective Burn Enhancement is your raw Burn Enhancement minus the target’s Burn Decrease</strong>, with a floor of 0% and a cap of 100%. The multiplier therefore ranges from 1× to 2×."
     },
     {
       "type": "p",
-      "html": "Once your other bonuses supply enough Burn Enhancement against a PvE boss, change spare Burn chips into Crit Rate chips. That is the foundation of the advanced PvE Burn/Crit progression described earlier."
+      "html": "For the chip-swapping strategy, see <a href=\"#pve-burn-build\">PvE Burn / Crit</a>."
     },
     {
       "type": "h2",
@@ -2046,7 +2122,7 @@
     },
     {
       "type": "p",
-      "html": "For PvE Burn, the useful sequence is: first reach 100% effective Burn Enhancement; then build Crit Rate until Evil Eye can reach 80% effective Burn Crit Rate; then keep improving Defense Break for your chosen gear type. More Crit Rate beyond the PvE target may still help when you switch that formation to conventional PvP Crit and face high Crit Resistance. <strong>Remove Evil Eye for that PvP setup.</strong> Evil Eye converts away the normal weapon crits Toad Lord needs, so do not pair them."
+      "html": "Evil Eye converts the eligible Crit Rate left after enemy Crit Resistance, so PvP requires more raw Crit Rate to obtain the same Burn Crit Rate. Do not pair Evil Eye with Toad Lord: Toad Lord needs normal weapon crits, which Evil Eye converts away."
     },
     {
       "type": "h2",
@@ -2248,15 +2324,6 @@
     {
       "type": "p",
       "html": "A sentinel with one great gold passive and several useful supporting passives is already a success. The odds of landing a second exact gold can be expensive, and those same materials might make your drones, pilots, or another sentinel stronger. Chase a second ideal gold when the rest of your build is ready for that investment."
-    },
-    {
-      "type": "h2",
-      "id": "sentinel-firing-order",
-      "title": "Sentinel firing-order uncertainty"
-    },
-    {
-      "type": "p",
-      "html": "Some battle logs I have seen suggest that when two sentinels fire at the same instant, the higher-BP player’s sentinel may activate first. This is not confirmed by controlled testing, so do not build a strategy that depends on that firing order."
     }
   ]
 }
