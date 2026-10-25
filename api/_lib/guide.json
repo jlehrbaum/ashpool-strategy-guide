@@ -1847,15 +1847,19 @@
     {
       "type": "h2",
       "id": "mech-event-stopping-points",
-      "title": "Mech Event — Why 100 or 500 pulls"
+      "title": "Mech Event — Plan for 100 or 500 pulls"
     },
     {
       "type": "p",
-      "html": "The Mech Event has <strong>400 pulls per full reward round</strong>. Because the rewards in the first 100 pulls can be especially attractive, two practical stopping points are <strong>100 pulls</strong> when resources are limited, or <strong>500 pulls</strong> if you can afford to finish a 400-pull round and claim the first 100 pulls of the second. Do not assume 400 is always the best place to stop. Check the current reward screen before spending, as the exact rewards have not been independently verified for every event."
+      "html": "Save your Mech Recruitment Tickets for the Mech Event. A full reward round takes <strong>400 pulls</strong>, but the three milestone rewards in the first 100 pulls offer the best return on your tickets."
     },
     {
       "type": "p",
-      "html": "Choose your stopping point based on the current rewards and how close you are to the next round."
+      "html": "If you can’t complete a full round, consider stopping at <strong>100 pulls</strong> and saving the rest for the next event. If you can afford it, aim for <strong>500 pulls</strong> to complete one full round and collect the first three milestone rewards from the second."
+    },
+    {
+      "type": "p",
+      "html": "Check the event rewards before spending, and don’t use Mech Recruitment Tickets between events."
     },
     {
       "type": "h2",
@@ -1881,7 +1885,15 @@
     },
     {
       "type": "p",
-      "html": "A full Pilot Event reward round takes <strong>300 pulls</strong>, and up to four rounds may be completed in one event. Milestone progress resets between events. Save Recruitment Tickets until you can reach a full round rather than buying scattered partial rewards. Active players may manage one round, and sometimes two with diamonds. SR pilot selectables are especially useful for developing the pilots you plan to equip and awaken."
+      "html": "Save your Recruitment Tickets for the monthly Pilot Event. The goal is to complete a full round of <strong>300 pulls</strong> to collect the milestone rewards."
+    },
+    {
+      "type": "p",
+      "html": "You don't necessarily need 300 tickets going in. You'll earn more during the event through daily activities and challenges, and you can use diamonds to make up the difference (2,600 diamonds for 10 pulls). I generally aim to enter with around 250 tickets, knowing I can close the gap during the week."
+    },
+    {
+      "type": "p",
+      "html": "Don't use tickets between events, and save your free daily pulls on the day the event starts until after the reset. If you're considering a second round, think carefully about the diamond cost."
     },
     {
       "type": "h2",
