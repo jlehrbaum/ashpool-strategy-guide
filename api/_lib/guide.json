@@ -1378,7 +1378,7 @@
     },
     {
       "type": "p",
-      "html": "You can equip three Mech Spirits. Pick them for the formation you are using: healing and damage reduction for a long defensive fight, weapon-crit bonuses for Crit offense, or Burn-specific bonuses for PvE. Mech Spirit combinations and passive bonuses also improve your account even when the spirit is not equipped."
+      "html": "Each of my formations has three default Mech Spirits chosen to work together. Depending on the opponent, I may swap one out to counter their build or adjust to their defenses. The recommendations below cover the Mech Spirits I use most often, not every useful option in the game. All Mech Spirit attribute bonuses apply whether equipped or not, but their active skills depend on which three you equip."
     },
     {
       "type": "h3",
@@ -1408,7 +1408,7 @@
     },
     {
       "type": "p",
-      "html": "Aqua Spirit’s protection stays active after the HP threshold is crossed, even if you heal afterward. Ladybug supplies a separate one-time emergency heal when HP first falls below 30%. For PvP Burn, damage reduction can be more valuable than another heal: in my testing, Berserk Dragon currently wins more fights in the third slot than Ladybug or Lantern, though matchups and Mech Spirit levels matter."
+      "html": "In my PvP Burn testing, Berserk Dragon has been outperforming Ladybug and Lantern in the third slot, although results can change as Mech Spirits and other parts of the build improve."
     },
     {
       "type": "p",
@@ -1417,7 +1417,7 @@
     {
       "type": "h3",
       "id": "my-pvp-offensive-favorites-in-priority-order",
-      "title": "PVP offense and counters"
+      "title": "PVP offense"
     },
     {
       "type": "ul",
@@ -1431,7 +1431,33 @@
           "nested": null
         },
         {
-          "html": "<strong>Flame Stinger:</strong> A damage-finishing option when the opponent is low on HP. Gloom Moon is a Hit Rate counter for high Dodge; Battle Diva helps against heavy Crit.",
+          "html": "<strong>Dragon Emperor (SSR):</strong> Saturation Fire increases damage against opponents above 60% HP, from +11% at skill level 1 to +77% at level 13. I especially like it for the first Star Scramble attack against a defender I don't expect to finish in one attempt. It helps deal more damage while their HP is still high, including when I'm planning a second attack or trying to burn down their fuel.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Flame Stinger:</strong> The opposite situation: useful for finishing an opponent whose HP is already low. In Star Scramble, I'll sometimes use Dragon Emperor for the first attack and swap to Flame Stinger for the second.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "id": "situational-pvp-mech-counters",
+      "title": "Situational PVP counters"
+    },
+    {
+      "type": "p",
+      "html": "These swaps can help against specific opponents in any PvP formation, not just Crit builds."
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>Gloom Moon (SSR):</strong> A situational Hit Rate boost when your Hit Rate is close to, but not quite enough to overcome, an opponent’s Dodge. I swap it in against high-Dodge defenders rather than equipping it for every fight. It can work alongside a Hit Rate engine to close the gap.",
+          "nested": null
+        },
+        {
+          "html": "<strong>Battle Diva (SSR):</strong> A situational defensive counter that increases Crit Resistance, Electric Decrease, and Burn Decrease. I swap it in when an opponent has a slight advantage in Crit Rate, Electric Enhancement, or Burn Enhancement and the extra resistance can close the gap. It is useful across several PvP matchups rather than just against Crit builds.",
           "nested": null
         }
       ]
@@ -1449,11 +1475,11 @@
           "nested": null
         },
         {
-          "html": "<strong>Star Envoy (SSR):</strong> Requires three equipped Burn drones. Every third Burn-drone skill has a chance to add a stack of Burn Damage Boost, up to five stacks. The activation chance increases as your Burn Enhancement exceeds the enemy’s Burn Decrease. The maximum stacked bonus is +125% at skill level 1 or +425% at level 13. Star Envoy is a powerful long-term upgrade for Burn builds.",
+          "html": "<strong>Star Envoy (SSR):</strong> Requires three equipped Burn drones. Every third Burn-drone skill has a chance to add a stack of Burn Damage Boost, up to five stacks. The activation chance increases as your Burn Enhancement exceeds the enemy’s Burn Decrease. The maximum stacked bonus is +125% at skill level 1 or +425% at level 13. Star Envoy is one of my core Mech Spirits for both PvE and PvP Burn when I run three Burn drones.",
           "nested": null
         },
         {
-          "html": "<strong>Third Mech Spirit:</strong> Use Dragon Emperor or Crimson Shadow. Both increase PvE damage. I currently prefer Dragon Emperor, but testing has shown that Crimson Shadow can perform just as well or better. Compare their damage bonuses at your current skill levels to see which performs best.",
+          "html": "<strong>Third slot — Dragon Emperor or Crimson Shadow:</strong> I generally start with Dragon Emperor, but I've tested fights where Crimson Shadow performed as well or better. Compare them at your current skill levels rather than assuming one will always win.",
           "nested": null
         }
       ]
@@ -1461,7 +1487,7 @@
     {
       "type": "h3",
       "id": "how-mech-leveling-works",
-      "title": "How leveling works"
+      "title": "How Mech Spirit upgrades work"
     },
     {
       "type": "p",
