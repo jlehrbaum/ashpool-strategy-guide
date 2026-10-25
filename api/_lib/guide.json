@@ -70,85 +70,43 @@
         {
           "header": false,
           "cells": [
-            "Choose your formations",
+            "Decide which formation to use",
             "<a href=\"#pairing-primaries-with-secondaries\">Formation comparison</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Choose an opponent to attack",
+            "Beat a difficult PvP opponent",
             "<a href=\"#situational-swaps-for-pvp\">PvP matchups</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Improve your pilot stats",
-            "<a href=\"#pilots-the-foundation\">Pilots</a>"
+            "Figure out why you're losing fights",
+            "<a href=\"#troubleshoot-pvp-losses\">PvP troubleshooting</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Manufacture better chips",
-            "<a href=\"#chip-formations\">Chips</a>"
+            "Decide what to upgrade next",
+            "<a href=\"#part-3-optimizing-your-builds\">Build Upgrades</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Build and evolve Burn drones",
-            "<a href=\"#burn-drones\">Burn Drones</a>"
+            "Improve your boss damage",
+            "<a href=\"#pve-burn-build\">PvE Burn / Crit</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Choose and develop Sentinels",
-            "<a href=\"#sentinels\">Sentinels</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Choose or swap Mech Spirits",
-            "<a href=\"#mech-spirits\">Mech Spirits</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Upgrade engines and Camp Technology",
-            "<a href=\"#engines\">Engines & Camp Tech</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Compare Titan Gear upgrades",
-            "<a href=\"#titan-sets-and-weapon-tech\">Titan Gear</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Upgrade Legion Technology",
-            "<a href=\"#legion-technology\">Legion Technology</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Spend resources efficiently",
+            "Get more value from your resources",
             "<a href=\"#part-4-resource-and-event-economy\">Events & Resources</a>"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Check formulas and stat caps",
-            "<a href=\"#part-1-understanding-the-four-systems\">Mechanics Reference</a>"
           ]
         }
       ]
