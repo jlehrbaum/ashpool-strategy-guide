@@ -1864,19 +1864,23 @@
     {
       "type": "h2",
       "id": "the-drone-event-buy-sell-technique",
-      "title": "Drone Event — How resale changes the cost"
+      "title": "Drone Event — Make the most of your Rhenite"
     },
     {
       "type": "p",
-      "html": "A full Drone Event round takes <strong>8,000 Rhenite in qualifying spend</strong>, with up to four rounds. Buying a drone counts at full price, but selling it returns <strong>80%</strong> of what you paid. If all 8,000 is spent on drones and resold, the net cost is 1,600 Rhenite. Progress resets between events."
+      "html": "Save your Rhenite for Drone Events and aim to complete full <strong>8,000-point rounds</strong>. You can complete up to four rounds per event, and progress resets between events."
     },
     {
       "type": "p",
-      "html": "Refreshes cost 10 Rhenite and count toward the milestone, but cannot be refunded. For example, 26 refreshes cost 260, plus 7,800 in drone purchases, for 8,060 event credit. Selling the drones returns 6,240, so the net cost is <strong>1,820 Rhenite</strong>. Drone recasts also count toward the event; budget for them separately."
+      "html": "The trick is that buying drones counts toward the event at full price, but selling them returns <strong>80% of your Rhenite</strong>. So spending 8,000 on drones and selling them back costs just <strong>1,600 Rhenite net</strong>, plus any shop refreshes. Refreshes cost 10 Rhenite each and also count toward your event progress."
     },
     {
       "type": "p",
-      "html": "Save your drone recasts for Drone Events when possible. Modified Chips count at twice their value toward event milestones, so you can improve drone passives while earning event rewards. Your net Rhenite cost depends on purchases, refunds, refreshes, and recasts. The <a href=\"https://drone-calc-nu.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Drone Event Calculator</a> can help plan a round. With a Volley Vortex pass, completing four rounds may be easier; some active players can complete two or three without one."
+      "html": "Save your drone recasts for the event too. Every Modified Chip spent counts as two points toward the milestone, so you can improve your drones while earning rewards."
+    },
+    {
+      "type": "p",
+      "html": "Use my <a href=\"https://drone-calc-nu.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Drone Event Calculator</a> to figure out how much Rhenite you’ll need based on your purchases, refreshes, and recasts."
     },
     {
       "type": "h2",
