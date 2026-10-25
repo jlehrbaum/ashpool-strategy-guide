@@ -1851,7 +1851,7 @@
     },
     {
       "type": "p",
-      "html": "The Mech Event has <strong>400 pulls per full reward round</strong>. Because the rewards in the first 100 pulls can be especially attractive, two practical stopping points are <strong>100 pulls</strong> when resources are limited, or <strong>500 pulls</strong> if you can afford to finish a 400-pull round and claim the first 100 pulls of the second. Do not assume 400 is always the best place to stop. Check the current reward screen before spending, as the exact rewards have not been independently verified for every event. Ladybug has no N-class selectable, so random Mech Event pulls are particularly important for developing it."
+      "html": "The Mech Event has <strong>400 pulls per full reward round</strong>. Because the rewards in the first 100 pulls can be especially attractive, two practical stopping points are <strong>100 pulls</strong> when resources are limited, or <strong>500 pulls</strong> if you can afford to finish a 400-pull round and claim the first 100 pulls of the second. Do not assume 400 is always the best place to stop. Check the current reward screen before spending, as the exact rewards have not been independently verified for every event."
     },
     {
       "type": "p",
@@ -1872,7 +1872,7 @@
     },
     {
       "type": "p",
-      "html": "Save your drone recasts for Drone Events when possible. Modified Chips count at twice their value toward event milestones, so you can improve drone passives while earning event rewards. Your net Rhenite cost depends on purchases, refunds, refreshes, and recasts. The Drone Event Calculator can help plan a round. With a Volley Vortex pass, completing four rounds may be easier; some active players can complete two or three without one."
+      "html": "Save your drone recasts for Drone Events when possible. Modified Chips count at twice their value toward event milestones, so you can improve drone passives while earning event rewards. Your net Rhenite cost depends on purchases, refunds, refreshes, and recasts. The <a href=\"https://drone-calc-nu.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Drone Event Calculator</a> can help plan a round. With a Volley Vortex pass, completing four rounds may be easier; some active players can complete two or three without one."
     },
     {
       "type": "h2",
