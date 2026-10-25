@@ -38,19 +38,23 @@
     },
     {
       "type": "p",
-      "html": "One of the most interesting things about Wing Fighter is that the player with more Battle Power (BP) does not always win. You can beat someone much stronger on paper, then lose to someone weaker. Often, the difference is not how much you have upgraded. It is <strong>how your build matches up against theirs</strong>."
+      "html": "One of the most interesting things about Wing Fighter is that the player with more Battle Power (BP) doesn’t always win. You can beat someone stronger on paper, then lose to someone weaker. Often, the difference is <strong>how your build matches up against theirs</strong>."
     },
     {
       "type": "p",
-      "html": "That is what got me interested in figuring out how this game really works. Which stats counter each other? Why does one formation survive an attack that destroys another? When is a new drone or sentinel actually an improvement, and when are you just spending resources to raise BP? The more I have tested, compared notes, and dug into the mechanics, the more I have found that good decisions matter as much as raw power."
+      "html": "That’s what got me interested in understanding how the game really works. Which stats counter each other? Why do some builds outperform others? Which upgrades are worth the investment? Through gameplay, testing, and discussions with GΛLΛXY • BLΛCKØUT, I’ve learned that good decisions matter as much as raw power."
     },
     {
       "type": "p",
-      "html": "This is my working guide to those decisions, with PvP as the main focus. It covers how to size up an opponent, choose a formation, strengthen the parts of your build that matter, and get more from limited resources. There is also a dedicated PvE section, because boss damage is important for progression. Some recommendations are well established; others are things I am still testing, and I will call out the difference."
+      "html": "This guide brings together what I’ve learned, with PvP as the main focus. It covers formations, combat mechanics, upgrades, and making the most of events and resources, plus PvE strategies for boss damage and progression."
     },
     {
       "type": "p",
-      "html": "<strong>Keep testing your builds.</strong> The best combination of drones, Sentinels, Mech Spirits, chips, and gear depends on how they work together. I’ve found that as I upgrade one part of my build, the best choices for other parts can change too. Use the recommendations in this guide as a starting point, then test different combinations in Military Drills. What works best for my account today might not be what works best for yours, or even for mine a month from now."
+      "html": "<strong>Keep testing your builds.</strong> Chips, drones, Sentinels, Mech Spirits, and gear all work together. As you upgrade one part, the best choices for other parts can change. Use these recommendations as a starting point and test what works best for your account."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Want personalized advice?</strong> Download the guide as a JSON file and upload it to ChatGPT or another AI assistant. You can analyze your builds, compare opponents, and get recommendations based on the strategies and mechanics covered here."
     },
     {
       "type": "h2",
