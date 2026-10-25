@@ -163,8 +163,28 @@
     border-top: 1px solid var(--border);
   }
   .toc-part:first-child { border-top: none; margin-top: 0; padding-top: 4px; }
-  .toc-level-2 { }
-  .toc-level-3 { color: var(--text-dim); font-size: 0.8rem; }
+  .toc-level-2 { font-size: 0.82rem; }
+  .toc-level-3 { color: var(--text-dim); font-size: 0.75rem; opacity: 0.85; }
+
+  /* Collapsible children under each h1. Closed by default; auto-opened for
+     the h1 section the user is currently reading. */
+  .toc-children {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease;
+    border-left: 1px solid var(--border);
+    margin-left: 12px;
+  }
+  .toc-children.open { max-height: 4000px; }
+  .toc-item.has-children::after {
+    content: " ›";
+    display: inline-block;
+    color: var(--text-dim);
+    transition: transform 0.2s ease;
+    transform-origin: center;
+    margin-left: 4px;
+  }
+  .toc-item.has-children.expanded::after { transform: rotate(90deg); }
 
   /* ── Main content ── */
   #main {
@@ -509,7 +529,9 @@
   const TOC = document.getElementById('toc');
   const NO_RESULTS = document.getElementById('no-results');
 
-  const TOC_PAD = { h1: 12, h2: 28, h3: 44 };
+  // h2/h3 live inside .toc-children, which adds 12px of margin-left plus a
+  // left border; these padding values stack on top of that.
+  const TOC_PAD = { h1: 12, h2: 12, h3: 28 };
 
   function renderMeta(m) {
     const parts = [];
@@ -599,23 +621,79 @@
   }
 
   function renderToc(entries) {
-    TOC.innerHTML = entries.map(e => {
+    // Group h2/h3 under their preceding h1 so each section can be
+    // collapsed/expanded as a unit.
+    const html = [];
+    let currentChildren = null; // array of inner-item strings
+    let currentParentId = null;
+
+    function flushChildren() {
+      if (currentChildren && currentChildren.length) {
+        html.push(`<div class="toc-children" data-parent="${currentParentId}">${currentChildren.join('')}</div>`);
+      }
+      currentChildren = null;
+      currentParentId = null;
+    }
+
+    entries.forEach((e, idx) => {
       const pad = TOC_PAD[e.level] || 12;
       const level = e.level.slice(1); // "1","2","3"
-      const isPart = e.level === 'h1' && /^(Part \d|Start Here)/i.test(stripTags(e.title));
-      const partCls = isPart ? ' toc-part' : '';
-      return `<a href="#${e.id}" class="toc-item toc-level-${level}${partCls}" style="padding-left:${pad}px">${e.title}</a>`;
-    }).join('\n');
+      if (e.level === 'h1') {
+        flushChildren();
+        const isPart = /^(Part \d|Start Here)/i.test(stripTags(e.title));
+        const partCls = isPart ? ' toc-part' : '';
+        // Determine if this h1 will have children (lookahead to next h1).
+        const hasChildren = entries.slice(idx + 1).some(n => {
+          if (n.level === 'h1') return false;
+          return true;
+        });
+        const extraCls = hasChildren ? ' has-children' : '';
+        html.push(`<a href="#${e.id}" class="toc-item toc-level-1${partCls}${extraCls}" data-h1="${e.id}" style="padding-left:${pad}px">${e.title}</a>`);
+        currentParentId = e.id;
+        currentChildren = [];
+      } else {
+        if (!currentChildren) currentChildren = [];
+        currentChildren.push(
+          `<a href="#${e.id}" class="toc-item toc-level-${level}" style="padding-left:${pad}px">${e.title}</a>`
+        );
+      }
+    });
+    flushChildren();
+
+    TOC.innerHTML = html.join('\n');
   }
 
   function wireUp() {
     const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id]'));
     const tocLinks = Array.from(document.querySelectorAll('.toc-item'));
+    const h1Links = tocLinks.filter(a => a.classList.contains('toc-level-1'));
+    const childrenPanels = Array.from(document.querySelectorAll('.toc-children'));
+
+    // Map every content heading id -> owning h1 id so we can open the right
+    // child panel as the user scrolls through the document.
+    const idToParentH1 = {};
+    let currentH1 = null;
+    headings.forEach(h => {
+      if (h.tagName === 'H1') { currentH1 = h.id; idToParentH1[h.id] = h.id; }
+      else { idToParentH1[h.id] = currentH1; }
+    });
+
+    function openSection(h1Id) {
+      childrenPanels.forEach(p => {
+        const match = p.dataset.parent === h1Id;
+        p.classList.toggle('open', match);
+      });
+      h1Links.forEach(a => {
+        a.classList.toggle('expanded', a.dataset.h1 === h1Id);
+      });
+    }
 
     function setActive(id) {
       tocLinks.forEach(a => {
         a.classList.toggle('active', a.getAttribute('href') === '#' + id);
       });
+      const parentH1 = idToParentH1[id];
+      if (parentH1) openSection(parentH1);
       const active = tocLinks.find(a => a.getAttribute('href') === '#' + id);
       if (active) {
         const top = active.offsetTop - TOC.clientHeight / 2;
@@ -623,10 +701,35 @@
       }
     }
 
+    // Clicking an h1 in the TOC toggles its section (and navigates).
+    h1Links.forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.dataset.h1;
+        const panel = document.querySelector(`.toc-children[data-parent="${id}"]`);
+        if (!panel) return; // no children, just let the anchor navigate
+        const isOpen = panel.classList.contains('open');
+        childrenPanels.forEach(p => p.classList.remove('open'));
+        h1Links.forEach(x => x.classList.remove('expanded'));
+        if (!isOpen) {
+          panel.classList.add('open');
+          a.classList.add('expanded');
+        }
+      });
+    });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
     }, { rootMargin: '-10% 0px -80% 0px', threshold: 0 });
     headings.forEach(h => observer.observe(h));
+
+    // Initial section open based on URL hash or first h1.
+    const initialHash = (window.location.hash || '').slice(1);
+    const initialId = initialHash && idToParentH1[initialHash] ? initialHash :
+                      (headings[0] && headings[0].id);
+    if (initialId) {
+      const parent = idToParentH1[initialId];
+      if (parent) openSection(parent);
+    }
 
     // Deep-link details handler (future-proof)
     function openDetailsForHash() {
