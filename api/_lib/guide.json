@@ -1570,7 +1570,7 @@
     {
       "type": "h3",
       "id": "how-mech-leveling-works",
-      "title": "How Mech Spirit upgrades work"
+      "title": "Mech Spirit upgrades and bonuses"
     },
     {
       "type": "p",
@@ -2043,11 +2043,6 @@
     {
       "type": "p",
       "html": "You only need the gap between Break and Defense to apply the formula. At equal values, the multiplier is 1.00×. A positive gap increases damage; a negative gap reduces it. For example, if your PDB is 300 above their PD, the bonus-side formula gives 1.30× before other modifiers. The reverse comparison tells you how well your defenses hold up against the opponent."
-    },
-    {
-      "type": "h3",
-      "id": "the-breakpoint",
-      "title": "When Break equals Defense"
     },
     {
       "type": "p",
@@ -2530,7 +2525,7 @@
       "html": "A sentinel with one great gold passive and several useful supporting passives is already a success. The odds of landing a second exact gold can be expensive, and those same materials might make your drones, pilots, or another sentinel stronger. Chase a second ideal gold when the rest of your build is ready for that investment."
     },
     {
-      "type": "h3",
+      "type": "h2",
       "id": "sentinel-healing-interactions",
       "title": "Sentinel healing interactions"
     },
