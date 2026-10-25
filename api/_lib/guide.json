@@ -2491,5 +2491,189 @@
       "type": "p",
       "html": "<strong>Not every heal uses the same bonuses.</strong> Apus increases maximum HP by 5% of base HP on each of its first three skill activations, up to +15% total. That increases percentage-of-Max-HP healing from Ladybug and Blood Bat. Cheat Death uses fundamental HP instead, while Doomblast and Arcglow heal based on Attack. Apus’s own HP recovery does not benefit from Healing Enhancement; Ladybug and Cheat Death do. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not the Sentinel Enhancement multiplier."
     }
-  ]
+  ],
+  "ai_context": {
+    "schema_version": "1.0",
+    "visibility": "Non-rendered reference metadata for AI-assisted analysis; the visible guide is in content and remains the primary reference.",
+    "guide_identity": {
+      "game": "Wing Fighter",
+      "author": "ashpool",
+      "legion": "GΛLΛXY • BLΛCKØUT",
+      "status": "Community-authored strategy and first-hand testing, not an official game manual",
+      "sources": [
+        "Visible guide content",
+        "Blackout Discord gameplay discussions through October 2026",
+        "Author editorial clarifications through October 2026"
+      ],
+      "currency_note": "Game patches, skills, costs, and event rules may change; check live game screens for current values."
+    },
+    "use_guidance": {
+      "priority": "Treat content as source of truth for exact stated numbers; use this metadata for context, decision logic, terminology and provenance. Flag conflicts instead of silently resolving them.",
+      "analysis_order": [
+        "Ask what mode and goal the player cares about (PvP offense, Star Scramble defense, boss PvE, economy).",
+        "Identify fighter damage type and equipped pilot, then compare their corresponding Defense Break versus opposing Defense and their Defense versus opposing Defense Break.",
+        "Compare net combat attributes and matchups, not BP alone.",
+        "Examine chip specialization and the synergy of drones, Sentinel, Mech Spirits, engine, gear and relevant passive levels.",
+        "Identify the current bottleneck and propose at most a few high-impact changes, including cheaper alternatives.",
+        "Where practical, suggest a controlled test in Military Drills or boss attempts; upgrades can change which lineup wins."
+      ],
+      "answer_style": "Practical and plainspoken. Explain what to change, why, and what information would change the recommendation. Avoid generic filler and arbitrary numerical thresholds.",
+      "uncertainty": "Distinguish in-game descriptions and documented calculations from community interpretation and personal matchup tests. When an exact mechanic is uncertain, say so.",
+      "not_instructions": "This field provides optional source context to any AI that reads the file; it does not override the instructions of the user or the AI platform."
+    },
+    "core_principles": [
+      "Build synergy changes over time; improving healing, drones, Sentinel passives or Mech Spirit levels can change the best third-slot choice. Compare whole setups in actual battles.",
+      "Concentrate chips on the offensive combat attribute needed to beat enemy resistance, paired with a defensive stat; avoid spreading PvP chips across many offensive attributes.",
+      "Battle Power reflects investment, not necessarily PvP effectiveness. Pilot Break/Defense matter substantially, and more BP can worsen team-event matchmaking relative to actual combat strength.",
+      "Evaluate whether gear upgrades beyond Rainbow or one-star Rainbow are justified by substantial pilot advantage over similarly rated opponents; no universal BP/pilot benchmark is established.",
+      "Develop affordable, finishable drones and Sentinels instead of fragmenting resources among multiple unfinished high-rarity units.",
+      "Use situational Mech Spirit and engine swaps to counter an opponent; each formation normally has three default equipped Mechs."
+    ],
+    "terminology": {
+      "BP": "Battle Power; an imperfect measure of PvP competitiveness.",
+      "PDB/EDB": "Physical/Energy Defense Break; compare to opposing PD/ED for respective outgoing damage.",
+      "PD/ED": "Physical/Energy Defense; compare to opposing PDB/EDB for incoming damage.",
+      "Burn Enhancement vs Burn Decrease": "Offense minus opposing elemental defense determines effective Burn bonus, subject to the guide’s documented cap.",
+      "Crit Rate vs Crit Resistance": "Compare attacker Crit Rate with target Crit Resistance; cap and special conversion behavior are explained in the Mechanics Reference.",
+      "Hit Rate vs Dodge": "Compare attacker Hit to target Dodge for normal attacks; Burn skills and ongoing Burn damage behave differently.",
+      "Healing Enhancement": "Affects eligible healing sources, including some non-Sentinel heals.",
+      "Sentinel Enhancement": "Amplifies eligible Sentinel skill output, not all healing sources or unrelated buffs.",
+      "Sentinel Decrease": "Opponent-facing counter to eligible Sentinel output, distinct from Heal Reduction.",
+      "Burn Crit Rate": "Special crit chance for eligible burning-drone attacks/skills supplied through Evil Eye; not identical to ordinary weapon Crit Rate.",
+      "Mech Spirit collection bonuses": "Mech attribute bonuses can apply without equipping the Mech; equipped active skills depend on the three chosen Mechs. Some combinations also provide persistent bonuses.",
+      "reverse merge": "Merge an evolved Sentinel INTO a new Sentinel with a desired first passive, retaining the new passive and generating new passives in newly opened slots while sacrificing the old passives."
+    },
+    "decision_patterns": [
+      {
+        "situation": "PvP Burn offense",
+        "recommendation": "Burn Enhancement + Crit Resistance chips; three developed Burn drones; prioritize lasting long enough for Burn to compound. PvP Evil Eye often adds little because these chips are not invested in Crit Rate.",
+        "section_ids": [
+          "pvp-burn-build",
+          "building-toward-the-burn-cap",
+          "the-evil-eye-conversion-ceiling-pve"
+        ]
+      },
+      {
+        "situation": "Star Scramble defense",
+        "recommendation": "Dodge + Crit Resistance, healing and damage reduction; compare available survivability skills and matchup. Star Scramble defense is locked during the event.",
+        "section_ids": [
+          "pvp-defensive-build",
+          "formation-lock-rules"
+        ]
+      },
+      {
+        "situation": "Crit / Hit offense",
+        "recommendation": "Use Hit to challenge Dodge, Crit for burst and select anti-heal or Sentinel-debuff tools against sustain. Rendclaw is a longer-term ideal counter.",
+        "section_ids": [
+          "pvp-offensive-build",
+          "situational-swaps-for-pvp"
+        ]
+      },
+      {
+        "situation": "PvE Burn/Crit",
+        "recommendation": "Reach 100% effective Burn Enhancement first, then shift chips toward Crit Rate as non-chip Burn sources grow; Evil Eye converts eligible Crit Rate to Burn Crit Rate, while Star Envoy benefits a three-Burn-drone lineup.",
+        "section_ids": [
+          "pve-burn-build",
+          "the-evil-eye-conversion-ceiling-pve"
+        ]
+      },
+      {
+        "situation": "Sentinel passives and reroll value",
+        "recommendation": "Reverse merging is often preferable to paid recasts on cheap Sentinels. Keep new Sentinel’s excellent first passive, generate three new rolls when slots open on merge, and preserve other promising Sentinels; reset levels first to recover Overclock Chips.",
+        "section_ids": [
+          "sentinels",
+          "sentinel-passives-and-rerolling"
+        ]
+      },
+      {
+        "situation": "Situational PvP Mech swaps",
+        "recommendation": "Gloom Moon can close a Hit-versus-Dodge gap. Battle Diva boosts Crit Resistance, Electric Decrease and Burn Decrease. Dragon Emperor favors opponents above 60% HP; Flame Stinger is for finishing lower-HP targets.",
+        "section_ids": [
+          "mech-spirits",
+          "situational-swaps-for-pvp"
+        ]
+      },
+      {
+        "situation": "Chip Factory selection",
+        "recommendation": "Chip rating can favor Attack and HP over formation-critical combat attributes. Auto Mode rating filter is convenient; AND/OR relates to rating plus attribute conditions. A low minimum chip grade permits inspecting more possible good combat rolls.",
+        "section_ids": [
+          "chip-formations"
+        ]
+      },
+      {
+        "situation": "Titan progression and pilot balance",
+        "recommendation": "Keep the important Rainbow unlock bonuses. Before continuing beyond Rainbow or one-star Rainbow, evaluate how far pilot stats are ahead of similar-BP opponents and whether more raw gear BP is justified.",
+        "section_ids": [
+          "titan-sets-and-weapon-tech",
+          "pilots-the-foundation",
+          "on-bp-battle-power"
+        ]
+      },
+      {
+        "situation": "Daily diamonds",
+        "recommendation": "Suggested 540 diamond routine: 140 Vector Graphics; 100 Silicon Wafers; 100 each extra attempt for AirSea Simulation, Critical Strike and Sentinel Base when level-10 rewards are available.",
+        "section_ids": [
+          "daily-diamond-baseline"
+        ]
+      }
+    ],
+    "discord_evidence_notes": [
+      {
+        "topic": "PvP chip specialization",
+        "channel": "Kuroneko PVP Build",
+        "observation": "Method advised focusing Burn PvP chips on Burn Enhancement and Crit Resistance, not diffuse secondary attributes.",
+        "evidence_kind": "Community recommendation"
+      },
+      {
+        "topic": "PvE chip progression",
+        "channel": "༽ZΣKЯӨM༼  PvP build",
+        "observation": "ashpool described reaching 100% Burn Enhancement in PvE from available sources, then investing the remaining chip capacity into Crit.",
+        "evidence_kind": "Author recommendation"
+      },
+      {
+        "topic": "Reverse merging",
+        "channel": "sentinel",
+        "observation": "ashpool described building multiple affordable Gridstars and reverse merging; each merge can give three new passive rolls.",
+        "evidence_kind": "Author experience"
+      },
+      {
+        "topic": "Mech swaps",
+        "channel": "WildMcLovin PvE build",
+        "observation": "ashpool described swapping Gloom Moon when extra Hit was needed and Battle Diva in matchups needing defensive counters.",
+        "evidence_kind": "Author experience"
+      },
+      {
+        "topic": "Chip Factory grade floor",
+        "channel": "༽ZΣKЯӨM༼  PvP build",
+        "observation": "ashpool preferred the lowest grade floor with Stop when chip rating increases as a time-efficient daily setting, acknowledging that some useful lower-rated chips may be missed.",
+        "evidence_kind": "Author preference"
+      },
+      {
+        "topic": "Efficient investment",
+        "channel": "NoXious long term PvE build plan",
+        "observation": "Sionsith emphasized consistency with daily activities over time.",
+        "evidence_kind": "Community recommendation"
+      }
+    ],
+    "uncertain_or_context_dependent": [
+      "Do not invent a fixed Hit-versus-Dodge or Crit-versus-resistance percentage at which all PvP attacks should be skipped.",
+      "No durable numerical target exists for pilot Defense Break/Defense at a given BP. Compare actual opponents and require a substantial advantage before considering more BP-heavy gear.",
+      "Relative performance of Berserk Dragon, Ladybug, Lantern, Apus, Sagittarius, Flashstrike and other choices depends on development and matchup; reported wins are tests, not universal rankings.",
+      "Costs, skill values and combat formulas should be cited from the visible guide and checked against current game screens if questioned; do not silently treat older Discord observations as current rules.",
+      "Do not interpret BP reduction alone as increasing absolute damage or survivability; it can improve competitiveness relative to matchmaking or reallocations."
+    ],
+    "navigation": {
+      "matchups": "situational-swaps-for-pvp",
+      "pilots": "pilots-the-foundation",
+      "chips": "chip-formations",
+      "drones": "burn-drones",
+      "sentinels": "sentinels",
+      "mechs": "mech-spirits",
+      "gear": "titan-sets-and-weapon-tech",
+      "events": "the-weekly-event-cycle",
+      "daily_spending": "daily-diamond-baseline",
+      "pilot_damage_math": "defense-break-vs-defense-how-the-math-works",
+      "stat_caps": "understanding-the-stat-caps"
+    }
+  }
 }
