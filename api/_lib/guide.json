@@ -155,7 +155,7 @@
           "header": false,
           "cells": [
             "Burn / Crit Resistance",
-            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop through burn skills and ticks. Healing, Crit Resistance, and damage reduction help you survive while Burn builds."
+            "My most-used PvP offense. Three developed Burn drones deal damage that Dodge cannot stop. Healing, Crit Resistance, and damage reduction help you survive while Burn builds."
           ]
         },
         {
@@ -191,13 +191,6 @@
           "cells": [
             "Situational: Dodge / Burn Decrease",
             "Useful against Burn-heavy opponents. Burn Decrease reduces their damage; Dodge still helps against normal attacks. Giving up Crit Resistance makes it less suitable as my default defense against common Crit builds."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Situational: Dodge / Hit",
-            "A Dodge variation that also provides Hit against opposing Dodge builds. It works best when your Dodge exceeds their Hit by a wide margin and you have a strong supporting build, especially pilots."
           ]
         }
       ]
@@ -239,14 +232,14 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "Arcglow or Doomblast supports longer fights. Glimshade can heal when the target is burning. Against powerful healing builds, consider Heal Reduction instead."
+            "Burn damage builds over time, so surviving the early part of the fight is essential. Arcglow and Doomblast provide healing that keeps you alive while Burn stacks and damage bonuses accumulate. Doomblast also increases Healing Enhancement as the fight progresses. Glimshade is another option, healing when the target is burning."
           ]
         },
         {
           "header": false,
           "cells": [
             "Mech Spirits",
-            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three. <strong>Evil Eye is better suited to PvE Burn/Crit.</strong> It converts only the Crit Rate above the target’s Crit Resistance into Burn Crit Rate. PvE bosses have no Crit Resistance, so the conversion works well. In PvP, this formation focuses its chips on Burn Enhancement to overcome enemy Burn Decrease, and on Crit Resistance for defense. That leaves too little Crit Rate above enemy Crit Resistance for Evil Eye to contribute much."
+            "Aqua Spirit and Star Envoy are my core PvP Burn choices. For the third slot, Ladybug provides a one-time emergency heal when HP first falls below 30% in PvP, Lantern increases Healing Enhancement, and Berserk Dragon reduces incoming damage throughout the fight. In my testing, Berserk Dragon is currently outperforming both Ladybug and Lantern, but results may vary depending on the opponent, equipment, and Mech Spirit levels. It’s worth testing all three."
           ]
         },
         {
@@ -257,6 +250,10 @@
           ]
         }
       ]
+    },
+    {
+      "type": "p",
+      "html": "<strong>What about Evil Eye?</strong> Given how powerful it is for PvE Burn, you might expect it to work just as well in PvP. The difference is how you build your chips. In PvP, you want to concentrate on one offensive attribute so you can overcome your opponent’s resistance. For Burn / Crit Resistance, that means prioritizing Burn Enhancement, with Crit Resistance providing protection against Crit attacks. Evil Eye converts Crit Rate above your opponent’s Crit Resistance into Burn Crit Rate. This works extremely well in PvE because bosses have no Crit Resistance, allowing you to invest in both Burn Enhancement and Crit Rate. But in PvP, spreading your chips across Burn and Crit would weaken your ability to overcome either resistance. With your chips focused on Burn, Evil Eye has too little Crit Rate to convert into meaningful damage."
     },
     {
       "type": "p",
