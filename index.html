@@ -621,79 +621,109 @@
   }
 
   function renderToc(entries) {
-    // Group h2/h3 under their preceding h1 so each section can be
-    // collapsed/expanded as a unit.
-    const html = [];
-    let currentChildren = null; // array of inner-item strings
-    let currentParentId = null;
+    // Nested collapse: h2s live inside .toc-h1-panel per h1, and h3s live
+    // inside .toc-h2-panel per h2. Each panel starts closed; the panel for
+    // the heading you are currently reading is opened via setActive().
+    const parts = [];
 
-    function flushChildren() {
-      if (currentChildren && currentChildren.length) {
-        html.push(`<div class="toc-children" data-parent="${currentParentId}">${currentChildren.join('')}</div>`);
+    // Precompute grouping: list of {h1, h2s:[{h2, h3s:[...]}]}.
+    const groups = [];
+    let currentH1 = null;
+    let currentH2 = null;
+    for (const e of entries) {
+      if (e.level === 'h1') {
+        currentH1 = { ...e, h2s: [] };
+        currentH2 = null;
+        groups.push(currentH1);
+      } else if (e.level === 'h2') {
+        if (!currentH1) continue;
+        currentH2 = { ...e, h3s: [] };
+        currentH1.h2s.push(currentH2);
+      } else if (e.level === 'h3') {
+        if (!currentH1) continue;
+        if (!currentH2) {
+          // Orphan h3 under h1 directly — synthesize a pseudo-h2 bucket so
+          // the renderer still has somewhere to put it.
+          currentH2 = { id: '__orphan__' + currentH1.id, title: '', h3s: [], orphan: true };
+          currentH1.h2s.push(currentH2);
+        }
+        currentH2.h3s.push(e);
       }
-      currentChildren = null;
-      currentParentId = null;
     }
 
-    entries.forEach((e, idx) => {
-      const pad = TOC_PAD[e.level] || 12;
-      const level = e.level.slice(1); // "1","2","3"
-      if (e.level === 'h1') {
-        flushChildren();
-        const isPart = /^(Part \d|Start Here)/i.test(stripTags(e.title));
-        const partCls = isPart ? ' toc-part' : '';
-        // Determine if this h1 will have children (lookahead to next h1).
-        const hasChildren = entries.slice(idx + 1).some(n => {
-          if (n.level === 'h1') return false;
-          return true;
-        });
-        const extraCls = hasChildren ? ' has-children' : '';
-        html.push(`<a href="#${e.id}" class="toc-item toc-level-1${partCls}${extraCls}" data-h1="${e.id}" style="padding-left:${pad}px">${e.title}</a>`);
-        currentParentId = e.id;
-        currentChildren = [];
-      } else {
-        if (!currentChildren) currentChildren = [];
-        currentChildren.push(
-          `<a href="#${e.id}" class="toc-item toc-level-${level}" style="padding-left:${pad}px">${e.title}</a>`
-        );
-      }
-    });
-    flushChildren();
+    for (const g of groups) {
+      const isPart = /^(Part \d|Start Here)/i.test(stripTags(g.title));
+      const partCls = isPart ? ' toc-part' : '';
+      const hasChildren = g.h2s.length > 0;
+      const extra = hasChildren ? ' has-children' : '';
+      parts.push(
+        `<a href="#${g.id}" class="toc-item toc-level-1${partCls}${extra}" data-h1="${g.id}" style="padding-left:${TOC_PAD.h1}px">${g.title}</a>`
+      );
+      if (!hasChildren) continue;
+      const h2Html = g.h2s.map(h2 => {
+        if (h2.orphan) {
+          // No visible h2 label; just the orphan h3s inlined (uncommon case).
+          return h2.h3s.map(h3 =>
+            `<a href="#${h3.id}" class="toc-item toc-level-3" style="padding-left:${TOC_PAD.h3}px">${h3.title}</a>`
+          ).join('');
+        }
+        const h2HasChildren = h2.h3s.length > 0;
+        const h2Extra = h2HasChildren ? ' has-children' : '';
+        let out = `<a href="#${h2.id}" class="toc-item toc-level-2${h2Extra}" data-h2="${h2.id}" style="padding-left:${TOC_PAD.h2}px">${h2.title}</a>`;
+        if (h2HasChildren) {
+          out += `<div class="toc-children toc-h2-panel" data-parent-h2="${h2.id}">` +
+            h2.h3s.map(h3 =>
+              `<a href="#${h3.id}" class="toc-item toc-level-3" style="padding-left:${TOC_PAD.h3}px">${h3.title}</a>`
+            ).join('') +
+            '</div>';
+        }
+        return out;
+      }).join('');
+      parts.push(`<div class="toc-children toc-h1-panel" data-parent="${g.id}">${h2Html}</div>`);
+    }
 
-    TOC.innerHTML = html.join('\n');
+    TOC.innerHTML = parts.join('\n');
   }
 
   function wireUp() {
     const headings = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id]'));
     const tocLinks = Array.from(document.querySelectorAll('.toc-item'));
     const h1Links = tocLinks.filter(a => a.classList.contains('toc-level-1'));
-    const childrenPanels = Array.from(document.querySelectorAll('.toc-children'));
+    const h2Links = tocLinks.filter(a => a.classList.contains('toc-level-2'));
+    const h1Panels = Array.from(document.querySelectorAll('.toc-h1-panel'));
+    const h2Panels = Array.from(document.querySelectorAll('.toc-h2-panel'));
 
-    // Map every content heading id -> owning h1 id so we can open the right
-    // child panel as the user scrolls through the document.
+    // Map every content heading id -> owning h1 and owning h2 (for h3s).
     const idToParentH1 = {};
+    const idToParentH2 = {};
     let currentH1 = null;
+    let currentH2 = null;
     headings.forEach(h => {
-      if (h.tagName === 'H1') { currentH1 = h.id; idToParentH1[h.id] = h.id; }
-      else { idToParentH1[h.id] = currentH1; }
+      if (h.tagName === 'H1') {
+        currentH1 = h.id;
+        currentH2 = null;
+        idToParentH1[h.id] = h.id;
+      } else if (h.tagName === 'H2') {
+        currentH2 = h.id;
+        idToParentH1[h.id] = currentH1;
+      } else {
+        idToParentH1[h.id] = currentH1;
+        idToParentH2[h.id] = currentH2;
+      }
     });
 
-    function openSection(h1Id) {
-      childrenPanels.forEach(p => {
-        const match = p.dataset.parent === h1Id;
-        p.classList.toggle('open', match);
-      });
-      h1Links.forEach(a => {
-        a.classList.toggle('expanded', a.dataset.h1 === h1Id);
-      });
+    function openSection(h1Id, h2Id) {
+      h1Panels.forEach(p => p.classList.toggle('open', p.dataset.parent === h1Id));
+      h1Links.forEach(a => a.classList.toggle('expanded', a.dataset.h1 === h1Id));
+      h2Panels.forEach(p => p.classList.toggle('open', p.dataset.parentH2 === h2Id));
+      h2Links.forEach(a => a.classList.toggle('expanded', a.dataset.h2 === h2Id));
     }
 
     function setActive(id) {
       tocLinks.forEach(a => {
         a.classList.toggle('active', a.getAttribute('href') === '#' + id);
       });
-      const parentH1 = idToParentH1[id];
-      if (parentH1) openSection(parentH1);
+      openSection(idToParentH1[id] || null, idToParentH2[id] || null);
       const active = tocLinks.find(a => a.getAttribute('href') === '#' + id);
       if (active) {
         const top = active.offsetTop - TOC.clientHeight / 2;
@@ -701,16 +731,39 @@
       }
     }
 
-    // Clicking an h1 in the TOC toggles its section (and navigates).
+    // Clicking an h1 in the TOC toggles its panel (and still navigates).
     h1Links.forEach(a => {
-      a.addEventListener('click', (e) => {
+      a.addEventListener('click', () => {
         const id = a.dataset.h1;
-        const panel = document.querySelector(`.toc-children[data-parent="${id}"]`);
-        if (!panel) return; // no children, just let the anchor navigate
-        const isOpen = panel.classList.contains('open');
-        childrenPanels.forEach(p => p.classList.remove('open'));
+        const panel = document.querySelector(`.toc-h1-panel[data-parent="${id}"]`);
+        if (!panel) return;
+        const willOpen = !panel.classList.contains('open');
+        h1Panels.forEach(p => p.classList.remove('open'));
         h1Links.forEach(x => x.classList.remove('expanded'));
-        if (!isOpen) {
+        // Also collapse all h2 panels when switching h1 context.
+        h2Panels.forEach(p => p.classList.remove('open'));
+        h2Links.forEach(x => x.classList.remove('expanded'));
+        if (willOpen) {
+          panel.classList.add('open');
+          a.classList.add('expanded');
+        }
+      });
+    });
+
+    // Clicking an h2 in the TOC toggles its own h3 panel.
+    h2Links.forEach(a => {
+      a.addEventListener('click', (ev) => {
+        const id = a.dataset.h2;
+        const panel = document.querySelector(`.toc-h2-panel[data-parent-h2="${id}"]`);
+        if (!panel) return;
+        const willOpen = !panel.classList.contains('open');
+        // Only collapse other h2 panels within the same h1 group.
+        const parentH1Panel = a.closest('.toc-h1-panel');
+        if (parentH1Panel) {
+          parentH1Panel.querySelectorAll('.toc-h2-panel').forEach(p => p.classList.remove('open'));
+          parentH1Panel.querySelectorAll('.toc-level-2').forEach(x => x.classList.remove('expanded'));
+        }
+        if (willOpen) {
           panel.classList.add('open');
           a.classList.add('expanded');
         }
@@ -727,8 +780,7 @@
     const initialId = initialHash && idToParentH1[initialHash] ? initialHash :
                       (headings[0] && headings[0].id);
     if (initialId) {
-      const parent = idToParentH1[initialId];
-      if (parent) openSection(parent);
+      openSection(idToParentH1[initialId] || null, idToParentH2[initialId] || null);
     }
 
     // Deep-link details handler (future-proof)
