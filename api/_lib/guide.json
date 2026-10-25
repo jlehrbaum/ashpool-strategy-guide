@@ -9,27 +9,19 @@
         "href": "#start-here"
       },
       {
-        "label": "PvP Builds",
+        "label": "Formations & PvP",
         "href": "#part-2-situational-builds-and-tactics"
       },
       {
-        "label": "Pilots",
-        "href": "#pilots-the-foundation"
-      },
-      {
-        "label": "Drones",
-        "href": "#burn-drones"
-      },
-      {
-        "label": "Sentinels",
-        "href": "#sentinels"
+        "label": "Build Upgrades",
+        "href": "#part-3-optimizing-your-builds"
       },
       {
         "label": "Events & Resources",
         "href": "#part-4-resource-and-event-economy"
       },
       {
-        "label": "Mechanics",
+        "label": "Mechanics Reference",
         "href": "#part-1-understanding-the-four-systems"
       }
     ],
@@ -71,79 +63,114 @@
         {
           "header": true,
           "cells": [
-            "Your goal",
-            "Jump to"
+            "What you want to do",
+            "Go to"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Develop a Burn offense",
-            "<a href=\"#pvp-burn-build\">Burn / Crit Resistance</a>"
+            "Choose your formations",
+            "<a href=\"#pairing-primaries-with-secondaries\">Formation comparison</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Choose a PvP defense",
-            "<a href=\"#pvp-defensive-build\">Dodge / Crit Resistance</a>"
+            "Choose an opponent to attack",
+            "<a href=\"#situational-swaps-for-pvp\">PvP matchups</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Counter Dodge or Burn builds",
-            "<a href=\"#pvp-offensive-build\">Crit / Hit</a>"
+            "Improve your pilot stats",
+            "<a href=\"#pilots-the-foundation\">Pilots</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Know what to upgrade",
-            "<a href=\"#pilots-the-foundation\">Pilots</a>, <a href=\"#burn-drones\">Drones</a>, and <a href=\"#sentinels\">Sentinels</a>"
+            "Manufacture better chips",
+            "<a href=\"#chip-formations\">Chips</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Build for bosses",
-            "<a href=\"#pve-burn-build\">PvE Burn progression</a>"
+            "Build and evolve Burn drones",
+            "<a href=\"#burn-drones\">Burn Drones</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Plan events",
-            "<a href=\"#part-4-resource-and-event-economy\">Events and resources</a>"
+            "Choose and develop Sentinels",
+            "<a href=\"#sentinels\">Sentinels</a>"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Check formulas",
-            "<a href=\"#part-1-understanding-the-four-systems\">Mechanics reference</a>"
+            "Choose or swap Mech Spirits",
+            "<a href=\"#mech-spirits\">Mech Spirits</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Upgrade engines and Camp Technology",
+            "<a href=\"#engines\">Engines & Camp Tech</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Compare Titan Gear upgrades",
+            "<a href=\"#titan-sets-and-weapon-tech\">Titan Gear</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Upgrade Legion Technology",
+            "<a href=\"#legion-technology\">Legion Technology</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Spend resources efficiently",
+            "<a href=\"#part-4-resource-and-event-economy\">Events & Resources</a>"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Check formulas and stat caps",
+            "<a href=\"#part-1-understanding-the-four-systems\">Mechanics Reference</a>"
           ]
         }
       ]
     },
     {
+      "type": "h1",
+      "id": "part-2-situational-builds-and-tactics",
+      "title": "Part 1 — Formations and PvP Strategy"
+    },
+    {
       "type": "h2",
       "id": "start-priorities",
-      "title": "Choosing Your Formations"
+      "title": "How formations work"
     },
     {
       "type": "p",
       "html": "<strong>Your chips are the foundation of each formation.</strong> The attributes you prioritize determine the type of build you’re creating, whether that’s Burn / Crit Resistance, Dodge / Crit Resistance, or Crit / Hit. From there, choose your drones, sentinel, Mech Spirits, and equipment to support that strategy. You can save three different formations to prepare for different opponents and game modes. See <a href=\"#chip-formations\">Chips — Focus on the Stats That Matter</a> for manufacturing and upgrade advice."
     },
     {
-      "type": "h1",
-      "id": "part-2-situational-builds-and-tactics",
-      "title": "Part 1 — Pick the right formation for the fight"
-    },
-    {
       "type": "h2",
       "id": "pairing-primaries-with-secondaries",
-      "title": "What each formation does best"
+      "title": "Formation comparison"
     },
     {
       "type": "table",
@@ -474,7 +501,7 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "I currently use SavagePlate with gold and blue Crit Damage passives. I am developing a Flashstrike with gold Crit Damage to see whether its damage-boost skill can outperform that SavagePlate. Compare actual boss results rather than assuming the newer sentinel wins."
+            "Stormquill with strong Crit Damage passives is an affordable practical choice. Flashstrike with multiple Crit Damage passives and Sentinel Enhancement is an excellent upgrade and can be worth building relatively early. Compare actual boss damage at your current development levels."
           ]
         }
       ]
@@ -490,7 +517,7 @@
     {
       "type": "h2",
       "id": "situational-swaps-for-pvp",
-      "title": "When a matchup is worth attacking"
+      "title": "Choosing a PvP matchup"
     },
     {
       "type": "p",
@@ -539,7 +566,7 @@
     {
       "type": "h2",
       "id": "formation-lock-rules",
-      "title": "When your build is locked"
+      "title": "Formation locking by game mode"
     },
     {
       "type": "table",
@@ -584,7 +611,7 @@
     {
       "type": "h1",
       "id": "part-3-optimizing-your-builds",
-      "title": "Part 2 — Strengthen Your Build"
+      "title": "Part 2 — Improving Your Builds"
     },
     {
       "type": "p",
@@ -593,7 +620,7 @@
     {
       "type": "h2",
       "id": "on-bp-battle-power",
-      "title": "Strength vs. Battle Power"
+      "title": "Battle Power and PvP strength"
     },
     {
       "type": "p",
@@ -605,7 +632,7 @@
     },
     {
       "type": "p",
-      "html": "Attack, HP, and better equipment can absolutely be worth the BP. The trade-off is especially clear with sentinels: leveling beyond 80 adds stats and BP, but does not improve the active skill. In Star Scramble, lower-BP players also contribute by clearing defensive items and reducing enemy fuel so stronger teammates can focus on one-hit kills."
+      "html": "Attack, HP, and better equipment can absolutely be worth the BP. The trade-off is especially clear with sentinels: leveling beyond 80 adds stats and BP, but does not improve the active skill. In Star Scramble, lower-BP players also contribute by clearing defensive items and reducing enemy fuel so stronger teammates can focus on one-hit kills. Titan Gear is a major example: once you reach Rainbow, further upgrades can add BP faster than your pilots improve. See <a href=\"#when-to-stop-upgrading-titan-gear\">When to stop upgrading Titan Gear</a>."
     },
     {
       "type": "p",
@@ -673,7 +700,7 @@
     {
       "type": "h3",
       "id": "why-pilots-matter-more-than-they-look",
-      "title": "Why pilots win close fights"
+      "title": "Why pilot stats matter"
     },
     {
       "type": "ul",
@@ -703,12 +730,12 @@
     },
     {
       "type": "p",
-      "html": "For example, 300 more PDB than your opponent’s PD gives you a <strong>1.30× damage multiplier (+30%)</strong>. If your PDB is 300 lower instead, the multiplier is <strong>1 / 1.30 ≈ 0.769× (−23.1%)</strong>. This helps explain why a pilot mismatch can swing a fight even when the chip matchup looks favorable. See the <a href=\"#defense-break-vs-defense-how-the-math-works\">full Defense Break reference</a> for more examples."
+      "html": "For example, 300 more PDB than your opponent’s PD gives you a <strong>1.30× damage multiplier (+30%)</strong>. If your PDB is 300 lower instead, the multiplier is <strong>1 / 1.30 ≈ 0.769× (−23.1%)</strong>. This helps explain why a pilot mismatch can swing a fight even when the chip matchup looks favorable. See the <a href=\"#defense-break-vs-defense-how-the-math-works\">full Defense Break reference</a> for more examples. Before heavily upgrading Titan Gear beyond Rainbow, compare your pilot stats with opponents around your BP. If you are not significantly ahead of most of them, prioritize pilots first."
     },
     {
       "type": "h3",
       "id": "the-equipped-pilot-multiplier",
-      "title": "Equip the right pilot for each fight"
+      "title": "Choosing your equipped pilot"
     },
     {
       "type": "p",
@@ -941,7 +968,7 @@
     {
       "type": "h3",
       "id": "pilot-training",
-      "title": "Upgrade the passives that matter"
+      "title": "Pilot passive upgrades"
     },
     {
       "type": "p",
@@ -963,7 +990,7 @@
     {
       "type": "h3",
       "id": "chip-placement-logic-across-formations",
-      "title": "Don't rely on chip rating alone"
+      "title": "Chip rating vs. combat stats"
     },
     {
       "type": "p",
@@ -980,7 +1007,7 @@
     {
       "type": "h3",
       "id": "auto-mode-setup-in-the-chip-factory",
-      "title": "Set up Auto Mode"
+      "title": "Chip Factory Auto Mode"
     },
     {
       "type": "p",
@@ -1015,7 +1042,7 @@
     {
       "type": "h3",
       "id": "foundation-two-maxed-ninjas",
-      "title": "Which drones should you build?"
+      "title": "Burn drone progression"
     },
     {
       "type": "p",
@@ -1197,7 +1224,7 @@
     {
       "type": "h3",
       "id": "recommended-passive-priorities",
-      "title": "Passives worth targeting"
+      "title": "Sentinel passive priorities"
     },
     {
       "type": "table",
@@ -1246,7 +1273,7 @@
     {
       "type": "h3",
       "id": "the-reverse-merge-technique",
-      "title": "Reverse merge before you recast"
+      "title": "Sentinel reverse merging"
     },
     {
       "type": "p",
@@ -1383,13 +1410,13 @@
     {
       "type": "h3",
       "id": "my-pvp-defensive-favorites-in-priority-order",
-      "title": "PVP protection and healing"
+      "title": "PvP protection and healing"
     },
     {
       "type": "ul",
       "items": [
         {
-          "html": "<strong>Aqua Spirit (SSR):</strong> Its Emergency Shield grants +35% Final Damage Decrease the first time your HP crosses its threshold. At skill level 1 that threshold is below 30% HP; at level 13 it rises to below 96%. The protection lasts until the battle ends, even after you heal. That makes it especially valuable in healing builds.",
+          "html": "<strong>Aqua Spirit (SSR):</strong> Its Emergency Shield grants +35% Final Damage Decrease the first time your HP crosses its threshold. At skill level 1 that threshold is below 30% HP; at level 13 it rises to below 96%. The protection lasts until the battle ends, even after you heal. I use Aqua Spirit in all three of my formations because its protection is so valuable, even in offensive builds.",
           "nested": null
         },
         {
@@ -1412,12 +1439,12 @@
     },
     {
       "type": "p",
-      "html": "Aqua Spirit and Berserk Dragon contribute to the same Final Damage Decrease stat. Their listed +35% and +34% bonuses are valuable together, but do <strong>not</strong> interpret them as a literal 69% reduction in every incoming hit: the combat formula also depends on the attacker’s other damage modifiers."
+      "html": "Aqua Spirit and Berserk Dragon both contribute to Final Damage Decrease, but they scale differently. Aqua Spirit always grants <strong>+35%</strong> once its HP threshold triggers; leveling it raises the HP threshold, not the damage reduction. Berserk Dragon is active from the start of the fight and grants <strong>+10% at skill level 1, increasing to +34% at level 13</strong>. Even when both are maxed, don't interpret their combined bonuses as a literal 69% reduction in every incoming hit: actual damage also depends on the attacker’s other damage modifiers."
     },
     {
       "type": "h3",
       "id": "my-pvp-offensive-favorites-in-priority-order",
-      "title": "PVP offense"
+      "title": "PvP offense"
     },
     {
       "type": "ul",
@@ -1443,7 +1470,7 @@
     {
       "type": "h3",
       "id": "situational-pvp-mech-counters",
-      "title": "Situational PVP counters"
+      "title": "Situational PvP counters"
     },
     {
       "type": "p",
@@ -1465,7 +1492,7 @@
     {
       "type": "h3",
       "id": "my-pve-burn-formation-mechs-in-priority-order",
-      "title": "PVE Burn/Crit"
+      "title": "PvE Burn / Crit"
     },
     {
       "type": "ul",
@@ -1588,7 +1615,7 @@
     {
       "type": "h3",
       "id": "super-tech-pvp-priorities",
-      "title": "Super Tech PVP priorities"
+      "title": "Super Tech PvP priorities"
     },
     {
       "type": "p",
@@ -1606,7 +1633,7 @@
     {
       "type": "h3",
       "id": "titan-sets",
-      "title": "Titan Sets"
+      "title": "Titan set bonuses"
     },
     {
       "type": "ul",
@@ -1627,7 +1654,32 @@
     },
     {
       "type": "p",
-      "html": "The July mechanics model gives a <strong>1.3× adjusted-attack factor</strong> for a complete five-piece Titan setup. Because several damage sources use adjusted attack, replacing one piece can cost more than its individual stats suggest. My full Conqueror setup has also won more fights than switching to Hardrock for extra HP. Compare complete builds in actual fights, including their set bonuses."
+      "html": "Equipping all five pieces of a matching Titan set gives you a <strong>30% boost to the Attack used in damage calculations</strong> (1.3×). Swapping out even one piece breaks that bonus, so the extra stats from a different piece may not make up for the damage you lose. In my testing, a full Conqueror setup has won more fights than swapping in Hardrock for extra HP. Test the full setups rather than comparing individual pieces."
+    },
+    {
+      "type": "h3",
+      "id": "when-to-stop-upgrading-titan-gear",
+      "title": "When to pause Titan Gear upgrades"
+    },
+    {
+      "type": "p",
+      "html": "Getting your Titan Gear to Rainbow is an important milestone because it unlocks valuable attribute bonuses. For example, the Conqueror Maingun gains <strong>+30% Attack against bosses</strong>."
+    },
+    {
+      "type": "p",
+      "html": "Once you reach Rainbow, or perhaps 1-star Rainbow, consider slowing down or stopping further upgrades. Additional stars can add substantial Attack and HP, but they also raise Battle Power (BP). If your pilots are not keeping pace, you can end up with a high-BP account that is surprisingly easy to beat."
+    },
+    {
+      "type": "p",
+      "html": "<strong>More BP does not always mean a stronger PvP build.</strong> Reducing excessive gear investment while keeping important Rainbow bonuses can make you more competitive relative to other players at your BP, especially when you redirect resources toward pilots and useful combat attributes."
+    },
+    {
+      "type": "p",
+      "html": "There is no reliable benchmark for pilot strength at a given BP. Compare your Defense Break and Defense stats with players around your BP. <strong>If your pilots are significantly ahead of most comparable opponents, further gear upgrades may make sense. If you are only slightly ahead, or behind, prioritize pilots first.</strong>"
+    },
+    {
+      "type": "p",
+      "html": "The goal is not to have the lowest BP. It is to make sure every increase in BP comes with enough fighting strength to justify it."
     },
     {
       "type": "h3",
@@ -1645,7 +1697,7 @@
     {
       "type": "h2",
       "id": "legion-technology",
-      "title": "Legion Technology — Prioritize aerial PVP bonuses"
+      "title": "Legion Technology"
     },
     {
       "type": "p",
@@ -1654,11 +1706,16 @@
     {
       "type": "h3",
       "id": "weapon-tech-priorities",
-      "title": "PVP Upgrade Priorities"
+      "title": "PvP upgrade priorities"
     },
     {
       "type": "p",
       "html": "For PvP, pay attention to two upgrades that explicitly include other players: “Increase damage against aerial enemies (including players)” in Damage Increase, and “Reduce damage from aerial enemies (including players)” in Enemy Weakened. Their listed maximum level is 100. These can help across a wide range of PvP attacks and defenses, so they deserve sustained investment."
+    },
+    {
+      "type": "h3",
+      "id": "equipment-reinforce",
+      "title": "Equipment Reinforce"
     },
     {
       "type": "p",
@@ -1683,7 +1740,7 @@
     },
     {
       "type": "p",
-      "html": "For example, the mechanics model lists a rainbow Titan Winggun at roughly 1.6 seconds between shots with a damage coefficient of 0.09, and Missile at about four seconds with a coefficient of 0.225. Those numbers partly offset one another before considering weapon attack values, crits, and other bonuses. Compare the actual contribution and upgrade cost of each weapon when choosing what to improve next."
+      "html": "For example, a rainbow Titan Winggun has approximately 1.6 seconds between shots and a 0.09 damage coefficient, while a Missile has about four seconds between shots and a 0.225 coefficient. Those numbers partly offset one another before considering weapon attack values, crits, and other bonuses. Compare the actual contribution and upgrade cost of each weapon when choosing what to improve next."
     },
     {
       "type": "p",
@@ -1692,7 +1749,7 @@
     {
       "type": "h1",
       "id": "part-4-resource-and-event-economy",
-      "title": "Part 3 — Spend Smarter"
+      "title": "Part 3 — Events and Resource Management"
     },
     {
       "type": "p",
@@ -1701,7 +1758,7 @@
     {
       "type": "h2",
       "id": "the-weekly-event-cycle",
-      "title": "Know the milestone before you spend"
+      "title": "Event spending strategy"
     },
     {
       "type": "p",
@@ -1840,7 +1897,7 @@
     {
       "type": "h1",
       "id": "part-1-understanding-the-four-systems",
-      "title": "Part 4 — Mechanics Reference"
+      "title": "Part 4 — Game Mechanics Reference"
     },
     {
       "type": "p",
@@ -1849,7 +1906,7 @@
     {
       "type": "h2",
       "id": "defense-break-vs-defense-how-the-math-works",
-      "title": "Defense Break vs. Defense — Exact math"
+      "title": "Defense Break damage calculations"
     },
     {
       "type": "p",
@@ -1858,7 +1915,7 @@
     {
       "type": "h3",
       "id": "the-formula",
-      "title": "The Formula"
+      "title": "Damage formulas"
     },
     {
       "type": "p",
@@ -1883,7 +1940,7 @@
     {
       "type": "h3",
       "id": "the-breakpoint",
-      "title": "Reaching Parity"
+      "title": "When Break equals Defense"
     },
     {
       "type": "p",
@@ -1892,7 +1949,7 @@
     {
       "type": "h3",
       "id": "why-the-asymmetry-matters",
-      "title": "How Break Gaps Change Damage"
+      "title": "How Break gaps affect damage"
     },
     {
       "type": "p",
@@ -2025,7 +2082,7 @@
     {
       "type": "h3",
       "id": "what-the-caps-apply-to",
-      "title": "What the Caps Apply To"
+      "title": "What the caps apply to"
     },
     {
       "type": "p",
