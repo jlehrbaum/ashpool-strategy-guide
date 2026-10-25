@@ -57,6 +57,10 @@
       "html": "This is my working guide to those decisions, with PvP as the main focus. It covers how to size up an opponent, choose a formation, strengthen the parts of your build that matter, and get more from limited resources. There is also a dedicated PvE section, because boss damage is important for progression. Some recommendations are well established; others are things I am still testing, and I will call out the difference."
     },
     {
+      "type": "p",
+      "html": "<strong>Keep testing your builds.</strong> The best combination of drones, Sentinels, Mech Spirits, chips, and gear depends on how they work together. I’ve found that as I upgrade one part of my build, the best choices for other parts can change too. Use the recommendations in this guide as a starting point, then test different combinations in Military Drills. What works best for my account today might not be what works best for yours, or even for mine a month from now."
+    },
+    {
       "type": "h2",
       "id": "where-to-start",
       "title": "Find what you need"
@@ -374,7 +378,7 @@
           "header": false,
           "cells": [
             "Sentinel",
-            "SavagePlate provides fast direct damage. Stormquill reduces enemy Damage Boost and, as a G-rarity sentinel, is much cheaper to fully evolve. Rendclaw is another strong option, but as an SSR sentinel, it’s a longer-term investment."
+            "Rendclaw is my ideal choice for its anti-heal ability, but as an SSR sentinel, it’s a longer-term investment. SavagePlate provides fast direct damage. Stormquill reduces enemy Damage Boost and, as a G-rarity sentinel, is much cheaper to fully evolve."
           ]
         },
         {
@@ -686,6 +690,23 @@
     },
     {
       "type": "h3",
+      "id": "pilot-defense-break-damage-formula",
+      "title": "How pilot stats affect damage"
+    },
+    {
+      "type": "p",
+      "html": "Compare your Defense Break with the opponent’s matching Defense: PDB against PD for physical attacks, or EDB against ED for energy attacks. For incoming damage, reverse the comparison using their Break against your Defense."
+    },
+    {
+      "type": "p",
+      "html": "<strong>When your Break is higher:</strong> Damage multiplier = 1 + (Break − Defense) / 1,000. <strong>When your Break is lower:</strong> Damage multiplier = 1 / (1 + (Defense − Break) / 1,000). At equal values, the multiplier is 1.00×."
+    },
+    {
+      "type": "p",
+      "html": "For example, 300 more PDB than your opponent’s PD gives you a <strong>1.30× damage multiplier (+30%)</strong>. If your PDB is 300 lower instead, the multiplier is <strong>1 / 1.30 ≈ 0.769× (−23.1%)</strong>. This helps explain why a pilot mismatch can swing a fight even when the chip matchup looks favorable. See the <a href=\"#defense-break-vs-defense-how-the-math-works\">full Defense Break reference</a> for more examples."
+    },
+    {
+      "type": "h3",
       "id": "the-equipped-pilot-multiplier",
       "title": "Equip the right pilot for each fight"
     },
@@ -920,7 +941,7 @@
     {
       "type": "h3",
       "id": "pilot-training",
-      "title": "Train useful passives, not empty BP"
+      "title": "Upgrade the passives that matter"
     },
     {
       "type": "p",
@@ -937,33 +958,50 @@
     },
     {
       "type": "p",
-      "html": "Chip manufacturing is a long-term investment. Set up Auto Mode to look for the attributes you want across all three formations, and run it daily. As your Chip Factory levels up, it produces better-quality chips, helping you strengthen each build over time."
+      "html": "Your chips are the foundation of your formations, so manufacture them daily and focus on improving the combat attributes your builds depend on."
     },
     {
       "type": "h3",
       "id": "chip-placement-logic-across-formations",
-      "title": "Pick chips for the formation you actually use"
+      "title": "Don't rely on chip rating alone"
     },
     {
       "type": "p",
-      "html": "For everyday chip manufacturing, I recommend Auto Mode with <strong>“Stop when chip rating increases.”</strong> It’s a huge time-saver and a good way to steadily improve your chips."
+      "html": "A higher-rated chip isn’t necessarily better for your build. Chip ratings account for Attack and Health alongside combat attributes, so a chip with more Attack and Health might actually have less Dodge, Crit Resistance, or Burn Enhancement than the one you’re replacing."
     },
     {
       "type": "p",
-      "html": "The trade-off is that overall chip rating doesn’t always reflect the attributes you care about. A lower-rated chip might have better Dodge and Crit Resistance than a higher-rated one, for example. But as your factory levels up and produces better-quality chips, that’s a relatively small sacrifice for a huge amount of time saved."
+      "html": "For everyday manufacturing, I use Auto Mode with <strong>“Stop when chip rating increases.”</strong> It’s a convenient way to improve your chips without reviewing every result, but it can miss lower-rated chips with better combat attributes."
     },
     {
       "type": "p",
-      "html": "When you’re changing a formation or looking for specific attributes, consider lowering the minimum chip grade and reviewing more chips manually. This gives you a better chance of finding the attributes you need, even on lower-rated chips."
+      "html": "When you’re trying to build or significantly improve a particular formation, it’s worth reviewing more chips manually. You may find better combinations even when the overall rating is lower."
     },
     {
       "type": "h3",
       "id": "auto-mode-setup-in-the-chip-factory",
-      "title": "Use the Chip Factory without babysitting it"
+      "title": "Set up Auto Mode"
     },
     {
       "type": "p",
-      "html": "The Chip Factory produces random attributes, and Auto Mode can watch for chips suited to more than one formation. Start with three attribute targets; the interface can accommodate roughly three to six, but a narrower selection is easier to review. Use OR when either attribute is useful and AND only when both must appear on the same chip."
+      "html": "The <strong>AND/OR setting</strong> determines how Auto Mode uses your selected attributes alongside the chip rating filter:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>AND:</strong> A chip must meet both the rating and attribute conditions.",
+          "nested": null
+        },
+        {
+          "html": "<strong>OR:</strong> A chip can qualify by meeting either condition, potentially showing lower-rated chips with the attributes you need.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "I generally use the rating filter for everyday manufacturing. When hunting for specific attributes, I broaden the results and review more chips myself."
     },
     {
       "type": "h2",
@@ -972,61 +1010,45 @@
     },
     {
       "type": "p",
-      "html": "In Burn builds, your three drones supply much of the damage. A finished lower-rarity drone can be more useful than a barely developed SR, so compare what each drone contributes before committing resources."
+      "html": "Your three drones provide much of the damage in a Burn build, but their abilities matter as much as their individual strength. Some increase Burn damage across the whole lineup, while others help build stacks or deal direct damage."
     },
     {
       "type": "h3",
       "id": "foundation-two-maxed-ninjas",
-      "title": "How to develop your Burn drones"
+      "title": "Which drones should you build?"
     },
     {
       "type": "p",
-      "html": "<strong>Start with Ninja.</strong> It is inexpensive to fully evolve and gives you a developed Burn drone sooner than an R or SR option. Build toward two maxed Ninjas and a strong third drone. Sagittarius adds Flaming, increasing the combined damage of your Burn stacks; Lich is a more accessible R option that buffs Burn damage across your drone lineup."
-    },
-    {
-      "type": "table",
-      "rows": [
-        {
-          "header": true,
-          "cells": [
-            "Stage",
-            "What to develop",
-            "Why"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Starting out",
-            "One Ninja, then a second",
-            "Affordable Burn damage while you accumulate resources"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Third drone",
-            "Sagittarius, Lich, or another developed Burn drone",
-            "Choose useful skills and upgrades you can complete"
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "Longer term",
-            "Developed Sagittarius, Lyra, Fornax, or a strong R/SR mix",
-            "Replace a Ninja when the new drone actually improves your results"
-          ]
-        }
-      ]
+      "html": "<strong>Start with Ninja.</strong> It is inexpensive to fully evolve and gives you a strong Burn drone early. Two maxed Ninjas are a good foundation while you develop other options."
     },
     {
       "type": "p",
-      "html": "R drones are usually cheaper to develop than SR drones. Lich offers a team-wide Burn benefit; Cerberus and Scorpion Lion are more situational. SR drones can become stronger with enough investment, but compare boss and PvP results before replacing a completed drone."
+      "html": "<strong>Prioritize Sagittarius.</strong> Its Flaming ability increases the combined damage from your Burn stacks, making it especially valuable in longer fights. It is generally where I would put my first major SR investment."
     },
     {
       "type": "p",
-      "html": "<strong>Burn stacks have a six-stack limit.</strong> A Burn-drone skill can add a stack, but adding a seventh does not create a seventh active stack: it replaces the oldest one. This matters when judging abilities that add extra stacks. Also remember that Burn-drone normal attacks can still miss, even though their skills and existing Burn damage do not use the normal Hit/Dodge check. The <a href=\"#drones-and-crit-what-actually-converts\">mechanics reference</a> covers drone critical hits."
+      "html": "<strong>Consider Lich as your R upgrade.</strong> Its level-4 skill gives +15% Burn Damage across your drone lineup for the battle. That makes it useful once you can maintain multiple Burn stacks. Cerberus and Scorpion Lion have more conditional abilities; the <a href=\"#choosing-among-r-tier-burn-drones\">R drone comparison</a> has the details."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Develop Lyra next, then Fornax.</strong> Lyra becomes stronger as Burn stacks build. Fornax reduces drone cooldowns and can become attractive for its combination bonus, but I would finish the core Burn drones before spreading SR resources across several projects."
+    },
+    {
+      "type": "p",
+      "html": "A fully evolved lower-rarity drone can outperform a barely developed SR. Replace Ninja when the new drone performs better in your fights, not just because it has a higher rarity."
+    },
+    {
+      "type": "h3",
+      "id": "burn-stack-behavior",
+      "title": "How Burn stacks work"
+    },
+    {
+      "type": "p",
+      "html": "Burn has a maximum of <strong>six active stacks</strong>. Once you reach that limit, a new stack replaces the oldest one. Adding stacks faster is not always the same as dealing more damage. Sagittarius adds Flaming stacks that increase the combined damage from your Burn stacks; reaching that bonus sooner can help, but a second Sagittarius does not raise its cap."
+    },
+    {
+      "type": "p",
+      "html": "Normal drone attacks can still be dodged. Burn skills and existing Burn damage do not use the normal Hit/Dodge check. For how drone critical hits work, see the <a href=\"#drones-and-crit-what-actually-converts\">mechanics reference</a>."
     },
     {
       "type": "h3",
@@ -1093,21 +1115,13 @@
       "html": "<strong>Transposition is a way to move good passive rolls to a better-developed drone.</strong> It costs 300 diamonds. Both drones must be the same rarity, have at least five stars, and have no unsaved recast results. The five passive <em>types and colors</em> switch places, but each drone keeps its own passive <em>levels</em>. For example, you can roll a great passive on a five-star donor, then transpose those passive types onto a much more evolved drone."
     },
     {
-      "type": "p",
-      "html": "<strong>Lich:</strong> its level-4 skill gives +15% Burn Damage for all drones throughout the battle; the exact stacking relationship with other damage bonuses has not been independently verified."
-    },
-    {
-      "type": "p",
-      "html": "<strong>Experimental Quick Reload deserves caution in Burn builds.</strong> The July mechanics research observed some situations where it increased the interval between Burn ticks from one second to as much as 1.5 seconds. That could reduce boss damage even if the passive sounds beneficial. Test it before committing to it."
-    },
-    {
       "type": "h2",
       "id": "sentinels",
       "title": "Sentinels"
     },
     {
       "type": "p",
-      "html": "A sentinel can keep you alive, deal damage, or counter an opponent’s healing. Which one you develop depends on your formation and the passives available to you. Gridstar is a useful example of how much a strong passive combination can matter."
+      "html": "A strong Sentinel is about more than rarity. Its passives and how they support your formation can matter more than its active skill. Start with affordable Sentinels like Gridstar and Stormquill, where you can develop strong passives without spending heavily on recasting. Arcglow, Doomblast, and Rendclaw become more attractive once you can evolve them and improve their passives."
     },
     {
       "type": "h3",
@@ -1120,9 +1134,9 @@
         {
           "header": true,
           "cells": [
-            "Role",
-            "Accessible option",
-            "Long-term option"
+            "Build",
+            "Practical choice",
+            "Upgrade or goal"
           ]
         },
         {
@@ -1130,37 +1144,37 @@
           "cells": [
             "Dodge / Heal",
             "Gridstar with gold Healing Enhancement",
-            "Arcglow for more sustain, or Doomblast as a longer-term SSR option"
+            "Arcglow or Doomblast for stronger healing"
           ]
         },
         {
           "header": false,
           "cells": [
             "Crit offense",
-            "SavagePlate for repeated damage; Stormquill if you need to reduce enemy Damage Boost",
-            "Rendclaw when you need a stronger anti-heal answer"
+            "SavagePlate for direct damage, or Stormquill to reduce enemy Damage Boost",
+            "Rendclaw for anti-heal"
           ]
         },
         {
           "header": false,
           "cells": [
-            "PVE Burn/Crit",
-            "SavagePlate with gold + blue Crit Damage is my current working PvE sentinel; Flashstrike is a strong candidate I am developing.",
-            "Flashstrike with multiple Crit Damage passives and Sentinel Enhancement is a promising PvE goal, but compare boss damage before replacing a strong SavagePlate."
-          ]
-        },
-        {
-          "header": false,
-          "cells": [
-            "PVP Burn",
-            "Arcglow for sustain or Glimshade if enemies stay burned",
+            "PvP Burn",
+            "Arcglow for healing, or Glimshade against burning targets",
             "Doomblast for longer fights"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Anti-heal",
+            "PvE Burn/Crit",
+            "Stormquill with strong Crit Damage passives",
+            "Flashstrike with multiple Crit Damage passives and Sentinel Enhancement. Flashstrike can be worth developing relatively early, rather than waiting until late game."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Anti-heal counter",
             "SavagePlate with Heal Reduction",
             "Rendclaw"
           ]
@@ -1168,21 +1182,17 @@
       ]
     },
     {
-      "type": "p",
-      "html": "For Dodge / Heal defense, start with Gridstar and Healing Enhancement. Arcglow and Doomblast provide stronger healing options as you develop them, although rerolling multiple ideal passives on expensive sentinels can consume a lot of Protection Cores. Against heavy healing, keep a separate sentinel with Healing Reduction."
-    },
-    {
       "type": "h3",
       "id": "core-mechanics",
-      "title": "Leveling and evolution are different"
+      "title": "Leveling and evolution"
     },
     {
       "type": "p",
-      "html": "All five sentinel rarities (N, R, G, SR, and SSR) have <strong>four passive slots</strong>. Fully evolving one takes <strong>40 total copies</strong>, including the first copy, and raises all four passives to level 10. Evolution also increases Attack and HP, but improving the passive bonuses is usually the biggest reason to pursue all 40 copies."
+      "html": "<strong>Leveling</strong> uses Overclock Chips to strengthen the active skill up to level 80. Levels 81–150 increase Attack, HP, and BP without improving the skill. Level 80 is a practical stopping point unless you specifically need the extra raw stats. You can reset a Sentinel to recover its Overclock Chips."
     },
     {
       "type": "p",
-      "html": "Sentinel <strong>level</strong> is separate from evolution. Overclock Chips raise the level and improve the active skill up to <strong>level 80</strong>. Levels 81–150 cost sharply more chips and raise raw stats and BP without making the skill stronger. Level 80 is a practical stopping point for many players, but pushing higher can make sense when raw strength is the goal. If you reset a sentinel, you can recover the Overclock Chips."
+      "html": "<strong>Evolution</strong> takes 40 total copies, including the first. All Sentinel rarities (N, R, G, SR, and SSR) have four passive slots; full evolution improves Attack and HP, unlocks all four slots, and raises their passives to level 10."
     },
     {
       "type": "h3",
@@ -1195,56 +1205,69 @@
         {
           "header": true,
           "cells": [
-            "Your build",
-            "Prioritize"
+            "Build",
+            "Passives to prioritize"
           ]
         },
         {
           "header": false,
           "cells": [
-            "Healing / Dodge",
-            "Gold Healing Enhancement, then purple; Crit Damage Reduction or Sentinel Enhancement when useful."
+            "Dodge / Heal",
+            "Healing Enhancement or Sentinel Enhancement"
           ]
         },
         {
           "header": false,
           "cells": [
             "Crit offense",
-            "Crit Damage, Crit Rate, Heal Reduction, and selected Sentinel Enhancement."
+            "Heal Reduction to counter healing; Sentinel Decrease against Arcglow or Doomblast; Sentinel Enhancement when using Rendclaw to increase its damage. Crit Damage is useful, but lower priority."
           ]
         },
         {
           "header": false,
           "cells": [
-            "PVE Burn/Crit",
-            "Crit Damage and useful damage buffs; Flashstrike can use a developed combination of multiple Crit Damage passives."
+            "PvP Burn",
+            "Healing Enhancement; Sentinel Enhancement on strong healing Sentinels"
           ]
         },
         {
           "header": false,
           "cells": [
-            "PVP Burn",
-            "Healing Enhancement on Arcglow/Doomblast; Sentinel Enhancement if the sentinel’s own output matters."
+            "PvE Burn/Crit",
+            "Crit Damage and Sentinel Enhancement"
           ]
         }
       ]
     },
     {
       "type": "p",
-      "html": "At passive level 10, Healing Enhancement provides <strong>+100% for gold, +80% for purple, and +60% for blue</strong>. These bonuses add together. Gold Sentinel Enhancement adds +75% at level 10 and acts as a separate multiplier for eligible sentinel damage and healing. It does not multiply Ladybug or Cheat Death healing. Enemy Healing Reduction and Sentinel Reduction can offset the corresponding bonuses."
+      "html": "At passive level 10, gold Healing Enhancement provides +100%, purple +80%, and blue +60%. These bonuses add together. Gold Sentinel Enhancement provides +75% and separately multiplies eligible Sentinel healing or damage; it does not improve Ladybug or Cheat Death. Sentinel Enhancement is significantly more valuable on strong active skills, such as Arcglow or Doomblast, than on Gridstar. See <a href=\"#sentinel-healing-interactions\">how healing bonuses interact</a>."
+    },
+    {
+      "type": "h3",
+      "id": "the-reverse-merge-technique",
+      "title": "Reverse merge before you recast"
     },
     {
       "type": "p",
-      "html": "<strong>Not every heal uses the same bonuses.</strong> Apus increases maximum HP by 5% of base HP on each of its first three skill activations, up to +15% total. That increases percentage-of-Max-HP healing from Ladybug and Blood Bat. Cheat Death uses fundamental HP instead, while Doomblast and Arcglow heal based on Attack. Apus’s own HP recovery does not benefit from Healing Enhancement; Ladybug and Cheat Death do. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not the Sentinel Enhancement multiplier."
+      "html": "Reverse merging is a cheaper way to reroll passives without spending Recast Cores, especially on affordable Sentinels like Gridstar. Find a new Gridstar with a strong first passive, ideally gold Healing Enhancement. Then merge your developed Gridstar <strong>into the new one</strong>, not the other way around."
+    },
+    {
+      "type": "p",
+      "html": "The new Gridstar keeps its first passive, inherits the evolution progress, and gets <strong>three new random passive rolls in slots 2–4</strong> when fully evolved. All the old Gridstar’s passives are lost. If the result is not good enough, repeat with another promising copy. Developing a couple of four-star Gridstars in parallel can provide more chances to improve the rolls without Recast Cores."
+    },
+    {
+      "type": "p",
+      "html": "<strong>Don’t sacrifice a Gridstar that already has another valuable passive just to reroll.</strong> Keep promising copies for other formations or matchups. Before any reverse merge, reset the Sentinel you’re sacrificing to recover its Overclock Chips."
     },
     {
       "type": "h3",
       "id": "sentinel-recast-lock-cost",
-      "title": "The real cost of a sentinel recast"
+      "title": "When recasting makes sense"
     },
     {
       "type": "p",
-      "html": "Every sentinel recast costs <strong>20 Recast Cores</strong>, regardless of the number of locked passive slots. Locking slots protects good rolls, but each lock adds a <em>separate</em> Protection Core cost on every attempt:"
+      "html": "Recasting is more relevant for expensive SR and SSR Sentinels, especially once their four passive slots are filled. Every recast costs <strong>20 Recast Cores</strong>. Protecting good passives also costs Protection Cores on each attempt:"
     },
     {
       "type": "table",
@@ -1291,21 +1314,8 @@
       "html": "Protection Cores are particularly expensive. At the first-pack rate of 15 for $3 (where available), locking one slot uses about $4 of Protection Cores per recast; two cost about $8; three about $20. Those amounts are <em>in addition to</em> the 20 Recast Cores. Later paid packs can be more expensive. Save the costly recasts for the sentinels where a better passive will make the most difference. The <a href=\"#odds-of-hitting-gold\">reference section</a> models the odds of finding a specific gold passive."
     },
     {
-      "type": "h3",
-      "id": "the-reverse-merge-technique",
-      "title": "Keep the better passive, not the older sentinel"
-    },
-    {
       "type": "p",
-      "html": "Gridstar shows why passive quality matters. Each inexpensive new copy starts with one passive, so you can look for a gold Healing Enhancement roll and then transfer your existing evolution progress through <a href=\"#the-reverse-merge-technique\">reverse merging</a>."
-    },
-    {
-      "type": "p",
-      "html": "<strong>Reverse merging lets you keep a great passive on a newer copy.</strong> Select the <em>sentinel you keep</em>, which has the passive you want, and the developed <em>sentinel you sacrifice</em>. The kept sentinel retains its existing passive rolls and receives the evolution stars. New passive slots gain new random rolls. All passive rolls on the sacrificed sentinel disappear."
-    },
-    {
-      "type": "p",
-      "html": "For example, suppose you have an old 40-star Arcglow with mediocre passives and find a one-star Arcglow with gold Healing Enhancement. Keep the one-star copy and sacrifice the 40-star copy into it. You keep the gold passive and end up with a developed Arcglow. <strong>Level down the old sentinel before sacrificing it</strong> so you recover the Overclock Chips."
+      "html": "Save expensive recasts for Sentinels that will meaningfully improve your main formations. A strong Gridstar can carry you much further than a poorly developed SSR."
     },
     {
       "type": "h3",
@@ -2147,6 +2157,10 @@
       ]
     },
     {
+      "type": "p",
+      "html": "<strong>Experimental Quick Reload deserves caution in Burn builds.</strong> The July mechanics research observed some situations where it increased the interval between Burn ticks from one second to as much as 1.5 seconds. That could reduce boss damage even if the passive sounds beneficial. Test it before committing to it."
+    },
+    {
       "type": "h2",
       "id": "choosing-among-r-tier-burn-drones",
       "title": "Lich, Cerberus, and Scorpion Lion"
@@ -2324,6 +2338,15 @@
     {
       "type": "p",
       "html": "A sentinel with one great gold passive and several useful supporting passives is already a success. The odds of landing a second exact gold can be expensive, and those same materials might make your drones, pilots, or another sentinel stronger. Chase a second ideal gold when the rest of your build is ready for that investment."
+    },
+    {
+      "type": "h3",
+      "id": "sentinel-healing-interactions",
+      "title": "Sentinel healing interactions"
+    },
+    {
+      "type": "p",
+      "html": "<strong>Not every heal uses the same bonuses.</strong> Apus increases maximum HP by 5% of base HP on each of its first three skill activations, up to +15% total. That increases percentage-of-Max-HP healing from Ladybug and Blood Bat. Cheat Death uses fundamental HP instead, while Doomblast and Arcglow heal based on Attack. Apus’s own HP recovery does not benefit from Healing Enhancement; Ladybug and Cheat Death do. The mechanics research also indicates that Glimshade’s conditional heal benefits from Healing Enhancement but not the Sentinel Enhancement multiplier."
     }
   ]
 }
