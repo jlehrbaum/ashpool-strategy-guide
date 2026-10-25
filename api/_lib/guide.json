@@ -564,6 +564,62 @@
       ]
     },
     {
+      "type": "h3",
+      "id": "troubleshoot-pvp-losses",
+      "title": "Troubleshooting PvP losses"
+    },
+    {
+      "type": "p",
+      "html": "When a build loses, identify what went wrong before spending more resources. These are useful first checks:"
+    },
+    {
+      "type": "table",
+      "rows": [
+        {
+          "header": true,
+          "cells": [
+            "What happens",
+            "What to check"
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Your attacks miss",
+            "Compare your Hit Rate with the opponent’s Dodge. Consider a Hit Rate engine, Gloom Moon, or a Burn formation."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Enemy critical hits kill you",
+            "Compare Crit Resistance with their Crit Rate. If the crits that land are still too strong, consider Crit Damage Reduction."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Your damage is too low",
+            "Compare your relevant pilot Defense Break with the opponent’s Defense, then check whether your main combat attribute overcomes their counter."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "Burn wears you down",
+            "Compare their Burn Enhancement with your Burn Decrease. Dodge does not stop Burn skills or existing Burn ticks."
+          ]
+        },
+        {
+          "header": false,
+          "cells": [
+            "You lose before Burn builds up",
+            "Improve survival with healing or damage reduction, or switch to a faster offensive build for that matchup."
+          ]
+        }
+      ]
+    },
+    {
       "type": "h2",
       "id": "formation-lock-rules",
       "title": "Formation locking by game mode"
@@ -1028,7 +1084,7 @@
     },
     {
       "type": "p",
-      "html": "I generally use the rating filter for everyday manufacturing. When hunting for specific attributes, I broaden the results and review more chips myself."
+      "html": "I generally use the rating filter for everyday manufacturing. When hunting for specific attributes, I broaden the results and review more chips myself. When searching for specific combat attributes, keep the <strong>minimum chip grade low</strong> so potentially useful lower-grade chips are not filtered out before you review them."
     },
     {
       "type": "h2",
@@ -1521,6 +1577,15 @@
       "html": "Mech Spirits improve their attribute bonuses during each four-level stretch. Every fifth level upgrades their main skill. The skill reaches level 13 when the spirit reaches level 60. You also get some benefits from spirits that are not equipped, so plan upgrades around the active skills and collection bonuses you can actually use."
     },
     {
+      "type": "h3",
+      "id": "mech-spirit-combination-bonuses",
+      "title": "Mech Spirit combination bonuses"
+    },
+    {
+      "type": "p",
+      "html": "Mech Spirits can also provide <strong>permanent combination bonuses</strong> when you collect and develop the required spirits, even if those spirits are not in your equipped three. For example, the <strong>Quantum Shift</strong> combination boosts Dodge and can reach <strong>+44%</strong> when its requirements are fully developed. Check the combinations available to you before spending heavily on an unequipped Mech Spirit; some are worth upgrading for the shared bonuses alone."
+    },
+    {
       "type": "h2",
       "id": "engines",
       "title": "Engines"
@@ -1884,15 +1949,57 @@
     {
       "type": "h2",
       "id": "daily-diamond-baseline",
-      "title": "Daily diamonds — Spend on your current bottleneck"
+      "title": "Daily diamond spending"
     },
     {
       "type": "p",
-      "html": "Decide which upgrade you are working toward before spending daily diamonds. Pilot awakening, drone evolution, sentinel passives, and event milestones draw on different resources; focus your spending on the next meaningful upgrade and keep enough diamonds in reserve for upcoming events."
+      "html": "A good daily routine is to spend <strong>540 diamonds</strong> on two resource purchases and three daily challenges."
     },
     {
       "type": "p",
-      "html": "An aggressive daily routine can cost about <strong>540 diamonds</strong>: 140 for engine parts, 300 across three challenge resources, and 100 for Chip Factory parts. Spend based on your current bottleneck rather than treating this as a daily requirement."
+      "html": "<strong>Daily purchases</strong>"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>140 diamonds</strong> for Vector Graphics to upgrade your engines.",
+          "nested": null
+        },
+        {
+          "html": "<strong>100 diamonds</strong> for Silicon Wafers to manufacture chips.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "<strong>Extra attempts in daily challenges</strong>"
+    },
+    {
+      "type": "ul",
+      "items": [
+        {
+          "html": "<strong>100 diamonds</strong> for AirSea Simulation, which rewards Pilot Badges and Training Guides.",
+          "nested": null
+        },
+        {
+          "html": "<strong>100 diamonds</strong> for Critical Strike, which rewards Batteries and Rhenite for drones.",
+          "nested": null
+        },
+        {
+          "html": "<strong>100 diamonds</strong> for Sentinel Base, which rewards Sentinel Chips and Overclock Chips.",
+          "nested": null
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "html": "I especially recommend buying the extra Silicon Wafers every day. For the three challenges, wait until you're earning level 10 rewards before spending diamonds on extra attempts."
+    },
+    {
+      "type": "p",
+      "html": "Ideally, build enough Collection Center income to cover these purchases, leaving other diamonds for discounted Daily Shop items and events. If you can't afford the full 540 yet, prioritize what you can."
     },
     {
       "type": "h1",
